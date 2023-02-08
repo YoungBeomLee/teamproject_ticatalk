@@ -1,0 +1,23 @@
+{
+  "name": "ticatalk",
+  "version": "1.0.0",
+  "description": "[공연보내조] - 김종건, 윤내현, 이영범, 정이진, 최성원",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ejin1018/ticatalk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ejin1018/ticatalk/issues"
+  },
+  "homepage": "https://github.com/ejin1018/ticatalk#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}

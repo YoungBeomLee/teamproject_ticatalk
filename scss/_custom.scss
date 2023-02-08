@@ -1,0 +1,18 @@
+//theme-color
+$primary: #7432E1 !default;
+$secondary: #A49DF1 !default;
+$accent: #7365F0 !default; //변수명추가
+$tertiary: #CCC7F2 !default; //변수명추가
+$light: #F2F4F5 !default;
+$dark: #333333 !default;
+//url설정 확인: 다른데거 쓸건지
+$font-family-sans-serif: "Pretendard";
+//tkt-font <h태그는 따로 지정해줘야합니다.>
+$tkt1 : normal 300 50px 'Pretendard','sans-serif';
+$tkt2 : normal 300 42px 'Pretendard','sans-serif';
+$tkt3 : normal 600 32px 'Pretendard','sans-serif';
+$tkt4 : normal 600 26px 'Pretendard','sans-serif';
+$tkt5 : normal 600 21px 'Pretendard','sans-serif';
+$tkt6 : normal 600 16px 'Pretendard','sans-serif';
+$tkt-t : normal 400 16px 'Pretendard','sans-serif';
+//root에 자간 설정해야함.
