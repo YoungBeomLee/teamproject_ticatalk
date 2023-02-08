@@ -1,7 +1,7 @@
 //theme-color
 $primary: #7432E1 !default;
-$secondary: #A49DF1 !default;
 $accent: #7365F0 !default; //변수명추가
+$secondary: #A49DF1 !default;
 $tertiary: #CCC7F2 !default; //변수명추가
 $light: #F2F4F5 !default;
 $dark: #333333 !default;
@@ -10,15 +10,20 @@ $lgray: #d9d9d9;
 
 //url설정 확인: 다른데거 쓸건지
 $font-family-sans-serif: "Pretendard";
+$letter-spacing: -0.8px;
 
 //tkt-font-heading
-$tkt-h1 : normal 300 50px 'Pretendard',sans-serif;
-$tkt-h2 : normal 300 42px 'Pretendard',sans-serif;
-$tkt-h3 : normal 600 32px 'Pretendard',sans-serif;
-$tkt-h4 : normal 600 26px 'Pretendard',sans-serif;
-$tkt-h5 : normal 600 21px 'Pretendard',sans-serif;
-$tkt-h6 : normal 600 16px 'Pretendard',sans-serif;
+$tkt-h1 : normal 300 50px 'pretendard',sans-serif;
+$tkt-h2 : normal 300 42px 'pretendard',sans-serif;
+$tkt-h3 : normal 600 32px 'pretendard',sans-serif;
+$tkt-h4 : normal 600 26px 'pretendard',sans-serif;
+$tkt-h5 : normal 600 21px 'pretendard',sans-serif;
+$tkt-h6 : normal 600 16px 'pretendard',sans-serif;
 //tkt-font-text
-$tkt-t5 : normal 400 21px 'Pretendard',sans-serif;
-$tkt-t6 : normal 400 16px 'Pretendard',sans-serif;
-$tkt-sm : normal 400 14px 'Pretendard',sans-serif;
+$tkt-t5 : normal 400 21px 'pretendard',sans-serif;
+$tkt-t6 : normal 400 16px 'pretendard',sans-serif;
+$tkt-sm : normal 400 14px 'pretendard',sans-serif;
+
+body{
+  letter-spacing: $letter-spacing;
+}
