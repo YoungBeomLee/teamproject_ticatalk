@@ -4,11 +4,6 @@
 /* 유틸리티 초기화 */
 body {
   letter-spacing: -0.8px;
-  color: #333333;
-}
-
-.row > * {
-  padding: 0;
 }
 
 a {
@@ -8377,12 +8372,36 @@ textarea.form-control-lg {
   font: normal 400 14px "pretendard" !important;
 }
 
+.text-accent {
+  color: #7365F0 !important;
+}
+
+.text-tertiary {
+  color: #CCC7F2 !important;
+}
+
+.text-gray {
+  color: #828282 !important;
+}
+
+.text-lgray {
+  color: #d9d9d9 !important;
+}
+
 .bg-accent {
   background-color: #7365F0 !important;
 }
 
 .bg-tertiary {
   background-color: #CCC7F2 !important;
+}
+
+.bg-gray {
+  background-color: #828282 !important;
+}
+
+.bg-lgray {
+  background-color: #d9d9d9 !important;
 }
 
 @media (min-width: 576px) {
@@ -8931,11 +8950,29 @@ textarea.form-control-lg {
   .tkt-sm-sm {
     font: normal 400 14px "pretendard" !important;
   }
+  .text-sm-accent {
+    color: #7365F0 !important;
+  }
+  .text-sm-tertiary {
+    color: #CCC7F2 !important;
+  }
+  .text-sm-gray {
+    color: #828282 !important;
+  }
+  .text-sm-lgray {
+    color: #d9d9d9 !important;
+  }
   .bg-sm-accent {
     background-color: #7365F0 !important;
   }
   .bg-sm-tertiary {
     background-color: #CCC7F2 !important;
+  }
+  .bg-sm-gray {
+    background-color: #828282 !important;
+  }
+  .bg-sm-lgray {
+    background-color: #d9d9d9 !important;
   }
 }
 @media (min-width: 768px) {
@@ -9484,11 +9521,29 @@ textarea.form-control-lg {
   .tkt-md-sm {
     font: normal 400 14px "pretendard" !important;
   }
+  .text-md-accent {
+    color: #7365F0 !important;
+  }
+  .text-md-tertiary {
+    color: #CCC7F2 !important;
+  }
+  .text-md-gray {
+    color: #828282 !important;
+  }
+  .text-md-lgray {
+    color: #d9d9d9 !important;
+  }
   .bg-md-accent {
     background-color: #7365F0 !important;
   }
   .bg-md-tertiary {
     background-color: #CCC7F2 !important;
+  }
+  .bg-md-gray {
+    background-color: #828282 !important;
+  }
+  .bg-md-lgray {
+    background-color: #d9d9d9 !important;
   }
 }
 @media (min-width: 992px) {
@@ -10037,11 +10092,29 @@ textarea.form-control-lg {
   .tkt-lg-sm {
     font: normal 400 14px "pretendard" !important;
   }
+  .text-lg-accent {
+    color: #7365F0 !important;
+  }
+  .text-lg-tertiary {
+    color: #CCC7F2 !important;
+  }
+  .text-lg-gray {
+    color: #828282 !important;
+  }
+  .text-lg-lgray {
+    color: #d9d9d9 !important;
+  }
   .bg-lg-accent {
     background-color: #7365F0 !important;
   }
   .bg-lg-tertiary {
     background-color: #CCC7F2 !important;
+  }
+  .bg-lg-gray {
+    background-color: #828282 !important;
+  }
+  .bg-lg-lgray {
+    background-color: #d9d9d9 !important;
   }
 }
 @media (min-width: 1200px) {
@@ -10590,11 +10663,29 @@ textarea.form-control-lg {
   .tkt-xl-sm {
     font: normal 400 14px "pretendard" !important;
   }
+  .text-xl-accent {
+    color: #7365F0 !important;
+  }
+  .text-xl-tertiary {
+    color: #CCC7F2 !important;
+  }
+  .text-xl-gray {
+    color: #828282 !important;
+  }
+  .text-xl-lgray {
+    color: #d9d9d9 !important;
+  }
   .bg-xl-accent {
     background-color: #7365F0 !important;
   }
   .bg-xl-tertiary {
     background-color: #CCC7F2 !important;
+  }
+  .bg-xl-gray {
+    background-color: #828282 !important;
+  }
+  .bg-xl-lgray {
+    background-color: #d9d9d9 !important;
   }
 }
 @media (min-width: 1400px) {
@@ -11143,11 +11234,29 @@ textarea.form-control-lg {
   .tkt-xxl-sm {
     font: normal 400 14px "pretendard" !important;
   }
+  .text-xxl-accent {
+    color: #7365F0 !important;
+  }
+  .text-xxl-tertiary {
+    color: #CCC7F2 !important;
+  }
+  .text-xxl-gray {
+    color: #828282 !important;
+  }
+  .text-xxl-lgray {
+    color: #d9d9d9 !important;
+  }
   .bg-xxl-accent {
     background-color: #7365F0 !important;
   }
   .bg-xxl-tertiary {
     background-color: #CCC7F2 !important;
+  }
+  .bg-xxl-gray {
+    background-color: #828282 !important;
+  }
+  .bg-xxl-lgray {
+    background-color: #d9d9d9 !important;
   }
 }
 @media (min-width: 1200px) {

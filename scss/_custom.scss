@@ -1,8 +1,8 @@
 //theme-color
 $primary: #7432E1 !default;
-$accent: #7365F0 !default; //변수명추가
+$accent: #7365F0 !default;
 $secondary: #A49DF1 !default;
-$tertiary: #CCC7F2 !default; //변수명추가
+$tertiary: #CCC7F2 !default;
 $light: #F2F4F5 !default;
 $dark: #333333 !default;
 $gray: #828282;
@@ -11,7 +11,7 @@ $lgray: #d9d9d9;
 $utilities: () !default;
 $utilities: map-merge(
    (
-      'tkt-color': (
+      'tkt-bgcolor': (
 			responsive: true,
          property: background-color,
          class: bg,
@@ -19,6 +19,26 @@ $utilities: map-merge(
             (
               accent: #7365F0,
               tertiary: #CCC7F2,
+              gray: #828282,
+              lgray: #d9d9d9,
+            ),
+      ),
+   ),
+   $utilities
+);
+$utilities: () !default;
+$utilities: map-merge(
+   (
+      'tkt-color': (
+			responsive: true,
+         property: color,
+         class: text,
+         values:
+            (
+              accent: #7365F0,
+              tertiary: #CCC7F2,
+              gray: #828282,
+              lgray: #d9d9d9,
             ),
       ),
    ),
@@ -97,10 +117,6 @@ $utilities: map-merge(
 // initialize
 body{
    letter-spacing: $letter-spacing;
-   color: $dark;
-}
-.row > *{
-   padding:0;
 }
 a{
    text-decoration: none !important;
