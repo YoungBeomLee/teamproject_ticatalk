@@ -10998,4 +10998,61 @@ textarea.form-control-lg {
 .title h3, .title .h3 {
   line-height: 60px;
   margin-left: 10px;
+}
+
+.nav-link {
+  color: #F2F4F5;
+  font-size: normal 400 21px "pretendard", sans-serif;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #7432E1;
+}
+
+.navbar-brand > img {
+  width: 168px;
+}
+
+.navbar {
+  z-index: 1000;
+  top: 2%;
+}
+
+#carouselExampleIndicators.sec1-slide {
+  position: absolute !important;
+  top: 0;
+}
+
+.carousel-indicators {
+  bottom: -10%;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 14rem;
+  height: 18rem;
+  background-color: white;
+  border-radius: 10%;
+  border: 0;
+}
+.carousel-indicators [data-bs-target]:first-child {
+  background: url("../img/poster/sec1/sec1-jeans-kopis.jpg") center center/cover no-repeat;
+}
+.carousel-indicators [data-bs-target]:nth-child(2) {
+  background: url("../img/poster/sec1/sec1-amusesound-kopis.png") center center/cover no-repeat;
+}
+.carousel-indicators [data-bs-target]:nth-child(3) {
+  background: url("../img/poster/sec1/sec1-cafenight-kopis.gif") center center/cover no-repeat;
+}
+.carousel-indicators [data-bs-target]:nth-child(4) {
+  background: url("../img/poster/sec1/sec1-hisaishijo-kopis.gif") center center/cover no-repeat;
+}
+.carousel-indicators [data-bs-target]:nth-child(5) {
+  background: url("../img/poster/sec1/sec1-nextnormal-kopis.jpg") center center/cover no-repeat;
+}
+.carousel-indicators [data-bs-target]:nth-child(6) {
+  background: url("../img/poster/sec1/sec1-matinee-kopis.gif") center center/cover no-repeat;
 }/*# sourceMappingURL=main.css.map */
