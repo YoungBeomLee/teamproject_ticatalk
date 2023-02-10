@@ -54,7 +54,6 @@ $utilities: map-merge(
    $utilities /* 기존 유틸리티와 merge */
 );
 
-
 //margin-class
 $utilities: () !default; /* 유틸리티 초기화 */
 $utilities: map-merge(
@@ -74,6 +73,25 @@ $utilities: map-merge(
       ),
    ),
    $utilities /* 기존 유틸리티와 merge */
+);
+
+//border-radius class
+$utilities: () !default;
+$utilities: map-merge(
+   (
+      'tkt-border-radius': (
+			responsive: true,
+         property: border-radius,
+         class: br,
+         values:
+            (
+              5: 5px,
+              10: 10px,
+              15: 15px,
+            ),
+      ),
+   ),
+   $utilities
 );
 
 // initialize
