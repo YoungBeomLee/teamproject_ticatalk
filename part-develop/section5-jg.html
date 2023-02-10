@@ -15,7 +15,7 @@
       }
 
       .w1440 {
-        max-width: 1400px;
+        max-width: 1440px;
         margin: auto;
       }
       .w100 {
@@ -23,86 +23,95 @@
         margin: auto;
       }
       .search-type > ul > li:hover {
-        color: aqua;
+        color: #7432e1;
         cursor: pointer;
         font-weight: 900;
       }
     </style>
   </head>
   <body>
-    <div
-      class="sec5-search container border-0 rounded-3 bg-tertiary p-5"
-      style="background-color: gray"
-    >
-      <p class="tkt-h3" style="font: $tkt-h3">통합검색</p>
-      <div class="search row">
-        <div class="search-type col-4">
-          <ul class="d-flex list-unstyled justify-content-between mg-15">
-            <li class="m-1">전체</li>
-            <li class="m-1">뮤지컬</li>
-            <li class="m-1">연극</li>
-            <li class="m-1">콘서트</li>
-            <li class="m-1">클래식</li>
-            <li class="m-1">가족.아동</li>
-            <li class="m-1">뮤직페스티벌</li>
+    <section class="w1440 mgb-160">
+      <p class="tkt-h3">통합검색</p>
+      <div class="sec5-search container border-25 rounded-3 bg-light p-5">
+        <div class="search row">
+          <div class="search-type col-6">
+            <ul class="d-flex list-unstyled justify-content-between mgb-35">
+              <li class="m-2 tkt-h5">전체</li>
+              <li class="m-2 tkt-h5">뮤지컬</li>
+              <li class="m-2 tkt-h5">연극</li>
+              <li class="m-2 tkt-h5">콘서트</li>
+              <li class="m-2 tkt-h5">클래식</li>
+              <li class="m-2 tkt-h5">가족.아동</li>
+              <li class="m-2 tkt-h5">뮤직페스티벌</li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-detail row">
+          <div class="search-detail col-4">
+            <ul-=
+              class="search-detail d-flex list-unstyled justify-content-between mgb-35"
+            >
+              <button class="border-0 rounded-3 m-1 p-2 bg-tertiary">
+                &nbsp;&nbsp;지역&nbsp;&nbsp;
+              </button>
+              <button class="border-0 rounded-3 m-1 p-2 bg-tertiary">
+                &nbsp;&nbsp;기간&nbsp;&nbsp;
+              </button>
+              <button class="border-0 rounded-3 m-1 p-2 bg-tertiary">
+                &nbsp;&nbsp;날짜&nbsp;&nbsp;
+              </button>
+              <button class="border-0 rounded-3 pr-5 m-1 p-2 bg-tertiary">
+                &nbsp;&nbsp;공연상태&nbsp;&nbsp;
+              </button>
+            </ul-=>
+          </div>
+        </div>
+        <div class="search-result">
+          <ul class="result-img list-unstyled d-flex justify-content-between">
+            <li class="result1 list-unstyled">
+              <img
+                src="../img/sec4-result01.jpg"
+                class="rounded float-start"
+                alt=""
+                style="width: 220px; height: 270px"
+              />
+            </li>
+            <li class="result2 list-unstyled">
+              <img
+                src="../img/sec4-result02.jpg"
+                class="rounded mx-auto d-block"
+                alt=""
+                style="width: 220px; height: 270px"
+              />
+            </li>
+            <li class="result3 list-unstyled">
+              <img
+                src="../img/sec4-result03.gif"
+                class="rounded mx-auto d-block"
+                alt=""
+                style="width: 220px; height: 270px"
+              />
+            </li>
+            <li class="result4 list-unstyled">
+              <img
+                src="../img/sec4-result04.gif"
+                class="rounded mx-auto d-block"
+                alt=""
+                style="width: 220px; height: 270px"
+              />
+            </li>
+            <li class="result5 list-unstyled">
+              <img
+                src="../img/sec4-result05.jpg"
+                class="rounded float-end d-block"
+                alt=""
+                style="width: 220px; height: 270px"
+              />
+            </li>
           </ul>
         </div>
       </div>
-      <div class="search-detail row">
-        <div class="search-detail col-3">
-          <ul class="search-detail d-flex" style="padding: 0px">
-            <button class="border-0 rounded-3 m-1 btn-tertiary">지역</button>
-            <button class="border-0 rounded-3 m-1 bg-tertiary">기간</button>
-            <button class="border-0 rounded-3 m-1 bg-tertiary">날짜</button>
-            <button class="border-0 rounded-3 m-1 bg-tertiary">공연상태</button>
-          </ul>
-        </div>
-      </div>
-      <div class="search-result">
-        <ul class="result-img list-unstyled d-flex justify-content-between">
-          <li class="result1 list-unstyled">
-            <img
-              src="../img/sec4-result01.jpg"
-              class="rounded float-start"
-              alt=""
-              style="width: 220px; height: 270px"
-            />
-          </li>
-          <li class="result2 list-unstyled">
-            <img
-              src="../img/sec4-result02.jpg"
-              class="rounded mx-auto d-block"
-              alt=""
-              style="width: 220px; height: 270px"
-            />
-          </li>
-          <li class="result3 list-unstyled">
-            <img
-              src="../img/sec4-result03.gif"
-              class="rounded mx-auto d-block"
-              alt=""
-              style="width: 220px; height: 270px"
-            />
-          </li>
-          <li class="result4 list-unstyled">
-            <img
-              src="../img/sec4-result04.gif"
-              class="rounded mx-auto d-block"
-              alt=""
-              style="width: 220px; height: 270px"
-            />
-          </li>
-          <li class="result5 list-unstyled">
-            <img
-              src="../img/sec4-result05.jpg"
-              class="rounded float-end d-block"
-              alt=""
-              style="width: 220px; height: 270px"
-            />
-          </li>
-        </ul>
-      </div>
-    </div>
+    </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
@@ -110,31 +119,3 @@
     ></script>
   </body>
 </html>
-<!-- <div class="sec5-search">
-                <p></p>
-                <div class="search-type">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <div class="search-detail">
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        </div>
-                        <div class="search-result">
-                            <div class="result-img">
-                                <div class="result1"></div>
-                                <div class="result2"></div>
-                                <div class="result3"></div>
-                                <div class="result4"></div>
-                                <div class="result5"></div>
-                            </div>
-                        </div>
-                    </ul>
-                </div>
-            </div> -->
