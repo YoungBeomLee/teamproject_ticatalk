@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.6/static/pretendard.css");
 /* 유틸리티 초기화 */
+/* 유틸리티 초기화 */
 body {
   letter-spacing: -0.8px;
   color: #333333;
@@ -8328,6 +8329,50 @@ textarea.form-control-lg {
   margin-bottom: 10rem !important;
 }
 
+.tkt-h1 {
+  font: normal 300 50px "pretendard" !important;
+}
+
+.tkt-h2 {
+  font: normal 300 42px "pretendard" !important;
+}
+
+.tkt-h3 {
+  font: normal 600 32px "pretendard" !important;
+}
+
+.tkt-h4 {
+  font: normal 600 26px "pretendard" !important;
+}
+
+.tkt-h5 {
+  font: normal 600 21px "pretendard" !important;
+}
+
+.tkt-h6 {
+  font: normal 600 16px "pretendard" !important;
+}
+
+.tkt-t5 {
+  font: normal 400 21px "pretendard" !important;
+}
+
+.tkt-t6 {
+  font: normal 400 16px "pretendard" !important;
+}
+
+.tkt-sm {
+  font: normal 400 14px "pretendard" !important;
+}
+
+.bg-accent {
+  background-color: #7365F0 !important;
+}
+
+.bg-tertiary {
+  background-color: #CCC7F2 !important;
+}
+
 @media (min-width: 576px) {
   .float-sm-start {
     float: left !important;
@@ -8837,6 +8882,39 @@ textarea.form-control-lg {
   }
   .mgb-sm-160 {
     margin-bottom: 10rem !important;
+  }
+  .tkt-sm-h1 {
+    font: normal 300 50px "pretendard" !important;
+  }
+  .tkt-sm-h2 {
+    font: normal 300 42px "pretendard" !important;
+  }
+  .tkt-sm-h3 {
+    font: normal 600 32px "pretendard" !important;
+  }
+  .tkt-sm-h4 {
+    font: normal 600 26px "pretendard" !important;
+  }
+  .tkt-sm-h5 {
+    font: normal 600 21px "pretendard" !important;
+  }
+  .tkt-sm-h6 {
+    font: normal 600 16px "pretendard" !important;
+  }
+  .tkt-sm-t5 {
+    font: normal 400 21px "pretendard" !important;
+  }
+  .tkt-sm-t6 {
+    font: normal 400 16px "pretendard" !important;
+  }
+  .tkt-sm-sm {
+    font: normal 400 14px "pretendard" !important;
+  }
+  .bg-sm-accent {
+    background-color: #7365F0 !important;
+  }
+  .bg-sm-tertiary {
+    background-color: #CCC7F2 !important;
   }
 }
 @media (min-width: 768px) {
@@ -9349,6 +9427,39 @@ textarea.form-control-lg {
   .mgb-md-160 {
     margin-bottom: 10rem !important;
   }
+  .tkt-md-h1 {
+    font: normal 300 50px "pretendard" !important;
+  }
+  .tkt-md-h2 {
+    font: normal 300 42px "pretendard" !important;
+  }
+  .tkt-md-h3 {
+    font: normal 600 32px "pretendard" !important;
+  }
+  .tkt-md-h4 {
+    font: normal 600 26px "pretendard" !important;
+  }
+  .tkt-md-h5 {
+    font: normal 600 21px "pretendard" !important;
+  }
+  .tkt-md-h6 {
+    font: normal 600 16px "pretendard" !important;
+  }
+  .tkt-md-t5 {
+    font: normal 400 21px "pretendard" !important;
+  }
+  .tkt-md-t6 {
+    font: normal 400 16px "pretendard" !important;
+  }
+  .tkt-md-sm {
+    font: normal 400 14px "pretendard" !important;
+  }
+  .bg-md-accent {
+    background-color: #7365F0 !important;
+  }
+  .bg-md-tertiary {
+    background-color: #CCC7F2 !important;
+  }
 }
 @media (min-width: 992px) {
   .float-lg-start {
@@ -9859,6 +9970,39 @@ textarea.form-control-lg {
   }
   .mgb-lg-160 {
     margin-bottom: 10rem !important;
+  }
+  .tkt-lg-h1 {
+    font: normal 300 50px "pretendard" !important;
+  }
+  .tkt-lg-h2 {
+    font: normal 300 42px "pretendard" !important;
+  }
+  .tkt-lg-h3 {
+    font: normal 600 32px "pretendard" !important;
+  }
+  .tkt-lg-h4 {
+    font: normal 600 26px "pretendard" !important;
+  }
+  .tkt-lg-h5 {
+    font: normal 600 21px "pretendard" !important;
+  }
+  .tkt-lg-h6 {
+    font: normal 600 16px "pretendard" !important;
+  }
+  .tkt-lg-t5 {
+    font: normal 400 21px "pretendard" !important;
+  }
+  .tkt-lg-t6 {
+    font: normal 400 16px "pretendard" !important;
+  }
+  .tkt-lg-sm {
+    font: normal 400 14px "pretendard" !important;
+  }
+  .bg-lg-accent {
+    background-color: #7365F0 !important;
+  }
+  .bg-lg-tertiary {
+    background-color: #CCC7F2 !important;
   }
 }
 @media (min-width: 1200px) {
@@ -10371,6 +10515,39 @@ textarea.form-control-lg {
   .mgb-xl-160 {
     margin-bottom: 10rem !important;
   }
+  .tkt-xl-h1 {
+    font: normal 300 50px "pretendard" !important;
+  }
+  .tkt-xl-h2 {
+    font: normal 300 42px "pretendard" !important;
+  }
+  .tkt-xl-h3 {
+    font: normal 600 32px "pretendard" !important;
+  }
+  .tkt-xl-h4 {
+    font: normal 600 26px "pretendard" !important;
+  }
+  .tkt-xl-h5 {
+    font: normal 600 21px "pretendard" !important;
+  }
+  .tkt-xl-h6 {
+    font: normal 600 16px "pretendard" !important;
+  }
+  .tkt-xl-t5 {
+    font: normal 400 21px "pretendard" !important;
+  }
+  .tkt-xl-t6 {
+    font: normal 400 16px "pretendard" !important;
+  }
+  .tkt-xl-sm {
+    font: normal 400 14px "pretendard" !important;
+  }
+  .bg-xl-accent {
+    background-color: #7365F0 !important;
+  }
+  .bg-xl-tertiary {
+    background-color: #CCC7F2 !important;
+  }
 }
 @media (min-width: 1400px) {
   .float-xxl-start {
@@ -10882,6 +11059,39 @@ textarea.form-control-lg {
   .mgb-xxl-160 {
     margin-bottom: 10rem !important;
   }
+  .tkt-xxl-h1 {
+    font: normal 300 50px "pretendard" !important;
+  }
+  .tkt-xxl-h2 {
+    font: normal 300 42px "pretendard" !important;
+  }
+  .tkt-xxl-h3 {
+    font: normal 600 32px "pretendard" !important;
+  }
+  .tkt-xxl-h4 {
+    font: normal 600 26px "pretendard" !important;
+  }
+  .tkt-xxl-h5 {
+    font: normal 600 21px "pretendard" !important;
+  }
+  .tkt-xxl-h6 {
+    font: normal 600 16px "pretendard" !important;
+  }
+  .tkt-xxl-t5 {
+    font: normal 400 21px "pretendard" !important;
+  }
+  .tkt-xxl-t6 {
+    font: normal 400 16px "pretendard" !important;
+  }
+  .tkt-xxl-sm {
+    font: normal 400 14px "pretendard" !important;
+  }
+  .bg-xxl-accent {
+    background-color: #7365F0 !important;
+  }
+  .bg-xxl-tertiary {
+    background-color: #CCC7F2 !important;
+  }
 }
 @media (min-width: 1200px) {
   .fs-1 {
@@ -10929,11 +11139,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.tkt-h1 {
-  font: normal 300 50px "pretendard", sans-serif;
-  color: #7432E1;
-}
-
 .sec3-ticketopen {
   width: 1400px;
   margin-top: 100px;
@@ -11002,7 +11207,6 @@ textarea.form-control-lg {
 
 .nav-link {
   color: #F2F4F5;
-  font-size: normal 400 21px "pretendard", sans-serif;
 }
 
 .nav-link:hover, .nav-link:focus {
