@@ -22,6 +22,11 @@
         width: 100%;
         margin: auto;
       }
+      .search-type > ul > li:hover {
+        color: aqua;
+        cursor: pointer;
+        font-weight: 900;
+      }
     </style>
   </head>
   <body>
@@ -29,7 +34,7 @@
       class="sec5-search container border-0 rounded-3 bg-tertiary p-5"
       style="background-color: gray"
     >
-      <p class="text-tkt-h3">통합검색</p>
+      <p class="tkt-h3" style="font: $tkt-h3">통합검색</p>
       <div class="search row">
         <div class="search-type col-4">
           <ul class="d-flex list-unstyled justify-content-between mg-15">
@@ -53,14 +58,12 @@
           </ul>
         </div>
       </div>
-      <div class="search-result d-flex justify-content-centers">
-        <ul
-          class="result-img list-unstyled d-flex flex-row justify-content-centers"
-        >
+      <div class="search-result">
+        <ul class="result-img list-unstyled d-flex justify-content-between">
           <li class="result1 list-unstyled">
             <img
               src="../img/sec4-result01.jpg"
-              class="rounded float-start img-fluid"
+              class="rounded float-start"
               alt=""
               style="width: 220px; height: 270px"
             />
@@ -68,7 +71,7 @@
           <li class="result2 list-unstyled">
             <img
               src="../img/sec4-result02.jpg"
-              class="rounded float-start img-fluid"
+              class="rounded mx-auto d-block"
               alt=""
               style="width: 220px; height: 270px"
             />
@@ -76,7 +79,7 @@
           <li class="result3 list-unstyled">
             <img
               src="../img/sec4-result03.gif"
-              class="rounded float-start img-fluid"
+              class="rounded mx-auto d-block"
               alt=""
               style="width: 220px; height: 270px"
             />
@@ -84,7 +87,7 @@
           <li class="result4 list-unstyled">
             <img
               src="../img/sec4-result04.gif"
-              class="rounded float-start img-fluid"
+              class="rounded mx-auto d-block"
               alt=""
               style="width: 220px; height: 270px"
             />
@@ -92,7 +95,7 @@
           <li class="result5 list-unstyled">
             <img
               src="../img/sec4-result05.jpg"
-              class="rounded float-start img-fluid"
+              class="rounded float-end d-block"
               alt=""
               style="width: 220px; height: 270px"
             />

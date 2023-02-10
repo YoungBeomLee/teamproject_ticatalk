@@ -25,12 +25,34 @@ $tkt-t6 : normal 400 16px 'pretendard',sans-serif;
 $tkt-sm : normal 400 14px 'pretendard',sans-serif;
 
 //margin
-$mg-sc: 160px;
-$mg-15: 15px;
-$mg-25: 25px;
-$mg-35: 35px;
-$mg-55: 55px;
+$utilities: () !default; /* 유틸리티 초기화 */
+$utilities: map-merge(
+   (
+      'tkt-margin': ( /* 새로운 클래스 변수를 정의 */ 
+			responsive: true,
+         property: margin-bottom,
+         class: mgb, /* 새로운 클래스명을 정의 */
+         values: /* $spacers대신에 새로운 맵으로 정의  */
+            (
+              15: 0.938rem,
+              25: 1.563rem,
+              35: 2.188rem,
+              55: 3.438rem,
+              160: 10rem,
+            ),
+      ),
+   ),
+   $utilities /* 기존 유틸리티와 merge */
+);
 
+// initialize
 body{
-  letter-spacing: $letter-spacing;
+   letter-spacing: $letter-spacing;
+   color: $dark;
+}
+.row > *{
+   padding:0;
+}
+a{
+   text-decoration: none !important;
 }
