@@ -9577,6 +9577,18 @@ fieldset:disabled .btn {
   visibility: hidden !important;
 }
 
+.w-18 {
+  width: 18px !important;
+}
+
+.w-25 {
+  width: 25px !important;
+}
+
+.w-35 {
+  width: 35px !important;
+}
+
 .br-5 {
   border-radius: 5px !important;
 }
@@ -10252,6 +10264,15 @@ fieldset:disabled .btn {
   .text-sm-center {
     text-align: center !important;
   }
+  .w-sm-18 {
+    width: 18px !important;
+  }
+  .w-sm-25 {
+    width: 25px !important;
+  }
+  .w-sm-35 {
+    width: 35px !important;
+  }
   .br-sm-5 {
     border-radius: 5px !important;
   }
@@ -10903,6 +10924,15 @@ fieldset:disabled .btn {
   }
   .text-md-center {
     text-align: center !important;
+  }
+  .w-md-18 {
+    width: 18px !important;
+  }
+  .w-md-25 {
+    width: 25px !important;
+  }
+  .w-md-35 {
+    width: 35px !important;
   }
   .br-md-5 {
     border-radius: 5px !important;
@@ -11556,6 +11586,15 @@ fieldset:disabled .btn {
   .text-lg-center {
     text-align: center !important;
   }
+  .w-lg-18 {
+    width: 18px !important;
+  }
+  .w-lg-25 {
+    width: 25px !important;
+  }
+  .w-lg-35 {
+    width: 35px !important;
+  }
   .br-lg-5 {
     border-radius: 5px !important;
   }
@@ -12208,6 +12247,15 @@ fieldset:disabled .btn {
   .text-xl-center {
     text-align: center !important;
   }
+  .w-xl-18 {
+    width: 18px !important;
+  }
+  .w-xl-25 {
+    width: 25px !important;
+  }
+  .w-xl-35 {
+    width: 35px !important;
+  }
   .br-xl-5 {
     border-radius: 5px !important;
   }
@@ -12859,6 +12907,15 @@ fieldset:disabled .btn {
   }
   .text-xxl-center {
     text-align: center !important;
+  }
+  .w-xxl-18 {
+    width: 18px !important;
+  }
+  .w-xxl-25 {
+    width: 25px !important;
+  }
+  .w-xxl-35 {
+    width: 35px !important;
   }
   .br-xxl-5 {
     border-radius: 5px !important;
