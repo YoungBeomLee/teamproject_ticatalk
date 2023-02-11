@@ -13179,6 +13179,31 @@ fieldset:disabled .btn {
   margin-left: 10px;
 }
 
+.sec4-title span {
+  height: 35px;
+  background: url("../../img/icon/talk.png") no-repeat;
+  background-size: contain;
+}
+
+.sec4-big-card:hover .sec4-big-poster {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.sec4-big-card:hover .sec4-big-title {
+  font-weight: 600 !important;
+}
+
+.sec4-big-poster {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.sec4-big-title {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
 .sec4-talk-title:hover {
   color: #7432E1 !important;
   text-decoration: underline !important;
@@ -13206,7 +13231,7 @@ fieldset:disabled .btn {
 }
 
 .sec4-join-btn:hover {
-  background-color: #7432E1;
+  background-color: #7432E1 !important;
   color: #F2F4F5;
 }
 
@@ -13216,6 +13241,63 @@ fieldset:disabled .btn {
 
 .sec4-join-btn:hover .sec4-right-fill {
   display: block !important;
+}
+
+.sec4-mini-card {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.sec4-mini-card:hover {
+  background: #CCC7F2 !important;
+}
+
+.sec4-mini-card:hover .sec4-mini-title {
+  font-weight: bold;
+}
+
+.sec4-mini-title {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.sec4-img-box {
+  height: 246px;
+  background-size: 120%;
+  background-position: center;
+}
+
+.sec4-img-box .sec4-img-blur {
+  background: rgba(255, 255, 255, 0.37);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+
+.sec4-img-box .sec4-img-poster {
+  width: 55%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.sec4-img-box:hover .sec4-img-poster {
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
+}
+
+.sec4-img-box1 {
+  background: url("../../img/poster/sec4/sec4-feblight-kopis.jpg") no-repeat;
+}
+
+.sec4-img-box2 {
+  background: url("../../img/poster/sec4/sec4-otium-kopis.jpg") no-repeat;
+}
+
+.sec4-img-box3 {
+  background: url("../../img/poster/sec4/sec4-snowday-kopis.gif") no-repeat;
 }
 
 a {
