@@ -1,54 +1,97 @@
-.nav-link{
-    color:$light;
-    font-size : $tkt-t5;//class로
-    // .nav-link { //원래거
-    //     display: block;
-    //     padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
-    //     font-size: var(--bs-nav-link-font-size);
-    //     font-weight: var(--bs-nav-link-font-weight);
-    //     color: var(--bs-nav-link-color);
-    //     text-decoration: none;
-    //     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-    // }
+//nav
+nav {
+  display: block;
+  position: relative;
+  z-index: 2;
+  top:16px;
+
+  & h1 img{
+    width: 168px;
+  }
 }
 
-.nav-link:hover, .nav-link:focus {
-    color: $primary;
+.tab-content{
+  position: relative;
+  top: 16px;
+
+  & > .active {
+  z-index: 2;
 }
-.navbar-brand>img{
-    width:168px;
-}
-.navbar{
-    z-index : $zindex-dropdown;
-    top:2%;
 }
 
-.carousel.sec1-slide{
-    position : absolute !important; 
-    top : 0;
-}
-.carousel-indicators {
-    bottom: -10%;
-    //display: flex; 원래값
-    //justify-content: center;
-    }
+//carousel
+.carousel.sec1-carousel  {
+  position : absolute !important; 
+  top : 0;
 
-
-.carousel-indicators .active {
-    opacity: 1;
-}
-
-.carousel-indicators [data-bs-target] {
+//corousel-indicator(pager)
+  & .carousel-indicators {
+    bottom: -13%;
     
-    width: 14rem;
-    height: 18rem;
-    background-color: white;
-    border-radius:10%;
-    border:0;
-    &:first-child{background: url("../img/poster/sec1/sec1-jeans-kopis.jpg")center center/cover no-repeat;}
-    &:nth-child(2){background: url("../img/poster/sec1/sec1-amusesound-kopis.png") center center/cover no-repeat;}
-    &:nth-child(3){background: url("../img/poster/sec1/sec1-cafenight-kopis.gif") center center/cover no-repeat;}
-    &:nth-child(4){background: url("../img/poster/sec1/sec1-hisaishijo-kopis.gif") center center/cover no-repeat;}
-    &:nth-child(5){background: url("../img/poster/sec1/sec1-nextnormal-kopis.jpg") center center/cover no-repeat;}
-    &:nth-child(6){background: url("../img/poster/sec1/sec1-matinee-kopis.gif") center center/cover no-repeat;}
+    & button.active{
+      opacity: 0;
+    }
+    & [data-bs-target] {
+      width: 204px;
+      height: 298px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 0 0 0 12px;
+      padding: 0;
+      border: 0;
+      border-radius: 10%;
+      opacity:0.3;
+      background-color: $primary;//white로 하고 번호에 z-index 제외할지 이대로 진행할지//배경때문에 white 가 더 나을거같긴한데
 }
+
+    &>.row>div{
+      border-radius:10%;
+      opacity: 1;
+      position: relative;
+      
+      &>img{
+        position: absolute;
+        top: -10px;
+        left: -4px;
+        // z-index: 2;
+      }
+
+      &>label>img{
+        width: 204px;
+        height: 298px;
+        border-radius:10%;
+      }
+    }
+  }
+
+//carousel-mainimg
+  & .carousel-caption {
+    top: 30%;
+    left: 15%;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    z-index: 2;
+  }
+
+//carousel-control-prev-next  
+  & .carousel-control-prev {
+    left: 90px;
+    top: 610px;
+    
+    & .carousel-control-prev-icon {
+    background-image: url("../img/icon/button-prev-round.png");
+    filter: none;
+  }
+  }
+  & .carousel-control-next {
+    right: 90px;
+    top: 610px;
+
+    & .carousel-control-next-icon {
+    background-image: url("../img/icon/button-next-round.png");
+    filter: none;
+  }
+  }
+}
+

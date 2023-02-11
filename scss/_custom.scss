@@ -1,30 +1,81 @@
 //theme-color
 $primary: #7432E1 !default;
-$accent: #7365F0 !default; //변수명추가
+$accent: #7365F0 !default;
 $secondary: #A49DF1 !default;
-$tertiary: #CCC7F2 !default; //변수명추가
+$tertiary: #CCC7F2 !default;
 $light: #F2F4F5 !default;
 $dark: #333333 !default;
 $gray: #828282;
 $lgray: #d9d9d9;
+$footergray:#393939;
+//color-class
+$utilities: () !default;
+$utilities: map-merge(
+   (
+      'tkt-bgcolor': (
+			responsive: true,
+         property: background-color,
+         class: bg,
+         values:
+            (
+              accent: #7365F0,
+              tertiary: #CCC7F2,
+              gray: #828282,
+              lgray: #d9d9d9,
+            ),
+      ),
+   ),
+   $utilities
+);
+$utilities: () !default;
+$utilities: map-merge(
+   (
+      'tkt-color': (
+			responsive: true,
+         property: color,
+         class: text,
+         values:
+            (
+              accent: #7365F0,
+              tertiary: #CCC7F2,
+              gray: #828282,
+              lgray: #d9d9d9,
+            ),
+      ),
+   ),
+   $utilities
+);
 
 //url설정 확인: 다른데거 쓸건지
 $font-family-sans-serif: "Pretendard";
 $letter-spacing: -0.8px;
 
-//tkt-font-heading
-$tkt-h1 : normal 300 50px 'pretendard',sans-serif;
-$tkt-h2 : normal 300 42px 'pretendard',sans-serif;
-$tkt-h3 : normal 600 32px 'pretendard',sans-serif;
-$tkt-h4 : normal 600 26px 'pretendard',sans-serif;
-$tkt-h5 : normal 600 21px 'pretendard',sans-serif;
-$tkt-h6 : normal 600 16px 'pretendard',sans-serif;
-//tkt-font-text
-$tkt-t5 : normal 400 21px 'pretendard',sans-serif;
-$tkt-t6 : normal 400 16px 'pretendard',sans-serif;
-$tkt-sm : normal 400 14px 'pretendard',sans-serif;
+//font-class
+$utilities: () !default; /* 유틸리티 초기화 */
+$utilities: map-merge(
+   (
+      'tkt-typo': ( /* 새로운 클래스 변수를 정의 */ 
+			responsive: true,
+         property: font,
+         class: tkt, /* 새로운 클래스명을 정의 */
+         values: /* $spacers대신에 새로운 맵으로 정의  */
+            (
+              h1: normal 300 50px 'pretendard',
+              h2: normal 300 42px 'pretendard',
+              h3: normal 600 32px 'pretendard',
+              h4: normal 600 26px 'pretendard',
+              h5: normal 600 21px 'pretendard',
+              h6: normal 600 16px 'pretendard',
+              t5: normal 400 21px 'pretendard',
+              t6: normal 400 16px 'pretendard',
+              sm: normal 400 14px 'pretendard',
+            ),
+      ),
+   ),
+   $utilities /* 기존 유틸리티와 merge */
+);
 
-//margin
+//margin-class
 $utilities: () !default; /* 유틸리티 초기화 */
 $utilities: map-merge(
    (
@@ -45,13 +96,28 @@ $utilities: map-merge(
    $utilities /* 기존 유틸리티와 merge */
 );
 
+//border-radius class
+$utilities: () !default;
+$utilities: map-merge(
+   (
+      'tkt-border-radius': (
+			responsive: true,
+         property: border-radius,
+         class: br,
+         values:
+            (
+              5: 5px,
+              10: 10px,
+              15: 15px,
+            ),
+      ),
+   ),
+   $utilities
+);
+
 // initialize
 body{
    letter-spacing: $letter-spacing;
-   color: $dark;
-}
-.row > *{
-   padding:0;
 }
 a{
    text-decoration: none !important;
