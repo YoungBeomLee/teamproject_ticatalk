@@ -122,12 +122,12 @@ $utilities: map-merge(
       'tkt-width': (
 			responsive: true,
          property: width,
-         class: w,
+         class: tkt,
          values:
             (
-               18: 18px,
-               25: 25px,
-               35: 35px,
+               w18: 18px,
+               w25: 25px,
+               w35: 35px,
             ),
       ),
    ),

@@ -1,3 +1,32 @@
+.sec4-talk-title:hover{
+  color: $primary !important;
+  text-decoration: underline !important;
+  font-weight: 600 !important;
+}
 .dropup .dropdown-toggle::after{
   display: none;
+}
+.sec4-like-btn:hover{
+  .sec4-like-line{
+    display: none;
+  }
+  .sec4-like-fill{
+    display: block !important;
+  }
+}
+.sec4-mem-btn:hover{
+  background: $tertiary !important;
+}
+.sec4-join-arrows{
+  height: 18px;
+}
+.sec4-join-btn:hover{
+  background-color: $primary;
+  color: $light;
+  .sec4-right-line{
+    display: none;
+  }
+  .sec4-right-fill{
+    display: block !important;
+  }
 }

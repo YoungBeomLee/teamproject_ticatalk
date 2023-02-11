@@ -9577,15 +9577,15 @@ fieldset:disabled .btn {
   visibility: hidden !important;
 }
 
-.w-18 {
+.tkt-w18 {
   width: 18px !important;
 }
 
-.w-25 {
+.tkt-w25 {
   width: 25px !important;
 }
 
-.w-35 {
+.tkt-w35 {
   width: 35px !important;
 }
 
@@ -10264,13 +10264,13 @@ fieldset:disabled .btn {
   .text-sm-center {
     text-align: center !important;
   }
-  .w-sm-18 {
+  .tkt-sm-w18 {
     width: 18px !important;
   }
-  .w-sm-25 {
+  .tkt-sm-w25 {
     width: 25px !important;
   }
-  .w-sm-35 {
+  .tkt-sm-w35 {
     width: 35px !important;
   }
   .br-sm-5 {
@@ -10925,13 +10925,13 @@ fieldset:disabled .btn {
   .text-md-center {
     text-align: center !important;
   }
-  .w-md-18 {
+  .tkt-md-w18 {
     width: 18px !important;
   }
-  .w-md-25 {
+  .tkt-md-w25 {
     width: 25px !important;
   }
-  .w-md-35 {
+  .tkt-md-w35 {
     width: 35px !important;
   }
   .br-md-5 {
@@ -11586,13 +11586,13 @@ fieldset:disabled .btn {
   .text-lg-center {
     text-align: center !important;
   }
-  .w-lg-18 {
+  .tkt-lg-w18 {
     width: 18px !important;
   }
-  .w-lg-25 {
+  .tkt-lg-w25 {
     width: 25px !important;
   }
-  .w-lg-35 {
+  .tkt-lg-w35 {
     width: 35px !important;
   }
   .br-lg-5 {
@@ -12247,13 +12247,13 @@ fieldset:disabled .btn {
   .text-xl-center {
     text-align: center !important;
   }
-  .w-xl-18 {
+  .tkt-xl-w18 {
     width: 18px !important;
   }
-  .w-xl-25 {
+  .tkt-xl-w25 {
     width: 25px !important;
   }
-  .w-xl-35 {
+  .tkt-xl-w35 {
     width: 35px !important;
   }
   .br-xl-5 {
@@ -12908,13 +12908,13 @@ fieldset:disabled .btn {
   .text-xxl-center {
     text-align: center !important;
   }
-  .w-xxl-18 {
+  .tkt-xxl-w18 {
     width: 18px !important;
   }
-  .w-xxl-25 {
+  .tkt-xxl-w25 {
     width: 25px !important;
   }
-  .w-xxl-35 {
+  .tkt-xxl-w35 {
     width: 35px !important;
   }
   .br-xxl-5 {
@@ -13179,8 +13179,43 @@ fieldset:disabled .btn {
   margin-left: 10px;
 }
 
+.sec4-talk-title:hover {
+  color: #7432E1 !important;
+  text-decoration: underline !important;
+  font-weight: 600 !important;
+}
+
 .dropup .dropdown-toggle::after {
   display: none;
+}
+
+.sec4-like-btn:hover .sec4-like-line {
+  display: none;
+}
+
+.sec4-like-btn:hover .sec4-like-fill {
+  display: block !important;
+}
+
+.sec4-mem-btn:hover {
+  background: #CCC7F2 !important;
+}
+
+.sec4-join-arrows {
+  height: 18px;
+}
+
+.sec4-join-btn:hover {
+  background-color: #7432E1;
+  color: #F2F4F5;
+}
+
+.sec4-join-btn:hover .sec4-right-line {
+  display: none;
+}
+
+.sec4-join-btn:hover .sec4-right-fill {
+  display: block !important;
 }
 
 a {
