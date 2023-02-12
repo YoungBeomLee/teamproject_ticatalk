@@ -11497,10 +11497,6 @@ nav .card li a:hover {
   filter: none;
 }
 
-.sec3-ticketopen {
-  margin-top: 100px;
-}
-
 .sec3-container {
   width: 100%;
 }
@@ -11554,12 +11550,14 @@ nav .card li a:hover {
 .title img {
   width: 50px;
   height: 50px;
-  margin-top: 10px;
 }
 
 .title h3, .title .h3 {
   line-height: 60px;
   margin-left: 10px;
+  margin-bottom: 0;
+  position: relative;
+  top: 3px;
 }
 
 .sec4-title span {
@@ -11675,14 +11673,17 @@ a {
 
 .footer-top-left {
   width: 20%;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-top-center {
-  width: 60%;
+  width: 50%;
 }
 
 .footer-top-right {
-  width: 20%;
+  width: 30%;
+  padding-right: 0;
 }
 
 .footer-chopstick1 span {
@@ -11716,7 +11717,7 @@ footer .container {
 .hr {
   width: 100%;
   background: white;
-  height: 2px;
+  height: 1px;
 }
 
 .footer-info {
@@ -11733,6 +11734,23 @@ footer .container {
   margin: 0 20px;
 }
 
+.footer-info-list li::after {
+  content: "|";
+  padding-left: 30px;
+}
+
+.footer-info-list li:last-child:after {
+  content: "";
+}
+
 .footer-info-list li:first-child {
   margin-left: 0;
+}
+
+.footer-middle {
+  padding: 0;
+}
+
+.footer-bottom {
+  padding: 0;
 }/*# sourceMappingURL=main.css.map */
