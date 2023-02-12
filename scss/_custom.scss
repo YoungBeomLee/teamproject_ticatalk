@@ -18,10 +18,10 @@ $utilities: map-merge(
          class: bg,
          values:
             (
-              accent: #7365F0,
-              tertiary: #CCC7F2,
-              gray: #828282,
-              lgray: #d9d9d9,
+               accent: #7365F0,
+               tertiary: #CCC7F2,
+               gray: #828282,
+               lgray: #d9d9d9,
             ),
       ),
    ),
@@ -36,10 +36,10 @@ $utilities: map-merge(
          class: text,
          values:
             (
-              accent: #7365F0,
-              tertiary: #CCC7F2,
-              gray: #828282,
-              lgray: #d9d9d9,
+               accent: #7365F0,
+               tertiary: #CCC7F2,
+               gray: #828282,
+               lgray: #d9d9d9,
             ),
       ),
    ),
@@ -60,15 +60,15 @@ $utilities: map-merge(
          class: tkt, /* 새로운 클래스명을 정의 */
          values: /* $spacers대신에 새로운 맵으로 정의  */
             (
-              h1: normal 300 50px 'pretendard',
-              h2: normal 300 42px 'pretendard',
-              h3: normal 600 32px 'pretendard',
-              h4: normal 600 26px 'pretendard',
-              h5: normal 600 21px 'pretendard',
-              h6: normal 600 16px 'pretendard',
-              t5: normal 400 21px 'pretendard',
-              t6: normal 400 16px 'pretendard',
-              sm: normal 400 14px 'pretendard',
+               h1: normal 300 50px 'pretendard',
+               h2: normal 300 42px 'pretendard',
+               h3: normal 600 32px 'pretendard',
+               h4: normal 600 26px 'pretendard',
+               h5: normal 600 21px 'pretendard',
+               h6: normal 600 16px 'pretendard',
+               t5: normal 400 21px 'pretendard',
+               t6: normal 400 16px 'pretendard',
+               sm: normal 400 14px 'pretendard',
             ),
       ),
    ),
@@ -84,12 +84,12 @@ $utilities: map-merge(
          property: margin-bottom,
          class: mgb, /* 새로운 클래스명을 정의 */
          values: /* $spacers대신에 새로운 맵으로 정의  */
-            (
-              15: 0.938rem,
-              25: 1.563rem,
-              35: 2.188rem,
-              55: 3.438rem,
-              160: 10rem,
+               (
+               15: 0.938rem,
+               25: 1.563rem,
+               35: 2.188rem,
+               55: 3.438rem,
+               160: 10rem,
             ),
       ),
    ),
@@ -106,9 +106,28 @@ $utilities: map-merge(
          class: br,
          values:
             (
-              5: 5px,
-              10: 10px,
-              15: 15px,
+               5: 5px,
+               10: 10px,
+               15: 15px,
+            ),
+      ),
+   ),
+   $utilities
+);
+
+//width class
+$utilities: () !default;
+$utilities: map-merge(
+   (
+      'tkt-width': (
+			responsive: true,
+         property: width,
+         class: tkt,
+         values:
+            (
+               w18: 18px,
+               w25: 25px,
+               w35: 35px,
             ),
       ),
    ),

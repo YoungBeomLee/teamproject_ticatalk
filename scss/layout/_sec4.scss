@@ -1,0 +1,98 @@
+.sec4-title{
+  span{
+    height: 35px;
+    background: url("../../img/icon/talk.png") no-repeat;
+    background-size:contain;
+  }
+}
+
+.sec4-big-card{
+  &:hover{
+    .sec4-big-poster{
+      transform: scale(1.1);
+    }
+    .sec4-big-title{
+      font-weight: 600 !important;
+    }
+  }
+}
+.sec4-big-poster{
+  transition: all .4s;
+}
+.sec4-big-title{
+  transition: all .4s;
+}
+
+.sec4-talk-title:hover{
+  color: $primary !important;
+  text-decoration: underline !important;
+  font-weight: 600 !important;
+}
+.dropup .dropdown-toggle::after{
+  display: none;
+}
+.sec4-like-btn:hover{
+  .sec4-like-line{
+    display: none;
+  }
+  .sec4-like-fill{
+    display: block !important;
+  }
+}
+.sec4-mem-btn:hover{
+  background: $tertiary !important;
+}
+.sec4-join-arrows{
+  height: 18px;
+}
+.sec4-join-btn:hover{
+  background-color: $primary !important;
+  color: $light;
+  .sec4-right-line{
+    display: none;
+  }
+  .sec4-right-fill{
+    display: block !important;
+  }
+}
+
+.sec4-mini-card{
+  transition: all .4s;
+  &:hover{
+    background: $tertiary !important;
+    .sec4-mini-title{
+      font-weight: bold;
+    }
+  }
+}
+.sec4-mini-title{
+  transition: all .4s;
+}
+.sec4-img-box{
+  height: 246px;
+  background-size: 120%;
+  background-position: center;
+  .sec4-img-blur{
+    background: rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur(2px);
+  }
+  .sec4-img-poster{
+    width: 55%;
+    transform: translate(-50%,-50%) scale(1);
+    transition: transform .4s;
+  }
+  &:hover{
+    .sec4-img-poster{
+      transform: translate(-50%,-50%) scale(1.1);
+    }
+  }
+}
+.sec4-img-box1{
+  background: url("../../img/poster/sec4/sec4-feblight-kopis.jpg") no-repeat;
+}
+.sec4-img-box2{
+  background: url("../../img/poster/sec4/sec4-otium-kopis.jpg") no-repeat;
+}
+.sec4-img-box3{
+  background: url("../../img/poster/sec4/sec4-snowday-kopis.gif") no-repeat;
+}
