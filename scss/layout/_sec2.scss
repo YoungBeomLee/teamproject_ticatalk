@@ -1,0 +1,15 @@
+.sec2-fav-btn{
+  &:hover{
+    .sec2-icon-leave{
+      display: none !important;
+    }
+    .sec2-icon-hover{
+      display: block !important;
+    }
+    .sec2-fav-text{
+      color: $primary !important;
+      font-weight: 600 !important;
+      text-decoration: underline !important;
+    }
+  }
+}
