@@ -3,20 +3,73 @@ nav {
   display: block;
   position: relative;
   z-index: 2;
-  top:16px;
+  padding-top: 16px;
 
-  & h1 img{
-    width: 168px;
+  .nav{
+    --bs-nav-link-color: #F2F4F5;
+    --bs-nav-link-hover-color: #7432E1;
+    
+    & h1 img{
+      width: 168px;
+    }
+
+    & .btn {
+      --bs-btn-color: none;
+      --bs-btn-border-width: 0;
+      --bs-btn-hover-border-color: none;
+      --bs-btn-box-shadow: none;
+      border: none;
+      background-color: none;
+      display: block;
+      padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+      font-size: 21px;
+      font-weight: 600;
+    }
+
+    .dropdown-menu {
+      transform: translate3d(-6px, 55px, 0px);
+      --bs-dropdown-min-width: 0 !important; 
+      --bs-dropdown-padding-y: 1rem;
+      --bs-dropdown-color: #333333;
+      --bs-dropdown-bg: #F2F4F5;
+      --bs-dropdown-link-hover-bg: #F2F4F5;
+      --bs-dropdown-link-hover-color: #7432e1;
+      --bs-dropdown-link-active-color: #F2F4F5;
+      --bs-dropdown-link-active-bg: #7432E1;
+      --bs-dropdown-item-padding-y: 0.4rem;
+      border-radius: 10%; //빼도될듯
+      text-align: center;
+    }
+    .dropdown-toggle::after {
+      display: none;// display:inline-block 으로 보여도됨
+    }
   }
-}
 
-.tab-content{
-  position: relative;
-  top: 16px;
+  &:hover {
+    background-color: #f2f4f5b2;
 
-  & > .active {
-  z-index: 2;
-}
+    & .nav-link {
+       --bs-nav-link-color: #333;
+     }
+    }
+  //nav 2-depth
+  .card {
+    --bs-card-border-width: none;
+    --bs-card-border-color: none;
+    --bs-card-bg: none;
+    border: none;
+    
+    & li{
+      padding: 0 20px;
+
+      & a{
+        color: #333;
+        &:hover{
+          color:#7432E1;
+        }
+      }
+    }
+  }
 }
 
 //carousel
@@ -26,11 +79,16 @@ nav {
 
 //corousel-indicator(pager)
   & .carousel-indicators {
-    bottom: -13%;
-    
+    top:70%;
+
     & button.active{
       opacity: 0;
     }
+    & button:hover{
+      opacity:0.8;
+    }
+    
+
     & [data-bs-target] {
       width: 204px;
       height: 298px;
@@ -57,11 +115,23 @@ nav {
         // z-index: 2;
       }
 
-      &>label>img{
-        width: 204px;
-        height: 298px;
-        border-radius:10%;
+      &>label{
+        
+        &>img{
+          width: 204px;
+          height: 298px;
+          border-radius:10%;
+        }
+        
+        &>div{
+          color:#333;
+          opacity: 0;
+          top: 20%;
+          left:14%;
+        }
       }
+      
+      
     }
   }
 
@@ -95,3 +165,7 @@ nav {
   }
 }
 
+// @include media-breakpoint-up(sm) {
+//   .carousel-inner{visibility: hidden;}
+
+//  }
