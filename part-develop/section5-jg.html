@@ -9,41 +9,130 @@
   </head>
   <body>
     <section class="sec5-ticketsearch mx-auto mgb-160">
-      <div
-        class="sec5-container container-fluid container-xxl container-md container-sm"
-      >
-        <div class="ticketsearch-wrap">
+      <div class="sec5-container container-xxl container-md container-sm">
+        <div class="ticketsearch-wrap container-fluid">
           <!--타이틀 부분-->
-          <div class="title col text-left mgb-25">
-            <img src="../img/icon/search-p.png" alt="" />
+          <div class="title text-left mgb-25">
+            <img src="../img/icon/search-p.png" class="m-0" alt="" />
             <h3 class="tkt-h3 text-dark">티켓 오픈</h3>
           </div>
         </div>
-        <div class="ticketsearch-contents border-25 rounded-3 bg-light p-5">
+        <div
+          class="ticketsearch-contents container-fluid border-25 rounded-3 bg-light p-5"
+        >
           <div class="search">
             <ul
-              class="d-flex list-unstyled justify-content-between col-xxl-6 col-md-12 col-sm-12 mgb-35"
+              class="nav nav-tab d-flex list-unstyled justify-content-between col-xxl-6 col-md-12 col-sm-12 mgb-35"
+              id="myTab"
+              role="tablist"
             >
-              <li class="m-2 tkt-h5">
-                <a href="#" class="nav-link tkt-h5">전체</a>
+              <li class="m-2 tkt-h5 nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#1"
+                  type="button"
+                  role="tab"
+                  aria-controls="1"
+                  aria-selected="true"
+                ><a
+                  href="#tabmenu_01"
+                  class="text-dark tkt-h5"
+                  data-toggle="tab"
+                  >전체</a
+                ></button
+                >
               </li>
-              <li class="m-2 tkt-h5">
-                <a href="#" class="nav-link tkt-h5">뮤지컬</a>
+              <li class="m-2 tkt-h5 nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#2"
+                  type="button"
+                  role="tab"
+                  aria-controls="2"
+                  aria-selected="false"
+                ><a href="#tabmenu_02" class="text-dark tkt-h5" data-toggle="tab"
+                  >뮤지컬</a
+                ></button>
+                
               </li>
-              <li class="m-2 tkt-h5">
-                <a href="#" class="nav-link tkt-h5">연극</a>
+              <li class="m-2 tkt-h5 nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#3"
+                  type="button"
+                  role="tab"
+                  aria-controls="3"
+                  aria-selected="false"
+                ><a href="#tabmenu_03" class="text-dark tkt-h5" data-toggle="tab"
+                  >연극</a
+                ></button>
+                
               </li>
-              <li class="m-2 tkt-h5">
-                <a href="#" class="nav-link tkt-h5">콘서트</a>
+              <li class="m-2 tkt-h5 nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#4"
+                  type="button"
+                  role="tab"
+                  aria-controls="4"
+                  aria-selected="false"
+                ><a href="#tabmenu_04" class="text-dark tkt-h5" data-toggle="tab"
+                  >콘서트</a
+                ></button>
+                
               </li>
-              <li class="m-2 tkt-h5">
-                <a href="#" class="nav-link tkt-h5">클래식</a>
+              <li class="m-2 tkt-h5 nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#5"
+                  type="button"
+                  role="tab"
+                  aria-controls="5"
+                  aria-selected="false"
+                ><a href="#tabmenu_05" class="text-dark tkt-h5" data-toggle="tab"
+                  >클래식</a
+                ></button>
+                
               </li>
-              <li class="m-2 tkt-h5">
-                <a href="#" class="nav-link tkt-h5">가족.아동</a>
+              <li class="m-2 tkt-h5 nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#6"
+                  type="button"
+                  role="tab"
+                  aria-controls="6"
+                  aria-selected="false"
+                ><a href="#tabmenu_06" class="text-dark tkt-h5" data-toggle="tab"
+                  >가족.아동</a
+                ></button>
+                
               </li>
-              <li class="m-2 tkt-h5">
-                <a href="#" class="nav-link tkt-h5">뮤직페스티벌</a>
+              <li class="m-2 tkt-h5 nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#7"
+                  type="button"
+                  role="tab"
+                  aria-controls="7"
+                  aria-selected="false"
+                ><a href="#tabmenu_07" class="text-dark tkt-h5" data-toggle="tab"
+                  >뮤직페스티벌</a
+                ></button>
+                
               </li>
             </ul>
           </div>
@@ -52,89 +141,80 @@
               <ul
                 class="search-detail conatainer d-flex list-unstyled justify-content-between"
               >
-                <button class="border-0 rounded-3 m-1 p-2 bg-tertiary">
-                  <a class="nav-link" href="#">&nbsp;&nbsp;지역&nbsp;&nbsp;</a>
+              <div class="dropdown">
+                <button class="border-0 rounded-3 pr-5 m-1 p-2 bg-tertiary position-relative btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  &nbsp;&nbsp;지역&nbsp;&nbsp;
                 </button>
-                <button class="border-0 rounded-3 m-1 p-2 bg-tertiary">
-                  <a class="nav-link" href="#">&nbsp;&nbsp;기간&nbsp;&nbsp;</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">서울</a></li>
+                  <li><a class="dropdown-item" href="#">경기도</a></li>
+                  <li><a class="dropdown-item" href="#">충청도</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="border-0 rounded-3 pr-5 m-1 p-2 bg-tertiary position-relative btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  &nbsp;&nbsp;기간&nbsp;&nbsp;
                 </button>
-                <button class="border-0 rounded-3 m-1 p-2 bg-tertiary">
-                  <a class="nav-link" href="#">&nbsp;&nbsp;날짜&nbsp;&nbsp;</a>
-                </button>
-                <button class="border-0 rounded-3 pr-5 m-1 p-2 bg-tertiary">
-                  <a class="nav-link" href="#"
-                    >&nbsp;&nbsp;공연상태&nbsp;&nbsp;</a
-                  >
-                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">1월</a></li>
+                  <li><a class="dropdown-item" href="#">2월</a></li>
+                  <li><a class="dropdown-item" href="#">3월</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="border-0 rounded-3 pr-5 m-1 p-2 bg-tertiary position-relative btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  &nbsp;&nbsp;날짜&nbsp;&nbsp;</button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">월</a></li>
+                  <li><a class="dropdown-item" href="#">화</a></li>
+                  <li><a class="dropdown-item" href="#">수</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="border-0 rounded-3 pr-5 m-1 p-2 bg-tertiary position-relative btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  &nbsp;&nbsp;공연 상태&nbsp;&nbsp;</button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">예매중</a></li>
+                  <li><a class="dropdown-item" href="#">예매전</a></li>
+                  <li><a class="dropdown-item" href="#">마감</a></li>
+                </ul>
+              </div>
               </ul>
             </div>
           </div>
-          <div class="search-result row d-flex justify-content-between">
-            <div class="result5 col-xxl-1 col-md-4 col-sm-6">
-              <img
-                src="../img/sec4-result01.jpg"
-                class="img img-fluid"
-                alt=""
-                style="min-width: 186px; height: 238px"
-              />
-              <p class="text-dark text-center mt-3 mb-1">2023.01.23(월)14:00</p>
+          <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="1" role="tabpanel" >
+          <div class="search-result row justify-content-between">
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result01.jpg" class="img" alt="" />
+              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+                2023.01.23(월)14:0
+              </p>
               <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
             </div>
-            <div class="result5 col-xxl-1 col-md-4 col-sm-6">
-              <img
-                src="../img/sec4-result02.jpg"
-                class="img img-fluid"
-                alt=""
-                style="min-width: 186px; height: 238px"
-              />
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result02.jpg" class="img" alt="" />
               <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
                 2023.01.23(월)14:00
               </p>
               <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
             </div>
-            <div class="result5 col-xxl-1 col-md-4 col-sm-6">
-              <img
-                src="../img/sec4-result03.gif"
-                class="img img-fluid"
-                alt=""
-                style="min-width: 186px; height: 238px"
-              />
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result03.gif" class="img" alt="" />
               <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
                 2023.01.23(월)14:00
               </p>
               <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
             </div>
-            <div class="result5 col-xxl-1 col-md-4 col-sm-6">
-              <img
-                src="../img/sec4-result04.gif"
-                class="img img-fluid"
-                alt=""
-                style="min-width: 186px; height: 238px"
-              />
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result04.gif" class="img" alt="" />
               <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
                 2023.01.23(월)14:00
               </p>
               <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
             </div>
-            <div class="result5 col-xxl-1 col-md-4 col-sm-6">
-              <img
-                src="../img/sec4-result05.jpg"
-                class="img img-fluid"
-                alt=""
-                style="min-width: 186px; height: 238px"
-              />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-            </div>
-            <div class="result5 col-xxl-1 col-md-4 col-sm-6">
-              <img
-                src="../img/sec4-result05.jpg"
-                class="img img-fluid"
-                alt=""
-                style="min-width: 186px; height: 238px"
-              />
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result05.jpg" class="img" alt="" />
               <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
                 2023.01.23(월)14:00
               </p>
@@ -142,6 +222,251 @@
             </div>
           </div>
         </div>
+        <div class="tab-pane fade" id="2" role="tabpanel" >
+          <div
+            class="search-result row justify-content-between"
+          >
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result01.jpg" class="img" alt="" />
+              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+                2023.01.23(월)14:00
+              </p>
+              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            </div>
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result02.jpg" class="img" alt="" />
+              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+                2023.01.23(월)14:00
+              </p>
+              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            </div>
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result03.gif" class="img" alt="" />
+              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+                2023.01.23(월)14:00
+              </p>
+              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            </div>
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result04.gif" class="img" alt="" />
+              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+                2023.01.23(월)14:00
+              </p>
+              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            </div>
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result05.jpg" class="img" alt="" />
+              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+                2023.01.23(월)14:00
+              </p>
+              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="3" role="tabpanel" >
+          <div
+            class="search-result row justify-content-between"
+          >
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result01.jpg" class="img" alt="" />
+              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+                2023.01.23(월)14:00
+              </p>
+              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            </div>
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result02.jpg" class="img" alt="" />
+              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+                2023.01.23(월)14:00
+              </p>
+              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            </div>
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result03.gif" class="img" alt="" />
+              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+                2023.01.23(월)14:00
+              </p>
+              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            </div>
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result04.gif" class="img" alt="" />
+              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+                2023.01.23(월)14:00
+              </p>
+              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            </div>
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result05.jpg" class="img" alt="" />
+              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+                2023.01.23(월)14:00
+              </p>
+              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="4" role="tabpanel" >
+          <div
+            class="search-result row justify-content-between"
+          >
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result01.jpg" class="img" alt="" />
+              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+                2023.01.23(월)14:00
+              </p>
+              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            </div>
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result02.jpg" class="img" alt="" />
+              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+                2023.01.23(월)14:00
+              </p>
+              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            </div>
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result03.gif" class="img" alt="" />
+              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+                2023.01.23(월)14:00
+              </p>
+              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            </div>
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result04.gif" class="img" alt="" />
+              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+                2023.01.23(월)14:00
+              </p>
+              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            </div>
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result05.jpg" class="img" alt="" />
+              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+                2023.01.23(월)14:00
+              </p>
+              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="5" role="tabpanel" >
+          <div
+            class="search-result row justify-content-between"
+          >
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result01.jpg" class="img" alt="" />
+              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+                2023.01.23(월)14:00
+              </p>
+              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            </div>
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result02.jpg" class="img" alt="" />
+              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+                2023.01.23(월)14:00
+              </p>
+              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            </div>
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result03.gif" class="img" alt="" />
+              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+                2023.01.23(월)14:00
+              </p>
+              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            </div>
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result04.gif" class="img" alt="" />
+              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+                2023.01.23(월)14:00
+              </p>
+              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            </div>
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result05.jpg" class="img" alt="" />
+              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+                2023.01.23(월)14:00
+              </p>
+              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="6" role="tabpanel" >
+          <div
+            class="search-result row justify-content-between"
+          >
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result01.jpg" class="img" alt="" />
+              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+                2023.01.23(월)14:00
+              </p>
+              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            </div>
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result02.jpg" class="img" alt="" />
+              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+                2023.01.23(월)14:00
+              </p>
+              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            </div>
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result03.gif" class="img" alt="" />
+              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+                2023.01.23(월)14:00
+              </p>
+              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            </div>
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result04.gif" class="img" alt="" />
+              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+                2023.01.23(월)14:00
+              </p>
+              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            </div>
+            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+              <img src="../img/sec4-result05.jpg" class="img" alt="" />
+              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+                2023.01.23(월)14:00
+              </p>
+              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="7" role="tabpanel" ><div
+          class="search-result row justify-content-between"
+        >
+          <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+            <img src="../img/sec4-result01.jpg" class="img" alt="" />
+            <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+              2023.01.23(월)14:00
+            </p>
+            <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+          </div>
+          <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+            <img src="../img/sec4-result02.jpg" class="img" alt="" />
+            <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+              2023.01.23(월)14:00
+            </p>
+            <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+          </div>
+          <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+            <img src="../img/sec4-result03.gif" class="img" alt="" />
+            <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+              2023.01.23(월)14:00
+            </p>
+            <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+          </div>
+          <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+            <img src="../img/sec4-result04.gif" class="img" alt="" />
+            <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+              2023.01.23(월)14:00
+            </p>
+            <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+          </div>
+          <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
+            <img src="../img/sec4-result05.jpg" class="img" alt="" />
+            <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
+              2023.01.23(월)14:00
+            </p>
+            <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+          </div>
+        </div></div>
+      </div>
       </div>
     </section>
     <script
