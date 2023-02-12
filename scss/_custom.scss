@@ -46,19 +46,18 @@ $utilities: map-merge(
    $utilities
 );
 
-//url설정 확인: 다른데거 쓸건지
 $font-family-sans-serif: "Pretendard";
 $letter-spacing: -0.8px;
 
 //font-class
-$utilities: () !default; /* 유틸리티 초기화 */
+$utilities: () !default; 
 $utilities: map-merge(
    (
-      'tkt-typo': ( /* 새로운 클래스 변수를 정의 */ 
+      'tkt-typo': ( 
 			responsive: true,
          property: font,
-         class: tkt, /* 새로운 클래스명을 정의 */
-         values: /* $spacers대신에 새로운 맵으로 정의  */
+         class: tkt,
+         values:
             (
                h1: normal 300 50px 'pretendard',
                h2: normal 300 42px 'pretendard',
@@ -76,14 +75,14 @@ $utilities: map-merge(
 );
 
 //margin-class
-$utilities: () !default; /* 유틸리티 초기화 */
+$utilities: () !default;
 $utilities: map-merge(
    (
-      'tkt-margin': ( /* 새로운 클래스 변수를 정의 */ 
+      'tkt-margin': (
 			responsive: true,
          property: margin-bottom,
-         class: mgb, /* 새로운 클래스명을 정의 */
-         values: /* $spacers대신에 새로운 맵으로 정의  */
+         class: mgb,
+         values:
                (
                15: 0.938rem,
                25: 1.563rem,
@@ -93,7 +92,7 @@ $utilities: map-merge(
             ),
       ),
    ),
-   $utilities /* 기존 유틸리티와 merge */
+   $utilities
 );
 
 //border-radius class

@@ -1,7 +1,4 @@
-@charset "UTF-8";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.6/static/pretendard.css");
-/* 유틸리티 초기화 */
-/* 유틸리티 초기화 */
 body {
   letter-spacing: -0.8px;
 }
@@ -13051,33 +13048,88 @@ nav {
   display: block;
   position: relative;
   z-index: 2;
-  top: 16px;
+  padding-top: 16px;
 }
 
-nav h1 img, nav .h1 img {
+nav .nav {
+  --bs-nav-link-color: #F2F4F5;
+  --bs-nav-link-hover-color: #7432E1;
+}
+
+nav .nav h1 img, nav .nav .h1 img {
   width: 168px;
 }
 
-.tab-content {
-  position: relative;
-  top: 16px;
+nav .nav .btn {
+  --bs-btn-color: none;
+  --bs-btn-border-width: 0;
+  --bs-btn-hover-border-color: none;
+  --bs-btn-box-shadow: none;
+  border: none;
+  background-color: none;
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: 21px;
+  font-weight: 600;
 }
 
-.tab-content > .active {
-  z-index: 2;
+nav .nav .dropdown-menu {
+  -webkit-transform: translate3d(-6px, 55px, 0px);
+          transform: translate3d(-6px, 55px, 0px);
+  --bs-dropdown-min-width: 0 !important;
+  --bs-dropdown-padding-y: 1rem;
+  --bs-dropdown-color: #333333;
+  --bs-dropdown-bg: #F2F4F5;
+  --bs-dropdown-link-hover-bg: #F2F4F5;
+  --bs-dropdown-link-hover-color: #7432e1;
+  --bs-dropdown-link-active-color: #F2F4F5;
+  --bs-dropdown-link-active-bg: #7432E1;
+  --bs-dropdown-item-padding-y: 0.4rem;
+  border-radius: 10%;
+  text-align: center;
 }
 
-.carousel.sec1-carousel {
-  position: absolute !important;
-  top: 0;
+nav .nav .dropdown-toggle::after {
+  display: none;
+}
+
+nav:hover {
+  background-color: #f2f4f5b2;
+}
+
+nav:hover .nav-link {
+  --bs-nav-link-color: #333;
+}
+
+nav .card {
+  --bs-card-border-width: none;
+  --bs-card-border-color: none;
+  --bs-card-bg: none;
+  border: none;
+}
+
+nav .card li {
+  padding: 0 20px;
+}
+
+nav .card li a {
+  color: #333;
+}
+
+nav .card li a:hover {
+  color: #7432E1;
 }
 
 .carousel.sec1-carousel .carousel-indicators {
-  bottom: -13%;
+  top: 70%;
 }
 
 .carousel.sec1-carousel .carousel-indicators button.active {
   opacity: 0;
+}
+
+.carousel.sec1-carousel .carousel-indicators button:hover {
+  opacity: 0.8;
 }
 
 .carousel.sec1-carousel .carousel-indicators [data-bs-target] {
@@ -13110,6 +13162,13 @@ nav h1 img, nav .h1 img {
   width: 204px;
   height: 298px;
   border-radius: 10%;
+}
+
+.carousel.sec1-carousel .carousel-indicators > .row > div > label > div {
+  color: #333;
+  opacity: 0;
+  top: 20%;
+  left: 14%;
 }
 
 .carousel.sec1-carousel .carousel-caption {
