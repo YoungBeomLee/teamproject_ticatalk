@@ -1,0 +1,28 @@
+.result5 {
+  width: 186px;
+  height: 285px;
+  img {
+    width: 186px;
+    height: 238px;
+  }
+}
+.search a {
+  &:hover {
+    color: $primary !important;
+
+    font-weight: 900 !important;
+  }
+}
+.search-detail > button:hover {
+  transition: all 0.4s;
+  background-color: $primary !important;
+  a {
+    color: $light !important;
+  }
+  .sec5-right-line {
+    display: none;
+  }
+  .sec5-right-line-w {
+    display: inline-block !important;
+  }
+}

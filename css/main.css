@@ -11609,6 +11609,34 @@ nav h1 img, nav .h1 img {
   background: url("../../img/poster/sec4/sec4-snowday-kopis.gif") no-repeat;
 }
 
+.result5 {
+  width: 186px;
+  height: 285px;
+}
+.result5 img {
+  width: 186px;
+  height: 238px;
+}
+
+.search a:hover {
+  color: #7432E1 !important;
+  font-weight: 900 !important;
+}
+
+.search-detail > button:hover {
+  transition: all 0.4s;
+  background-color: #7432E1 !important;
+}
+.search-detail > button:hover a {
+  color: #F2F4F5 !important;
+}
+.search-detail > button:hover .sec5-right-line {
+  display: none;
+}
+.search-detail > button:hover .sec5-right-line-w {
+  display: inline-block !important;
+}
+
 a {
   text-decoration: none;
 }
