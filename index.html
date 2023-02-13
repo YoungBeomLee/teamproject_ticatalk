@@ -379,7 +379,7 @@
 
   <section class="sec4-talkdata container-sm container-md container-xxl p-0 mgb-160">
     <div class="sec4-container container-fluid p-0">
-      <h2 class="sec4-title tkt-h3 mgb-25 text-dark d-flex align-items-center"><span class="d-inline-block tkt-w35 me-2"></span>캣톡 데이터</h2>
+      <h2 class="sec4-title tkt-h3 mgb-25 text-dark d-flex align-items-center"><span class="d-inline-block tkt-w35 tkt-h35 me-2"></span>캣톡 데이터</h2>
       <div class="sec4-content row">
         <div class="col-12 col-sm-12 col-md-4 col-xl-3">
           <div class="sec4-big-card card br-15 bg-tertiary overflow-hidden border-0">
@@ -564,132 +564,175 @@
     >
       <div class="ticketsearch-wrap">
         <!--타이틀 부분-->
-        <div class="title col text-left mgb-25">
-          <img src="../img/icon/search-p.png" alt="" />
-          <h3 class="tkt-h3 text-dark">티켓 오픈</h3>
+        <div class="title text-left mgb-25 d-flex align-items-center">
+          <img src="../img/icon/search-p.png" class="d-inline-block tkt-w35 tkt-h35 me-2" alt="" />
+          <h2 class="tkt-h3 m-0 text-dark">통합 검색</h2>
         </div>
       </div>
-      <div class="ticketsearch-contents border-25 rounded-3 bg-light p-5">
-        <div class="search">
-          <ul
-            class="d-flex list-unstyled justify-content-between col-xxl-6 col-md-12 col-sm-12 mgb-35"
-          >
-            <li class="m-2 tkt-h5">
-              <a href="#" class="nav-link tkt-h5">전체</a>
-            </li>
-            <li class="m-2 tkt-h5">
-              <a href="#" class="nav-link tkt-h5">뮤지컬</a>
-            </li>
-            <li class="m-2 tkt-h5">
-              <a href="#" class="nav-link tkt-h5">연극</a>
-            </li>
-            <li class="m-2 tkt-h5">
-              <a href="#" class="nav-link tkt-h5">콘서트</a>
-            </li>
-            <li class="m-2 tkt-h5">
-              <a href="#" class="nav-link tkt-h5">클래식</a>
-            </li>
-            <li class="m-2 tkt-h5">
-              <a href="#" class="nav-link tkt-h5">가족.아동</a>
-            </li>
-            <li class="m-2 tkt-h5">
-              <a href="#" class="nav-link tkt-h5">뮤직페스티벌</a>
-            </li>
-          </ul>
-        </div>
-        <div class="search-detail mgb-35">
-          <div class="search-detail col-xxl-4 col-md-6 col-sm-12">
-            <ul
-              class="search-detail conatainer d-flex list-unstyled justify-content-between"
-            >
-              <button class="border-0 rounded-3 m-1 p-2 bg-tertiary">
-                <a class="nav-link" href="#">&nbsp;&nbsp;지역&nbsp;&nbsp;</a>
-              </button>
-              <button class="border-0 rounded-3 m-1 p-2 bg-tertiary">
-                <a class="nav-link" href="#">&nbsp;&nbsp;기간&nbsp;&nbsp;</a>
-              </button>
-              <button class="border-0 rounded-3 m-1 p-2 bg-tertiary">
-                <a class="nav-link" href="#">&nbsp;&nbsp;날짜&nbsp;&nbsp;</a>
-              </button>
-              <button class="border-0 rounded-3 pr-5 m-1 p-2 bg-tertiary">
-                <a class="nav-link" href="#"
-                  >&nbsp;&nbsp;공연상태&nbsp;&nbsp;</a
-                >
-              </button>
+      <div class="ticketsearch-contents br-15 bg-light p-5">
+        <ul class="search list-unstyled d-inline-block w-100 mgb-25">
+          <li class="float-start me-4">
+            <a href="#" class="nav-link tkt-t5 text-dark search-nav-on">전체</a>
+          </li>
+          <li class="float-start me-4">
+            <a href="#" class="nav-link tkt-t5 text-dark">뮤지컬</a>
+          </li>
+          <li class="float-start me-4">
+            <a href="#" class="nav-link tkt-t5 text-dark">연극</a>
+          </li>
+          <li class="float-start me-4">
+            <a href="#" class="nav-link tkt-t5 text-dark">콘서트</a>
+          </li>
+          <li class="float-start me-4">
+            <a href="#" class="nav-link tkt-t5 text-dark">클래식</a>
+          </li>
+          <li class="float-start me-4">
+            <a href="#" class="nav-link tkt-t5 text-dark">가족.아동</a>
+          </li>
+          <li class="float-start me-4">
+            <a href="#" class="nav-link tkt-t5 text-dark">뮤직페스티벌</a>
+          </li>
+        </ul>
+        <div class="search-detail d-inline-block w-100 mgb-25">
+          <div class="dropdown float-start me-4">
+            <button class="search-detail-btn btn btn-secondary dropdown-toggle bg-lgray border-0 tkt-t6" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              지역
+            </button>
+            <ul class="search-detail-list dropdown-menu">
+              <li><a class="dropdown-item" href="#">전체</a></li>
+              <li><a class="dropdown-item" href="#">서울</a></li>
+              <li><a class="dropdown-item" href="#">경기도</a></li>
+              <li><a class="dropdown-item" href="#">강원도</a></li>
+              <li><a class="dropdown-item" href="#">충청도</a></li>
+              <li><a class="dropdown-item" href="#">전라도</a></li>
+              <li><a class="dropdown-item" href="#">경상도</a></li>
+              <li><a class="dropdown-item" href="#">제주</a></li>
             </ul>
           </div>
+          <div class="dropdown float-start me-4">
+            <button class="search-detail-btn btn btn-secondary dropdown-toggle bg-lgray border-0 tkt-t6" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              기간
+            </button>
+            <ul class="search-detail-list dropdown-menu">
+              <li><a class="dropdown-item" href="#">전체</a></li>
+              <li><a class="dropdown-item" href="#">일간</a></li>
+              <li><a class="dropdown-item" href="#">월간</a></li>
+              <li><a class="dropdown-item" href="#">주간</a></li>
+              <li><a class="dropdown-item" href="#">주말</a></li>
+            </ul>
+          </div>
+          <div class="dropdown float-start me-4">
+            <button class="search-detail-btn btn btn-secondary dropdown-toggle bg-lgray border-0 tkt-t6" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              날짜
+            </button>
+            <div class="search-detail-list dropdown-menu">
+              
+            </div>
+          </div>
+          <div class="dropdown float-start me-4">
+            <button class="search-detail-btn btn btn-secondary dropdown-toggle bg-lgray border-0 tkt-t6" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              공연 상태
+            </button>
+            <ul class="search-detail-list dropdown-menu">
+              <li><a class="dropdown-item" href="#">전체</a></li>
+              <li><a class="dropdown-item" href="#">공연중/공연예정</a></li>
+              <li><a class="dropdown-item" href="#">공연중</a></li>
+              <li><a class="dropdown-item" href="#">공연예정</a></li>
+              <li><a class="dropdown-item" href="#">종료/취소</a></li>
+            </ul>
+          </div>
+
+          <!-- <div class="search-detail">
+            <div class="search-detail conatainer list-unstyled">
+              <button class="border-0 rounded-3 m-1 p-2 bg-tertiary">
+                지역
+              </button>
+              <button class="border-0 rounded-3 m-1 p-2 bg-tertiary">
+                기간
+              </button>
+              <button class="border-0 rounded-3 m-1 p-2 bg-tertiary">
+                날짜
+              </button>
+              <button class="border-0 rounded-3 pr-5 m-1 p-2 bg-tertiary">
+                공연상태
+              </button>
+            </div>
+          </div> -->
         </div>
         <div class="search-result row d-flex justify-content-between">
-          <div class="result5 col-xxl-1 col-md-4 col-sm-6">
-            <img
-              src="../img/sec4-result01.jpg"
-              class="img img-fluid"
-              alt=""
-              style="min-width: 186px; height: 238px"
-            />
-            <p class="text-dark text-center mt-3 mb-1">2023.01.23(월)14:00</p>
-            <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+          <div class="text-center col-6 col-sm-6 col-md-4 col-xl-2">
+            <div class="card bg-transparent border-0 search-poster">
+              <img src="../img/poster/sec5/sec5-result01.jpg" class="card-img img img-fluid br-15" alt="">
+              <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
+              </a>
+            </div>
+            <div class="sec5-result-text">
+              <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1">2023.01.23(월)14:00</a>
+              <a href="#" class="d-inline-block tkt-t6 text-dark">콘서트이름</a>
+            </div>
           </div>
-          <div class="result5 col-xxl-1 col-md-4 col-sm-6">
-            <img
-              src="../img/sec4-result02.jpg"
-              class="img img-fluid"
-              alt=""
-              style="min-width: 186px; height: 238px"
-            />
-            <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-              2023.01.23(월)14:00
-            </p>
-            <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+          <div class="text-center col-6 col-sm-6 col-md-4 col-xl-2">
+            <div class="card bg-transparent border-0 search-poster">
+              <img src="../img/poster/sec5/sec5-result02.jpg" class="card-img img img-fluid br-15" alt="">
+              <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
+              </a>
+            </div>
+            <div class="sec5-result-text">
+              <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1">2023.01.23(월)14:00</a>
+              <a href="#" class="d-inline-block tkt-t6 text-dark">콘서트이름</a>
+            </div>
           </div>
-          <div class="result5 col-xxl-1 col-md-4 col-sm-6">
-            <img
-              src="../img/sec4-result03.gif"
-              class="img img-fluid"
-              alt=""
-              style="min-width: 186px; height: 238px"
-            />
-            <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-              2023.01.23(월)14:00
-            </p>
-            <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+          <div class="text-center col-6 col-sm-6 col-md-4 col-xl-2">
+            <div class="card bg-transparent border-0 search-poster">
+              <img src="../img/poster/sec5/sec5-result03.gif" class="card-img img img-fluid br-15" alt="">
+              <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
+              </a>
+            </div>
+            <div class="sec5-result-text">
+              <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1">2023.01.23(월)14:00</a>
+              <a href="#" class="d-inline-block tkt-t6 text-dark">콘서트이름</a>
+            </div>
           </div>
-          <div class="result5 col-xxl-1 col-md-4 col-sm-6">
-            <img
-              src="../img/sec4-result04.gif"
-              class="img img-fluid"
-              alt=""
-              style="min-width: 186px; height: 238px"
-            />
-            <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-              2023.01.23(월)14:00
-            </p>
-            <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+          <div class="text-center col-6 col-sm-6 col-md-4 col-xl-2">
+            <div class="card bg-transparent border-0 search-poster">
+              <img src="../img/poster/sec5/sec5-result04.gif" class="card-img img img-fluid br-15" alt="">
+              <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
+              </a>
+            </div>
+            <div class="sec5-result-text">
+              <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1">2023.01.23(월)14:00</a>
+              <a href="#" class="d-inline-block tkt-t6 text-dark">콘서트이름</a>
+            </div>
           </div>
-          <div class="result5 col-xxl-1 col-md-4 col-sm-6">
-            <img
-              src="../img/sec4-result05.jpg"
-              class="img img-fluid"
-              alt=""
-              style="min-width: 186px; height: 238px"
-            />
-            <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-              2023.01.23(월)14:00
-            </p>
-            <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+          <div class="text-center col-6 col-sm-6 col-md-4 col-xl-2">
+            <div class="card bg-transparent border-0 search-poster">
+              <img src="../img/poster/sec5/sec5-result05.jpg" class="card-img img img-fluid br-15" alt="">
+              <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
+              </a>
+            </div>
+            <div class="sec5-result-text">
+              <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1">2023.01.23(월)14:00</a>
+              <a href="#" class="d-inline-block tkt-t6 text-dark">콘서트이름</a>
+            </div>
           </div>
-          <div class="result5 col-xxl-1 col-md-4 col-sm-6">
-            <img
-              src="../img/sec4-result05.jpg"
-              class="img img-fluid"
-              alt=""
-              style="min-width: 186px; height: 238px"
-            />
-            <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-              2023.01.23(월)14:00
-            </p>
-            <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+          <div class="text-center col-6 col-sm-6 col-md-4 col-xl-2">
+            <div class="card bg-transparent border-0 search-poster">
+              <img src="../img/poster/sec5/sec5-result05.jpg" class="card-img img img-fluid br-15" alt="">
+              <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
+              </a>
+            </div>
+            <div class="sec5-result-text">
+              <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1">2023.01.23(월)14:00</a>
+              <a href="#" class="d-inline-block tkt-t6 text-dark">콘서트이름</a>
+            </div>
           </div>
+
         </div>
       </div>
     </div>
