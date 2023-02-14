@@ -6,6 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>sec5 김종건</title>
     <link rel="stylesheet" href="../css/main.css" />
+    <style>
+      #layer {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  z-index: 90999099999;
+  font-size: 2.4em;
+  padding: 2em;
+  box-sizing: border-box;
+  line-height: 2;
+  top: 200px;
+  left: 150px;
+}
+
+#layer button {
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #222;
+  color: #fff;
+}
+    </style>
   </head>
   <body>
     <section class="sec5-ticketsearch mx-auto mgb-160">
@@ -186,7 +205,7 @@
         <div class="tab-pane fade show active" id="1" role="tabpanel" >
           <div class="search-result row justify-content-between">
             <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result01.jpg" class="img" alt="" />
+              <img src="../img/poster/sec5/sec5-result02.jpg" class="img" alt="" />
               <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
                 2023.01.23(월)14:0
               </p>
@@ -469,6 +488,75 @@
       </div>
       </div>
     </section>
+
+
+
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary p-4 border-25 rounded-5"
+      data-bs-toggle="modal"
+      data-bs-target="#staticBackdrop"
+    >
+      티켓톡
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Modal title
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="layer" class="shadow p-4 mb-5 bg-secondary rounded d-flex flex-column position-fixed border rounded-5" style="width:246px; height:463px;">
+      <button type="button" class="btn btn-outline bg-dark  mb-2 text-start position-relative" style="height:88px; background-image: url('../img/poster/sec5/sec5-result02.jpg');">[클래식] 오티움 <br>눈 오는 날 세일 35% <div class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"style="width:25px; height:25px; transform: translate(12px, 15px);"></div></button>
+      <button type="button" class="btn btn-outline bg-dark  mb-2 text-start position-relative"style="height:88px; background-image: url('../img/poster/sec5/sec5-result04.gif');">[뮤지컬] 프로즌 <br>비 오는 날 세일 15%<div class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"style="width:25px; height:25px; transform: translate(12px, 15px);"></div></button>
+      <button type="button" class="btn btn-outline bg-dark  mb-2 text-start position-relative"style="height:88px; background-image: url('../img/poster/sec5/sec5-result03.gif');">[클래식] 오티움 <br>눈 오는 날 세일 35%<div class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"style="width:25px; height:25px; transform: translate(12px, 15px);"></div></button>
+      <button type="button" class="btn btn-outline bg-dark  mb-3 text-start position-relative"style="height:88px; background-image: url('../img/poster/sec5/sec5-result05.jpg');">[뮤지컬] 프로즌 <br>비 오는 날 세일 15%<div class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"style="width:25px; height:25px; transform: translate(12px, 15px);"></div></button>
+      <div class=" d-flex justify-content-between" style="height:20px">
+        <a class="text-light tkt-sm" href="">오늘 하루 그만 보기</a><span><button type="button" class="popbtn btn-close bg-secondary" aria-label="Close" style="width:0px; height:0px;">&nbsp;</button></span>
+      </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document
+      .querySelector(".popbtn")
+      .addEventListener("click", function () {
+        document.querySelector("#layer").classList.add('d-none');
+        document.querySelector("#layer").classList.remove('d-flex');
+      });
+    });
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"

@@ -21,16 +21,9 @@
     }
   }
 }
-<<<<<<< HEAD
-
 .search button {
   border: none;
   padding: 0;
-=======
-.search button{
-  border:none;
-  padding:0;
->>>>>>> parent of 6ce2ca0 (230214김종건 팝업추가)
 }
 .search-poster-hover {
   display: none;
@@ -41,5 +34,13 @@
     font-weight: 600 !important;
     color: $primary !important;
     text-decoration: underline !important;
+  }
+}
+.result5 {
+  width: 186px;
+  height: 285px;
+  img {
+    width: 186px;
+    height: 238px;
   }
 }
