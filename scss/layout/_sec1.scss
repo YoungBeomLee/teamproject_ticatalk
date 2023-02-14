@@ -9,19 +9,6 @@ nav {
       width: 168px;
     }
 
-    & .btn {
-      --bs-btn-color: none;
-      --bs-btn-border-width: 0;
-      --bs-btn-hover-border-color: none;
-      --bs-btn-box-shadow: none;
-      border: none;
-      background-color: none;
-      display: block;
-      padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
-      font-size: 21px;
-      font-weight: 600;
-    }
-
     .dropdown-menu {
       transform: translate3d(-6px, 55px, 0px);
       --bs-dropdown-min-width: 0 !important; 
@@ -33,7 +20,6 @@ nav {
       --bs-dropdown-link-active-color: #F2F4F5;
       --bs-dropdown-link-active-bg: #7432E1;
       --bs-dropdown-item-padding-y: 0.4rem;
-      border-radius: 10%; //빼도될듯
       text-align: center;
     }
     .dropdown-toggle::after {

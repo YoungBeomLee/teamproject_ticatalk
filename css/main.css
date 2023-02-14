@@ -13119,19 +13119,6 @@ nav .nav h1 img, nav .nav .h1 img {
   width: 168px;
 }
 
-nav .nav .btn {
-  --bs-btn-color: none;
-  --bs-btn-border-width: 0;
-  --bs-btn-hover-border-color: none;
-  --bs-btn-box-shadow: none;
-  border: none;
-  background-color: none;
-  display: block;
-  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
-  font-size: 21px;
-  font-weight: 600;
-}
-
 nav .nav .dropdown-menu {
   -webkit-transform: translate3d(-6px, 55px, 0px);
           transform: translate3d(-6px, 55px, 0px);
@@ -13144,7 +13131,6 @@ nav .nav .dropdown-menu {
   --bs-dropdown-link-active-color: #F2F4F5;
   --bs-dropdown-link-active-bg: #7432E1;
   --bs-dropdown-item-padding-y: 0.4rem;
-  border-radius: 10%;
   text-align: center;
 }
 
@@ -13535,5 +13521,11 @@ nav .card li a:hover {
 
 .footer-info-btn:hover {
   text-decoration: underline !important;
+}
+
+@media (max-width: 990px) {
+  .sec1-main-wrap {
+    height: 90vh;
+  }
 }
 /*# sourceMappingURL=main.css.map */
