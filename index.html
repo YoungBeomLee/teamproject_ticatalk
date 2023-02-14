@@ -8,95 +8,105 @@
   <title>티캣톡 - 공연 보고 친구도 사귀자!</title>
 </head>
 <body>
-  <section class="position-relative">
-    <!-- gnb -->
-    <nav class="container-fluid">
-      <div class="nav justify-content-evenly row-xxl" id="nav-tab">
-        <h1>
-          <a href="#"><img id ="logo" src="img/tkt-logo-w.svg" alt="logo" /></a>
-        </h1>
-        <!-- 1depth -->
-        <div class="nav-button d-flex justify-content-center pe-5 tkt-t5">
-          <button class="nav-link px-4 btn" type="button" id="nav-catalk-tab" data-bs-toggle="collapse" data-bs-target="#nav-catalk"  role="button" aria-expanded="false"  aria-controls="nav-catalk">캣톡</button>
-          <button class="nav-link px-4 btn" type="button" id="nav-search-tab" data-bs-toggle="collapse" data-bs-target="#nav-search" aria-expanded="false" aria-controls="nav-search">공연찾기</button>
-          <button class="nav-link px-4 btn" type="button" id="nav-ranking-tab" data-bs-toggle="collapse" data-bs-target="#nav-ranking" aria-expanded="false" aria-controls="nav-ranking">랭킹·추천</button>
-          <button class="nav-link px-4 btn" type="button" id="nav-promotion-tab" data-bs-toggle="collapse" data-bs-target="#nav-promotion" aria-expanded="false" aria-controls="nav-promotion">프로모션</button>
-          <button class="nav-link px-4 btn" type="button" id="nav-market-tab" data-bs-toggle="collapse" data-bs-target="#nav-market" aria-expanded="false" aria-controls="nav-market">티켓줍기</button>
-        </div>
-        <div class="align-self-center nav-item dropdown">
-          <a class="nav-link dropdown-toggle  ps-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img id = "login-icon" src="img/icon/myicon-white.png" alt="login" />
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">로그인</a></li>
-            <li><a class="dropdown-item" href="#">마이페이지</a></li>
-            <li><a class="dropdown-item" href="#">예매확인</a></li>
-            <li><a class="dropdown-item" href="#">이용안내</a></li>
-            <li><a class="dropdown-item" href="#">고객센터</a></li>
+  <!-- gnb -->
+  <nav class="container-fluid position-fixed py-4">
+    <div class="nav justify-content-between container" id="nav-tab">
+      <h1>
+        <a href="#"><img id ="logo" src="img/tkt-logo-w.svg" alt="logo" /></a>
+      </h1>
+      <!-- 1depth -->
+      <div class="nav-button d-flex justify-content-center pe-5 tkt-t5">
+        <button class="nav-link px-4 btn" type="button" id="nav-catalk-tab" data-bs-toggle="collapse" data-bs-target="#nav-catalk"  role="button" aria-expanded="false"  aria-controls="nav-catalk">캣톡</button>
+        <button class="nav-link px-4 btn" type="button" id="nav-search-tab" data-bs-toggle="collapse" data-bs-target="#nav-search" aria-expanded="false" aria-controls="nav-search">공연찾기</button>
+        <button class="nav-link px-4 btn" type="button" id="nav-ranking-tab" data-bs-toggle="collapse" data-bs-target="#nav-ranking" aria-expanded="false" aria-controls="nav-ranking">랭킹·추천</button>
+        <button class="nav-link px-4 btn" type="button" id="nav-promotion-tab" data-bs-toggle="collapse" data-bs-target="#nav-promotion" aria-expanded="false" aria-controls="nav-promotion">프로모션</button>
+        <button class="nav-link px-4 btn" type="button" id="nav-market-tab" data-bs-toggle="collapse" data-bs-target="#nav-market" aria-expanded="false" aria-controls="nav-market">티켓줍기</button>
+      </div>
+      <div class="align-self-center nav-item dropdown">
+        <a class="nav-link dropdown-toggle  ps-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img id = "login-icon" src="img/icon/myicon-white.png" alt="login" />
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">로그인</a></li>
+          <li><a class="dropdown-item" href="#">마이페이지</a></li>
+          <li><a class="dropdown-item" href="#">예매확인</a></li>
+          <li><a class="dropdown-item" href="#">이용안내</a></li>
+          <li><a class="dropdown-item" href="#">고객센터</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- 2depth -->
+    <div class="container-fluid px-0">
+      <div class="collapse multi-collapse" id="nav-catalk">
+        <div class="card card-body" >
+          <ul class="list-unstyled m-auto d-flex justify-content-center">
+            <li><a href="#">캣톡이란?</a></li>
+            <li><a href="#">캣톡데이터</a></li>
+            <li><a href="#">공연별</a></li>
+            <li><a href="#">지역별</a></li>
+            <li><a href="#">연령별</a></li>
           </ul>
         </div>
       </div>
-      <!-- 2depth -->
-      <div class="container-fluid px-0">
-        <div class="collapse multi-collapse" id="nav-catalk">
-          <div class="card card-body" >
-            <ul class="list-unstyled m-auto d-flex justify-content-center">
-              <li><a href="#">캣톡이란?</a></li>
-              <li><a href="#">캣톡데이터</a></li>
-              <li><a href="#">공연별</a></li>
-              <li><a href="#">지역별</a></li>
-              <li><a href="#">연령별</a></li>
-            </ul>
-          </div>
+      <div class="collapse multi-collapse" id="nav-search">
+        <div class="card card-body" >
+          <ul class="list-unstyled m-auto d-flex justify-content-center">
+            <li><a href="#">연극</a></li>
+            <li><a href="#">인디</a></li>
+            <li><a href="#">뮤지컬</a></li>
+            <li><a href="#">콘서트</a></li>
+            <li><a href="#">클래식</a></li>
+            <li><a href="#">아동·가족</a></li>
+            <li><a href="#">페스티벌</a></li>
+          </ul>
         </div>
-        <div class="collapse multi-collapse" id="nav-search">
-          <div class="card card-body" >
-            <ul class="list-unstyled m-auto d-flex justify-content-center">
-              <li><a href="#">연극</a></li>
-              <li><a href="#">인디</a></li>
-              <li><a href="#">뮤지컬</a></li>
-              <li><a href="#">콘서트</a></li>
-              <li><a href="#">클래식</a></li>
-              <li><a href="#">아동·가족</a></li>
-              <li><a href="#">페스티벌</a></li>
-            </ul>
-          </div>
+      </div>
+      <div class="collapse multi-collapse" id="nav-ranking">
+        <div class="card card-body" >
+          <ul class="list-unstyled m-auto d-flex justify-content-center">
+            <li><a href="#">기간별 랭킹</a></li>
+            <li><a href="#">장르별 랭킹</a></li>
+            <li><a href="#">지역별 랭킹</a></li>
+            <li><a href="#">좋아요 랭킹</a></li>
+          </ul>
         </div>
-        <div class="collapse multi-collapse" id="nav-ranking">
-          <div class="card card-body" >
-            <ul class="list-unstyled m-auto d-flex justify-content-center">
-              <li><a href="#">기간별 랭킹</a></li>
-              <li><a href="#">장르별 랭킹</a></li>
-              <li><a href="#">지역별 랭킹</a></li>
-              <li><a href="#">좋아요 랭킹</a></li>
-            </ul>
-          </div>
+      </div>
+      <div class="collapse multi-collapse" id="nav-promotion">
+        <div class="card card-body" >
+          <ul class="list-unstyled m-auto d-flex justify-content-center">
+            <li><a href="#">쿠폰</a></li>
+            <li><a href="#">출석체크</a></li>
+            <li><a href="#">리뷰이벤트</a></li>
+            <li><a href="#">진행중이벤트</a></li>
+            <li><a href="#">지난이벤트</a></li>
+          </ul>
         </div>
-        <div class="collapse multi-collapse" id="nav-promotion">
-          <div class="card card-body" >
-            <ul class="list-unstyled m-auto d-flex justify-content-center">
-              <li><a href="#">쿠폰</a></li>
-              <li><a href="#">출석체크</a></li>
-              <li><a href="#">리뷰이벤트</a></li>
-              <li><a href="#">진행중이벤트</a></li>
-              <li><a href="#">지난이벤트</a></li>
-            </ul>
-          </div>
+      </div>
+      <div class="collapse multi-collapse" id="nav-market">
+        <div class="card card-body" >
+          <ul class="list-unstyled m-auto d-flex justify-content-center">
+            <li><a href="#">취소표확인</a></li>
+            <li><a href="#">티켓 양도</a></li>
+            <li><a href="#">티켓 교환</a></li>
+          </ul>
         </div>
-        <div class="collapse multi-collapse" id="nav-market">
-          <div class="card card-body" >
-            <ul class="list-unstyled m-auto d-flex justify-content-center">
-              <li><a href="#">취소표확인</a></li>
-              <li><a href="#">티켓 양도</a></li>
-              <li><a href="#">티켓 교환</a></li>
-            </ul>
-          </div>
+      </div>
+    </div>  
+  </nav>
+  <section class="sec1-main-wrap position-relative">
+    <div class="sec1-main-inner">
+      <div class="sec1-contents container-sm container-md container-xl position-relative w-100 h-100 p-0">
+        <div class="sec1-maincon-info position-absolute start-0">
+          <h3 class="tkt-t5 text-light">티켓톡 랭킹</h3>
+          <p class="tkt-h1 text-light">가재 20주년 콘서트</p>
+          <p class="tkt-t6 text-light">2023.02.21~2023.02.26</p>
+          <p class="tkt-t6 text-light">올림픽 공원 내 올림픽홀</p>
         </div>
-      </div>  
-    </nav>
+
+      </div>
+    </div>
     <!-- carousel -->
-    <div id="carouselExampleDark" class="container-fluid carousel carousel-dark slide sec1-carousel mgb-160">
-      <!-- carousel-indicator:pager -->
+    <!-- <div id="carouselExampleDark" class="container-fluid carousel carousel-dark slide sec1-carousel mgb-160">
       <div class="carousel-indicators container-sm">
         <div class="row">
           <div class="col-xxl-2 col-md-4 col-sm-6">
@@ -180,7 +190,6 @@
           </div>
         </div>
       </div>
-      <!-- carousel-slide -->
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
           <img src="img/poster/sec1/sec1-main-test.jpg" class="d-block w-100" alt="..." />
@@ -237,7 +246,6 @@
           </div>
         </div>
       </div>
-      <!-- carousel-prev/next -->
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -246,15 +254,15 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
+    </div> -->
   </section>
   <!-- section1 nh -->
 
-  <section id="content" class="container-sm container-md container-xxl p-0 mgb-160">
-    <div class="row p-0">
+  <section id="content" class="mgb-160">
+    <div class="row m-auto p-0 container-sm container-md container-xxl">
       <div class="col-12 col-sm-12 col-md-2 col-xxl-2 p-0">
-        <img src="../img/icon/bookmark.png" alt="" class="">
-        <h2 class="sec2-fav-title text-dark tkt-h3 word-break">자주 찾는 서비스</h2>
+        <img src="img/icon/bookmark.png" alt="" class="tkt-w35 tkt-h35 mb-2">
+        <h2 class="sec2-fav-title text-dark tkt-h3 word-break">자주 찾는<br>서비스</h2>
       </div>
       <div class="col-12 col-sm-12 col-md-10 col-xxl-10 p-0">
         <div class="row align-items-center h-100">
@@ -313,13 +321,13 @@
   </section>
   <!-- section2 sw -->
 
-  <section class="sec3-ticketopen mx-auto mgb-160">
-    <div class="sec3-container container-fluid container-xxl container-md container-sm">
+  <section class="sec3-ticketopen mgb-160">
+    <div class="sec3-container p-0 container-fluid container-xxl container-md container-sm">
       <div class="ticketopen-wrap">
         <!--타이틀 부분-->
         <div class="title col text-left mgb-25">
-          <img src="img/icon/ticket.png" alt="">
-          <h3 class="tkt-h3 text-dark">티켓 오픈</h3>
+          <img src="img/icon/ticket.png" class="tkt-w35 tkt-h35 mt-1 me-2" alt="">
+          <h2 class="tkt-h3 text-dark">티켓 오픈</h2>
         </div>
       </div>
       <div class="ticketopen-contents row">
@@ -377,7 +385,7 @@
   </section>
   <!-- section3 yb -->
 
-  <section class="sec4-talkdata container-sm container-md container-xxl p-0 mgb-160">
+  <section class="sec4-talkdata container-sm container-md container-xl p-0 mgb-160">
     <div class="sec4-container container-fluid p-0">
       <h2 class="sec4-title tkt-h3 mgb-25 text-dark d-flex align-items-center"><span class="d-inline-block tkt-w35 tkt-h35 me-2"></span>캣톡 데이터</h2>
       <div class="sec4-content row">
@@ -565,7 +573,7 @@
       <div class="ticketsearch-wrap">
         <!--타이틀 부분-->
         <div class="title text-left mgb-25 d-flex align-items-center">
-          <img src="../img/icon/search-p.png" class="d-inline-block tkt-w35 tkt-h35 me-2" alt="" />
+          <img src="img/icon/search-p.png" class="d-inline-block tkt-w35 tkt-h35 me-2" alt="">
           <h2 class="tkt-h3 m-0 text-dark">통합 검색</h2>
         </div>
       </div>

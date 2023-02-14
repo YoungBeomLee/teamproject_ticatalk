@@ -1,10 +1,6 @@
 //nav
 nav {
-  display: block;
-  position: relative;
-  z-index: 2;
-  padding-top: 16px;
-
+  z-index: 30;
   .nav{
     --bs-nav-link-color: #F2F4F5;
     --bs-nav-link-hover-color: #7432E1;
@@ -68,6 +64,19 @@ nav {
           color:#7432E1;
         }
       }
+    }
+  }
+}
+
+.sec1-main-wrap{
+  height: 100vh;
+  .sec1-main-inner{
+    height: 80vh;
+    background: url("../img/poster/sec1/sec1-main-test.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    .sec1-maincon-info{
+      top: 30%;
     }
   }
 }
