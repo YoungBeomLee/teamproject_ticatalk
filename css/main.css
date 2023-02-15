@@ -11618,16 +11618,8 @@ nav .card li a:hover {
   color: #7432E1;
   z-index: 10;
 }
-<<<<<<< HEAD
 .sec1-mainslide-wrap .sec1-main-slide-box .sec1-main-slide-btn img {
-=======
 
-.sec1-mainslide-wrap .sec1-main-slide-box .sec1-main-slide-btn {
-  overflow: hidden;
-}
-
-.sec1-mainslide-wrap .sec1-main-slide-box .sec1-main-slide-btn > img {
->>>>>>> b340e396683e16a843c063ae1efaf7cfbf5269d2
   display: block;
   width: 100%;
   height: 100%;
