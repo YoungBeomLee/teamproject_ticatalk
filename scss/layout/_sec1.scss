@@ -129,3 +129,79 @@ nav {
 .sec1-poster-hover-title{
   line-height: 1.8 !important;
 }
+
+//chat
+#chat-wrap{
+  position: fixed;
+  left: 100px;
+  top: 100px;
+  z-index: 20;
+  
+  
+}
+iframe{
+  height: 0;
+  transition: all 1s;
+}
+.on{
+  height: 700px !important;
+}
+
+
+.chat-button{
+  position: fixed;
+  top: 80px;
+  left: 80px;
+  z-index: 100;
+  width: 6rem;
+  height: 6rem;
+  background-color: #7432E1;
+  border-radius: 50%;
+  transition: all 0.8s;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+ 
+}
+.chat-wrap-circle{
+  display: none;
+ 
+}
+.chat-icon {
+  position: relative;
+  margin-top: 3rem;
+}
+.chat-icon:before {
+  top: -0.8rem;
+}
+.chat-icon:after {
+  top: 0.8rem;
+}
+.chat-icon:before, .chat-icon:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+.chat-icon, .chat-icon:before, .chat-icon:after {
+  width: 3rem;
+  height: 2px;
+  background: #333;
+  display: inline-block;
+}
+.chat-button:hover .chat-icon:before {
+  top: -1rem;
+}
+.chat-button:hover .chat-icon:after {
+  top: 1rem;
+}
+.chat-wrap-circle:checked ~ .chat-button .chat-icon {
+  background-color: transparent;
+}
+.chat-wrap-circle:checked ~ .chat-button .chat-icon:before {
+  top: 0;
+  transform: rotate(135deg);
+}
+.chat-wrap-circle:checked ~ .chat-button .chat-icon:after {
+  top: 0;
+  transform: rotate(-135deg);
+}
