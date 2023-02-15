@@ -26,14 +26,11 @@ nav {
       display: none;// display:inline-block 으로 보여도됨
     }
   }
-
-  &:hover {
-    background-color: #f2f4f5b2;
-
-    & .nav-link {
-        --bs-nav-link-color: #333;
-      }
-    }
+  .nav-on{
+    color: $primary !important;
+    font-weight: 600 !important;
+    text-decoration: underline !important;
+  }
   //nav 2-depth
   .card {
     --bs-card-border-width: none;
@@ -47,7 +44,7 @@ nav {
       & a{
         color: #333;
         &:hover{
-          color:#7432E1;
+          @include tkt-thover;
         }
       }
     }

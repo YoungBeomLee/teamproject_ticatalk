@@ -17,11 +17,11 @@
       </h1>
       <!-- 1depth -->
       <div class="nav-button d-flex justify-content-center pe-5 tkt-t5">
-        <button class="nav-link px-4 btn border-0 bg-transparent tkt-t5" type="button" id="nav-catalk-tab" data-bs-toggle="collapse" data-bs-target="#nav-catalk"  role="button" aria-expanded="false"  aria-controls="nav-catalk">캣톡</button>
-        <button class="nav-link px-4 btn border-0 bg-transparent tkt-t5" type="button" id="nav-search-tab" data-bs-toggle="collapse" data-bs-target="#nav-search" aria-expanded="false" aria-controls="nav-search">공연찾기</button>
-        <button class="nav-link px-4 btn border-0 bg-transparent tkt-t5" type="button" id="nav-ranking-tab" data-bs-toggle="collapse" data-bs-target="#nav-ranking" aria-expanded="false" aria-controls="nav-ranking">랭킹·추천</button>
-        <button class="nav-link px-4 btn border-0 bg-transparent tkt-t5" type="button" id="nav-promotion-tab" data-bs-toggle="collapse" data-bs-target="#nav-promotion" aria-expanded="false" aria-controls="nav-promotion">프로모션</button>
-        <button class="nav-link px-4 btn border-0 bg-transparent tkt-t5" type="button" id="nav-market-tab" data-bs-toggle="collapse" data-bs-target="#nav-market" aria-expanded="false" aria-controls="nav-market">티켓줍기</button>
+        <button class="nav-link px-4 btn border-0 bg-transparent tkt-t5 text-light" type="button" id="nav-catalk-tab" data-bs-toggle="collapse" data-bs-target="#nav-catalk"  role="button" aria-expanded="false"  aria-controls="nav-catalk">캣톡</button>
+        <button class="nav-link px-4 btn border-0 bg-transparent tkt-t5 text-light" type="button" id="nav-search-tab" data-bs-toggle="collapse" data-bs-target="#nav-search" aria-expanded="false" aria-controls="nav-search">공연찾기</button>
+        <button class="nav-link px-4 btn border-0 bg-transparent tkt-t5 text-light" type="button" id="nav-ranking-tab" data-bs-toggle="collapse" data-bs-target="#nav-ranking" aria-expanded="false" aria-controls="nav-ranking">랭킹·추천</button>
+        <button class="nav-link px-4 btn border-0 bg-transparent tkt-t5 text-light" type="button" id="nav-promotion-tab" data-bs-toggle="collapse" data-bs-target="#nav-promotion" aria-expanded="false" aria-controls="nav-promotion">프로모션</button>
+        <button class="nav-link px-4 btn border-0 bg-transparent tkt-t5 text-light" type="button" id="nav-market-tab" data-bs-toggle="collapse" data-bs-target="#nav-market" aria-expanded="false" aria-controls="nav-market">티켓줍기</button>
       </div>
       <div class="align-self-center nav-item dropdown">
         <a class="nav-link dropdown-toggle  ps-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -839,44 +839,72 @@
     });
   </script>
   <script>
-    //nav-hover 함수
+    let sec1 = document.querySelector('.sec1-main-wrap');
+    let sec1Height = sec1.clientHeight;
     let nav = document.querySelector('nav');
+    let navBtn = document.querySelectorAll('.nav-link');
+    let navDepth = document.querySelectorAll('.multi-collapse');
     let logoImg = document.querySelector('#logo');
     let loginIcon = document.querySelector('#login-icon');
-    nav.addEventListener("mouseover",function(){
-      logoImg.setAttribute("src","img/tkt-logo-b.svg");
-      loginIcon.setAttribute("src","img/icon/myicon-black.png");
-    })
-    nav.addEventListener("mouseout",function(){
-      logoImg.setAttribute("src","img/tkt-logo-w.svg");
-      loginIcon.setAttribute("src","img/icon/myicon-white.png");
-    })
-    //collapse-remove 함수
-    let buttons = document.querySelectorAll('.nav-button button');
-    let targets = document.querySelectorAll('.multi-collapse');
-    buttons.forEach(function(b){
-      b.addEventListener('click',function (){
-        remove();
-      })
-    });
-    function remove(){
-      for(r=0; r<targets.length; r++){
-        targets[r].classList.remove('show');
-      }
-    };     
-    //carousel-indicator-hover함수
-    let pagers = document.querySelectorAll('.carousel-indicators button');
-    console.log(pagers);
-    for(p=0;p<pagers.length;p++){
-      pagers[p].addEventListener("mouseover",function(){
-        this.nextElementSibling.style.opacity="1";
-      });
 
-      pagers[p].addEventListener("mouseout",function(){
-        this.nextElementSibling.style.opacity="0";
-      
+    // useful function 
+    function delCName(target,clName){
+      target.forEach((targetAll)=>{
+        targetAll.classList.remove(clName);
       });
     }
+    function navBtnDark(){
+      navBtn.forEach((gnbBtns)=>{
+        gnbBtns.classList.add('text-dark');
+      });
+    }
+    function navBtnLight(){
+      navBtn.forEach((gnbBtns)=>{
+        gnbBtns.classList.remove('text-dark');
+      });
+    }
+    function logoDark(){
+      logoImg.setAttribute("src","img/tkt-logo-b.svg");
+      loginIcon.setAttribute("src","img/icon/myicon-black.png");
+    }
+    function logoLight(){
+      logoImg.setAttribute("src","img/tkt-logo-w.svg");
+      loginIcon.setAttribute("src","img/icon/myicon-white.png");
+    }
+
+    //nav-hover 함수
+    nav.addEventListener("mouseenter",function(){
+      logoDark();
+      navBtnDark();
+    })
+    nav.addEventListener("mouseleave",function(){
+      logoLight();
+      navBtnLight();
+      delCName(navBtn,'nav-on');
+      delCName(navDepth,'show');
+      if(window.scrollY > sec1Height){
+        logoDark();
+        navBtnDark();
+      }
+    })
+    
+    navBtn.forEach(function(b){
+      b.addEventListener('click',function (){
+        delCName(navBtn,'nav-on');
+        delCName(navDepth,'show');
+        b.classList.add('nav-on');
+      })
+    });
+
+    window.addEventListener('scroll',function(){
+      if(window.scrollY > sec1Height){
+        logoDark();
+        navBtnDark();
+      }else{
+        logoLight();
+        navBtnLight();
+      }
+    });
   </script>
 </body>
 </html>

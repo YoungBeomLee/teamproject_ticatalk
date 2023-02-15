@@ -13138,12 +13138,10 @@ nav .nav .dropdown-toggle::after {
   display: none;
 }
 
-nav:hover {
-  background-color: #f2f4f5b2;
-}
-
-nav:hover .nav-link {
-  --bs-nav-link-color: #333;
+nav .nav-on {
+  color: #7432E1 !important;
+  font-weight: 600 !important;
+  text-decoration: underline !important;
 }
 
 nav .card {
@@ -13162,7 +13160,9 @@ nav .card li a {
 }
 
 nav .card li a:hover {
-  color: #7432E1;
+  color: #7432E1 !important;
+  font-weight: 600 !important;
+  text-decoration: underline !important;
 }
 
 .sec1-main-wrap {
