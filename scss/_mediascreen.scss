@@ -1,0 +1,18 @@
+@media (max-width: 1400px) {
+  body{
+    // background: $primary;
+  }
+}
+@media (max-width: 990px) {
+  body{
+    // background: $secondary;
+  }
+  .sec1-main-wrap{
+    height: 90vh;
+  }
+}
+@media (max-width: 768px) {
+  body{
+    // background: $tertiary;
+  }
+}

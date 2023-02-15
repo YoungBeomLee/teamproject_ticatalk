@@ -6,255 +6,234 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css">
   <title>티캣톡 - 공연 보고 친구도 사귀자!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 </head>
 <body>
-  <section class="position-relative">
-    <!-- gnb -->
-    <nav class="container-fluid">
-      <div class="nav justify-content-evenly row-xxl" id="nav-tab">
-        <h1>
-          <a href="#"><img id ="logo" src="img/tkt-logo-w.svg" alt="logo" /></a>
-        </h1>
-        <!-- 1depth -->
-        <div class="nav-button d-flex justify-content-center pe-5 tkt-t5">
-          <button class="nav-link px-4 btn" type="button" id="nav-catalk-tab" data-bs-toggle="collapse" data-bs-target="#nav-catalk"  role="button" aria-expanded="false"  aria-controls="nav-catalk">캣톡</button>
-          <button class="nav-link px-4 btn" type="button" id="nav-search-tab" data-bs-toggle="collapse" data-bs-target="#nav-search" aria-expanded="false" aria-controls="nav-search">공연찾기</button>
-          <button class="nav-link px-4 btn" type="button" id="nav-ranking-tab" data-bs-toggle="collapse" data-bs-target="#nav-ranking" aria-expanded="false" aria-controls="nav-ranking">랭킹·추천</button>
-          <button class="nav-link px-4 btn" type="button" id="nav-promotion-tab" data-bs-toggle="collapse" data-bs-target="#nav-promotion" aria-expanded="false" aria-controls="nav-promotion">프로모션</button>
-          <button class="nav-link px-4 btn" type="button" id="nav-market-tab" data-bs-toggle="collapse" data-bs-target="#nav-market" aria-expanded="false" aria-controls="nav-market">티켓줍기</button>
-        </div>
-        <div class="align-self-center nav-item dropdown">
-          <a class="nav-link dropdown-toggle  ps-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img id = "login-icon" src="img/icon/myicon-white.png" alt="login" />
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">로그인</a></li>
-            <li><a class="dropdown-item" href="#">마이페이지</a></li>
-            <li><a class="dropdown-item" href="#">예매확인</a></li>
-            <li><a class="dropdown-item" href="#">이용안내</a></li>
-            <li><a class="dropdown-item" href="#">고객센터</a></li>
+  <!-- gnb -->
+  <nav class="container-fluid position-fixed py-4">
+    <div class="nav justify-content-between container" id="nav-tab">
+      <h1>
+        <a href="#"><img id ="logo" src="img/tkt-logo-w.svg" alt="logo" /></a>
+      </h1>
+      <!-- 1depth -->
+      <div class="nav-button d-flex justify-content-center pe-5 tkt-t5">
+        <button class="nav-link px-4 btn border-0 bg-transparent tkt-t5" type="button" id="nav-catalk-tab" data-bs-toggle="collapse" data-bs-target="#nav-catalk"  role="button" aria-expanded="false"  aria-controls="nav-catalk">캣톡</button>
+        <button class="nav-link px-4 btn border-0 bg-transparent tkt-t5" type="button" id="nav-search-tab" data-bs-toggle="collapse" data-bs-target="#nav-search" aria-expanded="false" aria-controls="nav-search">공연찾기</button>
+        <button class="nav-link px-4 btn border-0 bg-transparent tkt-t5" type="button" id="nav-ranking-tab" data-bs-toggle="collapse" data-bs-target="#nav-ranking" aria-expanded="false" aria-controls="nav-ranking">랭킹·추천</button>
+        <button class="nav-link px-4 btn border-0 bg-transparent tkt-t5" type="button" id="nav-promotion-tab" data-bs-toggle="collapse" data-bs-target="#nav-promotion" aria-expanded="false" aria-controls="nav-promotion">프로모션</button>
+        <button class="nav-link px-4 btn border-0 bg-transparent tkt-t5" type="button" id="nav-market-tab" data-bs-toggle="collapse" data-bs-target="#nav-market" aria-expanded="false" aria-controls="nav-market">티켓줍기</button>
+      </div>
+      <div class="align-self-center nav-item dropdown">
+        <a class="nav-link dropdown-toggle  ps-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img id = "login-icon" src="img/icon/myicon-white.png" alt="login" />
+        </a>
+        <ul class="dropdown-menu br-15">
+          <li><a class="dropdown-item" href="#">로그인</a></li>
+          <li><a class="dropdown-item" href="#">마이페이지</a></li>
+          <li><a class="dropdown-item" href="#">예매확인</a></li>
+          <li><a class="dropdown-item" href="#">이용안내</a></li>
+          <li><a class="dropdown-item" href="#">고객센터</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- 2depth -->
+    <div class="container-fluid px-0">
+      <div class="collapse multi-collapse" id="nav-catalk">
+        <div class="card card-body" >
+          <ul class="list-unstyled m-auto d-flex justify-content-center">
+            <li><a href="#">캣톡이란?</a></li>
+            <li><a href="#">캣톡데이터</a></li>
+            <li><a href="#">공연별</a></li>
+            <li><a href="#">지역별</a></li>
+            <li><a href="#">연령별</a></li>
           </ul>
         </div>
       </div>
-      <!-- 2depth -->
-      <div class="container-fluid px-0">
-        <div class="collapse multi-collapse" id="nav-catalk">
-          <div class="card card-body" >
-            <ul class="list-unstyled m-auto d-flex justify-content-center">
-              <li><a href="#">캣톡이란?</a></li>
-              <li><a href="#">캣톡데이터</a></li>
-              <li><a href="#">공연별</a></li>
-              <li><a href="#">지역별</a></li>
-              <li><a href="#">연령별</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="collapse multi-collapse" id="nav-search">
-          <div class="card card-body" >
-            <ul class="list-unstyled m-auto d-flex justify-content-center">
-              <li><a href="#">연극</a></li>
-              <li><a href="#">인디</a></li>
-              <li><a href="#">뮤지컬</a></li>
-              <li><a href="#">콘서트</a></li>
-              <li><a href="#">클래식</a></li>
-              <li><a href="#">아동·가족</a></li>
-              <li><a href="#">페스티벌</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="collapse multi-collapse" id="nav-ranking">
-          <div class="card card-body" >
-            <ul class="list-unstyled m-auto d-flex justify-content-center">
-              <li><a href="#">기간별 랭킹</a></li>
-              <li><a href="#">장르별 랭킹</a></li>
-              <li><a href="#">지역별 랭킹</a></li>
-              <li><a href="#">좋아요 랭킹</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="collapse multi-collapse" id="nav-promotion">
-          <div class="card card-body" >
-            <ul class="list-unstyled m-auto d-flex justify-content-center">
-              <li><a href="#">쿠폰</a></li>
-              <li><a href="#">출석체크</a></li>
-              <li><a href="#">리뷰이벤트</a></li>
-              <li><a href="#">진행중이벤트</a></li>
-              <li><a href="#">지난이벤트</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="collapse multi-collapse" id="nav-market">
-          <div class="card card-body" >
-            <ul class="list-unstyled m-auto d-flex justify-content-center">
-              <li><a href="#">취소표확인</a></li>
-              <li><a href="#">티켓 양도</a></li>
-              <li><a href="#">티켓 교환</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>  
-    </nav>
-    <!-- carousel -->
-    <div id="carouselExampleDark" class="container-fluid carousel carousel-dark slide sec1-carousel mgb-160">
-      <!-- carousel-indicator:pager -->
-      <div class="carousel-indicators container-sm">
-        <div class="row">
-          <div class="col-xxl-2 col-md-4 col-sm-6">
-            <img src="img/icon/number-square-1.png" alt="" />
-            <label for="sec1-slide-btn1">
-              <img src="img/poster/sec1/sec1-jeans-kopis.jpg" alt="" />
-              <button type="button" id="sec1-slide-btn1" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" aria-current="true" class="active" aria-label="Slide 1">
-              </button>
-              <div class="slide-btn-text position-absolute text-center">
-                <p>가재 20주년 콘서트</p>
-                <p>이보다 더 극적일 수는 없다.</p>
-                <p>2023.02.10~2023.02.15</p>
-              </div>
-              <p class="text-center tkt-t6 pt-2">가재20주년 콘서트</p>
-            </label>
-          </div>
-          <div class="col-xxl-2 col-md-4 col-sm-6">
-            <img src="img/icon/number-square-2.png" alt="" />
-            <label for="sec1-slide-btn2">
-              <img src="img/poster/sec1/sec1-amusesound-kopis.png" alt="" />
-              <button type="button" id="sec1-slide-btn2" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <div class="slide-btn-text position-absolute text-center">
-                <p>가재 20주년 콘서트</p>
-                <p>이보다 더 극적일 수는 없다.</p>
-                <p>2023.02.10~2023.02.15</p>
-              </div>
-              <p class="text-center tkt-t6 pt-2">가재20주년 콘서트</p>
-            </label>
-          </div>
-          <div class="col-xxl-2 col-md-4 col-sm-6">
-            <img src="img/icon//number-square-3.png" alt="" />
-            <label for="sec1-slide-btn3">
-              <img src="img/poster/sec1/sec1-cafenight-kopis.gif" alt="" />
-              <button type="button" id="sec1-slide-btn3" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <div class="slide-btn-text position-absolute text-center">
-                <p>가재 20주년 콘서트</p>
-                <p>이보다 더 극적일 수는 없다.</p>
-                <p>2023.02.10~2023.02.15</p>
-              </div>
-              <p class="text-center tkt-t6 pt-2">가재20주년 콘서트</p>
-            </label>
-          </div>
-          <div class="col-xxl-2 col-md-4 col-sm-6">
-            <img src="img/icon/number-square-4.png" alt="" />
-            <label for="sec1-slide-btn4">
-              <img src="img/poster/sec1/sec1-hisaishijo-kopis.gif" alt="" />
-              <button type="button" id="sec1-slide-btn4" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <div class="slide-btn-text position-absolute text-center">
-                <p>가재 20주년 콘서트</p>
-                <p>이보다 더 극적일 수는 없다.</p>
-                <p>2023.02.10~2023.02.15</p>
-              </div>
-              <p class="text-center tkt-t6 pt-2">가재20주년 콘서트</p>
-            </label>
-          </div>
-          <div class="col-xxl-2 col-md-4 col-sm-6">
-            <img src="img/icon/number-square-5.png" alt="" />
-            <label for="sec1-slide-btn5">
-              <img src="img/poster/sec1/sec1-nextnormal-kopis.jpg" alt="" />
-              <button type="button" id="sec1-slide-btn5" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
-              <div class="slide-btn-text position-absolute text-center">
-                <p>가재 20주년 콘서트</p>
-                <p>이보다 더 극적일 수는 없다.</p>
-                <p>2023.02.10~2023.02.15</p>
-              </div>
-              <p class="text-center tkt-t6 pt-2">가재20주년 콘서트</p>
-            </label>
-          </div>
-          <div class="col-xxl-2 col-md-4 col-sm-6">
-            <img src="img/icon/number-square-6.png" alt="" />
-            <label for="sec1-slide-btn6">
-              <img src="img/poster/sec1/sec1-matinee-kopis.gif" alt="" />
-              <button type="button" id="sec1-slide-btn6" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
-              <div class="slide-btn-text position-absolute text-center">
-                <p>가재 20주년 콘서트</p>
-                <p>이보다 더 극적일 수는 없다.</p>
-                <p>2023.02.10~2023.02.15</p>
-              </div>
-              <p class="text-center tkt-t6 pt-2">가재20주년 콘서트</p>
-            </label>
-          </div>
+      <div class="collapse multi-collapse" id="nav-search">
+        <div class="card card-body" >
+          <ul class="list-unstyled m-auto d-flex justify-content-center">
+            <li><a href="#">연극</a></li>
+            <li><a href="#">인디</a></li>
+            <li><a href="#">뮤지컬</a></li>
+            <li><a href="#">콘서트</a></li>
+            <li><a href="#">클래식</a></li>
+            <li><a href="#">아동·가족</a></li>
+            <li><a href="#">페스티벌</a></li>
+          </ul>
         </div>
       </div>
-      <!-- carousel-slide -->
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img src="img/poster/sec1/sec1-main-test.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block text-lgray">
-            <h5 class="tkt-t5">티켓톡 랭킹</h5>
-            <p class="tkt-h1">가재 20주년 콘서트</p>
-            <p class="tkt-t6">2023.02.21~2023.02.26</p>
-            <p class="tkt-t6">올림픽 공원 내 올림픽홀</p>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="img/poster/sec1/sec1-main-test.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block text-lgray">
-            <h5 class="tkt-t5">티켓톡 랭킹</h5>
-            <p class="tkt-h1">가재 20주년 콘서트</p>
-            <p class="tkt-t6">2023.02.21~2023.02.26</p>
-            <p class="tkt-t6">올림픽 공원 내 올림픽홀</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="img/poster/sec1/sec1-main-test.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block text-lgray">
-            <h5 class="tkt-t5">티켓톡 랭킹</h5>
-            <p class="tkt-h1">가재 20주년 콘서트</p>
-            <p class="tkt-t6">2023.02.21~2023.02.26</p>
-            <p class="tkt-t6">올림픽 공원 내 올림픽홀</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="img/poster/sec1/sec1-main-test.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block text-lgray">
-            <h5 class="tkt-t5">티켓톡 랭킹</h5>
-            <p class="tkt-h1">가재 20주년 콘서트</p>
-            <p class="tkt-t6">2023.02.21~2023.02.26</p>
-            <p class="tkt-t6">올림픽 공원 내 올림픽홀</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="img/poster/sec1/sec1-main-test.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block text-lgray">
-            <h5 class="tkt-t5">티켓톡 랭킹</h5>
-            <p class="tkt-h1">가재 20주년 콘서트</p>
-            <p class="tkt-t6">2023.02.21~2023.02.26</p>
-            <p class="tkt-t6">올림픽 공원 내 올림픽홀</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="img/poster/sec1/sec1-main-test.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block text-lgray">
-            <h5 class="tkt-t5">티켓톡 랭킹</h5>
-            <p class="tkt-h1">가재 20주년 콘서트</p>
-            <p class="tkt-t6">2023.02.21~2023.02.26</p>
-            <p class="tkt-t6">올림픽 공원 내 올림픽홀</p>
-          </div>
+      <div class="collapse multi-collapse" id="nav-ranking">
+        <div class="card card-body" >
+          <ul class="list-unstyled m-auto d-flex justify-content-center">
+            <li><a href="#">기간별 랭킹</a></li>
+            <li><a href="#">장르별 랭킹</a></li>
+            <li><a href="#">지역별 랭킹</a></li>
+            <li><a href="#">좋아요 랭킹</a></li>
+          </ul>
         </div>
       </div>
-      <!-- carousel-prev/next -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      <div class="collapse multi-collapse" id="nav-promotion">
+        <div class="card card-body" >
+          <ul class="list-unstyled m-auto d-flex justify-content-center">
+            <li><a href="#">쿠폰</a></li>
+            <li><a href="#">출석체크</a></li>
+            <li><a href="#">리뷰이벤트</a></li>
+            <li><a href="#">진행중이벤트</a></li>
+            <li><a href="#">지난이벤트</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="collapse multi-collapse" id="nav-market">
+        <div class="card card-body" >
+          <ul class="list-unstyled m-auto d-flex justify-content-center">
+            <li><a href="#">취소표확인</a></li>
+            <li><a href="#">티켓 양도</a></li>
+            <li><a href="#">티켓 교환</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>  
+  </nav>
+  <section class="sec1-main-wrap position-relative mgb-160">
+    <div class="sec1-main-inner">
+      <div class="sec1-contents container-sm container-md container-xxl position-relative w-100 h-100 p-0">
+        <div class="sec1-maincon-info position-absolute start-0">
+          <h3 class="tkt-t5 text-light">티캣톡 랭킹</h3>
+          <p class="tkt-h1 text-light">가재 20주년 콘서트</p>
+          <p class="tkt-t6 text-light">2023.02.21~2023.02.26</p>
+          <p class="tkt-t6 text-light">올림픽 공원 내 올림픽홀</p>
+        </div>
+      </div>
+      <div class="swiper mySwiper sec1-mainslide-wrap container-sm container-md container-xxl position-absolute start-0">
+        <div class="swiper-wrapper sec1-mainslide-inner">
+          <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
+            <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213252_230213_142210.jpg" class="card-img img img-fluid br-15" alt="">
+              <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                <span class="sec1-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">
+                  하프, 꽃 그리고 캔들<br>2023.03.05(일)<br>관람시간 120분<br>논현동 247-13
+                </span>
+              </a>
+            </div>
+            <a href="#" class="sec1-main-slide-text tkt-t6 text-dark">하프, 꽃 그리고 캔들</a>
+          </div>
+          <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
+            <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213198_230213_111425.jpg" class="card-img img img-fluid br-15" alt="">
+              <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">
+                  청춘 愛 오후(일)<br>2023.02.14(화)<br>관람시간 120분<br>대학로 드림시어터 소극장
+                </span>
+              </a>
+            </div>
+            <a href="#" class="sec1-main-slide-text tkt-t6 text-dark">청춘 愛 오후(일)</a>
+          </div>
+          <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
+            <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF212662_230206_105933.jpg" class="card-img img img-fluid br-15" alt="">
+              <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">
+                  쿠오레 정기연주회<br>2023.02.14(화)<br>관람시간 120분<br>SCC홀
+                </span>
+              </a>
+            </div>
+            <a href="#" class="sec1-main-slide-text tkt-t6 text-dark">쿠오레 정기연주회</a>
+          </div>
+          <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
+            <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF212660_230206_105109.jpg" class="card-img img img-fluid br-15" alt="">
+              <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">
+                  돼지바이러스<br>2023.02.19(일)<br>관람시간 120분<br>대학로 스타 스테이지
+                </span>
+              </a>
+            </div>
+            <a href="#" class="sec1-main-slide-text tkt-t6 text-dark">돼지바이러스</a>
+          </div>
+          <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
+            <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF212621_230203_132630.png" class="card-img img img-fluid br-15" alt="">
+              <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">
+                  SWEET TALK<br>2023.02.14(화)<br>관람시간 120분<br>롯데 콘서트홀
+                </span>
+              </a>
+            </div>
+            <a href="#" class="sec1-main-slide-text tkt-t6 text-dark">SWEET TALK</a>
+          </div>
+          <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
+            <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF211655_230201_104421.jpg" class="card-img img img-fluid br-15" alt="">
+              <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">
+                  청바지<br>2023.03.26(일)<br>관람시간 120분<br>룸씨어터
+                </span>
+              </a>
+            </div>
+            <a href="#" class="sec1-main-slide-text tkt-t6 text-dark">청바지</a>
+          </div>
+          <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
+            <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF209529_230110_094630.gif" class="card-img img img-fluid br-15" alt="">
+              <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">
+                  앤(ANNE)<br>2023.04.09(일)<br>관람시간 120분<br>예그린씨어터
+                </span>
+              </a>
+            </div>
+            <a href="#" class="sec1-main-slide-text tkt-t6 text-dark">앤(ANNE)</a>
+            
+          </div>
+          <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
+            <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213186_230213_104033.jpg" class="card-img img img-fluid br-15" alt="">
+              <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">
+                  black rain<br>2023.03.31(수)<br>관람시간 120분<br>한국문화의집 코우스
+                </span>
+              </a>
+            </div>
+            <a href="#" class="sec1-main-slide-text tkt-t6 text-dark">black rain</a>
+            
+          </div>
+          <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
+            <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213251_230213_141757.jfif" class="card-img img img-fluid br-15" alt="">
+              <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">
+                  스무살 콘서트"동창회"<br>2023.02.25(토)<br>관람시간 120분<br>벨로주 홍대
+                </span>
+              </a>
+            </div>
+            <a href="#" class="sec1-main-slide-text tkt-t6 text-dark">스무살 콘서트"동창회"</a>
+            
+          </div>
+          <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
+            <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF206120_230104_093710.gif" class="card-img img img-fluid br-15" alt="">
+              <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">
+                  빵야<br>2023.02.26(일)<br>관람시간 120분<br>LG아트센터
+                </span>
+              </a>
+            </div>
+            <a href="#" class="sec1-main-slide-text tkt-t6 text-dark">빵야</a>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="swiper-button-next sec1-main-slide-next"></div>
+      <div class="swiper-button-prev sec1-main-slide-prev"></div>
     </div>
   </section>
   <!-- section1 nh -->
 
-  <section id="content" class="container-sm container-md container-xxl p-0 mgb-160">
-    <div class="row p-0">
+  <section id="content" class="mgb-160">
+    <div class="row m-auto p-0 container-sm container-md container-xxl">
       <div class="col-12 col-sm-12 col-md-2 col-xxl-2 p-0">
-        <img src="../img/icon/bookmark.png" alt="" class="">
-        <h2 class="sec2-fav-title text-dark tkt-h3 word-break">자주 찾는 서비스</h2>
+        <img src="img/icon/bookmark.png" alt="" class="tkt-w35 tkt-h35 mb-2">
+        <h2 class="sec2-fav-title text-dark tkt-h3 word-break">자주 찾는<br>서비스</h2>
       </div>
       <div class="col-12 col-sm-12 col-md-10 col-xxl-10 p-0">
         <div class="row align-items-center h-100">
@@ -313,13 +292,13 @@
   </section>
   <!-- section2 sw -->
 
-  <section class="sec3-ticketopen mx-auto mgb-160">
-    <div class="sec3-container container-fluid container-xxl container-md container-sm">
+  <section class="sec3-ticketopen mgb-160">
+    <div class="sec3-container p-0 container-fluid container-xxl container-md container-sm">
       <div class="ticketopen-wrap">
         <!--타이틀 부분-->
         <div class="title col text-left mgb-25">
-          <img src="img/icon/ticket.png" alt="">
-          <h3 class="tkt-h3 text-dark">티켓 오픈</h3>
+          <img src="img/icon/ticket.png" class="tkt-w35 tkt-h35 mt-1 me-2" alt="">
+          <h2 class="tkt-h3 text-dark">티켓 오픈</h2>
         </div>
       </div>
       <div class="ticketopen-contents row">
@@ -327,50 +306,50 @@
         <div class="contentbox col-2 col-xxl-2 col-md-4 col-sm-6  ">
           <div class="imgbox mx-sm-auto">
             <div class="d-day"><p>d-1</p></div>
-            <img src="img/poster/sec3/sec3-jejufestival-kopis.PNG" class="img-fluid" alt="" />
+            <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF210105_230120_114938.gif" class="img-fluid" alt="" />
           </div>
-          <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">2023.01.23(월)14:00</p>
-          <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+          <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">2023.02.19(일)14:00</p>
+          <p class="text-dark text-center mx-sm-auto">고스트메모리</p>
         </div>
         <div class="contentbox col-2 col-xxl-2 col-md-4 col-sm-6">
           <div class="imgbox mx-sm-auto">
             <div class="d-day"><p>d-1</p></div>
-            <img src="img/poster/sec3/sec3-ozmagician-kopis.gif" class="img-fluid" alt="" />
+            <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213198_230213_111425.jpg" class="img-fluid" alt="" />
           </div>
-          <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">2023.01.23(월)14:00</p>
-          <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+          <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">2023.02.19(일)14:00</p>
+          <p class="text-dark text-center mx-sm-auto">청춘 愛 오후</p>
         </div>
         <div class="contentbox col-2 col-xxl-2 col-md-4 col-sm-6">
           <div class="imgbox mx-sm-auto">
             <div class="d-day"><p>d-1</p></div>
-            <img src="img/poster/sec3/sec3-remi-kopis.gif" class="img-fluid" alt="" />
+            <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF203891_221209_092426.gif" class="img-fluid" alt="" />
           </div>
-          <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">2023.01.23(월)14:00</p>
-          <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+          <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">2023.02.18(토)14:00</p>
+          <p class="text-dark text-center mx-sm-auto">정준일 소극장 콘서트</p>
         </div>
         <div class="contentbox col-2 col-xxl-2 col-md-4 col-sm-6">
           <div class="imgbox mx-sm-auto">
             <div class="d-day"><p>d-1</p></div>
-            <img src="img/poster/sec3/sec3-theoriginal-kopis.gif" class="img-fluid" alt="" />
+            <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213245_230213_135930.gif" class="img-fluid" alt="" />
           </div>
-          <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">2023.01.23(월)14:00</p>
-          <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+          <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">2023.02.25(토)14:00</p>
+          <p class="text-dark text-center mx-sm-auto">토요키즈클래식</p>
         </div>
         <div class="contentbox col-2 col-xxl-2 col-md-4 col-sm-6">
           <div class="imgbox mx-sm-auto">
             <div class="d-day"><p>d-1</p></div>
-            <img src="img/poster/sec3/sec3-thronapple-kopis.gif" class="img-fluid" alt="" />
+            <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213217_230213_115555.png" class="img-fluid" alt="" />
           </div>
-          <p class="text-dark text-center mt-3 mb-1  mx-sm-auto">2023.01.23(월)14:00</p>
-          <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+          <p class="text-dark text-center mt-3 mb-1  mx-sm-auto">2023.02.26(일)14:00</p>
+          <p class="text-dark text-center mx-sm-auto">HOWEVER CONCERT</p>
         </div>
         <div class="contentbox col-2 col-xxl-2 col-md-4 col-sm-6">
           <div class="imgbox mx-sm-auto">
             <div class="d-day"><p>d-1</p></div>
-            <img src="img/poster/sec3/sec3-remi-kopis.gif" class="img-fluid" alt="" />
+            <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF211599_230131_093534.jpg" class="img-fluid" alt="" />
           </div>
-          <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">2023.01.23(월)14:00</p>
-          <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+          <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">2023.03.05(일)14:00</p>
+          <p class="text-dark text-center mx-sm-auto">플란다스의 개</p>
         </div>
       </div>
     </div>
@@ -381,26 +360,26 @@
     <div class="sec4-container container-fluid p-0">
       <h2 class="sec4-title tkt-h3 mgb-25 text-dark d-flex align-items-center"><span class="d-inline-block tkt-w35 tkt-h35 me-2"></span>캣톡 데이터</h2>
       <div class="sec4-content row">
-        <div class="col-12 col-sm-12 col-md-4 col-xl-3">
+        <div class="col-12 col-sm-12 col-md-4 col-xxl-3">
           <div class="sec4-big-card card br-15 bg-tertiary overflow-hidden border-0">
             <a href="#" class="sec4-big-img-box br-15 overflow-hidden">
-              <img src="img/poster/sec1/sec1-hisaishijo-kopis.gif" class="sec4-big-poster card-img-top" alt="...">
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF209403_230106_095241.gif" class="sec4-big-poster card-img-top" alt="...">
             </a>
             <div class="card-body bg-tertiary text-center">
               <a href="#" class="sec4-big-title card-text text-primary tkt-t6">이번 주 가장 캣톡이 많은 공연</a>
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-12 col-md-8 col-xl-9">
+        <div class="col-12 col-sm-12 col-md-8 col-xxl-9">
           <div class="row d-flex justify-content-between align-items-end mgb-25">
-            <p class="sec4-besttalk-title tkt-h4 text-dark w-auto m-0">광명 심포니 오케스트라 정기 연주회 - 새로운 시작 [개벽]</p>
+            <p class="sec4-besttalk-title tkt-h4 text-dark w-auto m-0">아마데우스</p>
             <a href="#" class="w-auto tkt-t6">
               등록된 캣톡 52 개
               <img src="img/icon/right-p.png" class="tkt-w18" alt="">
             </a>
           </div>
           <div class="row mgb-25">
-            <div class="col-12 col-sm-12 col-md-4 col-xl-4">
+            <div class="col-12 col-sm-12 col-md-4 col-xxl-4">
               <div class="card br-15 border-0 bg-light">
                 <div class="card-body">
                   <div class="mgb-25 d-flex justify-content-between">
@@ -438,13 +417,13 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-4 col-xl-4">
+            <div class="col-12 col-sm-12 col-md-4 col-xxl-4">
               <div class="card br-15 border-0 bg-light">
                 <div class="card-body">
                   <div class="mgb-25 d-flex justify-content-between">
                     <div class="sec4-talk-titlebox w-75">
-                      <a href="#" class="sec4-talk-title d-block mb-2 text-dark card-title tkt-t6 text-truncate">정문에서 무료나눔 합니다</a>
-                      <p class="card-subtitle mb-2 text-gray tkt-sm">톡장 김와플</p>
+                      <a href="#" class="sec4-talk-title d-block mb-2 text-dark card-title tkt-t6 text-truncate">끝나고 뒷풀이</a>
+                      <p class="card-subtitle mb-2 text-gray tkt-sm">톡장 정대만</p>
                     </div>
                     <a href="#" class="sec4-like-btn tkt-w35 p-0 position-relative">
                       <img src="img/icon/heart-line.png" class="sec4-like-line w-100 position-absolute" alt="">
@@ -458,9 +437,9 @@
                         &nbsp;3 / 4
                       </button>
                       <ul class="dropdown-menu bg-tertiary border-0 br-15 tkt-w18">
-                        <li><a class="dropdown-item" href="#">김와플</a></li>
-                        <li><a class="dropdown-item" href="#">박박이</a></li>
-                        <li><a class="dropdown-item" href="#">김밥</a></li>
+                        <li><a class="dropdown-item" href="#">정대만</a></li>
+                        <li><a class="dropdown-item" href="#">송태섭</a></li>
+                        <li><a class="dropdown-item" href="#">강백호</a></li>
                       </ul>
                     </div>
                     <button type="button" class="sec4-join-btn btn w-auto br-15 bg-tertiary d-flex justify-content-between align-items-center">
@@ -476,13 +455,13 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-4 col-xl-4">
+            <div class="col-12 col-sm-12 col-md-4 col-xxl-4">
               <div class="card br-15 border-0 bg-light">
                 <div class="card-body">
                   <div class="mgb-25 d-flex justify-content-between">
                     <div class="sec4-talk-titlebox w-75">
-                      <a href="#" class="sec4-talk-title d-block mb-2 text-dark card-title tkt-t6 text-truncate">정문에서 무료나눔 합니다</a>
-                      <p class="card-subtitle mb-2 text-gray tkt-sm">톡장 김와플</p>
+                      <a href="#" class="sec4-talk-title d-block mb-2 text-dark card-title tkt-t6 text-truncate">마포에서 같이 이동하실 분</a>
+                      <p class="card-subtitle mb-2 text-gray tkt-sm">톡장 케로피</p>
                     </div>
                     <a href="#" class="sec4-like-btn tkt-w35 p-0 position-relative">
                       <img src="img/icon/heart-line.png" class="sec4-like-line w-100 position-absolute" alt="">
@@ -496,9 +475,9 @@
                         &nbsp;3 / 4
                       </button>
                       <ul class="dropdown-menu bg-tertiary border-0 br-15 tkt-w18">
-                        <li><a class="dropdown-item" href="#">김와플</a></li>
-                        <li><a class="dropdown-item" href="#">박박이</a></li>
-                        <li><a class="dropdown-item" href="#">김밥</a></li>
+                        <li><a class="dropdown-item" href="#">케로피</a></li>
+                        <li><a class="dropdown-item" href="#">멜로디</a></li>
+                        <li><a class="dropdown-item" href="#">뿅</a></li>
                       </ul>
                     </div>
                     <button type="button" class="sec4-join-btn btn w-auto br-15 bg-tertiary d-flex justify-content-between align-items-center">
@@ -517,33 +496,33 @@
           </div>
           <div class="row mgb-25 border-bottom border-lgray mx-1"></div>
           <div class="row">
-            <div class="col-12 col-sm-12 col-md-4 col-xl-4">
+            <div class="col-12 col-sm-12 col-md-4 col-xxl-4">
               <div class="sec4-mini-card card bg-light border-0 br-15 overflow-hidden">
                 <a href="#" class="sec4-img-box br-15 overflow-hidden sec4-img-box1 w-100 position-relative">
                   <div class="sec4-img-blur br-15 overflow-hidden position-absolute top-0 w-100 h-100"></div>                  
-                  <img src="img/poster/sec4/sec4-feblight-kopis.jpg" class="sec4-img-poster card-img-top br-15 position-absolute top-50 start-50" alt="...">
+                  <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF210026_230119_114754.gif" class="sec4-img-poster card-img-top br-15 position-absolute top-50 start-50" alt="...">
                 </a>
                 <div class="card-body text-center">
                   <a href="#" class="sec4-mini-title card-link text-primary">[가장 빨리] 캣톡이 생성된 공연</a>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-4 col-xl-4">
+            <div class="col-12 col-sm-12 col-md-4 col-xxl-4">
               <div class="sec4-mini-card card bg-light border-0 br-15 overflow-hidden">
                 <a href="#" class="sec4-img-box br-15 overflow-hidden sec4-img-box2 w-100 position-relative">
                   <div class="sec4-img-blur br-15 overflow-hidden position-absolute top-0 w-100 h-100"></div>                  
-                  <img src="img/poster/sec4/sec4-otium-kopis.jpg" class="sec4-img-poster card-img-top br-15 position-absolute top-50 start-50" alt="...">
+                  <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF211503_230127_143720.gif" class="sec4-img-poster card-img-top br-15 position-absolute top-50 start-50" alt="...">
                 </a>
                 <div class="card-body text-center">
                   <a href="#" class="sec4-mini-title card-link text-primary">[서울] 에서 가장 캣톡이 많은 공연</a>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-4 col-xl-4">
+            <div class="col-12 col-sm-12 col-md-4 col-xxl-4">
               <div class="sec4-mini-card card bg-light border-0 br-15 overflow-hidden">
                 <a href="#" class="sec4-img-box br-15 overflow-hidden sec4-img-box3 w-100 position-relative">
                   <div class="sec4-img-blur br-15 overflow-hidden position-absolute top-0 w-100 h-100"></div>                  
-                  <img src="img/poster/sec4/sec4-snowday-kopis.gif" class="sec4-img-poster card-img-top br-15 position-absolute top-50 start-50" alt="...">
+                  <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF194359_220711_114119.jpg" class="sec4-img-poster card-img-top br-15 position-absolute top-50 start-50" alt="...">
                 </a>
                 <div class="card-body text-center">
                   <a href="#" class="sec4-mini-title card-link text-primary">[10대 미만] 에서 인기인 공연</a>
@@ -565,32 +544,32 @@
       <div class="ticketsearch-wrap">
         <!--타이틀 부분-->
         <div class="title text-left mgb-25 d-flex align-items-center">
-          <img src="../img/icon/search-p.png" class="d-inline-block tkt-w35 tkt-h35 me-2" alt="" />
+          <img src="img/icon/search-p.png" class="d-inline-block tkt-w35 tkt-h35 me-2" alt="">
           <h2 class="tkt-h3 m-0 text-dark">통합 검색</h2>
         </div>
       </div>
       <div class="ticketsearch-contents br-15 bg-light p-5">
         <ul class="search list-unstyled d-inline-block w-100 mgb-25">
           <li class="float-start me-4">
-            <a href="#" class="nav-link tkt-t5 text-dark search-nav-on">전체</a>
+            <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark search-nav-on">전체</a>
           </li>
           <li class="float-start me-4">
-            <a href="#" class="nav-link tkt-t5 text-dark">뮤지컬</a>
+            <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark">뮤지컬</a>
           </li>
           <li class="float-start me-4">
-            <a href="#" class="nav-link tkt-t5 text-dark">연극</a>
+            <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark">연극</a>
           </li>
           <li class="float-start me-4">
-            <a href="#" class="nav-link tkt-t5 text-dark">콘서트</a>
+            <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark">콘서트</a>
           </li>
           <li class="float-start me-4">
-            <a href="#" class="nav-link tkt-t5 text-dark">클래식</a>
+            <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark">클래식</a>
           </li>
           <li class="float-start me-4">
-            <a href="#" class="nav-link tkt-t5 text-dark">가족.아동</a>
+            <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark">가족.아동</a>
           </li>
           <li class="float-start me-4">
-            <a href="#" class="nav-link tkt-t5 text-dark">뮤직페스티벌</a>
+            <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark">뮤직페스티벌</a>
           </li>
         </ul>
         <div class="search-detail d-inline-block w-100 mgb-25">
@@ -599,14 +578,14 @@
               지역
             </button>
             <ul class="search-detail-list dropdown-menu">
-              <li><a class="dropdown-item" href="#">전체</a></li>
-              <li><a class="dropdown-item" href="#">서울</a></li>
-              <li><a class="dropdown-item" href="#">경기도</a></li>
-              <li><a class="dropdown-item" href="#">강원도</a></li>
-              <li><a class="dropdown-item" href="#">충청도</a></li>
-              <li><a class="dropdown-item" href="#">전라도</a></li>
-              <li><a class="dropdown-item" href="#">경상도</a></li>
-              <li><a class="dropdown-item" href="#">제주</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">전체</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">서울</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">경기도</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">강원도</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">충청도</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">전라도</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">경상도</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">제주</a></li>
             </ul>
           </div>
           <div class="dropdown float-start me-4">
@@ -614,11 +593,11 @@
               기간
             </button>
             <ul class="search-detail-list dropdown-menu">
-              <li><a class="dropdown-item" href="#">전체</a></li>
-              <li><a class="dropdown-item" href="#">일간</a></li>
-              <li><a class="dropdown-item" href="#">월간</a></li>
-              <li><a class="dropdown-item" href="#">주간</a></li>
-              <li><a class="dropdown-item" href="#">주말</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">전체</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">일간</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">월간</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">주간</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">주말</a></li>
             </ul>
           </div>
           <div class="dropdown float-start me-4">
@@ -634,102 +613,85 @@
               공연 상태
             </button>
             <ul class="search-detail-list dropdown-menu">
-              <li><a class="dropdown-item" href="#">전체</a></li>
-              <li><a class="dropdown-item" href="#">공연중/공연예정</a></li>
-              <li><a class="dropdown-item" href="#">공연중</a></li>
-              <li><a class="dropdown-item" href="#">공연예정</a></li>
-              <li><a class="dropdown-item" href="#">종료/취소</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">전체</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">공연중/공연예정</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">공연중</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">공연예정</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">종료/취소</a></li>
             </ul>
           </div>
-
-          <!-- <div class="search-detail">
-            <div class="search-detail conatainer list-unstyled">
-              <button class="border-0 rounded-3 m-1 p-2 bg-tertiary">
-                지역
-              </button>
-              <button class="border-0 rounded-3 m-1 p-2 bg-tertiary">
-                기간
-              </button>
-              <button class="border-0 rounded-3 m-1 p-2 bg-tertiary">
-                날짜
-              </button>
-              <button class="border-0 rounded-3 pr-5 m-1 p-2 bg-tertiary">
-                공연상태
-              </button>
-            </div>
-          </div> -->
         </div>
         <div class="search-result row d-flex justify-content-between">
-          <div class="text-center col-6 col-sm-6 col-md-4 col-xl-2">
+          <div class="text-center col-6 col-sm-6 col-md-4 col-xxl-2">
             <div class="card bg-transparent border-0 search-poster">
-              <img src="../img/poster/sec5/sec5-result01.jpg" class="card-img img img-fluid br-15" alt="">
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213194_230213_110545.jpg" class="card-img img img-fluid br-15" alt="">
               <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
                 <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
               </a>
             </div>
             <div class="sec5-result-text">
-              <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1">2023.01.23(월)14:00</a>
-              <a href="#" class="d-inline-block tkt-t6 text-dark">콘서트이름</a>
+              <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1">2023.02.19(일)14:00</a>
+              <a href="#" class="d-inline-block tkt-t6 text-dark">K-BLSSx월담</a>
             </div>
           </div>
-          <div class="text-center col-6 col-sm-6 col-md-4 col-xl-2">
+          <div class="text-center col-6 col-sm-6 col-md-4 col-xxl-2">
             <div class="card bg-transparent border-0 search-poster">
-              <img src="../img/poster/sec5/sec5-result02.jpg" class="card-img img img-fluid br-15" alt="">
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF202671_221122_094142.jpg" class="card-img img img-fluid br-15" alt="">
               <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
                 <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
               </a>
             </div>
             <div class="sec5-result-text">
-              <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1">2023.01.23(월)14:00</a>
-              <a href="#" class="d-inline-block tkt-t6 text-dark">콘서트이름</a>
+              <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1">2022.11.11(월)14:00</a>
+              <a href="#" class="d-inline-block tkt-t6 text-dark">조이의 다락방</a>
             </div>
           </div>
-          <div class="text-center col-6 col-sm-6 col-md-4 col-xl-2">
+          <div class="text-center col-6 col-sm-6 col-md-4 col-xxl-2">
             <div class="card bg-transparent border-0 search-poster">
-              <img src="../img/poster/sec5/sec5-result03.gif" class="card-img img img-fluid br-15" alt="">
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF204871_221228_093225.gif" class="card-img img img-fluid br-15" alt="">
               <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
                 <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
               </a>
             </div>
             <div class="sec5-result-text">
-              <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1">2023.01.23(월)14:00</a>
-              <a href="#" class="d-inline-block tkt-t6 text-dark">콘서트이름</a>
+              <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1">2023.04.02(일)14:00</a>
+              <a href="#" class="d-inline-block tkt-t6 text-dark">뷰티풀선데이</a>
             </div>
           </div>
-          <div class="text-center col-6 col-sm-6 col-md-4 col-xl-2">
+          <div class="text-center col-6 col-sm-6 col-md-4 col-xxl-2">
             <div class="card bg-transparent border-0 search-poster">
-              <img src="../img/poster/sec5/sec5-result04.gif" class="card-img img img-fluid br-15" alt="">
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213222_230213_120313.png" class="card-img img img-fluid br-15" alt="">
               <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
                 <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
               </a>
             </div>
             <div class="sec5-result-text">
-              <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1">2023.01.23(월)14:00</a>
-              <a href="#" class="d-inline-block tkt-t6 text-dark">콘서트이름</a>
+              <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1">2023.02.22(수)14:00</a>
+              <a href="#" class="d-inline-block tkt-t6 text-dark">[우주라이브]현온콘서트</a>
             </div>
           </div>
-          <div class="text-center col-6 col-sm-6 col-md-4 col-xl-2">
+          <div class="text-center col-6 col-sm-6 col-md-4 col-xxl-2">
             <div class="card bg-transparent border-0 search-poster">
-              <img src="../img/poster/sec5/sec5-result05.jpg" class="card-img img img-fluid br-15" alt="">
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF209863_230117_105408.gif" class="card-img img img-fluid br-15" alt="">
               <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
                 <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
               </a>
             </div>
             <div class="sec5-result-text">
-              <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1">2023.01.23(월)14:00</a>
-              <a href="#" class="d-inline-block tkt-t6 text-dark">콘서트이름</a>
+              <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1">2023.04.30(일)14:00</a>
+              <a href="#" class="d-inline-block tkt-t6 text-dark">보이체크 인 더 다크</a>
             </div>
           </div>
-          <div class="text-center col-6 col-sm-6 col-md-4 col-xl-2">
+          <div class="text-center col-6 col-sm-6 col-md-4 col-xxl-2">
             <div class="card bg-transparent border-0 search-poster">
-              <img src="../img/poster/sec5/sec5-result05.jpg" class="card-img img img-fluid br-15" alt="">
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF209529_230110_094630.gif" class="card-img img img-fluid br-15" alt="">
               <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
                 <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
               </a>
             </div>
             <div class="sec5-result-text">
-              <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1">2023.01.23(월)14:00</a>
-              <a href="#" class="d-inline-block tkt-t6 text-dark">콘서트이름</a>
+              <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1">2023.04.09(일)14:00</a>
+              <a href="#" class="d-inline-block tkt-t6 text-dark">앤(ANNE)</a>
             </div>
           </div>
 
@@ -750,29 +712,29 @@
         <div class="footer-top-center col-6 row col-sm-6 col-md-5 border-start border-end border-lgray">
           <div class="footer-iconbox col-3 p-0 text-center">
             <a href="#" class="imgbox">
-              <img src="../img/icon/notice.png" alt="" class="common w-50 m-auto">
-              <img src="../img/icon/notice-p.png" alt=""  class="hover w-50 m-auto">
+              <img src="img/icon/notice.png" alt="" class="common w-50 m-auto">
+              <img src="img/icon/notice-p.png" alt=""  class="hover w-50 m-auto">
               <p class="footer-icon-text m-0 mt-2 tkt-t6 text-secondary">공지사항</p>
             </a>
           </div>
           <div class="footer-iconbox col-3 p-0 text-center">
             <a href="#" class="imgbox">
-              <img src="../img/icon/guide.png" alt="" class="common w-50 m-auto">
-              <img src="../img/icon/guide-p.png" alt=""  class="hover w-50 m-auto">
+              <img src="img/icon/guide.png" alt="" class="common w-50 m-auto">
+              <img src="img/icon/guide-p.png" alt=""  class="hover w-50 m-auto">
               <p class="footer-icon-text m-0 mt-2 tkt-t6 text-secondary">이용안내</p>
             </a>
           </div>
           <div class="footer-iconbox col-3 p-0 text-center">
             <a href="#" class="imgbox">
-              <img src="../img/icon/ear-s.png" alt="" class="common w-50 m-auto">
-              <img src="../img/icon/ear-p.png" alt=""  class="hover w-50 m-auto">
+              <img src="img/icon/ear-s.png" alt="" class="common w-50 m-auto">
+              <img src="img/icon/ear-p.png" alt=""  class="hover w-50 m-auto">
               <p class="footer-icon-text m-0 mt-2 tkt-t6 text-secondary">FAQ</p>
             </a>
           </div>
           <div class="footer-iconbox col-3 p-0 text-center">
             <a href="#" class="imgbox">
-              <img src="../img/icon/sellguide.png" alt="" class="common w-50 m-auto">
-              <img src="../img/icon/sellguide-p.png" alt="" class="hover w-50 m-auto">
+              <img src="img/icon/sellguide.png" alt="" class="common w-50 m-auto">
+              <img src="img/icon/sellguide-p.png" alt="" class="hover w-50 m-auto">
               <p class="footer-icon-text m-0 mt-2 tkt-t6 text-secondary">티켓판매<br>안내</p>
             </a>
           </div>
@@ -780,28 +742,27 @@
         <div class="footer-top-right col-6 row col-sm-6 col-md-4">
           <div class="footer-iconbox p-0 col-4 text-center">
             <a href="#" class="imgbox">
-              <img src="../img/icon/facebook.png" alt="" class="common w-50 m-auto">
-              <img src="../img/icon/facebook-p.png" alt="" class="hover w-50 m-auto">
+              <img src="img/icon/facebook.png" alt="" class="common w-50 m-auto">
+              <img src="img/icon/facebook-p.png" alt="" class="hover w-50 m-auto">
               <p class="footer-icon-text m-0 mt-2 tkt-t6 text-secondary">페이스북</p>
             </a>
           </div>
           <div class="footer-iconbox p-0 col-4 text-center">
             <a href="#" class="imgbox">
-              <img src="../img/icon/insta.png" alt="" class="common w-50 m-auto">
-              <img src="../img/icon/insta-p.png" alt="" class="hover w-50 m-auto">
+              <img src="img/icon/insta.png" alt="" class="common w-50 m-auto">
+              <img src="img/icon/insta-p.png" alt="" class="hover w-50 m-auto">
               <p class="footer-icon-text m-0 mt-2 tkt-t6 text-secondary">인스타그램</p>
             </a>
           </div>
           <div class="footer-iconbox p-0 col-4 text-center">
             <a href="#" class="imgbox">
-              <img src="../img/icon/kakao.png" alt="" class="common w-50 m-auto">
-              <img src="../img/icon/kakao-p.png" alt="" class="hover w-50 m-auto">
+              <img src="img/icon/kakao.png" alt="" class="common w-50 m-auto">
+              <img src="img/icon/kakao-p.png" alt="" class="hover w-50 m-auto">
               <p class="footer-icon-text m-0 mt-2 tkt-t6 text-secondary">카카오톡</p>
             </a>
           </div>
         </div>
       </div>
-      <!-- <div class="hr mt-5"></div> -->
       <div class="footer-middle container border-top border-bottom border-lgray py-3 mgb-55 p-0">
         <div class="footer-info">
           <ul class="footer-info-list text-white d-flex p-0 m-0">
@@ -838,7 +799,6 @@
           </ul>
         </div>
       </div>
-      <!-- <div class="hr"></div> -->
       <div class="footer-bottom container text-white mt-3 p-0">
         <p class="ticket-zoo tkt-t5 mgb-15"><b>티켓톡(주)</b></p>
         <p class="footer-adress mb-2 tkt-t6">서울 강남구 테헤란로5길24,장연빌딩/4층(장인빌딩) &nbsp;|&nbsp; 대표 OOO&nbsp; |&nbsp; 개인정보보호책임자 OOO &nbsp;|&nbsp; tiketalkhelp@tiketalk.com </p>
@@ -850,18 +810,40 @@
   <!-- footer yb -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 32,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        1400: {
+          slidesPerView: 5,
+        },
+        990: {
+          slidesPerView: 5,
+        },
+        768: {
+          slidesPerView: 3,
+        }
+      },
+    });
+  </script>
   <script>
     //nav-hover 함수
     let nav = document.querySelector('nav');
     let logoImg = document.querySelector('#logo');
     let loginIcon = document.querySelector('#login-icon');
     nav.addEventListener("mouseover",function(){
-      logoImg.setAttribute("src","../img/tkt-logo-b.svg");
-      loginIcon.setAttribute("src","../img/icon/myicon-black.png");
+      logoImg.setAttribute("src","img/tkt-logo-b.svg");
+      loginIcon.setAttribute("src","img/icon/myicon-black.png");
     })
     nav.addEventListener("mouseout",function(){
-      logoImg.setAttribute("src","../img/tkt-logo-w.svg");
-      loginIcon.setAttribute("src","../img/icon/myicon-white.png");
+      logoImg.setAttribute("src","img/tkt-logo-w.svg");
+      loginIcon.setAttribute("src","img/icon/myicon-white.png");
     })
     //collapse-remove 함수
     let buttons = document.querySelectorAll('.nav-button button');
