@@ -11618,8 +11618,10 @@ nav .card li a:hover {
   color: #7432E1;
   z-index: 10;
 }
-.sec1-mainslide-wrap .sec1-main-slide-box .sec1-main-slide-btn img {
-
+.sec1-mainslide-wrap .sec1-main-slide-box .sec1-main-slide-btn {
+  overflow: hidden;
+}
+.sec1-mainslide-wrap .sec1-main-slide-box .sec1-main-slide-btn > img {
   display: block;
   width: 100%;
   height: 100%;
@@ -11948,10 +11950,24 @@ iframe {
   padding: 0;
 }
 
+.search-poster-hover {
+  display: none;
+  background-color: rgba(116, 50, 225, 0.8);
+}
+
 .sec5-result-text:hover > a {
   font-weight: 600 !important;
   color: #7432E1 !important;
   text-decoration: underline !important;
+}
+
+.result5 {
+  width: 186px;
+  height: 285px;
+}
+.result5 img {
+  width: 186px;
+  height: 238px;
 }
 
 .footer-iconbox {
@@ -12034,6 +12050,23 @@ nav .card li a:hover {
   color: #7432E1;
 }
 
+.section1-catalk-info .catalk-info-container .catalk-info-wrap .button-wrap button {
+  border-radius: 25px;
+  border: none;
+  padding: 7px 0;
+}
+.section1-catalk-info .catalk-info-container .catalk-info-wrap .button-wrap button span {
+  position: relative;
+  top: -2px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.section2-catalk-data .catalk-data-container .catalk-data-wrap .div1, .section2-catalk-data .catalk-data-container .catalk-data-wrap .div2, .section2-catalk-data .catalk-data-container .catalk-data-wrap .div3 {
+  border-radius: 15px 15px 0 0;
+  width: 30%;
+  height: 275px;
+}
 @media (max-width: 990px) {
   .sec1-main-wrap {
     height: 90vh;

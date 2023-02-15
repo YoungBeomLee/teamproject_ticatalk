@@ -53,3 +53,49 @@ nav {
       }
     }
   }
+
+
+.section1-catalk-info{
+ 
+.catalk-info-container{
+
+  & .catalk-info-wrap{
+
+    & .button-wrap{
+      & button{
+        border-radius: 25px;
+        border: none;
+        padding: 7px 0;
+        & span{
+          position: relative;
+          top: -2px;
+          vertical-align: middle;
+          cursor: pointer;
+        }
+      }
+
+
+    }
+  }
+}
+ 
+
+}
+
+.section2-catalk-data{
+  .catalk-data-container{
+      & .catalk-data-wrap{
+        & .div1,.div2,.div3{
+          border-radius: 15px 15px 0 0;
+          width: 30%;
+          height: 275px;
+          
+          & p{
+            
+           
+          }
+         
+        }
+      }
+  }
+}
