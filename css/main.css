@@ -13189,7 +13189,7 @@ nav .card li a:hover {
 }
 
 .sec1-mainslide-wrap .sec1-main-slide-box::before {
-  content: '1';
+  content: attr(data-rank);
   position: absolute;
   top: 0px;
   left: 0px;
@@ -13197,8 +13197,8 @@ nav .card li a:hover {
   height: 40px;
   border-radius: 15px;
   background: #F2F4F5;
-  font-size: 21px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 600;
   line-height: 40px;
   color: #7432E1;
   z-index: 10;

@@ -872,7 +872,6 @@
       loginIcon.setAttribute("src","img/icon/myicon-white.png");
     }
 
-    //nav-hover 함수
     nav.addEventListener("mouseenter",function(){
       logoDark();
       navBtnDark();
@@ -904,6 +903,11 @@
         logoLight();
         navBtnLight();
       }
+    });
+
+    let mainSlideBoxes = document.querySelectorAll('.sec1-main-slide-box');
+    mainSlideBoxes.forEach((msbs,index)=>{
+      msbs.setAttribute('data-rank',index+1)
     });
   </script>
 </body>
