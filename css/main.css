@@ -13107,6 +13107,8 @@ fieldset:disabled .btn {
 }
 
 nav {
+  -webkit-transition: all .4s;
+  transition: all .4s;
   z-index: 30;
 }
 
@@ -13252,6 +13254,17 @@ nav .card li a:hover {
 
 .sec1-main-inner .sec1-main-slide-prev::after {
   content: '';
+}
+
+.sec1-poster-hover {
+  opacity: 0;
+  background-color: rgba(116, 50, 225, 0.9);
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.sec1-poster-hover:hover {
+  opacity: 1;
 }
 
 .sec1-poster-hover-title {
@@ -13555,8 +13568,14 @@ iframe {
 }
 
 .search-poster-hover {
-  display: none;
-  background-color: rgba(116, 50, 225, 0.8);
+  opacity: 0;
+  background-color: rgba(116, 50, 225, 0.9);
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.search-poster-hover:hover {
+  opacity: 1;
 }
 
 .sec5-result-text:hover > a {

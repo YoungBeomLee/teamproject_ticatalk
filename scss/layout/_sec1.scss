@@ -1,5 +1,6 @@
 //nav
 nav {
+  transition: all .4s;
   z-index: 30;
   .nav{
     --bs-nav-link-color: #F2F4F5;
@@ -130,8 +131,16 @@ nav {
     }
   }
 }
-.sec1-poster-hover-title{
-  line-height: 1.8 !important;
+.sec1-poster-hover{
+  opacity: 0;
+  background-color: rgba(116, 50, 225, 0.9);
+  transition: all .4s;
+  &:hover{
+    opacity: 1;
+  }
+  &-title{
+    line-height: 1.8 !important;
+  }
 }
 
 //chat
