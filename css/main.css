@@ -13547,6 +13547,51 @@ iframe {
   background: url("http://www.kopis.or.kr/upload/pfmPoster/PF_PF194359_220711_114119.jpg") no-repeat;
 }
 
+#purpose-pop {
+  width: 35%;
+  word-break: keep-all;
+  z-index: 100;
+  top: 15px;
+  right: 15px;
+}
+
+#purpose-pop .purpose-close {
+  background: url("../img/icon/close-p.png") no-repeat;
+  background-size: contain;
+}
+
+.pop-close {
+  width: 21px;
+  height: 21px;
+}
+
+#coupon-pop {
+  width: 246px;
+  height: 463px;
+  bottom: 15px;
+  left: 15px;
+  -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  z-index: 90999099999;
+  font-size: 2.4em;
+  padding: 2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 2;
+}
+
+#coupon-pop .coupon-btn {
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #222;
+  color: #fff;
+}
+
+#coupon-pop .coupon-close {
+  background: url("../img/icon/close-w.png") no-repeat;
+  background-size: contain;
+}
+
 .search a:hover {
   color: #7432E1 !important;
   font-weight: 600 !important;

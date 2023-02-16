@@ -10,6 +10,81 @@
   <script src="js/chat.js"></script>
 </head>
 <body>
+  <div id="purpose-pop" class="shadow p-4 bg-light d-flex flex-column position-fixed border-0 br-15">
+    <p class="text-primary mgb-15 tkt-t6">
+      해당 사이트는 학습용으로 제작되었으며 상업적 목적이 없음을 알립니다.
+    </p>
+    <p class="text-primary mgb-15 tkt-t6">
+      해당 사이트의 정보 및 이미지는 KOPIS에서 제공받은 API 데이터를
+      이용하였습니다.
+    </p>
+    <a class="text-primary tkt-sm mgb-25" href="https://www.kopis.or.kr/por/main/main.do">
+      출처 : KOPIS 공연예술통합전산망
+    </a>
+    <div class="pop-close-wrap d-flex justify-content-between align-items-center">
+      <a href="javascript:void(0)" class="tkt-sm text-secondary" alt="오늘 하루 그만 보기">오늘 하루 그만 보기</a>
+      <button type="button" class="purpose-close pop-close border-0 p-0"></button>
+    </div>
+  </div>
+
+  <div id="coupon-pop" class="shadow p-4 bg-secondary rounded d-flex flex-column position-fixed border-0 br-15">
+    <button type="button"
+      class="coupon-btn btn btn-outline bg-dark mb-2 text-start position-relative"
+      style="height: 88px;
+        background-image: url('../img/poster/sec5/popup-1.png');">
+        [클래식] 오티움 <br>눈 오는 날 세일 35%
+      <div
+        class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"
+        style="width: 25px; height: 25px; transform: translate(12px, 15px)"></div>
+    </button>
+    <button
+      type="button"
+      class="coupon-btn btn btn-outline bg-dark mb-2 text-start position-relative"
+      style="
+        height: 88px;
+        background-image: url('../img/poster/sec5/popup-2.png');
+      "
+    >
+      [뮤지컬] 프로즌 <br />비 오는 날 세일 15%
+      <div
+        class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"
+        style="width: 25px; height: 25px; transform: translate(12px, 15px)"
+      ></div>
+    </button>
+    <button
+      type="button"
+      class="coupon-btn btn btn-outline bg-dark mb-2 text-start position-relative"
+      style="
+        height: 88px;
+        background-image: url('../img/poster/sec5/popup-3.png');
+      "
+    >
+      [클래식] 오티움 <br />눈 오는 날 세일 35%
+      <div
+        class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"
+        style="width: 25px; height: 25px; transform: translate(12px, 15px)"
+      ></div>
+    </button>
+    <button
+      type="button"
+      class="coupon-btn btn btn-outline bg-dark mb-3 text-start position-relative"
+      style="
+        height: 88px;
+        background-image: url('../img/poster/sec5/popup-4.png');
+      "
+    >
+      [뮤지컬] 프로즌 <br />비 오는 날 세일 15%
+      <div
+        class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"
+        style="width: 25px; height: 25px; transform: translate(12px, 15px)"
+      ></div>
+    </button>
+    <div class="pop-close-wrap d-flex justify-content-between align-items-center">
+      <a href="javascript:void(0)" class="tkt-sm text-light" alt="오늘 하루 그만 보기">오늘 하루 그만 보기</a>
+      <button type="button" class="coupon-close pop-close border-0 p-0"></button>
+    </div>
+  </div>
+
   <!-- chat -->
   <a href="javascript:void(0)" class="chat-button">
     <img src="img/tkt-logocat-w.svg" alt="채팅창 열기 버튼">
@@ -599,7 +674,7 @@
             <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark" data-genre="클래식">클래식</a>
           </li>
           <li class="float-start me-4">
-            <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark" data-genre="가족.아동">가족.아동</a>
+            <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark" data-genre="가족.아동">가족·아동</a>
           </li>
           <li class="float-start me-4">
             <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark" data-genre="뮤직페스티벌">뮤직페스티벌</a>
@@ -717,7 +792,7 @@
       </div>
     </div>
   </section>
-<!-- section5 jg -->
+  <!-- section5 jg -->
 
   <footer class="bg-dark">
     <div class="footer-container container-xxl container-md container-sm py-4">
@@ -968,6 +1043,20 @@
             });   
         });
     };
+
+    let couponClose = document.querySelector(".coupon-close");
+    let purposeClose = document.querySelector(".purpose-close");
+    let couponPop = document.querySelector("#coupon-pop");
+    let purposePop = document.querySelector("#purpose-pop");
+
+    couponClose.addEventListener("click", function(){
+      couponPop.classList.add("d-none");
+      couponPop.classList.remove("d-flex");
+    });
+    purposeClose.addEventListener("click", function(){
+      purposePop.classList.add("d-none");
+      purposePop.classList.remove("d-flex");
+    });
   </script>
 </body>
 </html>
