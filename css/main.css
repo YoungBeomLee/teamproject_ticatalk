@@ -11504,7 +11504,12 @@ nav .card li a:hover {
   color: #7432E1;
   z-index: 10;
 }
-.sec1-mainslide-wrap .sec1-main-slide-box .sec1-main-slide-btn img {
+
+.sec1-mainslide-wrap .sec1-main-slide-box .sec1-main-slide-btn {
+  overflow: hidden;
+}
+
+.sec1-mainslide-wrap .sec1-main-slide-box .sec1-main-slide-btn > img {
   display: block;
   width: 100%;
   height: 100%;
@@ -11546,6 +11551,95 @@ nav .card li a:hover {
   line-height: 1.8 !important;
 }
 
+#chat-wrap {
+  position: fixed;
+  left: 100px;
+  top: 100px;
+  z-index: 20;
+}
+
+iframe {
+  height: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.on {
+  height: 700px !important;
+}
+
+.chat-button {
+  position: fixed;
+  top: 80px;
+  left: 80px;
+  z-index: 100;
+  width: 6rem;
+  height: 6rem;
+  background-color: #7432E1;
+  border-radius: 50%;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.chat-wrap-circle {
+  display: none;
+}
+
+.chat-icon {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.chat-icon:before {
+  top: -0.8rem;
+}
+
+.chat-icon:after {
+  top: 0.8rem;
+}
+
+.chat-icon:before, .chat-icon:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.chat-icon, .chat-icon:before, .chat-icon:after {
+  width: 3rem;
+  height: 2px;
+  background: #333;
+  display: inline-block;
+}
+
+.chat-button:hover .chat-icon:before {
+  top: -1rem;
+}
+
+.chat-button:hover .chat-icon:after {
+  top: 1rem;
+}
+
+.chat-wrap-circle:checked ~ .chat-button .chat-icon {
+  background-color: transparent;
+}
+
+.chat-wrap-circle:checked ~ .chat-button .chat-icon:before {
+  top: 0;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.chat-wrap-circle:checked ~ .chat-button .chat-icon:after {
+  top: 0;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
 .sec2-fav-title {
   word-break: keep-all;
 }
@@ -11566,63 +11660,55 @@ nav .card li a:hover {
   width: 100%;
 }
 
-.contentbox p {
-  width: 200px;
-}
-
-.contentbox .imgbox {
-  width: 200px;
-  height: 300px;
-  border-radius: 15px;
-  overflow: hidden;
-  position: relative;
-}
-
-.d-day {
-  width: 160px;
-  height: 160px;
-  border-radius: 100%;
-  background-color: #7432E1;
-  position: absolute;
-  left: 20px;
-  top: 50px;
-  text-align: center;
-  display: table;
-}
-
-.d-day p {
-  display: table-cell;
-  vertical-align: middle;
-  color: #F2F4F5;
-  font-size: 21px;
-}
-
-.contentbox .imgbox > img {
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-}
-
-.ticketopen-contents {
-  width: 100%;
-}
-
-.title {
-  display: flex;
-  justify-content: stretch;
-}
-
 .title img {
   width: 50px;
   height: 50px;
 }
 
-.title h3, .title .h3 {
-  line-height: 60px;
-  margin-left: 10px;
-  margin-bottom: 0;
-  position: relative;
-  top: 3px;
+.sec3-poster {
+  width: 223px;
+  height: 316px;
+}
+
+.sec3-poster .sec3-d-day {
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  background-color: rgba(116, 50, 225, 0.8);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  line-height: 160px !important;
+}
+
+.sec3-poster > img {
+  display: block;
+  height: 100%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.sec3-poster:hover > img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.sec3-poster:hover ~ .sec3-poster-info {
+  color: #7432E1 !important;
+  font-weight: 600 !important;
+  text-decoration: underline !important;
+}
+
+.sec3-poster-info:hover {
+  color: #7432E1 !important;
+  font-weight: 600 !important;
+  text-decoration: underline !important;
 }
 
 .sec4-title span {
@@ -11715,15 +11801,15 @@ nav .card li a:hover {
 }
 
 .sec4-img-box1 {
-  background: url("../img/poster/sec4/sec4-feblight-kopis.jpg") no-repeat;
+  background: url("http://www.kopis.or.kr/upload/pfmPoster/PF_PF210026_230119_114754.gif") no-repeat;
 }
 
 .sec4-img-box2 {
-  background: url("../img/poster/sec4/sec4-otium-kopis.jpg") no-repeat;
+  background: url("http://www.kopis.or.kr/upload/pfmPoster/PF_PF211503_230127_143720.gif") no-repeat;
 }
 
 .sec4-img-box3 {
-  background: url("../img/poster/sec4/sec4-snowday-kopis.gif") no-repeat;
+  background: url("http://www.kopis.or.kr/upload/pfmPoster/PF_PF194359_220711_114119.jpg") no-repeat;
 }
 
 .search a:hover {
@@ -11745,6 +11831,11 @@ nav .card li a:hover {
   display: block;
 }
 
+.search button {
+  border: none;
+  padding: 0;
+}
+
 .search-poster-hover {
   display: none;
   background-color: rgba(116, 50, 225, 0.8);
@@ -11754,6 +11845,16 @@ nav .card li a:hover {
   font-weight: 600 !important;
   color: #7432E1 !important;
   text-decoration: underline !important;
+}
+
+.result5 {
+  width: 186px;
+  height: 285px;
+}
+
+.result5 img {
+  width: 186px;
+  height: 238px;
 }
 
 .footer-iconbox {
@@ -11786,6 +11887,84 @@ nav .card li a:hover {
 
 .footer-info-btn:hover {
   text-decoration: underline !important;
+}
+
+nav {
+  z-index: 30;
+}
+
+nav .nav {
+  --bs-nav-link-color: #F2F4F5;
+  --bs-nav-link-hover-color: #7432E1;
+}
+
+nav .nav h1 img, nav .nav .h1 img {
+  width: 168px;
+}
+
+nav .nav .dropdown-menu {
+  -webkit-transform: translate3d(-6px, 55px, 0px);
+          transform: translate3d(-6px, 55px, 0px);
+  --bs-dropdown-min-width: 0 !important;
+  --bs-dropdown-padding-y: 1rem;
+  --bs-dropdown-color: #333333;
+  --bs-dropdown-bg: #F2F4F5;
+  --bs-dropdown-link-hover-bg: #F2F4F5;
+  --bs-dropdown-link-hover-color: #7432e1;
+  --bs-dropdown-link-active-color: #F2F4F5;
+  --bs-dropdown-link-active-bg: #7432E1;
+  --bs-dropdown-item-padding-y: 0.4rem;
+  text-align: center;
+}
+
+nav .nav .dropdown-toggle::after {
+  display: none;
+}
+
+nav:hover {
+  background-color: #f2f4f5b2;
+}
+
+nav:hover .nav-link {
+  --bs-nav-link-color: #333;
+}
+
+nav .card {
+  --bs-card-border-width: none;
+  --bs-card-border-color: none;
+  --bs-card-bg: none;
+  border: none;
+}
+
+nav .card li {
+  padding: 0 20px;
+}
+
+nav .card li a {
+  color: #333;
+}
+
+nav .card li a:hover {
+  color: #7432E1;
+}
+
+.section1-catalk-info .catalk-info-container .catalk-info-wrap .button-wrap button {
+  border-radius: 25px;
+  border: none;
+  padding: 7px 0;
+}
+
+.section1-catalk-info .catalk-info-container .catalk-info-wrap .button-wrap button span {
+  position: relative;
+  top: -2px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.section2-catalk-data .catalk-data-container .catalk-data-wrap .div1, .section2-catalk-data .catalk-data-container .catalk-data-wrap .div2, .section2-catalk-data .catalk-data-container .catalk-data-wrap .div3 {
+  border-radius: 15px 15px 0 0;
+  width: 30%;
+  height: 275px;
 }
 
 @media (max-width: 990px) {
