@@ -1,83 +1,73 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="../css/main.css">
-  <style>
-    /* #content */
-    #content {width: 100%; margin-top: 30px;}
-    #content .content_cover {width: 1200px;}
-    #content .content_cover ul {display: flex;}
-    #content .content_cover ul li {width: 25%; line-height: 80px; text-align: center;}
-    #content .content_cover ul li:hover span { color: #7432E1 !important; font-weight: bold }
-    #content .content_cover ul li:first-child {margin-top: -20px;}
-    #content .content_cover ul li:first-child img{margin-left: -80px;}
-    #content .content_cover ul li:first-child h2{margin-top: -20px;}
-    #content .content_cover ul li a .leave {display: block;}
-    #content .content_cover ul li a .hover {display: none;}
-    #content .content_cover ul li a:hover .leave {display: none;}
-    #content .content_cover ul li a:hover .hover {display: block;}
-    /* 불릿기호 초기화 */
-    dl,ul,li,ol,menu {list-style: none;}
-    a {text-decoration: none;}
-  </style>
 </head>
 <body>
   <section id="content" class="mgb-160">
-    <div class="row">
-      <div class="content_cover col text-center">
-        <ul class="col text-center">
-          <li class="text-center text-dark">
-            <img src="../img/icon/bookmark.png" alt="" class="">
-            <h2 class="text-dark">자주 찾는<br>서비스</h2>
-          </li>
-          <li class="text-center text-dark">
-            <a href="#">
-              <img src="../img/icon/wallet.png" alt="" class="leave m-auto">
-              <img src="../img/icon/wallet-p.png" alt="" class="hover m-auto">
-              <span class="text-dark">결제방법</span>
-            </a>
-          </li>
-          <li class="text-center text-dark">
-            <a href="#"><img src="../img/icon/coin.png" alt="" class="leave m-auto">
-              <img src="../img/icon/coin-p.png" alt="" class="hover m-auto">
-              <span class="text-dark">수수료</span>
-            </a>
-          </li>
-          <li class="text-center text-dark">
-            <a href="#"><img src="../img/icon/card-cancel.png" alt="" class="leave m-auto">
-              <img src="../img/icon/card-cancel-p.png" alt="" class="hover m-auto">
-              <span class="text-dark">취소/환불</span>
-            </a>
-          </li>
-          <li class="text-center text-dark"><a href="#">
-              <img src="../img/icon/card.png" alt="" class="leave m-auto">
-              <img src="../img/icon/card-p.png" alt="" class="hover m-auto"><span class="text-dark">제휴/할인카드</span>
-            </a>
-          </li>
-          <li class="text-center text-dark"><a href="#"><img src="../img/icon/rocket.png" alt="" class="leave m-auto">
-              <img src="../img/icon/rocket-p.png" alt="" class="hover m-auto">
-              <span class="text-dark">티켓/배송수령</span>
-            </a>
-          </li>
-          <li class="text-center text-dark">
-            <a href="#"><img src="../img/icon/ear.png" alt="" class="leave m-auto">
-              <img src="../img/icon/ear-p.png" alt="" class="hover m-auto">
-              <span class="text-dark">FAQ</p></span>
-            </a>
-          </li>
-          <li class="text-center text-dark">
-            <a href="#"><img src="../img/icon/book.png" alt="" class="leave m-auto">
-              <img src="../img/icon/book-p.png" alt="" class="hover m-auto">
-              <span class="text-dark">장르별/예매방법</span>
-            </a>
-          </li>
-        </ul>
+    <div class="row m-auto p-0 text-left container-sm container-md container-xxl">
+      <div class="col-12 col-sm-12 col-md-2 col-xxl-2 p-0 title col text-left mgb-25 m-auto">
+        <img src="../img/icon/bookmark.png" alt="" class="tkt-w35 tkt-h35 mb-1 mt-1 me-1 ms-0 ps-0">
+        <h2 class="tkt-h3 text-dark tkt-h3 word-break">인기 서비스</h2>
       </div>
+      <div class="col-12 col-sm-12 col-md-10 col-xxl-10 p-0">
+        <div class="row align-items-center h-100">
+          <div class="col p-0">
+            <a href="#" class="sec2-fav-btn">
+              <img src="../img/icon/wallet.png" alt="" class="sec2-icon-leave d-block w-50 m-auto">
+              <img src="../img/icon/wallet-p.png" alt="" class="sec2-icon-hover d-none w-50 m-auto">
+              <p class="sec2-fav-text mb-0 mt-2 tkt-t6 text-center text-dark">결제방법</p>
+            </a>
+          </div>
+          <div class="col p-0">
+            <a href="#" class="sec2-fav-btn">
+              <img src="../img/icon/coin.png" alt="" class="sec2-icon-leave d-block w-50 m-auto">
+              <img src="../img/icon/coin-p.png" alt="" class="sec2-icon-hover d-none w-50 m-auto">
+              <p class="sec2-fav-text mb-0 mt-2 tkt-t6 text-center text-dark">수수료</p>
+            </a>
+          </div>
+          <div class="col p-0">
+            <a href="#" class="sec2-fav-btn">
+              <img src="../img/icon/card-cancel.png" alt="" class="sec2-icon-leave d-block w-50 m-auto">
+              <img src="../img/icon/card-cancel-p.png" alt="" class="sec2-icon-hover d-none w-50 m-auto">
+              <p class="sec2-fav-text mb-0 mt-2 tkt-t6 text-center text-dark">취소/환불</p>
+            </a>
+          </div>
+          <div class="col p-0">
+            <a href="#" class="sec2-fav-btn">
+              <img src="../img/icon/card.png" alt="" class="sec2-icon-leave d-block w-50 m-auto">
+              <img src="../img/icon/card-p.png" alt="" class="sec2-icon-hover d-none w-50 m-auto">
+              <p class="sec2-fav-text mb-0 mt-2 tkt-t6 text-center text-dark">제휴/할인카드</p>
+            </a>
+          </div>
+          <div class="col p-0">
+            <a href="#" class="sec2-fav-btn">
+              <img src="../img/icon/rocket.png" alt="" class="sec2-icon-leave d-block w-50 m-auto">
+              <img src="../img/icon/rocket-p.png" alt="" class="sec2-icon-hover d-none w-50 m-auto">
+              <p class="sec2-fav-text mb-0 mt-2 tkt-t6 text-center text-dark">티켓/배송수령</p>
+            </a>
+          </div>
+          <div class="col p-0">
+            <a href="#" class="sec2-fav-btn">
+              <img src="../img/icon/ear.png" alt="" class="sec2-icon-leave d-block w-50 m-auto">
+              <img src="../img/icon/ear-p.png" alt="" class="sec2-icon-hover d-none w-50 m-auto">
+              <p class="sec2-fav-text mb-0 mt-2 tkt-t6 text-center text-dark">FAQ</p>
+            </a>
+          </div>
+          <div class="col p-0">
+            <a href="#" class="sec2-fav-btn">
+              <img src="../img/icon/book.png" alt="" class="sec2-icon-leave d-block w-50 m-auto">
+              <img src="../img/icon/book-p.png" alt="" class="sec2-icon-hover d-none w-50 m-auto">
+              <p class="sec2-fav-text mb-0 mt-2 tkt-t6 text-center text-dark">장르별/예매방법</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
