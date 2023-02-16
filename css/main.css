@@ -13433,21 +13433,6 @@ iframe {
   height: 50px;
 }
 
-.sec3-poster .sec3-d-day {
-  width: 160px;
-  height: 160px;
-  border-radius: 100%;
-  background-color: rgba(116, 50, 225, 0.8);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  line-height: 160px !important;
-}
-
 .sec3-poster > img {
   display: block;
   height: 100%;
@@ -13455,6 +13440,11 @@ iframe {
           transform: scale(1);
   -webkit-transition: all .4s;
   transition: all .4s;
+}
+
+.sec3-poster:hover {
+  -webkit-box-shadow: 0px 2px 6px #A49DF1;
+          box-shadow: 0px 2px 6px #A49DF1;
 }
 
 .sec3-poster:hover > img {
@@ -13466,6 +13456,13 @@ iframe {
   color: #7432E1 !important;
   font-weight: 600 !important;
   text-decoration: underline !important;
+}
+
+.sec3-d-day {
+  position: absolute;
+  top: -12px;
+  left: 0;
+  border-radius: 5px;
 }
 
 .sec3-poster-info:hover {
