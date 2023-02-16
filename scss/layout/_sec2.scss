@@ -2,6 +2,7 @@
   word-break: keep-all;
 }
 .sec2-fav-btn{
+  transition: all .4s;
   &:hover{
     .sec2-icon-leave{
       display: none !important;
@@ -14,5 +15,35 @@
       font-weight: 600 !important;
       text-decoration: underline !important;
     }
+    ~ .sec2-btn-back{
+      opacity: .8;
+      &-sec{
+        transform:translate(-50%, -50%) scale(60);
+      }
+      &-ter{
+        transform:translate(-50%, -50%) scale(90);
+      }
+    }
+  }
+}
+.sec2-btn-back{
+  top: 35%;
+  left: 50%;
+  border-radius: 50%;
+  transform:translate(-50%,-50%) scale(1);
+  transform-origin: center;
+  opacity: 0;
+  &-sec{
+    width: 1px;
+    height: 1px;
+    z-index:-10;
+    transition: all .2s;
+  }
+  &-ter{
+    width: 1px;
+    height: 1px;
+    z-index:-20;
+    transition: all .4s;
+
   }
 }
