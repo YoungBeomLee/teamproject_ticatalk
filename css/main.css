@@ -11562,11 +11562,13 @@ nav .nav .dropdown-menu {
 nav .nav .dropdown-toggle::after {
   display: none;
 }
+
 nav:hover {
   background-color: rgba(242, 244, 245, 0.6980392157);
 }
 nav:hover .nav-link {
   --bs-nav-link-color: #333;
+
 }
 nav .card {
   --bs-card-border-width: none;
@@ -11581,7 +11583,9 @@ nav .card li a {
   color: #333;
 }
 nav .card li a:hover {
-  color: #7432E1;
+  color: #7432E1 !important;
+  font-weight: 600 !important;
+  text-decoration: underline !important;
 }
 
 .sec1-main-wrap {
@@ -11604,7 +11608,9 @@ nav .card li a:hover {
   transform: translateX(-50%) !important;
 }
 .sec1-mainslide-wrap .sec1-main-slide-box::before {
+
   content: "1";
+
   position: absolute;
   top: 0px;
   left: 0px;
@@ -11612,8 +11618,8 @@ nav .card li a:hover {
   height: 40px;
   border-radius: 15px;
   background: #F2F4F5;
-  font-size: 21px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 600;
   line-height: 40px;
   color: #7432E1;
   z-index: 10;
@@ -11767,10 +11773,12 @@ iframe {
   height: 50px;
 }
 
+
 .sec3-poster {
   width: 223px;
   height: 316px;
 }
+
 .sec3-poster .sec3-d-day {
   width: 160px;
   height: 160px;
@@ -11923,11 +11931,6 @@ iframe {
 
 .search-poster:hover .search-poster-hover {
   display: block;
-}
-
-.search button {
-  border: none;
-  padding: 0;
 }
 
 .search-poster-hover {

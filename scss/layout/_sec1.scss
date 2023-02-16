@@ -26,14 +26,11 @@ nav {
       display: none;// display:inline-block 으로 보여도됨
     }
   }
-
-  &:hover {
-    background-color: #f2f4f5b2;
-
-    & .nav-link {
-        --bs-nav-link-color: #333;
-      }
-    }
+  .nav-on{
+    color: $primary !important;
+    font-weight: 600 !important;
+    text-decoration: underline !important;
+  }
   //nav 2-depth
   .card {
     --bs-card-border-width: none;
@@ -47,7 +44,7 @@ nav {
       & a{
         color: #333;
         &:hover{
-          color:#7432E1;
+          @include tkt-thover;
         }
       }
     }
@@ -73,7 +70,7 @@ nav {
   transform: translateX(-50%) !important;
   .sec1-main-slide-box {
     &::before{
-      content: '1';
+      content: attr(data-rank);
       position: absolute;
       top: 0px;
       left: 0px;
@@ -81,8 +78,8 @@ nav {
       height: 40px;
       border-radius: 15px;
       background: $light;
-      font-size: 21px;
-      font-weight: 400;
+      font-size: 18px;
+      font-weight: 600;
       line-height: 40px;
       color: $primary;
       z-index: 10;
@@ -147,7 +144,6 @@ iframe{
   transition: all 1s;
   
 }
-
 
 
 .chat-button{
