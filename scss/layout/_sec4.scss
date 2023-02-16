@@ -21,11 +21,8 @@
 .sec4-big-title{
   transition: all .4s;
 }
-
 .sec4-talk-title:hover{
-  color: $primary !important;
-  text-decoration: underline !important;
-  font-weight: 600 !important;
+  @include tkt-thover;
 }
 .dropup .dropdown-toggle::after{
   display: none;

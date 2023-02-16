@@ -28,9 +28,7 @@ nav {
     }
   }
   .nav-on {
-    color: $primary !important;
-    font-weight: 600 !important;
-    text-decoration: underline !important;
+    @include tkt-thover;
   }
   //nav 2-depth
   .card {

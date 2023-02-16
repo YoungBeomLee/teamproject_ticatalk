@@ -13457,8 +13457,8 @@ iframe {
 
 .sec4-talk-title:hover {
   color: #7432E1 !important;
-  text-decoration: underline !important;
   font-weight: 600 !important;
+  text-decoration: underline !important;
 }
 
 .dropup .dropdown-toggle::after {
