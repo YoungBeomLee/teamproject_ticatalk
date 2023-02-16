@@ -1,3 +1,42 @@
+#purpose-pop{
+  width: 35%;
+  word-break: keep-all;
+  z-index: 100;
+  top: 15px;
+  right: 15px;
+  .purpose-close{
+    background: url("../img/icon/close-p.png") no-repeat;
+    background-size:contain;
+  }
+}
+.pop-close{
+  width: 21px;
+  height: 21px;
+}
+
+#coupon-pop {
+  width: 246px;
+  height: 463px;
+  bottom: 15px;
+  left: 15px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  z-index: 90999099999;
+  font-size: 2.4em;
+  padding: 2em;
+  box-sizing: border-box;
+  line-height: 2;
+  .coupon-btn {
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #222;
+    color: #fff;
+  }
+  .coupon-close{
+    background: url("../img/icon/close-w.png") no-repeat;
+    background-size:contain;
+  }
+}
+
 .search a {
   &:hover {
     color: $primary !important;

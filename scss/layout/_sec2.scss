@@ -11,9 +11,7 @@
       display: block !important;
     }
     .sec2-fav-text{
-      color: $primary !important;
-      font-weight: 600 !important;
-      text-decoration: underline !important;
+      @include tkt-thover;
     }
     ~ .sec2-btn-back{
       opacity: .8;
@@ -44,6 +42,5 @@
     height: 1px;
     z-index:-20;
     transition: all .4s;
-
   }
 }

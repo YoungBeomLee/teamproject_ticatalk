@@ -28,9 +28,7 @@ nav {
     }
   }
   .nav-on {
-    color: $primary !important;
-    font-weight: 600 !important;
-    text-decoration: underline !important;
+    @include tkt-thover;
   }
   //nav 2-depth
   .card {
@@ -131,18 +129,35 @@ nav {
     }
   }
 }
+<<<<<<< HEAD
 
 .sec1-poster-hover-title {
   line-height: 1.8 !important;
 
+=======
+.sec1-poster-hover{
+  opacity: 0;
+  background-color: rgba(116, 50, 225, 0.9);
+  transition: all .4s;
+  &:hover{
+    opacity: 1;
+  }
+  &-title{
+    line-height: 1.8 !important;
+  }
+>>>>>>> 77b74625468b612a49ff4a6fb4ab32e962fbfdc9
 }
 
 //chat
 #chat-wrap {
   position: fixed;
-  left: 100px;
-  top: 100px;
-  z-index: 20;
+  bottom: 50px;
+  right: 50px;
+  z-index: 50;
+  iframe{
+    display: none;
+    transition: all 1s;
+  }
 }
 iframe {
   display: none;
@@ -151,59 +166,26 @@ iframe {
 
 .chat-button {
   position: fixed;
-  top: 80px;
-  left: 80px;
+  bottom: 30px;
+  right: 30px;
   z-index: 100;
   width: 3rem;
   height: 3rem;
   background-color: #7432e1;
   border-radius: 50%;
-  transition: all 0.8s;
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 5px rgb(164, 157, 241);
   text-align: center;
-}
-.chat-wrap-circle {
-  display: none;
-}
-.chat-icon {
-  position: relative;
-  margin-top: 1.5rem;
-}
-.chat-icon:before {
-  top: -0.5rem;
-}
-.chat-icon:after {
-  top: 0.5rem;
-}
-.chat-icon:before,
-.chat-icon:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  transition: all 0.2s;
-}
-.chat-icon,
-.chat-icon:before,
-.chat-icon:after {
-  width: 1.5rem;
-  height: 2px;
-  background: #333;
-  display: inline-block;
-}
-.chat-button:hover .chat-icon:before {
-  top: -0.7rem;
-}
-.chat-button:hover .chat-icon:after {
-  top: 0.7rem;
-}
-.chat-wrap-circle:checked ~ .chat-button .chat-icon {
-  background-color: transparent;
-}
-.chat-wrap-circle:checked ~ .chat-button .chat-icon:before {
-  top: 0;
-  transform: rotate(135deg);
-}
-.chat-wrap-circle:checked ~ .chat-button .chat-icon:after {
-  top: 0;
-  transform: rotate(-135deg);
+  img{
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    transition: all .4s;
+  }
+  &:hover{
+    img{
+      transform: translate(-50%,-50%) scale(1.1);
+    }
+  }
 }
