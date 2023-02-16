@@ -22,15 +22,17 @@
   }
 }
 .search-poster-hover {
-  display: none;
-  background-color: rgba(116, 50, 225, 0.8);
+  opacity: 0;
+  background-color: rgba(116, 50, 225, 0.9);
+  transition: all .4s;
+  &:hover{
+    opacity: 1;
+  }
 }
 
 .sec5-result-text:hover {
   > a {
-    font-weight: 600 !important;
-    color: $primary !important;
-    text-decoration: underline !important;
+    @include tkt-thover;
   }
 }
 .result5 {
