@@ -1,0 +1,88 @@
+//nav
+nav {
+    z-index: 30;
+    .nav{
+      --bs-nav-link-color: #F2F4F5;
+      --bs-nav-link-hover-color: #7432E1;
+      
+      & h1 img{
+        width: 168px;
+      }
+  
+      .dropdown-menu {
+        transform: translate3d(-6px, 55px, 0px);
+        --bs-dropdown-min-width: 0 !important; 
+        --bs-dropdown-padding-y: 1rem;
+        --bs-dropdown-color: #333333;
+        --bs-dropdown-bg: #F2F4F5;
+        --bs-dropdown-link-hover-bg: #F2F4F5;
+        --bs-dropdown-link-hover-color: #7432e1;
+        --bs-dropdown-link-active-color: #F2F4F5;
+        --bs-dropdown-link-active-bg: #7432E1;
+        --bs-dropdown-item-padding-y: 0.4rem;
+        text-align: center;
+      }
+      .dropdown-toggle::after {
+        display: none;// display:inline-block 으로 보여도됨
+      }
+    }
+  
+    &:hover {
+      background-color: #f2f4f5b2;
+  
+      & .nav-link {
+          --bs-nav-link-color: #333;
+        }
+      }
+    //nav 2-depth
+    .card {
+      --bs-card-border-width: none;
+      --bs-card-border-color: none;
+      --bs-card-bg: none;
+      border: none;
+      
+      & li{
+        padding: 0 20px;
+  
+        & a{
+          color: #333;
+          &:hover{
+            color:#7432E1;
+          }
+        }
+      }
+    }
+  }
+
+
+.section1-catalk-info{
+  .catalk-info-container{
+    & .catalk-info-wrap{
+      & .button-wrap{
+        & button{
+          border-radius: 25px;
+          border: none;
+          padding: 7px 0;
+          & span{
+            position: relative;
+            top: -2px;
+            vertical-align: middle;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section2-catalk-data{
+  .catalk-data-container{
+      & .catalk-data-wrap{
+        & .div1,.div2,.div3{
+          border-radius: 15px 15px 0 0;
+          width: 30%;
+          height: 275px;
+        }
+      }
+  }
+}

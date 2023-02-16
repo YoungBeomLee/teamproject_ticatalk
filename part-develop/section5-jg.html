@@ -538,21 +538,6 @@
         </div>
       </div>
     </div>
-
-
-    <div id="layer" class="shadow p-4 mb-5 bg-secondary rounded d-flex flex-column position-fixed top-50 border rounded-5" style="width:246px; height:463px;">
-        <button type="button" class="btn btn-outline bg-dark  mb-2 text-start position-relative"style="height:88px; background-image: url('../img/poster/sec5/popup-1.png');">[클래식] 오티움 <br>눈 오는 날 세일 35% <div class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"style="width:25px; height:25px; transform: translate(12px, 15px);"></div></button>
-      <button type="button" class="btn btn-outline bg-dark  mb-2 text-start position-relative"style="height:88px; background-image: url('../img/poster/sec5/popup-2.png');">[뮤지컬] 프로즌 <br>비 오는 날 세일 15%<div class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"style="width:25px; height:25px; transform: translate(12px, 15px);"></div></button>
-      <button type="button" class="btn btn-outline bg-dark  mb-2 text-start position-relative"style="height:88px; background-image: url('../img/poster/sec5/popup-3.png');">[클래식] 오티움 <br>눈 오는 날 세일 35%<div class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"style="width:25px; height:25px; transform: translate(12px, 15px);"></div></button>
-      <button type="button" class="btn btn-outline bg-dark  mb-3 text-start position-relative"style="height:88px; background-image: url('../img/poster/sec5/popup-4.png');">[뮤지컬] 프로즌 <br>비 오는 날 세일 15%<div class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"style="width:25px; height:25px; transform: translate(12px, 15px);"></div></button>
-      <div class=" d-flex justify-content-between " style="height:20px">
-        <input type="checkbox" id="popup" />
-          <label for="popup" class="text-light tkt-sm me-5">오늘하루안보기</label>
-          <span class=""><button type="button" class="popbtn2 btn-close bg-secondary" aria-label="Close" style="width:10px; height:10px;">&nbsp;</button></span>
-      </div>
-  </div>
-
-
   <div id="layer2" class="shadow p-4 mb-5 bg-secondary rounded d-flex flex-column position-fixed top-0 border rounded-5" style="width:250px; height:280px;">
     <p class="text-primary tkt-md" href="">해당 사이트는 학습용으로 제작되었으며 상업적 목적이 없음을 알립니다..</p>
   <p class="text-primary tkt-md" href="">해당 사이트의 정보 및 이미지는 KOPIS에서 제공받은 API 데이터를 이용하였습니다.</p>
@@ -560,8 +545,34 @@
   <div class=" d-flex justify-content-between mt-3" style="height:20px">
     <span><button type="button" class="popbtn1 btn-close bg-secondary " aria-label="Close" style="width:10px; height:10px;">&nbsp;</button></span>
   </div>
+  <div id="layer" class="shadow p-4 mb-5 bg-secondary rounded d-flex flex-column position-fixed top-50 border rounded-5" style="width:246px; height:463px;">
+    <button type="button" class="btn btn-outline bg-dark  mb-2 text-start position-relative"style="height:88px; background-image: url('../img/poster/sec5/popup-1.png');">[클래식] 오티움 <br>눈 오는 날 세일 35% <div class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"style="width:25px; height:25px; transform: translate(12px, 15px);"></div></button>
+  <button type="button" class="btn btn-outline bg-dark  mb-2 text-start position-relative"style="height:88px; background-image: url('../img/poster/sec5/popup-2.png');">[뮤지컬] 프로즌 <br>비 오는 날 세일 15%<div class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"style="width:25px; height:25px; transform: translate(12px, 15px);"></div></button>
+  <button type="button" class="btn btn-outline bg-dark  mb-2 text-start position-relative"style="height:88px; background-image: url('../img/poster/sec5/popup-3.png');">[클래식] 오티움 <br>눈 오는 날 세일 35%<div class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"style="width:25px; height:25px; transform: translate(12px, 15px);"></div></button>
+  <button type="button" class="btn btn-outline bg-dark  mb-3 text-start position-relative"style="height:88px; background-image: url('../img/poster/sec5/popup-4.png');">[뮤지컬] 프로즌 <br>비 오는 날 세일 15%<div class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"style="width:25px; height:25px; transform: translate(12px, 15px);"></div></button>
+  <div class=" d-flex justify-content-between " style="height:20px">
+    <input type="checkbox" id="popup" />
+      <label for="popup" class="text-light tkt-sm me-5">오늘하루안보기</label>
+      <span class=""><button type="button" class="popbtn2 btn-close bg-secondary" aria-label="Close" style="width:10px; height:10px;">&nbsp;</button></span>
+  </div>
+</div>
     
   </div>
+  <script>
+    var myPopup = document.querySelector("#layer"),
+        checkbox = document.querySelector("#popup"),
+        popupClose = document.querySelector(".popbtn2");
+
+        function setCookie(name, value, day) {
+        var date = new Date(); // 현재 날짜 지정
+        date.setDate(date.getDate() + day);
+
+        var mycookie = "";
+        mycookie += name + "=" + value + ";";
+        mycookie += "Expires=" + date.toUTCString();
+        document.cookie = mycookie; //쿠키 설정, 생성
+      }     
+  </script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       document

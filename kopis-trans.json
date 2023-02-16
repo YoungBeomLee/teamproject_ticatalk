@@ -1,0 +1,634 @@
+{
+    "total": [
+      {
+        "genre": "뮤지컬",
+        "sub": [
+          {
+            "id": "1",
+            "rid": "PF213209",
+            "title": "광염 소나타",
+            "std": "2023.03.13",
+            "ed": "2023.06.04",
+            "locate": "대학로 드림아트센터",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213209_230213_114242.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "2",
+            "rid": "PF213179",
+            "title": "레드북",
+            "std": "2023.03.14",
+            "ed": "2023.05.28",
+            "locate": "홍익대 대학로 아트센터",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213179_230213_094930.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "3",
+            "rid": "PF213115",
+            "title": "해적",
+            "std": "2023.03.07",
+            "ed": "2023.06.11",
+            "locate": "서경대학교 공연예술센터",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213115_230210_093645.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "4",
+            "rid": "PF212833",
+            "title": "비밀의 화원",
+            "std": "2023.03.10",
+            "ed": "2023.04.30",
+            "locate": "국립정동극장",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF212833_230208_113048.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "5",
+            "rid": "PF212789",
+            "title": "인터뷰",
+            "std": "2023.03.04",
+            "ed": "2023.05.28",
+            "locate": "예스24 스테이지(구. DCF대명문화공장)",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF212789_230208_094931.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "6",
+            "rid": "PF212584",
+            "title": "은밀하게 위대하게: THE LAST",
+            "std": "2023.03.04",
+            "ed": "2023.05.07",
+            "locate": "KT&G 상상마당 대치아트홀",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF212584_230203_100212.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "7",
+            "rid": "PF212524",
+            "title": "다시, 봄",
+            "std": "2023.03.15",
+            "ed": "2023.04.01",
+            "locate": "세종문화회관",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF212524_230202_105129.jpg",
+            "state": "공연예정"
+          },
+          {
+            "id": "8",
+            "rid": "PF211480",
+            "title": "어린왕자",
+            "std": "2023.03.04",
+            "ed": "2023.04.23",
+            "locate": "충무아트센터",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF211480_230127_121857.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "9",
+            "rid": "PF211446",
+            "title": "호프: 읽히지 않은 책과 읽히지 않은 인생",
+            "std": "2023.03.16",
+            "ed": "2023.06.11",
+            "locate": "유니플렉스",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF211446_230127_095750.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "10",
+            "rid": "PF209954",
+            "title": "Inside Me (인사이드 미)",
+            "std": "2023.02.18",
+            "ed": "2023.03.26",
+            "locate": "엠스테이지(구.인사아트홀)",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF209954_230118_112658.gif",
+            "state": "공연예정"
+          }
+        ]
+      },
+      {
+        "genre": "연극",
+        "sub": [
+          {
+            "id": "1",
+            "rid": "PF213385",
+            "title": "하녀들",
+            "std": "2023.02.23",
+            "ed": "2023.03.05",
+            "locate": "을지공간",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213385_230215_124444.jpg",
+            "state": "공연예정"
+          },
+          {
+            "id": "2",
+            "rid": "PF213285",
+            "title": "세일즈맨의 죽음",
+            "std": "2023.02.24",
+            "ed": "2023.02.26",
+            "locate": "연우소극장",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213285_230214_104112.jpg",
+            "state": "공연예정"
+          },
+          {
+            "id": "3",
+            "rid": "PF213230",
+            "title": "루시드 드림",
+            "std": "2023.03.11",
+            "ed": "2023.03.12",
+            "locate": "씨어터조이 (구. 마당세실극장)",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213230_230213_122411.png",
+            "state": "공연예정"
+          },
+          {
+            "id": "4",
+            "rid": "PF212857",
+            "title": "창작산실, 엑스트라 연대기",
+            "std": "2023.03.04",
+            "ed": "2023.03.12",
+            "locate": "대학로예술극장",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF212857_230208_131613.jpg",
+            "state": "공연예정"
+          },
+          {
+            "id": "5",
+            "rid": "PF212819",
+            "title": "승리",
+            "std": "2023.02.24",
+            "ed": "2023.02.26",
+            "locate": "창작플랫폼 경험과 상상",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF212819_230208_105021.jpg",
+            "state": "공연예정"
+          },
+          {
+            "id": "6",
+            "rid": "PF212713",
+            "title": "서울메이트",
+            "std": "2023.02.15",
+            "ed": "2023.02.26",
+            "locate": "창조소극장 (구. 민아트홀)",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF212713_230206_160842.jpg",
+            "state": "공연중"
+          },
+          {
+            "id": "7",
+            "rid": "PF212559",
+            "title": "세상친구",
+            "std": "2023.02.23",
+            "ed": "2023.03.12",
+            "locate": "대학로 자유극장 (자유문화발전소)",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF212559_230202_142346.jpg",
+            "state": "공연예정"
+          },
+          {
+            "id": "8",
+            "rid": "PF211655",
+            "title": "청바지",
+            "std": "2023.02.01",
+            "ed": "2023.03.26",
+            "locate": "룸씨어터",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF211655_230201_104421.jpg",
+            "state": "공연중"
+          },
+          {
+            "id": "9",
+            "rid": "PF211610",
+            "title": "베니스의 상인",
+            "std": "2023.02.22",
+            "ed": "2023.03.05",
+            "locate": "여행자극장",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF211610_230131_102840.jpg",
+            "state": "공연예정"
+          },
+          {
+            "id": "10",
+            "rid": "PF209933",
+            "title": "파우스트",
+            "std": "2023.03.31",
+            "ed": "2023.04.29",
+            "locate": "LG아트센터 서울",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF209933_230118_103335.png",
+            "status": "공연예정"
+          }
+        ]
+      },
+      {
+        "genre": "콘서트",
+        "sub": [
+          {
+            "id": "1",
+            "rid": "PF213412",
+            "title": "SG워너비 콘서트: 우리의 노래 [서울]",
+            "std": "2023.04.01",
+            "ed": "2023.04.02",
+            "locate": "올림픽공원",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213412_230215_143654.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "2",
+            "rid": "PF213377",
+            "title": "스프링 콘서트: 소란X데이브레이크",
+            "std": "2023.03.28",
+            "ed": "2023.03.28",
+            "locate": "거제문화예술회관",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213377_230215_122809.jpg",
+            "state": "공연예정"
+          },
+          {
+            "id": "3",
+            "rid": "PF213365",
+            "title": "양지원 20주년 콘서트: 금의환향",
+            "std": "2023.05.06",
+            "ed": "2023.05.06",
+            "locate": "부천실내체육관",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213365_230215_120721.jpg",
+            "state": "공연예정"
+          },
+          {
+            "id": "4",
+            "rid": "PF213348",
+            "title": "BoA 20th Anniversary Live, THE BoA: Musicality",
+            "std": "2023.03.11",
+            "ed": "2023.03.12",
+            "locate": "올림픽공원",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213348_230215_112633.jpg",
+            "state": "공연예정"
+          },
+          {
+            "id": "5",
+            "rid": "PF213300",
+            "title": "스윗소로우 앨범 발매 기념 콘서트: 등대",
+            "std": "2023.03.31",
+            "ed": "2023.04.02",
+            "locate": "노들섬",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213300_230214_132730.png",
+            "state": "공연예정"
+          },
+          {
+            "id": "6",
+            "rid": "PF213295",
+            "title": "LEE JIN HYUK LIVE CONCERT: 4eVer",
+            "std": "2023.02.25",
+            "ed": "2023.02.26",
+            "locate": "무신사 개러지(구. 왓챠홀)",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213295_230214_121045.jpg",
+            "state": "공연예정"
+          },
+          {
+            "id": "7",
+            "rid": "PF213249",
+            "title": "CHERRY BOY 17 단독 콘서트: BLACK STREET",
+            "std": "2023.03.01",
+            "ed": "2023.03.01",
+            "locate": "SPACE BRICK (스페이스브릭)",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213249_230213_141206.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "8",
+            "rid": "PF213175",
+            "title": "본스타 일산 정기 콘서트: SING, NOW",
+            "std": "2023.02.23",
+            "ed": "2023.02.23",
+            "locate": "KT&G 상상마당 라이브홀 [마포]",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213175_230210_144710.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "9",
+            "rid": "PF213159",
+            "title": "허각 단독 콘서트, 공연각: 10주년, 못다한 이야기",
+            "std": "2023.03.25",
+            "ed": "2023.03.26",
+            "locate": "신한pLay 스퀘어 (구. 신한카드 판스퀘어)",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213159_230210_135049.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "10",
+            "rid": "PF213152",
+            "title": "봄소풍 포크 콘서트",
+            "std": "2023.03.31",
+            "ed": "2023.03.31",
+            "locate": "해운대문화회관",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213152_230210_123317.jpg",
+            "status": "공연예정"
+          }
+        ]
+      },
+      {
+        "genre": "클래식",
+        "sub": [
+          {
+            "id": "1",
+            "rid": "PF213404",
+            "title": "미술 속 음악이야기, 프리다 칼로, 자클린 뒤프레를 만나다 [여수]",
+            "std": "2023.03.23",
+            "ed": "2023.03.23",
+            "locate": "예울마루",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213404_230215_141736.jpg",
+            "state": "공연예정"
+          },
+          {
+            "id": "2",
+            "rid": "PF213400",
+            "title": "김수진 & 신희정 피아노 듀오 리사이틀",
+            "std": "2023.03.05",
+            "ed": "2023.03.05",
+            "locate": "꿈의숲아트센터",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213400_230215_135429.jpg",
+            "state": "공연예정"
+          },
+          {
+            "id": "3",
+            "rid": "PF213388",
+            "title": "세실콘서트, Violinist 박경화 X Pianist 김소원",
+            "std": "2023.02.22",
+            "ed": "2023.02.22",
+            "locate": "세실아트홀",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213388_230215_130742.png",
+            "state": "공연예정"
+          },
+          {
+            "id": "4",
+            "rid": "PF213374",
+            "title": "제8회 QUARTET 7 정기연주회",
+            "std": "2023.02.26",
+            "ed": "2023.02.26",
+            "locate": "쌀롱드무지끄",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213374_230215_122102.jpg",
+            "state": "공연예정"
+          },
+          {
+            "id": "5",
+            "rid": "PF213371",
+            "title": "아밋 펠레드(Amit Peled) & 이선미 리싸이틀",
+            "std": "2023.03.14",
+            "ed": "2023.03.14",
+            "locate": "세종문화회관",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213371_230215_121831.jpg",
+            "state": "공연예정"
+          },
+          {
+            "id": "6",
+            "rid": "PF213369",
+            "title": "아티스트 나우, 배원희 바이올린 리사이틀",
+            "std": "2023.03.30",
+            "ed": "2023.03.30",
+            "locate": "대구콘서트하우스",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213369_230215_121646.jpg",
+            "state": "공연예정"
+          },
+          {
+            "id": "7",
+            "rid": "PF213359",
+            "title": "오혜전 현주희 듀오 렉처리사이틀",
+            "std": "2023.03.02",
+            "ed": "2023.03.02",
+            "locate": "꿈의숲아트센터",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213359_230215_114829.jpg",
+            "state": "공연예정"
+          },
+          {
+            "id": "8",
+            "rid": "PF213353",
+            "title": "Emotional",
+            "std": "2023.03.16",
+            "ed": "2023.03.16",
+            "locate": "아트홀제이",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213353_230215_113541.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "9",
+            "rid": "PF213346",
+            "title": "피아니스트 LAURENS PATZLAFF & JOOSUN LIM  듀오 콘서트",
+            "std": "2023.03.03",
+            "ed": "2023.03.03",
+            "locate": "덕호아트홀",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213346_230215_112242.jpg",
+            "state": "공연예정"
+          },
+          {
+            "id": "10",
+            "rid": "PF213290",
+            "title": "Composer Series Ⅱ, Wolfgang Amadeus Mozart: 모차르트 협주곡의 밤",
+            "std": "2023.03.04",
+            "ed": "2023.03.04",
+            "locate": "구로아트밸리",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213290_230214_110649.gif",
+            "status": "공연예정"
+          }
+        ]
+      },
+      {
+        "genre": "가족/아동",
+        "sub": [
+          {
+            "id": "1",
+            "rid": "PF213414",
+            "title": "깨비와 혹부리영감",
+            "std": "2023.03.03",
+            "ed": "2023.03.03",
+            "locate": "노원문화예술회관",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213414_230215_144235.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "2",
+            "rid": "PF213410",
+            "title": "통진네시앤콘서트, 도채비방쉬 [김포]",
+            "std": "2023.02.25",
+            "ed": "2023.02.25",
+            "locate": "통진두레문화센터",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213410_230215_143404.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "3",
+            "rid": "PF213403",
+            "title": "고양이캣 [광명]",
+            "std": "2023.04.22",
+            "ed": "2023.04.22",
+            "locate": "광명시민회관",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213403_230215_141307.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "4",
+            "rid": "PF213386",
+            "title": "공룡애니멀쇼 [울산]",
+            "std": "2023.04.09",
+            "ed": "2023.04.09",
+            "locate": "울산문화예술회관",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213386_230215_124707.jpg",
+            "state": "공연예정"
+          },
+          {
+            "id": "5",
+            "rid": "PF213376",
+            "title": "번개맨: 우주최강 번개삼총사 [창원]",
+            "std": "2023.04.08",
+            "ed": "2023.04.09",
+            "locate": "성산아트홀",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213376_230215_122447.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "6",
+            "rid": "PF213364",
+            "title": "겨울왕국: 겨울이야기 [성남]",
+            "std": "2023.04.15",
+            "ed": "2023.04.15",
+            "locate": "잡월드 나래울극장",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213364_230215_120437.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "7",
+            "rid": "PF213305",
+            "title": "우리 아빠가 최고야 [울산]",
+            "std": "2023.04.08",
+            "ed": "2023.04.09",
+            "locate": "울산북구문화예술회관",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213305_230214_140636.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "8",
+            "rid": "PF213269",
+            "title": "슈퍼 히어로의 똥 닦는 법 [원주]",
+            "std": "2023.04.29",
+            "ed": "2023.04.30",
+            "locate": "원주백운아트홀",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213269_230213_150106.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "9",
+            "rid": "PF213245",
+            "title": "토요키즈클래식, 클래식으로 만나는 명작 애니메이션 (3월)",
+            "std": "2023.03.25",
+            "ed": "2023.03.25",
+            "locate": "용인포은아트홀",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213245_230213_135930.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "10",
+            "rid": "PF213242",
+            "title": "알라딘 [양산]",
+            "std": "2023.04.23",
+            "ed": "2023.04.23",
+            "locate": "양산문화예술회관",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213242_230213_134731.jpg",
+            "status": "공연예정"
+          }
+        ]
+      },
+      {
+        "genre": "뮤직페스티벌",
+        "sub": [
+          {
+            "id": "1",
+            "rid": "PF213395",
+            "title": "그리즐리(Grizzly) Concert: Spring House",
+            "std": "2023.03.04",
+            "ed": "2023.03.05",
+            "locate": "폼텍웍스홀",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213395_230215_133725.jfif",
+            "state": "공연예정"
+          },
+          {
+            "id": "2",
+            "rid": "PF213312",
+            "title": "어느 날의 꿈",
+            "std": "2023.02.26",
+            "ed": "2023.02.26",
+            "locate": "벨로주 [홍대] (구. 왓에버)",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213312_230214_145048.jfif",
+            "state": "공연예정"
+          },
+          {
+            "id": "3",
+            "rid": "PF213270",
+            "title": "원픽 페스티벌",
+            "std": "2023.04.29",
+            "ed": "2023.04.30",
+            "locate": "연세대학교 노천극장",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213270_230213_150357.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "4",
+            "rid": "PF213257",
+            "title": "어쩌다 페스티벌, SPECIAL: HYNN(박혜원) X 홍이삭 [인천]",
+            "std": "2023.03.11",
+            "ed": "2023.03.11",
+            "locate": "인천문화예술회관",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213257_230213_143217.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "5",
+            "rid": "PF213192",
+            "title": "팔칠댄스(87dance) COLOR PAPER HOTEL 쇼케이스",
+            "std": "2023.03.11",
+            "ed": "2023.03.11",
+            "locate": "SPACE BRICK (스페이스브릭)",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213192_230213_110055.jpg",
+            "state": "공연예정"
+          },
+          {
+            "id": "6",
+            "rid": "PF213165",
+            "title": "Colorful Stage #2",
+            "std": "2023.03.11",
+            "ed": "2023.03.11",
+            "locate": "클럽온에어",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213165_230210_140814.jfif",
+            "state": "공연예정"
+          },
+          {
+            "id": "7",
+            "rid": "PF213152",
+            "title": "봄소풍 포크 콘서트",
+            "std": "2023.03.31",
+            "ed": "2023.03.31",
+            "locate": "해운대문화회관",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213152_230210_123317.jpg",
+            "state": "공연예정"
+          },
+          {
+            "id": "8",
+            "rid": "PF213055",
+            "title": "제 58회 라이브 클럽 데이 with 멜론 트랙제로",
+            "std": "2023.02.24",
+            "ed": "2023.02.24",
+            "locate": "라이브클럽 협동조합",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213055_230209_101451.jpg",
+            "state": "공연예정"
+          },
+          {
+            "id": "9",
+            "rid": "PF212838",
+            "title": "뽕 디스 빠뤼 in 밀양",
+            "std": "2023.02.24",
+            "ed": "2023.02.24",
+            "locate": "밀양아리랑아트센터",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF212838_230208_121302.jpg",
+            "state": "공연예정"
+          },
+          {
+            "id": "10",
+            "rid": "PF212830",
+            "title": "ONEW 1st CONCERT: O-NEW-NOTE",
+            "std": "2023.03.03",
+            "ed": "2023.03.05",
+            "locate": "올림픽공원",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF212830_230208_112331.jpg",
+            "status": "공연예정"
+          }
+        ]
+      }
+    ]
+  }

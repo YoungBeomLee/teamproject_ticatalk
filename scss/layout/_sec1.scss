@@ -1,29 +1,29 @@
 //nav
 nav {
   z-index: 30;
-  .nav{
-    --bs-nav-link-color: #F2F4F5;
-    --bs-nav-link-hover-color: #7432E1;
-    
-    & h1 img{
+  .nav {
+    --bs-nav-link-color: #f2f4f5;
+    --bs-nav-link-hover-color: #7432e1;
+
+    & h1 img {
       width: 168px;
     }
 
     .dropdown-menu {
       transform: translate3d(-6px, 55px, 0px);
-      --bs-dropdown-min-width: 0 !important; 
+      --bs-dropdown-min-width: 0 !important;
       --bs-dropdown-padding-y: 1rem;
       --bs-dropdown-color: #333333;
-      --bs-dropdown-bg: #F2F4F5;
-      --bs-dropdown-link-hover-bg: #F2F4F5;
+      --bs-dropdown-bg: #f2f4f5;
+      --bs-dropdown-link-hover-bg: #f2f4f5;
       --bs-dropdown-link-hover-color: #7432e1;
-      --bs-dropdown-link-active-color: #F2F4F5;
-      --bs-dropdown-link-active-bg: #7432E1;
+      --bs-dropdown-link-active-color: #f2f4f5;
+      --bs-dropdown-link-active-bg: #7432e1;
       --bs-dropdown-item-padding-y: 0.4rem;
       text-align: center;
     }
     .dropdown-toggle::after {
-      display: none;// display:inline-block 으로 보여도됨
+      display: none; // display:inline-block 으로 보여도됨
     }
   }
 
@@ -31,49 +31,49 @@ nav {
     background-color: #f2f4f5b2;
 
     & .nav-link {
-        --bs-nav-link-color: #333;
-      }
+      --bs-nav-link-color: #333;
     }
+  }
   //nav 2-depth
   .card {
     --bs-card-border-width: none;
     --bs-card-border-color: none;
     --bs-card-bg: none;
     border: none;
-    
-    & li{
+
+    & li {
       padding: 0 20px;
 
-      & a{
+      & a {
         color: #333;
-        &:hover{
-          color:#7432E1;
+        &:hover {
+          color: #7432e1;
         }
       }
     }
   }
 }
 
-.sec1-main-wrap{
+.sec1-main-wrap {
   height: 100vh;
-  .sec1-main-inner{
+  .sec1-main-inner {
     height: 80vh;
     background: url("../img/poster/sec1/sec1-main-test.jpg") no-repeat;
     background-size: cover;
     background-position: center;
-    .sec1-maincon-info{
+    .sec1-maincon-info {
       top: 30%;
     }
   }
 }
-.sec1-mainslide-wrap{
+.sec1-mainslide-wrap {
   width: 80%;
   bottom: 0%;
   left: 50% !important;
   transform: translateX(-50%) !important;
   .sec1-main-slide-box {
-    &::before{
-      content: '1';
+    &::before {
+      content: "1";
       position: absolute;
       top: 0px;
       left: 0px;
@@ -87,7 +87,7 @@ nav {
       color: $primary;
       z-index: 10;
     }
-    .sec1-main-slide-btn{
+    .sec1-main-slide-btn {
       overflow: hidden;
       & > img {
         display: block;
@@ -99,8 +99,8 @@ nav {
     }
   }
 }
-.sec1-main-inner{
-  .sec1-main-slide-next{
+.sec1-main-inner {
+  .sec1-main-slide-next {
     top: auto;
     bottom: 20%;
     right: 5%;
@@ -110,11 +110,11 @@ nav {
     background-size: contain;
     background-color: $light;
     border-radius: 15px;
-    &::after{
-      content: '';
+    &::after {
+      content: "";
     }
   }
-  .sec1-main-slide-prev{
+  .sec1-main-slide-prev {
     top: auto;
     bottom: 20%;
     left: 5%;
@@ -124,11 +124,85 @@ nav {
     background-size: contain;
     background-color: $light;
     border-radius: 15px;
-    &::after{
-      content: '';
+    &::after {
+      content: "";
     }
   }
 }
-.sec1-poster-hover-title{
+.sec1-poster-hover-title {
   line-height: 1.8 !important;
+}
+
+//chat
+#chat-wrap {
+  position: fixed;
+  left: 100px;
+  top: 100px;
+  z-index: 20;
+}
+iframe {
+  height: 0;
+  transition: all 1s;
+}
+.on {
+  height: 700px !important;
+}
+
+.chat-button {
+  position: fixed;
+  top: 80px;
+  left: 80px;
+  z-index: 100;
+  width: 6rem;
+  height: 6rem;
+  background-color: #7432e1;
+  border-radius: 50%;
+  transition: all 0.8s;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.chat-wrap-circle {
+  display: none;
+}
+.chat-icon {
+  position: relative;
+  margin-top: 3rem;
+}
+.chat-icon:before {
+  top: -0.8rem;
+}
+.chat-icon:after {
+  top: 0.8rem;
+}
+.chat-icon:before,
+.chat-icon:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+.chat-icon,
+.chat-icon:before,
+.chat-icon:after {
+  width: 3rem;
+  height: 2px;
+  background: #333;
+  display: inline-block;
+}
+.chat-button:hover .chat-icon:before {
+  top: -1rem;
+}
+.chat-button:hover .chat-icon:after {
+  top: 1rem;
+}
+.chat-wrap-circle:checked ~ .chat-button .chat-icon {
+  background-color: transparent;
+}
+.chat-wrap-circle:checked ~ .chat-button .chat-icon:before {
+  top: 0;
+  transform: rotate(135deg);
+}
+.chat-wrap-circle:checked ~ .chat-button .chat-icon:after {
+  top: 0;
+  transform: rotate(-135deg);
 }
