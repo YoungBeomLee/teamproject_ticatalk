@@ -659,7 +659,7 @@
       <div class="ticketsearch-contents br-15 bg-light p-5">
         <ul class="search list-unstyled d-inline-block w-100 mgb-25">
           <li class="float-start me-4">
-            <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark search-nav-on" data-genre="total">전체</a>
+            <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark search-nav-on" data-genre="전체">전체</a>
           </li>
           <li class="float-start me-4">
             <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark" data-genre="뮤지컬">뮤지컬</a>
@@ -680,41 +680,6 @@
             <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark" data-genre="뮤직페스티벌">뮤직페스티벌</a>
           </li>
         </ul>
-        <div class="search-detail d-inline-block w-100 mgb-25">
-          <div class="dropdown float-start me-4">
-            <button class="search-detail-btn btn btn-secondary dropdown-toggle bg-lgray border-0 tkt-t6" type="button" data-bs-toggle="dropdown" aria-expanded="false">지역</button>
-            <ul class="search-detail-list dropdown-menu">
-              <li><a class="dropdown-item" href="javascript:void(0)">전체</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">서울</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">경기도</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">강원도</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">충청도</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">전라도</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">경상도</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">제주</a></li>
-            </ul>
-          </div>
-          <div class="dropdown float-start me-4">
-            <button class="search-detail-btn btn btn-secondary dropdown-toggle bg-lgray border-0 tkt-t6" type="button" data-bs-toggle="dropdown" aria-expanded="false">기간</button>
-            <ul class="search-detail-list dropdown-menu">
-              <li><a class="dropdown-item" href="javascript:void(0)">전체</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">일간</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">월간</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">주간</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">주말</a></li>
-            </ul>
-          </div>
-          <div class="dropdown float-start me-4">
-            <button class="search-detail-btn btn btn-secondary dropdown-toggle bg-lgray border-0 tkt-t6" type="button" data-bs-toggle="dropdown" aria-expanded="false">공연 상태</button>
-            <ul class="search-detail-list dropdown-menu">
-              <li><a class="dropdown-item" href="javascript:void(0)">전체</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">공연중/공연예정</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">공연중</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">공연예정</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">종료/취소</a></li>
-            </ul>
-          </div>
-        </div>
         <div class="search-result row d-flex justify-content-between">
           <div class="text-center col-6 col-sm-6 col-md-4 col-xxl-2">
             <div class="card bg-transparent border-0 search-poster">
@@ -1017,29 +982,39 @@
     const resultImg=document.querySelectorAll('.search-result .card img');
     const resultDate=document.querySelectorAll('.search-result .date');
     const resultTitle=document.querySelectorAll('.search-result .title');
-    console.log(resultTitle);
     let kopisData;
-
+      //데이터 가져오기
     get_data();
         async function get_data() {
         const response = await fetch(kopisUrl);
             kopisData = await response.json();
             mainSearch(kopisData);
-            return kopisData;
         };
+      //데이터 비교출력  
     function mainSearch(kopisData){
+      console.log(kopisData)
       kopisData.total.forEach((g)=>{
           let dataGenre = g.genre;
       searchTab.addEventListener('click',function(e){
           let searchGenre = e.target.getAttribute('data-genre');
+          console.log(dataGenre,searchGenre)
           if(searchGenre==dataGenre){
               for(k=0;k<6;k++){
-                  console.log(g.sub[k].title);
                   resultImg[k].setAttribute('src',g.sub[k].img)
+                  resultImg[k].setAttribute('alt',`${g.sub[k].title}포스터`)
                   resultDate[k].innerText = `${g.sub[k].std}`
                   resultTitle[k].innerText = `${g.sub[k].title}`
                   };
-              };
+              }
+              // else{
+              //   for(t=0;t<6;t++){
+              //     resultImg[t].setAttribute('src',kopisData.total[t].sub[t].img);
+              //     resultImg[t].setAttribute('alt',`${kopisData.total[t].sub[t].title}포스터`);
+              //     resultDate[t].innerText=`${kopisData.total[t].sub[t].std}`
+              //     resultTitle[t].innerText=`${kopisData.total[t].sub[t].title}`
+              //   }
+
+              //};
             });   
         });
     };
