@@ -143,12 +143,11 @@ nav {
   
 }
 iframe{
-  height: 0;
+  display: none;
   transition: all 1s;
+  
 }
-.on{
-  height: 700px !important;
-}
+
 
 
 .chat-button{
@@ -156,8 +155,8 @@ iframe{
   top: 80px;
   left: 80px;
   z-index: 100;
-  width: 6rem;
-  height: 6rem;
+  width: 3rem;
+  height: 3rem;
   background-color: #7432E1;
   border-radius: 50%;
   transition: all 0.8s;
@@ -169,13 +168,13 @@ iframe{
 }
 .chat-icon {
   position: relative;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 .chat-icon:before {
-  top: -0.8rem;
+  top: -0.5rem;
 }
 .chat-icon:after {
-  top: 0.8rem;
+  top: 0.5rem;
 }
 .chat-icon:before, .chat-icon:after {
   content: "";
@@ -184,16 +183,16 @@ iframe{
   transition: all 0.2s;
 }
 .chat-icon, .chat-icon:before, .chat-icon:after {
-  width: 3rem;
+  width: 1.5rem;
   height: 2px;
   background: #333;
   display: inline-block;
 }
 .chat-button:hover .chat-icon:before {
-  top: -1rem;
+  top: -0.7rem;
 }
 .chat-button:hover .chat-icon:after {
-  top: 1rem;
+  top: 0.7rem;
 }
 .chat-wrap-circle:checked ~ .chat-button .chat-icon {
   background-color: transparent;
