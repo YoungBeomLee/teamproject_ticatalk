@@ -13614,8 +13614,8 @@ iframe {
 }
 
 .sec5-result-text:hover > a {
-  font-weight: 600 !important;
   color: #7432E1 !important;
+  font-weight: 600 !important;
   text-decoration: underline !important;
 }
 

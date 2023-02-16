@@ -10,18 +10,18 @@
 </head>
 <body>
   <!-- gnb -->
-  <nav class="container-fluid position-fixed py-4">
+  <nav class="tkt-nav container-fluid position-fixed py-4">
     <div class="nav justify-content-between container" id="nav-tab">
       <h1>
         <a href="#"><img id ="logo" src="img/tkt-logo-w.svg" alt="logo" /></a>
       </h1>
       <!-- 1depth -->
       <div class="nav-button d-flex justify-content-center pe-5 tkt-t5">
-        <button class="nav-link px-4 btn border-0 bg-transparent tkt-t5 text-light" type="button" id="nav-catalk-tab" data-bs-toggle="collapse" data-bs-target="#nav-catalk"  role="button" aria-expanded="false"  aria-controls="nav-catalk">캣톡</button>
-        <button class="nav-link px-4 btn border-0 bg-transparent tkt-t5 text-light" type="button" id="nav-search-tab" data-bs-toggle="collapse" data-bs-target="#nav-search" aria-expanded="false" aria-controls="nav-search">공연찾기</button>
-        <button class="nav-link px-4 btn border-0 bg-transparent tkt-t5 text-light" type="button" id="nav-ranking-tab" data-bs-toggle="collapse" data-bs-target="#nav-ranking" aria-expanded="false" aria-controls="nav-ranking">랭킹·추천</button>
-        <button class="nav-link px-4 btn border-0 bg-transparent tkt-t5 text-light" type="button" id="nav-promotion-tab" data-bs-toggle="collapse" data-bs-target="#nav-promotion" aria-expanded="false" aria-controls="nav-promotion">프로모션</button>
-        <button class="nav-link px-4 btn border-0 bg-transparent tkt-t5 text-light" type="button" id="nav-market-tab" data-bs-toggle="collapse" data-bs-target="#nav-market" aria-expanded="false" aria-controls="nav-market">티켓줍기</button>
+        <button class="tkt-nav-link nav-link px-4 btn border-0 bg-transparent tkt-t5 text-light" type="button" id="nav-catalk-tab" data-bs-toggle="collapse" data-bs-target="#nav-catalk"  role="button" aria-expanded="false"  aria-controls="nav-catalk">캣톡</button>
+        <button class="tkt-nav-link nav-link px-4 btn border-0 bg-transparent tkt-t5 text-light" type="button" id="nav-search-tab" data-bs-toggle="collapse" data-bs-target="#nav-search" aria-expanded="false" aria-controls="nav-search">공연찾기</button>
+        <button class="tkt-nav-link nav-link px-4 btn border-0 bg-transparent tkt-t5 text-light" type="button" id="nav-ranking-tab" data-bs-toggle="collapse" data-bs-target="#nav-ranking" aria-expanded="false" aria-controls="nav-ranking">랭킹·추천</button>
+        <button class="tkt-nav-link nav-link px-4 btn border-0 bg-transparent tkt-t5 text-light" type="button" id="nav-promotion-tab" data-bs-toggle="collapse" data-bs-target="#nav-promotion" aria-expanded="false" aria-controls="nav-promotion">프로모션</button>
+        <button class="tkt-nav-link nav-link px-4 btn border-0 bg-transparent tkt-t5 text-light" type="button" id="nav-market-tab" data-bs-toggle="collapse" data-bs-target="#nav-market" aria-expanded="false" aria-controls="nav-market">티켓줍기</button>
       </div>
       <div class="align-self-center nav-item dropdown">
         <a class="nav-link dropdown-toggle  ps-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -576,25 +576,25 @@
       <div class="ticketsearch-contents br-15 bg-light p-5">
         <ul class="search list-unstyled d-inline-block w-100 mgb-25">
           <li class="float-start me-4">
-            <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark search-nav-on">전체</a>
+            <a href="javascript:void(0)" class="sec5-nav-link nav-link tkt-t5 text-dark search-nav-on">전체</a>
           </li>
           <li class="float-start me-4">
-            <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark">뮤지컬</a>
+            <a href="javascript:void(0)" class="sec5-nav-link nav-link tkt-t5 text-dark">뮤지컬</a>
           </li>
           <li class="float-start me-4">
-            <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark">연극</a>
+            <a href="javascript:void(0)" class="sec5-nav-link nav-link tkt-t5 text-dark">연극</a>
           </li>
           <li class="float-start me-4">
-            <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark">콘서트</a>
+            <a href="javascript:void(0)" class="sec5-nav-link nav-link tkt-t5 text-dark">콘서트</a>
           </li>
           <li class="float-start me-4">
-            <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark">클래식</a>
+            <a href="javascript:void(0)" class="sec5-nav-link nav-link tkt-t5 text-dark">클래식</a>
           </li>
           <li class="float-start me-4">
-            <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark">가족.아동</a>
+            <a href="javascript:void(0)" class="sec5-nav-link nav-link tkt-t5 text-dark">가족.아동</a>
           </li>
           <li class="float-start me-4">
-            <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark">뮤직페스티벌</a>
+            <a href="javascript:void(0)" class="sec5-nav-link nav-link tkt-t5 text-dark">뮤직페스티벌</a>
           </li>
         </ul>
         <div class="search-detail d-inline-block w-100 mgb-25">
@@ -860,8 +860,8 @@
   <script>
     let sec1 = document.querySelector('.sec1-main-wrap');
     let sec1Height = sec1.clientHeight;
-    let nav = document.querySelector('nav');
-    let navBtn = document.querySelectorAll('.nav-link');
+    let nav = document.querySelector('.tkt-nav');
+    let navBtn = document.querySelectorAll('.tkt-nav-link');
     let navDepth = document.querySelectorAll('.multi-collapse');
     let logoImg = document.querySelector('#logo');
     let loginIcon = document.querySelector('#login-icon');
@@ -932,6 +932,15 @@
     mainSlideBoxes.forEach((msbs,index)=>{
       msbs.setAttribute('data-rank',index+1)
     });
+
+    // section5 
+    let searchBigBtn = document.querySelectorAll('.sec5-nav-link');
+    searchBigBtn.forEach((sbbtn)=>{
+      sbbtn.addEventListener('click',function(){
+        delCName(searchBigBtn,'search-nav-on');
+        sbbtn.classList.add('search-nav-on');
+      })
+    })
   </script>
 </body>
 </html>
