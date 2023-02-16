@@ -2,32 +2,32 @@
 nav {
   transition: all .4s;
   z-index: 30;
-  .nav{
-    --bs-nav-link-color: #F2F4F5;
-    --bs-nav-link-hover-color: #7432E1;
-    
-    & h1 img{
+  .nav {
+    --bs-nav-link-color: #f2f4f5;
+    --bs-nav-link-hover-color: #7432e1;
+
+    & h1 img {
       width: 168px;
     }
 
     .dropdown-menu {
       transform: translate3d(-6px, 55px, 0px);
-      --bs-dropdown-min-width: 0 !important; 
+      --bs-dropdown-min-width: 0 !important;
       --bs-dropdown-padding-y: 1rem;
       --bs-dropdown-color: #333333;
-      --bs-dropdown-bg: #F2F4F5;
-      --bs-dropdown-link-hover-bg: #F2F4F5;
+      --bs-dropdown-bg: #f2f4f5;
+      --bs-dropdown-link-hover-bg: #f2f4f5;
       --bs-dropdown-link-hover-color: #7432e1;
-      --bs-dropdown-link-active-color: #F2F4F5;
-      --bs-dropdown-link-active-bg: #7432E1;
+      --bs-dropdown-link-active-color: #f2f4f5;
+      --bs-dropdown-link-active-bg: #7432e1;
       --bs-dropdown-item-padding-y: 0.4rem;
       text-align: center;
     }
     .dropdown-toggle::after {
-      display: none;// display:inline-block 으로 보여도됨
+      display: none; // display:inline-block 으로 보여도됨
     }
   }
-  .nav-on{
+  .nav-on {
     color: $primary !important;
     font-weight: 600 !important;
     text-decoration: underline !important;
@@ -38,13 +38,13 @@ nav {
     --bs-card-border-color: none;
     --bs-card-bg: none;
     border: none;
-    
-    & li{
+
+    & li {
       padding: 0 20px;
 
-      & a{
+      & a {
         color: #333;
-        &:hover{
+        &:hover {
           @include tkt-thover;
         }
       }
@@ -52,14 +52,14 @@ nav {
   }
 }
 
-.sec1-main-wrap{
+.sec1-main-wrap {
   height: 100vh;
-  .sec1-main-inner{
+  .sec1-main-inner {
     height: 80vh;
     background: url("../img/poster/sec1/sec1-main-test.jpg") no-repeat;
     background-size: cover;
     background-position: center;
-    .sec1-maincon-info{
+    .sec1-maincon-info {
       top: 30%;
     }
   }
@@ -68,13 +68,13 @@ nav {
     background: rgba(0, 0, 0, 0.25);
   }
 }
-.sec1-mainslide-wrap{
+.sec1-mainslide-wrap {
   width: 80%;
   bottom: 0%;
   left: 50% !important;
   transform: translateX(-50%) !important;
   .sec1-main-slide-box {
-    &::before{
+    &::before {
       content: attr(data-rank);
       position: absolute;
       top: 0px;
@@ -89,7 +89,7 @@ nav {
       color: $primary;
       z-index: 10;
     }
-    .sec1-main-slide-btn{
+    .sec1-main-slide-btn {
       overflow: hidden;
       & > img {
         display: block;
@@ -101,8 +101,8 @@ nav {
     }
   }
 }
-.sec1-main-inner{
-  .sec1-main-slide-next{
+.sec1-main-inner {
+  .sec1-main-slide-next {
     top: auto;
     bottom: 20%;
     right: 5%;
@@ -112,11 +112,11 @@ nav {
     background-size: contain;
     background-color: $light;
     border-radius: 15px;
-    &::after{
-      content: '';
+    &::after {
+      content: "";
     }
   }
-  .sec1-main-slide-prev{
+  .sec1-main-slide-prev {
     top: auto;
     bottom: 20%;
     left: 5%;
@@ -126,11 +126,15 @@ nav {
     background-size: contain;
     background-color: $light;
     border-radius: 15px;
-    &::after{
-      content: '';
+    &::after {
+      content: "";
     }
   }
 }
+<<<<<<< HEAD
+.sec1-poster-hover-title {
+  line-height: 1.8 !important;
+=======
 .sec1-poster-hover{
   opacity: 0;
   background-color: rgba(116, 50, 225, 0.9);
@@ -141,36 +145,35 @@ nav {
   &-title{
     line-height: 1.8 !important;
   }
+>>>>>>> a89f717ff28a69c7402649892b8f30d5241127c4
 }
 
 //chat
-#chat-wrap{
+#chat-wrap {
   position: fixed;
   left: 100px;
   top: 100px;
   z-index: 20;
 }
-iframe{
+iframe {
   display: none;
   transition: all 1s;
-  
 }
 
-
-.chat-button{
+.chat-button {
   position: fixed;
   top: 80px;
   left: 80px;
   z-index: 100;
   width: 3rem;
   height: 3rem;
-  background-color: #7432E1;
+  background-color: #7432e1;
   border-radius: 50%;
   transition: all 0.8s;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
   text-align: center;
 }
-.chat-wrap-circle{
+.chat-wrap-circle {
   display: none;
 }
 .chat-icon {
@@ -183,13 +186,16 @@ iframe{
 .chat-icon:after {
   top: 0.5rem;
 }
-.chat-icon:before, .chat-icon:after {
+.chat-icon:before,
+.chat-icon:after {
   content: "";
   position: absolute;
   left: 0;
   transition: all 0.2s;
 }
-.chat-icon, .chat-icon:before, .chat-icon:after {
+.chat-icon,
+.chat-icon:before,
+.chat-icon:after {
   width: 1.5rem;
   height: 2px;
   background: #333;
