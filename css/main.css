@@ -13113,8 +13113,8 @@ nav {
 }
 
 nav .nav {
-  --bs-nav-link-color: #F2F4F5;
-  --bs-nav-link-hover-color: #7432E1;
+  --bs-nav-link-color: #f2f4f5;
+  --bs-nav-link-hover-color: #7432e1;
 }
 
 nav .nav h1 img, nav .nav .h1 img {
@@ -13127,11 +13127,11 @@ nav .nav .dropdown-menu {
   --bs-dropdown-min-width: 0 !important;
   --bs-dropdown-padding-y: 1rem;
   --bs-dropdown-color: #333333;
-  --bs-dropdown-bg: #F2F4F5;
-  --bs-dropdown-link-hover-bg: #F2F4F5;
+  --bs-dropdown-bg: #f2f4f5;
+  --bs-dropdown-link-hover-bg: #f2f4f5;
   --bs-dropdown-link-hover-color: #7432e1;
-  --bs-dropdown-link-active-color: #F2F4F5;
-  --bs-dropdown-link-active-bg: #7432E1;
+  --bs-dropdown-link-active-color: #f2f4f5;
+  --bs-dropdown-link-active-bg: #7432e1;
   --bs-dropdown-item-padding-y: 0.4rem;
   text-align: center;
 }
@@ -13237,7 +13237,7 @@ nav .card li a:hover {
 }
 
 .sec1-main-inner .sec1-main-slide-next::after {
-  content: '';
+  content: "";
 }
 
 .sec1-main-inner .sec1-main-slide-prev {
@@ -13253,7 +13253,7 @@ nav .card li a:hover {
 }
 
 .sec1-main-inner .sec1-main-slide-prev::after {
-  content: '';
+  content: "";
 }
 
 .sec1-poster-hover {
@@ -13284,8 +13284,10 @@ nav .card li a:hover {
   transition: all 1s;
 }
 
-.chat-wrap-circle {
+iframe {
   display: none;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .chat-button {
@@ -13295,7 +13297,7 @@ nav .card li a:hover {
   z-index: 100;
   width: 3rem;
   height: 3rem;
-  background-color: #7432E1;
+  background-color: #7432e1;
   border-radius: 50%;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
@@ -13339,6 +13341,49 @@ nav .card li a:hover {
 
 .chat-button .chat-icon:after {
   top: 0.5rem;
+}
+
+.chat-wrap-circle {
+  display: none;
+}
+
+.chat-icon {
+  position: relative;
+  margin-top: 1.5rem;
+}
+
+.chat-icon:before {
+  top: -0.5rem;
+}
+
+.chat-icon:after {
+  top: 0.5rem;
+}
+
+.chat-icon:before,
+.chat-icon:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.chat-icon,
+.chat-icon:before,
+.chat-icon:after {
+  width: 1.5rem;
+  height: 2px;
+  background: #333;
+  display: inline-block;
+}
+
+.chat-button:hover .chat-icon:before {
+  top: -0.7rem;
+}
+
+.chat-button:hover .chat-icon:after {
+  top: 0.7rem;
 }
 
 .chat-wrap-circle:checked ~ .chat-button .chat-icon {
@@ -13628,6 +13673,15 @@ nav .card li a:hover {
 .result5 img {
   width: 186px;
   height: 238px;
+}
+
+.ticketsearch-contents {
+  height: 100%;
+}
+
+.search-result {
+  height: 307px;
+  overflow: hidden;
 }
 
 .footer-iconbox {
