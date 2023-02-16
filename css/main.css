@@ -13364,6 +13364,11 @@ iframe {
   word-break: keep-all;
 }
 
+.sec2-fav-btn {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
 .sec2-fav-btn:hover .sec2-icon-leave {
   display: none !important;
 }
@@ -13376,6 +13381,47 @@ iframe {
   color: #7432E1 !important;
   font-weight: 600 !important;
   text-decoration: underline !important;
+}
+
+.sec2-fav-btn:hover ~ .sec2-btn-back {
+  opacity: .8;
+}
+
+.sec2-fav-btn:hover ~ .sec2-btn-back-sec {
+  -webkit-transform: translate(-50%, -50%) scale(60);
+          transform: translate(-50%, -50%) scale(60);
+}
+
+.sec2-fav-btn:hover ~ .sec2-btn-back-ter {
+  -webkit-transform: translate(-50%, -50%) scale(90);
+          transform: translate(-50%, -50%) scale(90);
+}
+
+.sec2-btn-back {
+  top: 35%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  opacity: 0;
+}
+
+.sec2-btn-back-sec {
+  width: 1px;
+  height: 1px;
+  z-index: -10;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.sec2-btn-back-ter {
+  width: 1px;
+  height: 1px;
+  z-index: -20;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 .sec3-container {
