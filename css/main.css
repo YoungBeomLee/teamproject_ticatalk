@@ -11558,12 +11558,8 @@ nav .card li a:hover {
 }
 
 iframe {
-  height: 0;
+  display: none;
   transition: all 1s;
-}
-
-.on {
-  height: 700px !important;
 }
 
 .chat-button {
@@ -11571,8 +11567,8 @@ iframe {
   top: 80px;
   left: 80px;
   z-index: 100;
-  width: 6rem;
-  height: 6rem;
+  width: 3rem;
+  height: 3rem;
   background-color: #7432e1;
   border-radius: 50%;
   transition: all 0.8s;
@@ -11586,15 +11582,15 @@ iframe {
 
 .chat-icon {
   position: relative;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
 .chat-icon:before {
-  top: -0.8rem;
+  top: -0.5rem;
 }
 
 .chat-icon:after {
-  top: 0.8rem;
+  top: 0.5rem;
 }
 
 .chat-icon:before,
@@ -11608,18 +11604,18 @@ iframe {
 .chat-icon,
 .chat-icon:before,
 .chat-icon:after {
-  width: 3rem;
+  width: 1.5rem;
   height: 2px;
   background: #333;
   display: inline-block;
 }
 
 .chat-button:hover .chat-icon:before {
-  top: -1rem;
+  top: -0.7rem;
 }
 
 .chat-button:hover .chat-icon:after {
-  top: 1rem;
+  top: 0.7rem;
 }
 
 .chat-wrap-circle:checked ~ .chat-button .chat-icon {
@@ -11835,6 +11831,15 @@ iframe {
   height: 238px;
 }
 
+.ticketsearch-contents {
+  height: 100%;
+}
+
+.search-result {
+  height: 307px;
+  overflow: hidden;
+}
+
 .footer-iconbox {
   position: relative;
 }
@@ -11931,6 +11936,9 @@ nav .card li a:hover {
   border-radius: 15px 15px 0 0;
   width: 30%;
   height: 275px;
+}
+.section2-catalk-data .catalk-data-container .catalk-data-wrap .div1 img, .section2-catalk-data .catalk-data-container .catalk-data-wrap .div2 img, .section2-catalk-data .catalk-data-container .catalk-data-wrap .div3 img {
+  padding-top: 50px;
 }
 
 @media (max-width: 990px) {
