@@ -13299,107 +13299,25 @@ iframe {
   height: 3rem;
   background-color: #7432e1;
   border-radius: 50%;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
   -webkit-box-shadow: 2px 2px 5px #a49df1;
           box-shadow: 2px 2px 5px #a49df1;
   text-align: center;
 }
 
-.chat-button:hover .chat-icon:before {
-  top: -0.7rem;
-}
-
-.chat-button:hover .chat-icon:after {
-  top: 0.7rem;
-}
-
-.chat-button .chat-icon {
-  position: relative;
-  margin-top: 1.5rem;
-  width: 1.5rem;
-  height: 2px;
-  background: #333;
-  display: inline-block;
-}
-
-.chat-button .chat-icon:before, .chat-button .chat-icon:after {
-  content: "";
+.chat-button img {
+  width: 70%;
   position: absolute;
-  left: 0;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  width: 1.5rem;
-  height: 2px;
-  background: #333;
-  display: inline-block;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
-.chat-button .chat-icon:before {
-  top: -0.5rem;
-}
-
-.chat-button .chat-icon:after {
-  top: 0.5rem;
-}
-
-.chat-wrap-circle {
-  display: none;
-}
-
-.chat-icon {
-  position: relative;
-  margin-top: 1.5rem;
-}
-
-.chat-icon:before {
-  top: -0.5rem;
-}
-
-.chat-icon:after {
-  top: 0.5rem;
-}
-
-.chat-icon:before,
-.chat-icon:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.chat-icon,
-.chat-icon:before,
-.chat-icon:after {
-  width: 1.5rem;
-  height: 2px;
-  background: #333;
-  display: inline-block;
-}
-
-.chat-button:hover .chat-icon:before {
-  top: -0.7rem;
-}
-
-.chat-button:hover .chat-icon:after {
-  top: 0.7rem;
-}
-
-.chat-wrap-circle:checked ~ .chat-button .chat-icon {
-  background-color: transparent;
-}
-
-.chat-wrap-circle:checked ~ .chat-button .chat-icon:before {
-  top: 0;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-}
-
-.chat-wrap-circle:checked ~ .chat-button .chat-icon:after {
-  top: 0;
-  -webkit-transform: rotate(-135deg);
-          transform: rotate(-135deg);
+.chat-button:hover img {
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
 }
 
 .sec2-fav-title {
