@@ -1,4 +1,4 @@
-    const kopisUrl = "../kopis-trans.json";
+    const kopisUrl = "kopis-trans.json";
     const searchTab=document.querySelector('.search');
     const resultImg=document.querySelectorAll('.search-result .card img');
     const resultDate=document.querySelectorAll('.search-result .date');
