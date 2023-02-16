@@ -13549,11 +13549,6 @@ iframe {
   display: block;
 }
 
-.search button {
-  border: none;
-  padding: 0;
-}
-
 .search-poster-hover {
   display: none;
   background-color: rgba(116, 50, 225, 0.8);
