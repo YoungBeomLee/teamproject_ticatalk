@@ -11669,6 +11669,18 @@ nav .card li a:hover {
   line-height: 1.8 !important;
 }
 
+.sec1-poster-hover {
+  opacity: 0;
+  background-color: rgba(116, 50, 225, 0.9);
+  transition: all 0.4s;
+}
+.sec1-poster-hover:hover {
+  opacity: 1;
+}
+.sec1-poster-hover-title {
+  line-height: 1.8 !important;
+}
+
 #chat-wrap {
   position: fixed;
   bottom: 50px;
