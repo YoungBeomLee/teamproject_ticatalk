@@ -7,8 +7,19 @@
   <link rel="stylesheet" href="css/main.css">
   <title>티캣톡 - 공연 보고 친구도 사귀자!</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <script src="js/chat.js"></script>
 </head>
 <body>
+  <!-- chat -->
+  <input type="checkbox" class="chat-wrap-circle" id="chat-toggle">
+  <label for="chat-toggle" class="chat-button">
+    <span class="chat-icon"></span>
+  </label>
+  <div id="chat-wrap">
+    <!-- 채팅 영역 -->
+    <iframe src="https://www.vchatcloud.com/chat-demo/iframe/iframe_pc/index.html?channelKey=IUZvIYCqXC-Ka7nbdSbst-20230213221754" frameborder="no" scrolling="no" marginwidth="0" marginheight="0" width="396" height="736"></iframe>
+  </div>
+
   <!-- gnb -->
   <nav class="tkt-nav container-fluid position-fixed py-4">
     <div class="nav justify-content-between container" id="nav-tab">
@@ -563,9 +574,7 @@
   <!-- section4 ej -->
 
   <section class="sec5-ticketsearch mx-auto mgb-160">
-    <div
-      class="sec5-container container-fluid container-xxl container-md container-sm"
-    >
+    <div class="sec5-container container-fluid container-xxl container-md container-sm">
       <div class="ticketsearch-wrap">
         <!--타이틀 부분-->
         <div class="title text-left mgb-25 d-flex align-items-center">
@@ -624,14 +633,6 @@
               <li><a class="dropdown-item" href="javascript:void(0)">주간</a></li>
               <li><a class="dropdown-item" href="javascript:void(0)">주말</a></li>
             </ul>
-          </div>
-          <div class="dropdown float-start me-4">
-            <button class="search-detail-btn btn btn-secondary dropdown-toggle bg-lgray border-0 tkt-t6" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              날짜
-            </button>
-            <div class="search-detail-list dropdown-menu">
-              
-            </div>
           </div>
           <div class="dropdown float-start me-4">
             <button class="search-detail-btn btn btn-secondary dropdown-toggle bg-lgray border-0 tkt-t6" type="button" data-bs-toggle="dropdown" aria-expanded="false">

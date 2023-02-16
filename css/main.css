@@ -13273,21 +13273,25 @@ nav .card li a:hover {
 
 #chat-wrap {
   position: fixed;
-  left: 100px;
-  top: 100px;
-  z-index: 20;
+  bottom: 50px;
+  right: 50px;
+  z-index: 50;
 }
 
-iframe {
+#chat-wrap iframe {
   display: none;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
+.chat-wrap-circle {
+  display: none;
+}
+
 .chat-button {
   position: fixed;
-  top: 80px;
-  left: 80px;
+  bottom: 30px;
+  right: 30px;
   z-index: 100;
   width: 3rem;
   height: 3rem;
@@ -13295,41 +13299,9 @@ iframe {
   border-radius: 50%;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
-  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 2px 2px 5px #a49df1;
+          box-shadow: 2px 2px 5px #a49df1;
   text-align: center;
-}
-
-.chat-wrap-circle {
-  display: none;
-}
-
-.chat-icon {
-  position: relative;
-  margin-top: 1.5rem;
-}
-
-.chat-icon:before {
-  top: -0.5rem;
-}
-
-.chat-icon:after {
-  top: 0.5rem;
-}
-
-.chat-icon:before, .chat-icon:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.chat-icon, .chat-icon:before, .chat-icon:after {
-  width: 1.5rem;
-  height: 2px;
-  background: #333;
-  display: inline-block;
 }
 
 .chat-button:hover .chat-icon:before {
@@ -13338,6 +13310,35 @@ iframe {
 
 .chat-button:hover .chat-icon:after {
   top: 0.7rem;
+}
+
+.chat-button .chat-icon {
+  position: relative;
+  margin-top: 1.5rem;
+  width: 1.5rem;
+  height: 2px;
+  background: #333;
+  display: inline-block;
+}
+
+.chat-button .chat-icon:before, .chat-button .chat-icon:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  width: 1.5rem;
+  height: 2px;
+  background: #333;
+  display: inline-block;
+}
+
+.chat-button .chat-icon:before {
+  top: -0.5rem;
+}
+
+.chat-button .chat-icon:after {
+  top: 0.5rem;
 }
 
 .chat-wrap-circle:checked ~ .chat-button .chat-icon {
