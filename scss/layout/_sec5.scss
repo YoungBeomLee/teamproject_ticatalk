@@ -29,6 +29,7 @@
     opacity: 1;
   }
 }
+
 .sec5-result-text:hover {
   > a {
     @include tkt-thover;
@@ -41,4 +42,11 @@
     width: 186px;
     height: 238px;
   }
+}
+.ticketsearch-contents {
+  height: 100%;
+}
+.search-result {
+  height: 307px;
+  overflow: hidden;
 }

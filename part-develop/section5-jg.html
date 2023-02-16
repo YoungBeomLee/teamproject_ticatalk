@@ -8,579 +8,477 @@
     <link rel="stylesheet" href="../css/main.css" />
     <style>
       #layer {
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
-  z-index: 90999099999;
-  font-size: 2.4em;
-  padding: 2em;
-  box-sizing: border-box;
-  line-height: 2;
-  top: 200px;
-  left: 150px;
-}
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+        z-index: 90999099999;
+        font-size: 2.4em;
+        padding: 2em;
+        box-sizing: border-box;
+        line-height: 2;
+        top: 200px;
+        left: 150px;
+      }
 
-#layer button {
-  cursor: pointer;
-  border-radius: 10px;
-  background-color: #222;
-  color: #fff;
-}
+      #layer button {
+        cursor: pointer;
+        border-radius: 10px;
+        background-color: #222;
+        color: #fff;
+      }
+      /* The "show" class is added to the filtered elements */
+      .show {
+        display: block;
+      }
     </style>
   </head>
   <body>
     <section class="sec5-ticketsearch mx-auto mgb-160">
-      <div class="sec5-container container-xxl container-md container-sm">
-        <div class="ticketsearch-wrap container-fluid">
+      <div
+        class="sec5-container container-fluid container-xxl container-md container-sm"
+      >
+        <div class="ticketsearch-wrap">
           <!--타이틀 부분-->
-          <div class="title text-left mgb-25">
-            <img src="../img/icon/search-p.png" class="m-0" alt="" />
-            <h3 class="tkt-h3 text-dark">티켓 오픈</h3>
+          <div class="title text-left mgb-25 d-flex align-items-center">
+            <img
+              src="img/icon/search-p.png"
+              class="d-inline-block tkt-w35 tkt-h35 me-2"
+              alt=""
+            />
+            <h2 class="tkt-h3 m-0 text-dark">통합 검색</h2>
           </div>
         </div>
-        <div
-          class="ticketsearch-contents container-fluid border-25 rounded-3 bg-light p-5"
-        >
-          <div class="search">
-            <ul
-              class="nav nav-tab d-flex list-unstyled justify-content-between col-xxl-6 col-md-12 col-sm-12 mgb-35"
-              id="myTab"
-              role="tablist"
-            >
-              <li class="m-2 tkt-h5 nav-item" role="presentation">
-                <button
-                  class="nav-link active"
-                  id="home-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#1"
-                  type="button"
-                  role="tab"
-                  aria-controls="1"
-                  aria-selected="true"
-                ><a
-                  href="#tabmenu_01"
-                  class="text-dark tkt-h5"
-                  data-toggle="tab"
-                  >전체</a
-                ></button
-                >
-              </li>
-              <li class="m-2 tkt-h5 nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="profile-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#2"
-                  type="button"
-                  role="tab"
-                  aria-controls="2"
-                  aria-selected="false"
-                ><a href="#tabmenu_02" class="text-dark tkt-h5" data-toggle="tab"
-                  >뮤지컬</a
-                ></button>
-                
-              </li>
-              <li class="m-2 tkt-h5 nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="profile-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#3"
-                  type="button"
-                  role="tab"
-                  aria-controls="3"
-                  aria-selected="false"
-                ><a href="#tabmenu_03" class="text-dark tkt-h5" data-toggle="tab"
-                  >연극</a
-                ></button>
-                
-              </li>
-              <li class="m-2 tkt-h5 nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="profile-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#4"
-                  type="button"
-                  role="tab"
-                  aria-controls="4"
-                  aria-selected="false"
-                ><a href="#tabmenu_04" class="text-dark tkt-h5" data-toggle="tab"
-                  >콘서트</a
-                ></button>
-                
-              </li>
-              <li class="m-2 tkt-h5 nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="profile-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#5"
-                  type="button"
-                  role="tab"
-                  aria-controls="5"
-                  aria-selected="false"
-                ><a href="#tabmenu_05" class="text-dark tkt-h5" data-toggle="tab"
-                  >클래식</a
-                ></button>
-                
-              </li>
-              <li class="m-2 tkt-h5 nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="profile-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#6"
-                  type="button"
-                  role="tab"
-                  aria-controls="6"
-                  aria-selected="false"
-                ><a href="#tabmenu_06" class="text-dark tkt-h5" data-toggle="tab"
-                  >가족.아동</a
-                ></button>
-                
-              </li>
-              <li class="m-2 tkt-h5 nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="profile-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#7"
-                  type="button"
-                  role="tab"
-                  aria-controls="7"
-                  aria-selected="false"
-                ><a href="#tabmenu_07" class="text-dark tkt-h5" data-toggle="tab"
-                  >뮤직페스티벌</a
-                ></button>
-                
-              </li>
-            </ul>
-          </div>
-          <div class="search-detail mgb-35">
-            <div class="search-detail col-xxl-4 col-md-6 col-sm-12">
-              <ul
-                class="search-detail conatainer d-flex list-unstyled justify-content-between"
+        <div class="ticketsearch-contents br-15 bg-light p-5">
+          <ul class="search list-unstyled d-inline-block w-100 mgb-25">
+            <li class="float-start me-4">
+              <a
+                href="javascript:void(0)"
+                class="nav-link tkt-t5 text-dark search-nav-on"
+                >전체</a
               >
-              <div class="dropdown">
-                <button class="border-0 rounded-3 pr-5 m-1 p-2 bg-tertiary position-relative btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  &nbsp;&nbsp;지역&nbsp;&nbsp;
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">서울</a></li>
-                  <li><a class="dropdown-item" href="#">경기도</a></li>
-                  <li><a class="dropdown-item" href="#">충청도</a></li>
-                </ul>
-              </div>
-              <div class="dropdown">
-                <button class="border-0 rounded-3 pr-5 m-1 p-2 bg-tertiary position-relative btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  &nbsp;&nbsp;기간&nbsp;&nbsp;
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">1월</a></li>
-                  <li><a class="dropdown-item" href="#">2월</a></li>
-                  <li><a class="dropdown-item" href="#">3월</a></li>
-                </ul>
-              </div>
-              <div class="dropdown">
-                <button class="border-0 rounded-3 pr-5 m-1 p-2 bg-tertiary position-relative btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  &nbsp;&nbsp;날짜&nbsp;&nbsp;</button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">월</a></li>
-                  <li><a class="dropdown-item" href="#">화</a></li>
-                  <li><a class="dropdown-item" href="#">수</a></li>
-                </ul>
-              </div>
-              <div class="dropdown">
-                <button class="border-0 rounded-3 pr-5 m-1 p-2 bg-tertiary position-relative btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  &nbsp;&nbsp;공연 상태&nbsp;&nbsp;</button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">예매중</a></li>
-                  <li><a class="dropdown-item" href="#">예매전</a></li>
-                  <li><a class="dropdown-item" href="#">마감</a></li>
-                </ul>
-              </div>
+            </li>
+            <li class="float-start me-4">
+              <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark"
+                >뮤지컬</a
+              >
+            </li>
+            <li class="float-start me-4">
+              <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark"
+                >연극</a
+              >
+            </li>
+            <li class="float-start me-4">
+              <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark"
+                >콘서트</a
+              >
+            </li>
+            <li class="float-start me-4">
+              <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark"
+                >클래식</a
+              >
+            </li>
+            <li class="float-start me-4">
+              <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark"
+                >가족.아동</a
+              >
+            </li>
+            <li class="float-start me-4">
+              <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark"
+                >뮤직페스티벌</a
+              >
+            </li>
+          </ul>
+          <div class="search-detail d-inline-block w-100 mgb-25">
+            <div class="dropdown float-start me-4">
+              <button
+                class="search-detail-btn btn btn-secondary dropdown-toggle bg-lgray border-0 tkt-t6"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                지역
+              </button>
+              <ul class="search-detail-list dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="javascript:void(0)">전체</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="javascript:void(0)">서울</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="javascript:void(0)">경기도</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="javascript:void(0)">강원도</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="javascript:void(0)">충청도</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="javascript:void(0)">전라도</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="javascript:void(0)">경상도</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="javascript:void(0)">제주</a>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown float-start me-4">
+              <button
+                class="search-detail-btn btn btn-secondary dropdown-toggle bg-lgray border-0 tkt-t6"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                기간
+              </button>
+              <ul class="search-detail-list dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="javascript:void(0)">전체</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="javascript:void(0)">일간</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="javascript:void(0)">월간</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="javascript:void(0)">주간</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="javascript:void(0)">주말</a>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown float-start me-4">
+              <button
+                class="search-detail-btn btn btn-secondary dropdown-toggle bg-lgray border-0 tkt-t6"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                날짜
+              </button>
+              <div class="search-detail-list dropdown-menu"></div>
+            </div>
+            <div class="dropdown float-start me-4">
+              <button
+                class="search-detail-btn btn btn-secondary dropdown-toggle bg-lgray border-0 tkt-t6"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                공연 상태
+              </button>
+              <ul class="search-detail-list dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="javascript:void(0)">전체</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="javascript:void(0)"
+                    >공연중/공연예정</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="javascript:void(0)">공연중</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="javascript:void(0)"
+                    >공연예정</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="javascript:void(0)"
+                    >종료/취소</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
-          <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="1" role="tabpanel" >
-          <div class="search-result row justify-content-between">
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/poster/sec5/sec5-result02.jpg" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:0
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+          <div class="search-result row d-flex justify-content-between">
+            <div class="text-center col-6 col-sm-6 col-md-4 col-xxl-2">
+              <div class="card bg-transparent border-0 search-poster">
+                <img
+                  src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213194_230213_110545.jpg"
+                  class="card-img img img-fluid br-15"
+                  alt=""
+                />
+                <a
+                  href="#"
+                  class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15"
+                >
+                  <span
+                    class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6"
+                    >공연 자세히 보기</span
+                  >
+                </a>
+              </div>
+              <div class="sec5-result-text">
+                <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1"
+                  >2023.02.19(일)14:00</a
+                >
+                <a href="#" class="d-inline-block tkt-t6 text-dark"
+                  >K-BLSSx월담</a
+                >
+              </div>
             </div>
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result02.jpg" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            <div class="text-center col-6 col-sm-6 col-md-4 col-xxl-2">
+              <div class="card bg-transparent border-0 search-poster">
+                <img
+                  src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF202671_221122_094142.jpg"
+                  class="card-img img img-fluid br-15"
+                  alt=""
+                />
+                <a
+                  href="#"
+                  class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15"
+                >
+                  <span
+                    class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6"
+                    >공연 자세히 보기</span
+                  >
+                </a>
+              </div>
+              <div class="sec5-result-text">
+                <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1"
+                  >2022.11.11(월)14:00</a
+                >
+                <a href="#" class="d-inline-block tkt-t6 text-dark"
+                  >조이의 다락방</a
+                >
+              </div>
             </div>
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result03.gif" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            <div class="text-center col-6 col-sm-6 col-md-4 col-xxl-2">
+              <div class="card bg-transparent border-0 search-poster">
+                <img
+                  src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF204871_221228_093225.gif"
+                  class="card-img img img-fluid br-15"
+                  alt=""
+                />
+                <a
+                  href="#"
+                  class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15"
+                >
+                  <span
+                    class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6"
+                    >공연 자세히 보기</span
+                  >
+                </a>
+              </div>
+              <div class="sec5-result-text">
+                <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1"
+                  >2023.04.02(일)14:00</a
+                >
+                <a href="#" class="d-inline-block tkt-t6 text-dark"
+                  >뷰티풀선데이</a
+                >
+              </div>
             </div>
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result04.gif" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            <div class="text-center col-6 col-sm-6 col-md-4 col-xxl-2">
+              <div class="card bg-transparent border-0 search-poster">
+                <img
+                  src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213222_230213_120313.png"
+                  class="card-img img img-fluid br-15"
+                  alt=""
+                />
+                <a
+                  href="#"
+                  class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15"
+                >
+                  <span
+                    class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6"
+                    >공연 자세히 보기</span
+                  >
+                </a>
+              </div>
+              <div class="sec5-result-text">
+                <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1"
+                  >2023.02.22(수)14:00</a
+                >
+                <a href="#" class="d-inline-block tkt-t6 text-dark"
+                  >[우주라이브]현온콘서트</a
+                >
+              </div>
             </div>
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result05.jpg" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            <div class="text-center col-6 col-sm-6 col-md-4 col-xxl-2">
+              <div class="card bg-transparent border-0 search-poster">
+                <img
+                  src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF209863_230117_105408.gif"
+                  class="card-img img img-fluid br-15"
+                  alt=""
+                />
+                <a
+                  href="#"
+                  class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15"
+                >
+                  <span
+                    class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6"
+                    >공연 자세히 보기</span
+                  >
+                </a>
+              </div>
+              <div class="sec5-result-text">
+                <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1"
+                  >2023.04.30(일)14:00</a
+                >
+                <a href="#" class="d-inline-block tkt-t6 text-dark"
+                  >보이체크 인 더 다크</a
+                >
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="2" role="tabpanel" >
-          <div
-            class="search-result row justify-content-between"
-          >
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result01.jpg" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-            </div>
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result02.jpg" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-            </div>
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result03.gif" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-            </div>
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result04.gif" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-            </div>
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result05.jpg" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="3" role="tabpanel" >
-          <div
-            class="search-result row justify-content-between"
-          >
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result01.jpg" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-            </div>
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result02.jpg" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-            </div>
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result03.gif" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-            </div>
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result04.gif" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-            </div>
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result05.jpg" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="4" role="tabpanel" >
-          <div
-            class="search-result row justify-content-between"
-          >
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result01.jpg" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-            </div>
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result02.jpg" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-            </div>
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result03.gif" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-            </div>
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result04.gif" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-            </div>
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result05.jpg" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
+            <div class="text-center col-6 col-sm-6 col-md-4 col-xxl-2">
+              <div class="card bg-transparent border-0 search-poster">
+                <img
+                  src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF209529_230110_094630.gif"
+                  class="card-img img img-fluid br-15"
+                  alt=""
+                />
+                <a
+                  href="#"
+                  class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15"
+                >
+                  <span
+                    class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6"
+                    >공연 자세히 보기</span
+                  >
+                </a>
+              </div>
+              <div class="sec5-result-text">
+                <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1"
+                  >2023.04.09(일)14:00</a
+                >
+                <a href="#" class="d-inline-block tkt-t6 text-dark">앤(ANNE)</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="5" role="tabpanel" >
-          <div
-            class="search-result row justify-content-between"
-          >
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result01.jpg" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-            </div>
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result02.jpg" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-            </div>
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result03.gif" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-            </div>
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result04.gif" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-            </div>
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result05.jpg" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="6" role="tabpanel" >
-          <div
-            class="search-result row justify-content-between"
-          >
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result01.jpg" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-            </div>
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result02.jpg" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-            </div>
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result03.gif" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-            </div>
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result04.gif" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-            </div>
-            <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-              <img src="../img/sec4-result05.jpg" class="img" alt="" />
-              <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-                2023.01.23(월)14:00
-              </p>
-              <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="7" role="tabpanel" ><div
-          class="search-result row justify-content-between"
-        >
-          <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-            <img src="../img/sec4-result01.jpg" class="img" alt="" />
-            <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-              2023.01.23(월)14:00
-            </p>
-            <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-          </div>
-          <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-            <img src="../img/sec4-result02.jpg" class="img" alt="" />
-            <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-              2023.01.23(월)14:00
-            </p>
-            <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-          </div>
-          <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-            <img src="../img/sec4-result03.gif" class="img" alt="" />
-            <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-              2023.01.23(월)14:00
-            </p>
-            <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-          </div>
-          <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-            <img src="../img/sec4-result04.gif" class="img" alt="" />
-            <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-              2023.01.23(월)14:00
-            </p>
-            <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-          </div>
-          <div class="result5 col-1 col-xxl-1 col-md-4 col-sm-6 me-4 mb-5">
-            <img src="../img/sec4-result05.jpg" class="img" alt="" />
-            <p class="text-dark text-center mt-3 mb-1 mx-sm-auto">
-              2023.01.23(월)14:00
-            </p>
-            <p class="text-dark text-center mx-sm-auto">콘서트이름</p>
-          </div>
-        </div></div>
-      </div>
       </div>
     </section>
-
-
-
-    <!-- Button trigger modal -->
-    <button
-      type="button"
-      class="btn btn-primary p-4 border-25 rounded-5"
-      data-bs-toggle="modal"
-      data-bs-target="#staticBackdrop"
-    >
-      티켓톡
-    </button>
-
-    <!-- Modal -->
     <div
-      class="modal fade"
-      id="staticBackdrop"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      tabindex="-1"
-      aria-labelledby="staticBackdropLabel"
-      aria-hidden="true"
+      id="layer2"
+      class="shadow p-4 mb-5 bg-secondary rounded d-flex flex-column position-fixed top-0 border rounded-5"
+      style="width: 250px; height: 280px"
     >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="staticBackdropLabel">
-              Modal title
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Understood</button>
-          </div>
-        </div>
+      <p class="text-primary tkt-md" href="">
+        해당 사이트는 학습용으로 제작되었으며 상업적 목적이 없음을 알립니다..
+      </p>
+      <p class="text-primary tkt-md" href="">
+        해당 사이트의 정보 및 이미지는 KOPIS에서 제공받은 API 데이터를
+        이용하였습니다.
+      </p>
+      <a
+        class="text-primary tkt-md"
+        href="https://www.kopis.or.kr/por/main/main.do"
+        >출처 : KOPIS 공연예술통합전산망</a
+      >
+      <div class="d-flex justify-content-between mt-3" style="height: 20px">
+        <span
+          ><button
+            type="button"
+            class="popbtn1 btn-close bg-secondary"
+            aria-label="Close"
+            style="width: 10px; height: 10px"
+          >
+            &nbsp;
+          </button></span
+        >
       </div>
     </div>
-
-
-    <div id="layer" class="shadow p-4 mb-5 bg-secondary rounded d-flex flex-column position-fixed top-50 border rounded-5" style="width:246px; height:463px;">
-        <button type="button" class="btn btn-outline bg-dark  mb-2 text-start position-relative"style="height:88px; background-image: url('../img/poster/sec5/popup-1.png');">[클래식] 오티움 <br>눈 오는 날 세일 35% <div class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"style="width:25px; height:25px; transform: translate(12px, 15px);"></div></button>
-      <button type="button" class="btn btn-outline bg-dark  mb-2 text-start position-relative"style="height:88px; background-image: url('../img/poster/sec5/popup-2.png');">[뮤지컬] 프로즌 <br>비 오는 날 세일 15%<div class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"style="width:25px; height:25px; transform: translate(12px, 15px);"></div></button>
-      <button type="button" class="btn btn-outline bg-dark  mb-2 text-start position-relative"style="height:88px; background-image: url('../img/poster/sec5/popup-3.png');">[클래식] 오티움 <br>눈 오는 날 세일 35%<div class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"style="width:25px; height:25px; transform: translate(12px, 15px);"></div></button>
-      <button type="button" class="btn btn-outline bg-dark  mb-3 text-start position-relative"style="height:88px; background-image: url('../img/poster/sec5/popup-4.png');">[뮤지컬] 프로즌 <br>비 오는 날 세일 15%<div class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"style="width:25px; height:25px; transform: translate(12px, 15px);"></div></button>
-      <div class=" d-flex justify-content-between " style="height:20px">
+    <div
+      id="layer"
+      class="shadow p-4 mb-5 bg-secondary rounded d-flex flex-column position-fixed top-50 border rounded-5"
+      style="width: 246px; height: 463px"
+    >
+      <button
+        type="button"
+        class="btn btn-outline bg-dark mb-2 text-start position-relative"
+        style="
+          height: 88px;
+          background-image: url('../img/poster/sec5/popup-1.png');
+        "
+      >
+        [클래식] 오티움 <br />눈 오는 날 세일 35%
+        <div
+          class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"
+          style="width: 25px; height: 25px; transform: translate(12px, 15px)"
+        ></div>
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline bg-dark mb-2 text-start position-relative"
+        style="
+          height: 88px;
+          background-image: url('../img/poster/sec5/popup-2.png');
+        "
+      >
+        [뮤지컬] 프로즌 <br />비 오는 날 세일 15%
+        <div
+          class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"
+          style="width: 25px; height: 25px; transform: translate(12px, 15px)"
+        ></div>
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline bg-dark mb-2 text-start position-relative"
+        style="
+          height: 88px;
+          background-image: url('../img/poster/sec5/popup-3.png');
+        "
+      >
+        [클래식] 오티움 <br />눈 오는 날 세일 35%
+        <div
+          class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"
+          style="width: 25px; height: 25px; transform: translate(12px, 15px)"
+        ></div>
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline bg-dark mb-3 text-start position-relative"
+        style="
+          height: 88px;
+          background-image: url('../img/poster/sec5/popup-4.png');
+        "
+      >
+        [뮤지컬] 프로즌 <br />비 오는 날 세일 15%
+        <div
+          class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"
+          style="width: 25px; height: 25px; transform: translate(12px, 15px)"
+        ></div>
+      </button>
+      <div class="d-flex justify-content-between" style="height: 20px">
         <input type="checkbox" id="popup" />
-          <label for="popup" class="text-light tkt-sm me-5">오늘하루안보기</label>
-          <span class=""><button type="button" class="popbtn2 btn-close bg-secondary" aria-label="Close" style="width:10px; height:10px;">&nbsp;</button></span>
+        <label for="popup" class="text-light tkt-sm me-5">오늘하루안보기</label>
+        <span class=""
+          ><button
+            type="button"
+            class="popbtn2 btn-close bg-secondary"
+            aria-label="Close"
+            style="width: 10px; height: 10px"
+          >
+            &nbsp;
+          </button></span
+        >
       </div>
-  </div>
-
-
-  <div id="layer2" class="shadow p-4 mb-5 bg-secondary rounded d-flex flex-column position-fixed top-0 border rounded-5" style="width:250px; height:280px;">
-    <p class="text-primary tkt-md" href="">해당 사이트는 학습용으로 제작되었으며 상업적 목적이 없음을 알립니다..</p>
-  <p class="text-primary tkt-md" href="">해당 사이트의 정보 및 이미지는 KOPIS에서 제공받은 API 데이터를 이용하였습니다.</p>
-  <a class="text-primary tkt-md" href="https://www.kopis.or.kr/por/main/main.do">출처 : KOPIS 공연예술통합전산망</a>
-  <div class=" d-flex justify-content-between mt-3" style="height:20px">
-    <span><button type="button" class="popbtn1 btn-close bg-secondary " aria-label="Close" style="width:10px; height:10px;">&nbsp;</button></span>
-  </div>
-    
-  </div>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      document
-      .querySelector(".popbtn2")
-      .addEventListener("click", function () {
-        document.querySelector("#layer").classList.add('d-none');
-        document.querySelector("#layer").classList.remove('d-flex');
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .querySelector(".popbtn2")
+          .addEventListener("click", function () {
+            document.querySelector("#layer").classList.add("d-none");
+            document.querySelector("#layer").classList.remove("d-flex");
+          });
       });
-    });
-    document.addEventListener("DOMContentLoaded", function () {
-      document
-      .querySelector(".popbtn1")
-      .addEventListener("click", function () {
-        document.querySelector("#layer2").classList.add('d-none');
-        document.querySelector("#layer2").classList.remove('d-flex');
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .querySelector(".popbtn1")
+          .addEventListener("click", function () {
+            document.querySelector("#layer2").classList.add("d-none");
+            document.querySelector("#layer2").classList.remove("d-flex");
+          });
       });
-    });
     </script>
-    
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
