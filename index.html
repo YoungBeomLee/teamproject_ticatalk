@@ -1,31 +1,24 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/main.css">
-  <title>티캣톡 - 공연 보고 친구도 사귀자!</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-  <script src="js/chat.js"></script>
-</head>
-<body>
-  <div id="purpose-pop" class="shadow p-4 bg-light d-flex flex-column position-fixed border-0 br-15">
-    <p class="text-primary mgb-15 tkt-t6">
-      해당 사이트는 학습용으로 제작되었으며 상업적 목적이 없음을 알립니다.
-    </p>
-    <p class="text-primary mgb-15 tkt-t6">
-      해당 사이트의 정보 및 이미지는 KOPIS에서 제공받은 API 데이터를
-      이용하였습니다.
-    </p>
-    <a class="text-primary tkt-sm mgb-25" href="https://www.kopis.or.kr/por/main/main.do">
-      출처 : KOPIS 공연예술통합전산망
-    </a>
-    <div class="pop-close-wrap d-flex justify-content-between align-items-center">
-      <a href="javascript:void(0)" class="tkt-sm text-secondary" alt="오늘 하루 그만 보기">오늘 하루 그만 보기</a>
-      <button type="button" class="purpose-close pop-close border-0 p-0"></button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>티캣톡 - 공연 보고 친구도 사귀자!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="js/chat.js"></script>
+  </head>
+  <body>
+    <div id="purpose-pop" class="shadow p-4 bg-light d-flex flex-column position-fixed border-0 br-15">
+      <p class="text-primary mgb-15 tkt-t6">해당 사이트는 학습용으로 제작되었으며 상업적 목적이 없음을 알립니다.</p>
+      <p class="text-primary mgb-15 tkt-t6">해당 사이트의 정보 및 이미지는 KOPIS에서 제공받은 API 데이터를 이용하였습니다.</p>
+      <a class="text-primary tkt-sm mgb-25" href="https://www.kopis.or.kr/por/main/main.do"> 출처 : KOPIS 공연예술통합전산망 </a>
+      <div class="pop-close-wrap d-flex justify-content-between align-items-center">
+        <a href="javascript:void(0)" class="tkt-sm text-secondary" alt="오늘 하루 그만 보기">오늘 하루 그만 보기</a>
+        <button type="button" class="purpose-close pop-close border-0 p-0"></button>
+      </div>
     </div>
-  </div>
 
   <div id="coupon-pop" class="shadow p-4 bg-secondary rounded d-flex flex-column position-fixed border-0 br-15">
     <button type="button" class="coupon-btn btn btn-outline bg-dark mb-2 text-start position-relative" 
@@ -58,386 +51,361 @@
     </div>
   </div>
 
-  <!-- chat -->
-  <a href="javascript:void(0)" class="chat-button">
-    <img src="img/tkt-logocat-w.svg" alt="채팅창 열기 버튼">
-  </a>
-  <!-- 채팅 영역 -->
-  <div id="chat-wrap">
-    <iframe src="https://www.vchatcloud.com/chat-demo/iframe/iframe_pc/index.html?channelKey=IUZvIYCqXC-Ka7nbdSbst-20230213221754" frameborder="no" scrolling="no" marginwidth="0" marginheight="0" width="396" height="736"></iframe>
-  </div>
+    <!-- chat -->
+    <a href="javascript:void(0)" class="chat-button">
+      <img src="img/tkt-logocat-w.svg" alt="채팅창 열기 버튼" />
+    </a>
+    <!-- 채팅 영역 -->
+    <div id="chat-wrap">
+      <iframe src="https://www.vchatcloud.com/chat-demo/iframe/iframe_pc/index.html?channelKey=IUZvIYCqXC-Ka7nbdSbst-20230213221754" frameborder="no" scrolling="no" marginwidth="0" marginheight="0" width="396" height="736"></iframe>
+    </div>
 
-  <!-- gnb -->
-  <nav class="tkt-nav container-fluid position-fixed py-4">
-    <div class="tkt-nav-inner nav justify-content-between container p-0" id="nav-tab">
-      <h1>
-        <a href="javascript:void(0)"><img id ="logo" src="img/tkt-logo-w.svg" alt="logo" /></a>
-      </h1>
-      <!-- 1depth -->
-      <div class="tkt-nav-btns nav-button d-flex justify-content-center p-0 tkt-t5">
-        <button class="tkt-nav-link nav-link px-4 btn border-0 bg-transparent tkt-t5 text-light" type="button" id="nav-catalk-tab" data-bs-toggle="collapse" data-bs-target="#nav-catalk"  role="button" aria-expanded="false"  aria-controls="nav-catalk">캣톡</button>
-        <button class="tkt-nav-link nav-link px-4 btn border-0 bg-transparent tkt-t5 text-light" type="button" id="nav-search-tab" data-bs-toggle="collapse" data-bs-target="#nav-search" aria-expanded="false" aria-controls="nav-search">공연찾기</button>
-        <button class="tkt-nav-link nav-link px-4 btn border-0 bg-transparent tkt-t5 text-light" type="button" id="nav-ranking-tab" data-bs-toggle="collapse" data-bs-target="#nav-ranking" aria-expanded="false" aria-controls="nav-ranking">랭킹·추천</button>
-        <button class="tkt-nav-link nav-link px-4 btn border-0 bg-transparent tkt-t5 text-light" type="button" id="nav-promotion-tab" data-bs-toggle="collapse" data-bs-target="#nav-promotion" aria-expanded="false" aria-controls="nav-promotion">프로모션</button>
-        <button class="tkt-nav-link nav-link px-4 btn border-0 bg-transparent tkt-t5 text-light" type="button" id="nav-market-tab" data-bs-toggle="collapse" data-bs-target="#nav-market" aria-expanded="false" aria-controls="nav-market">티켓줍기</button>
-      </div>
-      <div class="tkt-nav-my align-self-center nav-item dropdown">
-        <a class="nav-link dropdown-toggle  ps-4" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <img id = "login-icon" src="img/icon/myicon-white.png" alt="login" />
-        </a>
-        <ul class="dropdown-menu br-15">
-          <li><a class="dropdown-item" href="javascript:void(0)">로그인</a></li>
-          <li><a class="dropdown-item" href="javascript:void(0)">마이페이지</a></li>
-          <li><a class="dropdown-item" href="javascript:void(0)">예매확인</a></li>
-          <li><a class="dropdown-item" href="javascript:void(0)">이용안내</a></li>
-          <li><a class="dropdown-item" href="javascript:void(0)">고객센터</a></li>
-        </ul>
-      </div>
-    </div>
-    <!-- 2depth -->
-    <div class="container-fluid px-0">
-      <div class="collapse multi-collapse" id="nav-catalk">
-        <div class="card card-body" >
-          <ul class="list-unstyled m-auto d-flex justify-content-center">
-            <li><a href="javascript:void(0)">캣톡이란?</a></li>
-            <li><a href="javascript:void(0)">캣톡데이터</a></li>
-            <li><a href="javascript:void(0)">공연별</a></li>
-            <li><a href="javascript:void(0)">지역별</a></li>
-            <li><a href="javascript:void(0)">연령별</a></li>
+    <!-- gnb -->
+    <nav class="tkt-nav container-fluid position-fixed py-4">
+      <div class="tkt-nav-inner nav justify-content-between container p-0" id="nav-tab">
+        <h1>
+          <a href="javascript:void(0)"><img id="logo" src="img/tkt-logo-w.svg" alt="logo" /></a>
+        </h1>
+        <!-- 1depth -->
+        <div class="tkt-nav-btns nav-button d-flex justify-content-center p-0 tkt-t5">
+          <button class="tkt-nav-link nav-link px-4 btn border-0 bg-transparent tkt-t5 text-light" type="button" id="nav-catalk-tab" data-bs-toggle="collapse" data-bs-target="#nav-catalk" role="button" aria-expanded="false" aria-controls="nav-catalk">캣톡</button>
+          <button class="tkt-nav-link nav-link px-4 btn border-0 bg-transparent tkt-t5 text-light" type="button" id="nav-search-tab" data-bs-toggle="collapse" data-bs-target="#nav-search" aria-expanded="false" aria-controls="nav-search">공연찾기</button>
+          <button class="tkt-nav-link nav-link px-4 btn border-0 bg-transparent tkt-t5 text-light" type="button" id="nav-ranking-tab" data-bs-toggle="collapse" data-bs-target="#nav-ranking" aria-expanded="false" aria-controls="nav-ranking">랭킹·추천</button>
+          <button class="tkt-nav-link nav-link px-4 btn border-0 bg-transparent tkt-t5 text-light" type="button" id="nav-promotion-tab" data-bs-toggle="collapse" data-bs-target="#nav-promotion" aria-expanded="false" aria-controls="nav-promotion">프로모션</button>
+          <button class="tkt-nav-link nav-link px-4 btn border-0 bg-transparent tkt-t5 text-light" type="button" id="nav-market-tab" data-bs-toggle="collapse" data-bs-target="#nav-market" aria-expanded="false" aria-controls="nav-market">티켓줍기</button>
+        </div>
+        <div class="tkt-nav-my align-self-center nav-item dropdown">
+          <a class="nav-link dropdown-toggle ps-4" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img id="login-icon" src="img/icon/myicon-white.png" alt="login" />
+          </a>
+          <ul class="dropdown-menu br-15">
+            <li><a class="dropdown-item" href="javascript:void(0)">로그인</a></li>
+            <li><a class="dropdown-item" href="javascript:void(0)">마이페이지</a></li>
+            <li><a class="dropdown-item" href="javascript:void(0)">예매확인</a></li>
+            <li><a class="dropdown-item" href="javascript:void(0)">이용안내</a></li>
+            <li><a class="dropdown-item" href="javascript:void(0)">고객센터</a></li>
           </ul>
         </div>
       </div>
-      <div class="collapse multi-collapse" id="nav-search">
-        <div class="card card-body" >
-          <ul class="list-unstyled m-auto d-flex justify-content-center">
-            <li><a href="javascript:void(0)">연극</a></li>
-            <li><a href="javascript:void(0)">인디</a></li>
-            <li><a href="javascript:void(0)">뮤지컬</a></li>
-            <li><a href="javascript:void(0)">콘서트</a></li>
-            <li><a href="javascript:void(0)">클래식</a></li>
-            <li><a href="javascript:void(0)">아동·가족</a></li>
-            <li><a href="javascript:void(0)">페스티벌</a></li>
-          </ul>
+      <!-- 2depth -->
+      <div class="container-fluid px-0">
+        <div class="collapse multi-collapse" id="nav-catalk">
+          <div class="card card-body">
+            <ul class="list-unstyled m-auto d-flex justify-content-center">
+              <li><a href="javascript:void(0)">캣톡이란?</a></li>
+              <li><a href="javascript:void(0)">캣톡데이터</a></li>
+              <li><a href="javascript:void(0)">공연별</a></li>
+              <li><a href="javascript:void(0)">지역별</a></li>
+              <li><a href="javascript:void(0)">연령별</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="collapse multi-collapse" id="nav-search">
+          <div class="card card-body">
+            <ul class="list-unstyled m-auto d-flex justify-content-center">
+              <li><a href="javascript:void(0)">연극</a></li>
+              <li><a href="javascript:void(0)">인디</a></li>
+              <li><a href="javascript:void(0)">뮤지컬</a></li>
+              <li><a href="javascript:void(0)">콘서트</a></li>
+              <li><a href="javascript:void(0)">클래식</a></li>
+              <li><a href="javascript:void(0)">아동·가족</a></li>
+              <li><a href="javascript:void(0)">페스티벌</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="collapse multi-collapse" id="nav-ranking">
+          <div class="card card-body">
+            <ul class="list-unstyled m-auto d-flex justify-content-center">
+              <li><a href="javascript:void(0)">기간별 랭킹</a></li>
+              <li><a href="javascript:void(0)">장르별 랭킹</a></li>
+              <li><a href="javascript:void(0)">지역별 랭킹</a></li>
+              <li><a href="javascript:void(0)">좋아요 랭킹</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="collapse multi-collapse" id="nav-promotion">
+          <div class="card card-body">
+            <ul class="list-unstyled m-auto d-flex justify-content-center">
+              <li><a href="javascript:void(0)">쿠폰</a></li>
+              <li><a href="javascript:void(0)">출석체크</a></li>
+              <li><a href="javascript:void(0)">리뷰이벤트</a></li>
+              <li><a href="javascript:void(0)">진행중이벤트</a></li>
+              <li><a href="javascript:void(0)">지난이벤트</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="collapse multi-collapse" id="nav-market">
+          <div class="card card-body">
+            <ul class="list-unstyled m-auto d-flex justify-content-center">
+              <li><a href="javascript:void(0)">취소표확인</a></li>
+              <li><a href="javascript:void(0)">티켓 양도</a></li>
+              <li><a href="javascript:void(0)">티켓 교환</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="collapse multi-collapse" id="nav-ranking">
-        <div class="card card-body" >
-          <ul class="list-unstyled m-auto d-flex justify-content-center">
-            <li><a href="javascript:void(0)">기간별 랭킹</a></li>
-            <li><a href="javascript:void(0)">장르별 랭킹</a></li>
-            <li><a href="javascript:void(0)">지역별 랭킹</a></li>
-            <li><a href="javascript:void(0)">좋아요 랭킹</a></li>
-          </ul>
+    </nav>
+    <section class="sec1-main-wrap position-relative mgb-160">
+      <div class="sec1-main-inner">
+        <div class="sec1-main-dim position-absolute top-0 start-0 w-100"></div>
+        <div class="sec1-contents container-sm container-md container-xxl position-relative w-100 h-100 p-0">
+          <div class="sec1-maincon-info position-absolute start-0">
+            <h3 class="tkt-t5 text-light">티캣톡 랭킹</h3>
+            <p class="tkt-h1 text-light">가재 20주년 콘서트</p>
+            <p class="tkt-t6 text-light">2023.02.21~2023.02.26</p>
+            <p class="tkt-t6 text-light">올림픽 공원 내 올림픽홀</p>
+          </div>
         </div>
-      </div>
-      <div class="collapse multi-collapse" id="nav-promotion">
-        <div class="card card-body" >
-          <ul class="list-unstyled m-auto d-flex justify-content-center">
-            <li><a href="javascript:void(0)">쿠폰</a></li>
-            <li><a href="javascript:void(0)">출석체크</a></li>
-            <li><a href="javascript:void(0)">리뷰이벤트</a></li>
-            <li><a href="javascript:void(0)">진행중이벤트</a></li>
-            <li><a href="javascript:void(0)">지난이벤트</a></li>
-          </ul>
+        <div class="swiper mySwiper sec1-mainslide-wrap container-sm container-md container-xxl position-absolute start-0">
+          <div class="swiper-wrapper sec1-mainslide-inner">
+            <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
+              <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
+                <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213252_230213_142210.jpg" class="card-img img img-fluid br-15" alt="" />
+                <a href="javascript:void(0)" class="sec1-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                  <span class="sec1-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6"> 하프, 꽃 그리고 캔들<br />2023.03.05(일)<br />관람시간 120분<br />논현동 247-13 </span>
+                </a>
+              </div>
+              <a href="javascript:void(0)" class="sec1-main-slide-text tkt-t6 text-dark">하프, 꽃 그리고 캔들</a>
+            </div>
+            <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
+              <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
+                <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213198_230213_111425.jpg" class="card-img img img-fluid br-15" alt="" />
+                <a href="javascript:void(0)" class="sec1-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                  <span class="sec1-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6"> 청춘 愛 오후(일)<br />2023.02.14(화)<br />관람시간 120분<br />대학로 드림시어터 소극장 </span>
+                </a>
+              </div>
+              <a href="javascript:void(0)" class="sec1-main-slide-text tkt-t6 text-dark">청춘 愛 오후(일)</a>
+            </div>
+            <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
+              <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
+                <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF212662_230206_105933.jpg" class="card-img img img-fluid br-15" alt="" />
+                <a href="javascript:void(0)" class="sec1-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                  <span class="sec1-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6"> 쿠오레 정기연주회<br />2023.02.14(화)<br />관람시간 120분<br />SCC홀 </span>
+                </a>
+              </div>
+              <a href="javascript:void(0)" class="sec1-main-slide-text tkt-t6 text-dark">쿠오레 정기연주회</a>
+            </div>
+            <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
+              <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
+                <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF212660_230206_105109.jpg" class="card-img img img-fluid br-15" alt="" />
+                <a href="javascript:void(0)" class="sec1-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                  <span class="sec1-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6"> 돼지바이러스<br />2023.02.19(일)<br />관람시간 120분<br />대학로 스타 스테이지 </span>
+                </a>
+              </div>
+              <a href="javascript:void(0)" class="sec1-main-slide-text tkt-t6 text-dark">돼지바이러스</a>
+            </div>
+            <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
+              <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
+                <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF212621_230203_132630.png" class="card-img img img-fluid br-15" alt="" />
+                <a href="javascript:void(0)" class="sec1-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                  <span class="sec1-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6"> SWEET TALK<br />2023.02.14(화)<br />관람시간 120분<br />롯데 콘서트홀 </span>
+                </a>
+              </div>
+              <a href="javascript:void(0)" class="sec1-main-slide-text tkt-t6 text-dark">SWEET TALK</a>
+            </div>
+            <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
+              <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
+                <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF211655_230201_104421.jpg" class="card-img img img-fluid br-15" alt="" />
+                <a href="javascript:void(0)" class="sec1-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                  <span class="sec1-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6"> 청바지<br />2023.03.26(일)<br />관람시간 120분<br />룸씨어터 </span>
+                </a>
+              </div>
+              <a href="javascript:void(0)" class="sec1-main-slide-text tkt-t6 text-dark">청바지</a>
+            </div>
+            <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
+              <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
+                <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF209529_230110_094630.gif" class="card-img img img-fluid br-15" alt="" />
+                <a href="javascript:void(0)" class="sec1-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                  <span class="sec1-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6"> 앤(ANNE)<br />2023.04.09(일)<br />관람시간 120분<br />예그린씨어터 </span>
+                </a>
+              </div>
+              <a href="javascript:void(0)" class="sec1-main-slide-text tkt-t6 text-dark">앤(ANNE)</a>
+            </div>
+            <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
+              <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
+                <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213186_230213_104033.jpg" class="card-img img img-fluid br-15" alt="" />
+                <a href="javascript:void(0)" class="sec1-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                  <span class="sec1-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6"> black rain<br />2023.03.31(수)<br />관람시간 120분<br />한국문화의집 코우스 </span>
+                </a>
+              </div>
+              <a href="javascript:void(0)" class="sec1-main-slide-text tkt-t6 text-dark">black rain</a>
+            </div>
+            <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
+              <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
+                <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213251_230213_141757.jfif" class="card-img img img-fluid br-15" alt="" />
+                <a href="javascript:void(0)" class="sec1-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                  <span class="sec1-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6"> 스무살 콘서트"동창회"<br />2023.02.25(토)<br />관람시간 120분<br />벨로주 홍대 </span>
+                </a>
+              </div>
+              <a href="javascript:void(0)" class="sec1-main-slide-text tkt-t6 text-dark">스무살 콘서트"동창회"</a>
+            </div>
+            <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
+              <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
+                <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF206120_230104_093710.gif" class="card-img img img-fluid br-15" alt="" />
+                <a href="javascript:void(0)" class="sec1-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                  <span class="sec1-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6"> 빵야<br />2023.02.26(일)<br />관람시간 120분<br />LG아트센터 </span>
+                </a>
+              </div>
+              <a href="javascript:void(0)" class="sec1-main-slide-text tkt-t6 text-dark">빵야</a>
+            </div>
+          </div>
         </div>
+        <div class="swiper-button-next sec1-main-slide-next"></div>
+        <div class="swiper-button-prev sec1-main-slide-prev"></div>
       </div>
-      <div class="collapse multi-collapse" id="nav-market">
-        <div class="card card-body" >
-          <ul class="list-unstyled m-auto d-flex justify-content-center">
-            <li><a href="javascript:void(0)">취소표확인</a></li>
-            <li><a href="javascript:void(0)">티켓 양도</a></li>
-            <li><a href="javascript:void(0)">티켓 교환</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>  
-  </nav>
-  <section class="sec1-main-wrap position-relative mgb-160">
-    <div class="sec1-main-inner">
-      <div class="sec1-main-dim position-absolute top-0 start-0 w-100"></div>
-      <div class="sec1-contents container-sm container-md container-xxl position-relative w-100 h-100 p-0">
-        <div class="sec1-maincon-info position-absolute start-0">
-          <h3 class="tkt-t5 text-light">티캣톡 랭킹</h3>
-          <p class="tkt-h1 text-light">가재 20주년 콘서트</p>
-          <p class="tkt-t6 text-light">2023.02.21~2023.02.26</p>
-          <p class="tkt-t6 text-light">올림픽 공원 내 올림픽홀</p>
-        </div>
-      </div>
-      <div class="swiper mySwiper sec1-mainslide-wrap container-sm container-md container-xxl position-absolute start-0">
-        <div class="swiper-wrapper sec1-mainslide-inner">
-          <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
-            <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
-              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213252_230213_142210.jpg" class="card-img img img-fluid br-15" alt="">
-              <a href="javascript:void(0)" class="sec1-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
-                <span class="sec1-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">
-                  하프, 꽃 그리고 캔들<br>2023.03.05(일)<br>관람시간 120분<br>논현동 247-13
-                </span>
-              </a>
-            </div>
-            <a href="javascript:void(0)" class="sec1-main-slide-text tkt-t6 text-dark">하프, 꽃 그리고 캔들</a>
-          </div>
-          <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
-            <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
-              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213198_230213_111425.jpg" class="card-img img img-fluid br-15" alt="">
-              <a href="javascript:void(0)" class="sec1-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
-                <span class="sec1-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">
-                  청춘 愛 오후(일)<br>2023.02.14(화)<br>관람시간 120분<br>대학로 드림시어터 소극장
-                </span>
-              </a>
-            </div>
-            <a href="javascript:void(0)" class="sec1-main-slide-text tkt-t6 text-dark">청춘 愛 오후(일)</a>
-          </div>
-          <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
-            <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
-              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF212662_230206_105933.jpg" class="card-img img img-fluid br-15" alt="">
-              <a href="javascript:void(0)" class="sec1-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
-                <span class="sec1-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">
-                  쿠오레 정기연주회<br>2023.02.14(화)<br>관람시간 120분<br>SCC홀
-                </span>
-              </a>
-            </div>
-            <a href="javascript:void(0)" class="sec1-main-slide-text tkt-t6 text-dark">쿠오레 정기연주회</a>
-          </div>
-          <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
-            <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
-              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF212660_230206_105109.jpg" class="card-img img img-fluid br-15" alt="">
-              <a href="javascript:void(0)" class="sec1-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
-                <span class="sec1-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">
-                  돼지바이러스<br>2023.02.19(일)<br>관람시간 120분<br>대학로 스타 스테이지
-                </span>
-              </a>
-            </div>
-            <a href="javascript:void(0)" class="sec1-main-slide-text tkt-t6 text-dark">돼지바이러스</a>
-          </div>
-          <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
-            <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
-              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF212621_230203_132630.png" class="card-img img img-fluid br-15" alt="">
-              <a href="javascript:void(0)" class="sec1-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
-                <span class="sec1-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">
-                  SWEET TALK<br>2023.02.14(화)<br>관람시간 120분<br>롯데 콘서트홀
-                </span>
-              </a>
-            </div>
-            <a href="javascript:void(0)" class="sec1-main-slide-text tkt-t6 text-dark">SWEET TALK</a>
-          </div>
-          <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
-            <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
-              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF211655_230201_104421.jpg" class="card-img img img-fluid br-15" alt="">
-              <a href="javascript:void(0)" class="sec1-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
-                <span class="sec1-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">
-                  청바지<br>2023.03.26(일)<br>관람시간 120분<br>룸씨어터
-                </span>
-              </a>
-            </div>
-            <a href="javascript:void(0)" class="sec1-main-slide-text tkt-t6 text-dark">청바지</a>
-          </div>
-          <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
-            <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
-              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF209529_230110_094630.gif" class="card-img img img-fluid br-15" alt="">
-              <a href="javascript:void(0)" class="sec1-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
-                <span class="sec1-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">
-                  앤(ANNE)<br>2023.04.09(일)<br>관람시간 120분<br>예그린씨어터
-                </span>
-              </a>
-            </div>
-            <a href="javascript:void(0)" class="sec1-main-slide-text tkt-t6 text-dark">앤(ANNE)</a>
-            
-          </div>
-          <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
-            <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
-              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213186_230213_104033.jpg" class="card-img img img-fluid br-15" alt="">
-              <a href="javascript:void(0)" class="sec1-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
-                <span class="sec1-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">
-                  black rain<br>2023.03.31(수)<br>관람시간 120분<br>한국문화의집 코우스
-                </span>
-              </a>
-            </div>
-            <a href="javascript:void(0)" class="sec1-main-slide-text tkt-t6 text-dark">black rain</a>
-            
-          </div>
-          <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
-            <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
-              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213251_230213_141757.jfif" class="card-img img img-fluid br-15" alt="">
-              <a href="javascript:void(0)" class="sec1-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
-                <span class="sec1-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">
-                  스무살 콘서트"동창회"<br>2023.02.25(토)<br>관람시간 120분<br>벨로주 홍대
-                </span>
-              </a>
-            </div>
-            <a href="javascript:void(0)" class="sec1-main-slide-text tkt-t6 text-dark">스무살 콘서트"동창회"</a>
-            
-          </div>
-          <div class="swiper-slide sec1-main-slide-box position-relative text-center p-2">
-            <div class="sec1-main-slide-btn card bg-transparent border-0 search-poster mgb-15">
-              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF206120_230104_093710.gif" class="card-img img img-fluid br-15" alt="">
-              <a href="javascript:void(0)" class="sec1-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
-                <span class="sec1-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">
-                  빵야<br>2023.02.26(일)<br>관람시간 120분<br>LG아트센터
-                </span>
-              </a>
-            </div>
-            <a href="javascript:void(0)" class="sec1-main-slide-text tkt-t6 text-dark">빵야</a>
-            
-          </div>
-          
-        </div>
-      </div>
-      <div class="swiper-button-next sec1-main-slide-next"></div>
-      <div class="swiper-button-prev sec1-main-slide-prev"></div>
-    </div>
-  </section>
-  <!-- section1 nh -->
+    </section>
+    <!-- section1 nh -->
 
-  <section id="content" class="mgb-160">
-    <div class="row m-auto p-0 container-sm container-md container-xxl">
-      <div class="col-12 col-sm-12 col-md-12 col-xxl-2 p-0 d-flex align-items-center">
-        <img src="img/icon/bookmark.png" alt="" class="tkt-w35 tkt-h35 me-2 mb-2">
-        <h2 class="sec2-fav-title text-dark tkt-h3 word-break">캣톡 서비스</h2>
-      </div>
-      <div class="col-12 col-sm-12 col-md-12 col-xxl-10 p-0">
-        <div class="row align-items-center h-100">
-          <div class="col p-0 position-relative">
-            <a href="javascript:void(0)" class="sec2-fav-btn">
-              <img src="img/icon/wallet.svg" alt="" class="sec2-icon-leave d-block w-50 m-auto">
-              <img src="img/icon/wallet-p.png" alt="" class="sec2-icon-hover d-none w-50 m-auto">
-              <p class="sec2-fav-text mb-0 mt-2 tkt-t6 text-center text-dark">결제방법</p>
-            </a>
-            <div class="sec2-btn-back sec2-btn-back-sec position-absolute bg-secondary"></div>
-            <div class="sec2-btn-back sec2-btn-back-ter position-absolute bg-tertiary"></div>
-          </div>
-          <div class="col p-0 position-relative">
-            <a href="javascript:void(0)" class="sec2-fav-btn">
-              <img src="img/icon/coin.svg" alt="" class="sec2-icon-leave d-block w-50 m-auto">
-              <img src="img/icon/coin-p.png" alt="" class="sec2-icon-hover d-none w-50 m-auto">
-              <p class="sec2-fav-text mb-0 mt-2 tkt-t6 text-center text-dark">수수료</p>
-            </a>
-            <div class="sec2-btn-back sec2-btn-back-sec position-absolute bg-secondary"></div>
-            <div class="sec2-btn-back sec2-btn-back-ter position-absolute bg-tertiary"></div>
-          </div>
-          <div class="col p-0 position-relative">
-            <a href="javascript:void(0)" class="sec2-fav-btn">
-              <img src="img/icon/card-cancel.svg" alt="" class="sec2-icon-leave d-block w-50 m-auto">
-              <img src="img/icon/card-cancel-p.png" alt="" class="sec2-icon-hover d-none w-50 m-auto">
-              <p class="sec2-fav-text mb-0 mt-2 tkt-t6 text-center text-dark">취소/환불</p>
-            </a>
-            <div class="sec2-btn-back sec2-btn-back-sec position-absolute bg-secondary"></div>
-            <div class="sec2-btn-back sec2-btn-back-ter position-absolute bg-tertiary"></div>
-          </div>
-          <div class="col p-0 position-relative">
-            <a href="javascript:void(0)" class="sec2-fav-btn">
-              <img src="img/icon/card.svg" alt="" class="sec2-icon-leave d-block w-50 m-auto">
-              <img src="img/icon/card-p.png" alt="" class="sec2-icon-hover d-none w-50 m-auto">
-              <p class="sec2-fav-text mb-0 mt-2 tkt-t6 text-center text-dark">제휴/할인카드</p>
-            </a>
-            <div class="sec2-btn-back sec2-btn-back-sec position-absolute bg-secondary"></div>
-            <div class="sec2-btn-back sec2-btn-back-ter position-absolute bg-tertiary"></div>
-          </div>
-          <div class="col p-0 position-relative">
-            <a href="javascript:void(0)" class="sec2-fav-btn">
-              <img src="img/icon/rocket.svg" alt="" class="sec2-icon-leave d-block w-50 m-auto">
-              <img src="img/icon/rocket-p.png" alt="" class="sec2-icon-hover d-none w-50 m-auto">
-              <p class="sec2-fav-text mb-0 mt-2 tkt-t6 text-center text-dark">티켓/배송수령</p>
-            </a>
-            <div class="sec2-btn-back sec2-btn-back-sec position-absolute bg-secondary"></div>
-            <div class="sec2-btn-back sec2-btn-back-ter position-absolute bg-tertiary"></div>
-          </div>
-          <div class="col p-0 position-relative">
-            <a href="javascript:void(0)" class="sec2-fav-btn">
-              <img src="img/icon/ear.svg" alt="" class="sec2-icon-leave d-block w-50 m-auto">
-              <img src="img/icon/ear-p.png" alt="" class="sec2-icon-hover d-none w-50 m-auto">
-              <p class="sec2-fav-text mb-0 mt-2 tkt-t6 text-center text-dark">FAQ</p>
-            </a>
-            <div class="sec2-btn-back sec2-btn-back-sec position-absolute bg-secondary"></div>
-            <div class="sec2-btn-back sec2-btn-back-ter position-absolute bg-tertiary"></div>
-          </div>
-          <div class="col p-0 position-relative">
-            <a href="javascript:void(0)" class="sec2-fav-btn">
-              <img src="img/icon/book.svg" alt="" class="sec2-icon-leave d-block w-50 m-auto">
-              <img src="img/icon/book-p.png" alt="" class="sec2-icon-hover d-none w-50 m-auto">
-              <p class="sec2-fav-text mb-0 mt-2 tkt-t6 text-center text-dark">장르별/예매방법</p>
-            </a>
-            <div class="sec2-btn-back sec2-btn-back-sec position-absolute bg-secondary"></div>
-            <div class="sec2-btn-back sec2-btn-back-ter position-absolute bg-tertiary"></div>
+    <section id="content" class="mgb-160">
+      <div class="row m-auto p-0 container-sm container-md container-xxl">
+        <div class="col-12 col-sm-12 col-md-12 col-xxl-2 p-0 d-flex align-items-center">
+          <img src="img/icon/bookmark.png" alt="" class="tkt-w35 tkt-h35 me-2 mb-2" />
+          <h2 class="sec2-fav-title text-dark tkt-h3 word-break">캣톡 서비스</h2>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-xxl-10 p-0">
+          <div class="row align-items-center h-100">
+            <div class="col p-0 position-relative">
+              <a href="javascript:void(0)" class="sec2-fav-btn">
+                <img src="img/icon/wallet.svg" alt="" class="sec2-icon-leave d-block w-50 m-auto" />
+                <img src="img/icon/wallet-p.png" alt="" class="sec2-icon-hover d-none w-50 m-auto" />
+                <p class="sec2-fav-text mb-0 mt-2 tkt-t6 text-center text-dark">결제방법</p>
+              </a>
+              <div class="sec2-btn-back sec2-btn-back-sec position-absolute bg-secondary"></div>
+              <div class="sec2-btn-back sec2-btn-back-ter position-absolute bg-tertiary"></div>
+            </div>
+            <div class="col p-0 position-relative">
+              <a href="javascript:void(0)" class="sec2-fav-btn">
+                <img src="img/icon/coin.svg" alt="" class="sec2-icon-leave d-block w-50 m-auto" />
+                <img src="img/icon/coin-p.png" alt="" class="sec2-icon-hover d-none w-50 m-auto" />
+                <p class="sec2-fav-text mb-0 mt-2 tkt-t6 text-center text-dark">수수료</p>
+              </a>
+              <div class="sec2-btn-back sec2-btn-back-sec position-absolute bg-secondary"></div>
+              <div class="sec2-btn-back sec2-btn-back-ter position-absolute bg-tertiary"></div>
+            </div>
+            <div class="col p-0 position-relative">
+              <a href="javascript:void(0)" class="sec2-fav-btn">
+                <img src="img/icon/card-cancel.svg" alt="" class="sec2-icon-leave d-block w-50 m-auto" />
+                <img src="img/icon/card-cancel-p.png" alt="" class="sec2-icon-hover d-none w-50 m-auto" />
+                <p class="sec2-fav-text mb-0 mt-2 tkt-t6 text-center text-dark">취소/환불</p>
+              </a>
+              <div class="sec2-btn-back sec2-btn-back-sec position-absolute bg-secondary"></div>
+              <div class="sec2-btn-back sec2-btn-back-ter position-absolute bg-tertiary"></div>
+            </div>
+            <div class="col p-0 position-relative">
+              <a href="javascript:void(0)" class="sec2-fav-btn">
+                <img src="img/icon/card.svg" alt="" class="sec2-icon-leave d-block w-50 m-auto" />
+                <img src="img/icon/card-p.png" alt="" class="sec2-icon-hover d-none w-50 m-auto" />
+                <p class="sec2-fav-text mb-0 mt-2 tkt-t6 text-center text-dark">제휴/할인카드</p>
+              </a>
+              <div class="sec2-btn-back sec2-btn-back-sec position-absolute bg-secondary"></div>
+              <div class="sec2-btn-back sec2-btn-back-ter position-absolute bg-tertiary"></div>
+            </div>
+            <div class="col p-0 position-relative">
+              <a href="javascript:void(0)" class="sec2-fav-btn">
+                <img src="img/icon/rocket.svg" alt="" class="sec2-icon-leave d-block w-50 m-auto" />
+                <img src="img/icon/rocket-p.png" alt="" class="sec2-icon-hover d-none w-50 m-auto" />
+                <p class="sec2-fav-text mb-0 mt-2 tkt-t6 text-center text-dark">티켓/배송수령</p>
+              </a>
+              <div class="sec2-btn-back sec2-btn-back-sec position-absolute bg-secondary"></div>
+              <div class="sec2-btn-back sec2-btn-back-ter position-absolute bg-tertiary"></div>
+            </div>
+            <div class="col p-0 position-relative">
+              <a href="javascript:void(0)" class="sec2-fav-btn">
+                <img src="img/icon/ear.svg" alt="" class="sec2-icon-leave d-block w-50 m-auto" />
+                <img src="img/icon/ear-p.png" alt="" class="sec2-icon-hover d-none w-50 m-auto" />
+                <p class="sec2-fav-text mb-0 mt-2 tkt-t6 text-center text-dark">FAQ</p>
+              </a>
+              <div class="sec2-btn-back sec2-btn-back-sec position-absolute bg-secondary"></div>
+              <div class="sec2-btn-back sec2-btn-back-ter position-absolute bg-tertiary"></div>
+            </div>
+            <div class="col p-0 position-relative">
+              <a href="javascript:void(0)" class="sec2-fav-btn">
+                <img src="img/icon/book.svg" alt="" class="sec2-icon-leave d-block w-50 m-auto" />
+                <img src="img/icon/book-p.png" alt="" class="sec2-icon-hover d-none w-50 m-auto" />
+                <p class="sec2-fav-text mb-0 mt-2 tkt-t6 text-center text-dark">장르별/예매방법</p>
+              </a>
+              <div class="sec2-btn-back sec2-btn-back-sec position-absolute bg-secondary"></div>
+              <div class="sec2-btn-back sec2-btn-back-ter position-absolute bg-tertiary"></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- section2 sw -->
+    </section>
+    <!-- section2 sw -->
 
-  <section class="sec3-ticketopen mgb-160">
-    <div class="sec3-container p-0 container-fluid container-xxl container-md container-sm">
-      <div class="ticketopen-wrap">
-        <!--타이틀 부분-->
-        <div class="title col text-left mgb-25 d-flex align-items-center">
-          <img src="img/icon/ticket.png" class="tkt-w35 tkt-h35 me-2" alt="">
-          <h2 class="tkt-h3 text-dark m-0">티켓 오픈</h2>
+    <section class="sec3-ticketopen mgb-160">
+      <div class="sec3-container p-0 container-fluid container-xxl container-md container-sm">
+        <div class="ticketopen-wrap">
+          <!--타이틀 부분-->
+          <div class="title col text-left mgb-25 d-flex align-items-center">
+            <img src="img/icon/ticket.png" class="tkt-w35 tkt-h35 me-2" alt="" />
+            <h2 class="tkt-h3 text-dark m-0">티켓 오픈</h2>
+          </div>
+        </div>
+        <div class="ticketopen-contents row w-100 m-0">
+          <!--컨텐츠 부분-->
+          <div class="sec3-contentbox position-relative col-6 col-xxl-2 col-md-4 col-sm-6 text-center">
+            <a href="javascript:void(0)" class="sec3-poster d-block mx-sm-auto br-15 position-relative overflow-hidden w-100">
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF210105_230120_114938.gif" class="img-fluid w-100" alt="" />
+            </a>
+            <p class="sec3-d-day text-light m-0 px-3 py-2 tkt-t6 bg-primary">D - 1</p>
+            <a href="javascript:void(0)" class="sec3-poster-info d-inline-block tkt-t6 text-dark text-center mt-3 mb-1 mx-sm-auto">2023.02.19(일)14:00</a>
+            <br />
+            <a href="javascript:void(0)" class="sec3-poster-info d-inline-block tkt-t6 text-dark text-center mx-sm-auto">고스트메모리</a>
+          </div>
+          <div class="sec3-contentbox position-relative col-6 col-xxl-2 col-md-4 col-sm-6 text-center">
+            <a href="javascript:void(0)" class="sec3-poster d-block mx-sm-auto br-15 position-relative overflow-hidden w-100">
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213198_230213_111425.jpg" class="img-fluid w-100" alt="" />
+            </a>
+            <p class="sec3-d-day text-light m-0 px-3 py-2 tkt-t6 bg-primary">D - 1</p>
+            <a href="javascript:void(0)" class="sec3-poster-info d-inline-block tkt-t6 text-dark text-center mt-3 mb-1 mx-sm-auto">2023.02.19(일)14:00</a>
+            <br />
+            <a href="javascript:void(0)" class="sec3-poster-info d-inline-block tkt-t6 text-dark text-center mx-sm-auto">청춘 愛 오후</a>
+          </div>
+          <div class="sec3-contentbox position-relative col-6 col-xxl-2 col-md-4 col-sm-6 text-center">
+            <a href="javascript:void(0)" class="sec3-poster d-block mx-sm-auto br-15 position-relative overflow-hidden w-100">
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF203891_221209_092426.gif" class="img-fluid w-100" alt="" />
+              <p class="sec3-d-day text-light m-0 tkt-t5">D - 1</p>
+            </a>
+            <p class="sec3-d-day text-light m-0 px-3 py-2 tkt-t6 bg-primary">D - 1</p>
+            <a href="javascript:void(0)" class="sec3-poster-info d-inline-block tkt-t6 text-dark text-center mt-3 mb-1 mx-sm-auto">2023.02.18(토)14:00</a>
+            <br />
+            <a href="javascript:void(0)" class="sec3-poster-info d-inline-block tkt-t6 text-dark text-center mx-sm-auto">정준일 소극장 콘서트</a>
+          </div>
+          <div class="sec3-contentbox position-relative col-6 col-xxl-2 col-md-4 col-sm-6 text-center">
+            <a href="javascript:void(0)" class="sec3-poster d-block mx-sm-auto br-15 position-relative overflow-hidden w-100">
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213245_230213_135930.gif" class="img-fluid w-100" alt="" />
+              <p class="sec3-d-day text-light m-0 tkt-t5">D - 1</p>
+            </a>
+            <p class="sec3-d-day text-light m-0 px-3 py-2 tkt-t6 bg-primary">D - 1</p>
+            <a href="javascript:void(0)" class="sec3-poster-info d-inline-block tkt-t6 text-dark text-center mt-3 mb-1 mx-sm-auto">2023.02.25(토)14:00</a>
+            <br />
+            <a href="javascript:void(0)" class="sec3-poster-info d-inline-block tkt-t6 text-dark text-center mx-sm-auto">토요키즈클래식</a>
+          </div>
+          <div class="sec3-contentbox position-relative col-6 col-xxl-2 col-md-4 col-sm-6 text-center">
+            <a href="javascript:void(0)" class="sec3-poster d-block mx-sm-auto br-15 position-relative overflow-hidden w-100">
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213217_230213_115555.png" class="img-fluid w-100" alt="" />
+              <p class="sec3-d-day text-light m-0 tkt-t5">D - 1</p>
+            </a>
+            <p class="sec3-d-day text-light m-0 px-3 py-2 tkt-t6 bg-primary">D - 1</p>
+            <a href="javascript:void(0)" class="sec3-poster-info d-inline-block tkt-t6 text-dark text-center mt-3 mb-1 mx-sm-auto">2023.02.26(일)14:00</a>
+            <br />
+            <a href="javascript:void(0)" class="sec3-poster-info d-inline-block tkt-t6 text-dark text-center mx-sm-auto">HOWEVER CONCERT</a>
+          </div>
+          <div class="sec3-contentbox position-relative col-6 col-xxl-2 col-md-4 col-sm-6 text-center">
+            <a href="javascript:void(0)" class="sec3-poster d-block mx-sm-auto br-15 position-relative overflow-hidden w-100">
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF211599_230131_093534.jpg" class="img-fluid w-100" alt="" />
+              <p class="sec3-d-day text-light m-0 tkt-t5">D - 1</p>
+            </a>
+            <p class="sec3-d-day text-light m-0 px-3 py-2 tkt-t6 bg-primary">D - 1</p>
+            <a href="javascript:void(0)" class="sec3-poster-info d-inline-block tkt-t6 text-dark text-center mt-3 mb-1 mx-sm-auto">2023.03.05(일)14:00</a>
+            <br />
+            <a href="javascript:void(0)" class="sec3-poster-info d-inline-block tkt-t6 text-dark text-center mx-sm-auto">플란다스의 개</a>
+          </div>
         </div>
       </div>
-      <div class="ticketopen-contents row w-100 m-0">
-        <!--컨텐츠 부분-->
-        <div class="sec3-contentbox position-relative col-6 col-xxl-2 col-md-4 col-sm-6 text-center">
-          <a href="javascript:void(0)" class="sec3-poster d-block mx-sm-auto br-15 position-relative overflow-hidden w-100">
-            <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF210105_230120_114938.gif" class="img-fluid w-100" alt="">
-          </a>
-          <p class="sec3-d-day text-light m-0 px-3 py-2 tkt-t6 bg-primary">D - 1</p>
-          <a href="javascript:void(0)" class="sec3-poster-info d-inline-block tkt-t6 text-dark text-center mt-3 mb-1 mx-sm-auto">2023.02.19(일)14:00</a>
-          <br>
-          <a href="javascript:void(0)" class="sec3-poster-info d-inline-block tkt-t6 text-dark text-center mx-sm-auto">고스트메모리</a>
-        </div>
-        <div class="sec3-contentbox position-relative col-6 col-xxl-2 col-md-4 col-sm-6 text-center">
-          <a href="javascript:void(0)" class="sec3-poster d-block mx-sm-auto br-15 position-relative overflow-hidden w-100">
-            <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213198_230213_111425.jpg" class="img-fluid w-100" alt="">
-          </a>
-          <p class="sec3-d-day text-light m-0 px-3 py-2 tkt-t6 bg-primary">D - 1</p>
-          <a href="javascript:void(0)" class="sec3-poster-info d-inline-block tkt-t6 text-dark text-center mt-3 mb-1 mx-sm-auto">2023.02.19(일)14:00</a>
-          <br>
-          <a href="javascript:void(0)" class="sec3-poster-info d-inline-block tkt-t6 text-dark text-center mx-sm-auto">청춘 愛 오후</a>
-        </div>
-        <div class="sec3-contentbox position-relative col-6 col-xxl-2 col-md-4 col-sm-6 text-center">
-          <a href="javascript:void(0)" class="sec3-poster d-block mx-sm-auto br-15 position-relative overflow-hidden w-100">
-            <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF203891_221209_092426.gif" class="img-fluid w-100" alt="">
-            <p class="sec3-d-day text-light m-0 tkt-t5">D - 1</p>
-          </a>
-          <p class="sec3-d-day text-light m-0 px-3 py-2 tkt-t6 bg-primary">D - 1</p>
-          <a href="javascript:void(0)" class="sec3-poster-info d-inline-block tkt-t6 text-dark text-center mt-3 mb-1 mx-sm-auto">2023.02.18(토)14:00</a>
-          <br>
-          <a href="javascript:void(0)" class="sec3-poster-info d-inline-block tkt-t6 text-dark text-center mx-sm-auto">정준일 소극장 콘서트</a>
-        </div>
-        <div class="sec3-contentbox position-relative col-6 col-xxl-2 col-md-4 col-sm-6 text-center">
-          <a href="javascript:void(0)" class="sec3-poster d-block mx-sm-auto br-15 position-relative overflow-hidden w-100">
-            <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213245_230213_135930.gif" class="img-fluid w-100" alt="">
-            <p class="sec3-d-day text-light m-0 tkt-t5">D - 1</p>
-          </a>
-          <p class="sec3-d-day text-light m-0 px-3 py-2 tkt-t6 bg-primary">D - 1</p>
-          <a href="javascript:void(0)" class="sec3-poster-info d-inline-block tkt-t6 text-dark text-center mt-3 mb-1 mx-sm-auto">2023.02.25(토)14:00</a>
-          <br>
-          <a href="javascript:void(0)" class="sec3-poster-info d-inline-block tkt-t6 text-dark text-center mx-sm-auto">토요키즈클래식</a>
-        </div>
-        <div class="sec3-contentbox position-relative col-6 col-xxl-2 col-md-4 col-sm-6 text-center">
-          <a href="javascript:void(0)" class="sec3-poster d-block mx-sm-auto br-15 position-relative overflow-hidden w-100">
-            <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213217_230213_115555.png" class="img-fluid w-100" alt="">
-            <p class="sec3-d-day text-light m-0 tkt-t5">D - 1</p>
-          </a>
-          <p class="sec3-d-day text-light m-0 px-3 py-2 tkt-t6 bg-primary">D - 1</p>
-          <a href="javascript:void(0)" class="sec3-poster-info d-inline-block tkt-t6 text-dark text-center mt-3 mb-1 mx-sm-auto">2023.02.26(일)14:00</a>
-          <br>
-          <a href="javascript:void(0)" class="sec3-poster-info d-inline-block tkt-t6 text-dark text-center mx-sm-auto">HOWEVER CONCERT</a>
-        </div>
-        <div class="sec3-contentbox position-relative col-6 col-xxl-2 col-md-4 col-sm-6 text-center">
-          <a href="javascript:void(0)" class="sec3-poster d-block mx-sm-auto br-15 position-relative overflow-hidden w-100">
-            <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF211599_230131_093534.jpg" class="img-fluid w-100" alt="">
-            <p class="sec3-d-day text-light m-0 tkt-t5">D - 1</p>
-          </a>
-          <p class="sec3-d-day text-light m-0 px-3 py-2 tkt-t6 bg-primary">D - 1</p>
-          <a href="javascript:void(0)" class="sec3-poster-info d-inline-block tkt-t6 text-dark text-center mt-3 mb-1 mx-sm-auto">2023.03.05(일)14:00</a>
-          <br>
-          <a href="javascript:void(0)" class="sec3-poster-info d-inline-block tkt-t6 text-dark text-center mx-sm-auto">플란다스의 개</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- section3 yb -->
+    </section>
+    <!-- section3 yb -->
 
   <section class="sec4-talkdata container-sm container-md container-xxl p-0 mgb-160">
     <div class="sec4-container container-fluid p-0">
@@ -631,7 +599,7 @@
       <div class="ticketsearch-contents br-15 bg-light p-5">
         <ul class="search list-unstyled d-inline-block w-100 mgb-25">
           <li class="float-start me-4">
-            <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark search-nav-on" data-genre="total">전체</a>
+            <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark search-nav-on" data-genre="전체">전체</a>
           </li>
           <li class="float-start me-4">
             <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark" data-genre="뮤지컬">뮤지컬</a>
@@ -652,45 +620,10 @@
             <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark" data-genre="뮤직페스티벌">뮤직페스티벌</a>
           </li>
         </ul>
-        <div class="search-detail d-inline-block w-100 mgb-25">
-          <div class="dropdown float-start me-4">
-            <button class="search-detail-btn btn btn-secondary dropdown-toggle bg-lgray border-0 tkt-t6" type="button" data-bs-toggle="dropdown" aria-expanded="false">지역</button>
-            <ul class="search-detail-list dropdown-menu">
-              <li><a class="dropdown-item" href="javascript:void(0)">전체</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">서울</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">경기도</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">강원도</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">충청도</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">전라도</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">경상도</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">제주</a></li>
-            </ul>
-          </div>
-          <div class="dropdown float-start me-4">
-            <button class="search-detail-btn btn btn-secondary dropdown-toggle bg-lgray border-0 tkt-t6" type="button" data-bs-toggle="dropdown" aria-expanded="false">기간</button>
-            <ul class="search-detail-list dropdown-menu">
-              <li><a class="dropdown-item" href="javascript:void(0)">전체</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">일간</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">월간</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">주간</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">주말</a></li>
-            </ul>
-          </div>
-          <div class="dropdown float-start me-4">
-            <button class="search-detail-btn btn btn-secondary dropdown-toggle bg-lgray border-0 tkt-t6" type="button" data-bs-toggle="dropdown" aria-expanded="false">공연 상태</button>
-            <ul class="search-detail-list dropdown-menu">
-              <li><a class="dropdown-item" href="javascript:void(0)">전체</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">공연중/공연예정</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">공연중</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">공연예정</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">종료/취소</a></li>
-            </ul>
-          </div>
-        </div>
         <div class="search-result row d-flex justify-content-between">
           <div class="text-center col-6 col-sm-6 col-md-4 col-xxl-2">
             <div class="card bg-transparent border-0 search-poster">
-              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213194_230213_110545.jpg" class="card-img img img-fluid br-15" alt="" />
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213194_230213_110545.jpg" class="card-img img img-fluid br-15" alt="공연포스터" />
               <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
                 <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
               </a>
@@ -702,7 +635,7 @@
           </div>
           <div class="text-center col-6 col-sm-6 col-md-4 col-xxl-2">
             <div class="card bg-transparent border-0 search-poster">
-              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF202671_221122_094142.jpg" class="card-img img img-fluid br-15" alt="" />
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF202671_221122_094142.jpg" class="card-img img img-fluid br-15" alt="공연포스터" />
               <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
                 <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
               </a>
@@ -714,7 +647,7 @@
           </div>
           <div class="text-center col-6 col-sm-6 col-md-4 col-xxl-2">
             <div class="card bg-transparent border-0 search-poster">
-              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF204871_221228_093225.gif" class="card-img img img-fluid br-15" alt="" />
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF204871_221228_093225.gif" class="card-img img img-fluid br-15" alt="공연포스터" />
               <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
                 <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
               </a>
@@ -726,7 +659,7 @@
           </div>
           <div class="text-center col-6 col-sm-6 col-md-4 col-xxl-2">
             <div class="card bg-transparent border-0 search-poster">
-              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213222_230213_120313.png" class="card-img img img-fluid br-15" alt="" />
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213222_230213_120313.png" class="card-img img img-fluid br-15" alt="공연포스터" />
               <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
                 <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
               </a>
@@ -738,7 +671,7 @@
           </div>
           <div class="text-center col-6 col-sm-6 col-md-4 col-xxl-2">
             <div class="card bg-transparent border-0 search-poster">
-              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF209863_230117_105408.gif" class="card-img img img-fluid br-15" alt="" />
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF209863_230117_105408.gif" class="card-img img img-fluid br-15" alt="공연포스터" />
               <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
                 <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
               </a>
@@ -750,7 +683,7 @@
           </div>
           <div class="text-center col-6 col-sm-6 col-md-4 col-xxl-2">
             <div class="card bg-transparent border-0 search-poster">
-              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF209529_230110_094630.gif" class="card-img img img-fluid br-15" alt="" />
+              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF209529_230110_094630.gif" class="card-img img img-fluid br-15" alt="공연포스터" />
               <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
                 <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
               </a>
@@ -874,105 +807,105 @@
   </footer>
   <!-- footer yb -->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <!-- <script src="js/total-search.js"></script> -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 2,
-      spaceBetween: 32,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        1400: {
-          slidesPerView: 5,
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 32,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
-        990: {
-          slidesPerView: 5,
+        breakpoints: {
+          1400: {
+            slidesPerView: 5,
+          },
+          990: {
+            slidesPerView: 5,
+          },
+          768: {
+            slidesPerView: 3,
+          },
         },
-        768: {
-          slidesPerView: 3,
-        }
-      },
-    });
-  </script>
-  <script>
-    let sec1 = document.querySelector('.sec1-main-wrap');
-    let sec1Height = sec1.clientHeight;
-    let nav = document.querySelector('.tkt-nav');
-    let navBtn = document.querySelectorAll('.tkt-nav-link');
-    let navDepth = document.querySelectorAll('.multi-collapse');
-    let logoImg = document.querySelector('#logo');
-    let loginIcon = document.querySelector('#login-icon');
+      });
+      
+    </script>
+    <script>
+      let sec1 = document.querySelector(".sec1-main-wrap");
+      let sec1Height = sec1.clientHeight;
+      let nav = document.querySelector(".tkt-nav");
+      let navBtn = document.querySelectorAll(".tkt-nav-link");
+      let navDepth = document.querySelectorAll(".multi-collapse");
+      let logoImg = document.querySelector("#logo");
+      let loginIcon = document.querySelector("#login-icon");
 
-    // useful function 
-    function delCName(target,clName){
-      target.forEach((targetAll)=>{
-        targetAll.classList.remove(clName);
-      });
-    }
-    function navBtnDark(){
-      navBtn.forEach((gnbBtns)=>{
-        gnbBtns.classList.add('text-dark');
-      });
-      nav.style.backgroundColor = '#f2f4f5b2'
-      nav.style.backdropFilter = 'blur(10px)'
-    }
-    function navBtnLight(){
-      navBtn.forEach((gnbBtns)=>{
-        gnbBtns.classList.remove('text-dark');
-      });
-      nav.style.backgroundColor = 'transparent'
-      nav.style.backdropFilter = 'blur(0px)'
-    }
-    function logoDark(){
-      logoImg.setAttribute("src","img/tkt-logo-b.svg");
-      loginIcon.setAttribute("src","img/icon/myicon-black.png");
-    }
-    function logoLight(){
-      logoImg.setAttribute("src","img/tkt-logo-w.svg");
-      loginIcon.setAttribute("src","img/icon/myicon-white.png");
-    }
-
-    nav.addEventListener("mouseenter",function(){
-      logoDark();
-      navBtnDark();
-    })
-    nav.addEventListener("mouseleave",function(){
-      logoLight();
-      navBtnLight();
-      delCName(navBtn,'nav-on');
-      delCName(navDepth,'show');
-      if(window.scrollY > sec1Height){
-        logoDark();
-        navBtnDark();
+      // useful function
+      function delCName(target, clName) {
+        target.forEach((targetAll) => {
+          targetAll.classList.remove(clName);
+        });
       }
-    })
-    
-    navBtn.forEach(function(b){
-      b.addEventListener('click',function (){
-        delCName(navBtn,'nav-on');
-        delCName(navDepth,'show');
-        b.classList.add('nav-on');
-      })
-    });
+      function navBtnDark() {
+        navBtn.forEach((gnbBtns) => {
+          gnbBtns.classList.add("text-dark");
+        });
+        nav.style.backgroundColor = "#f2f4f5b2";
+        nav.style.backdropFilter = "blur(10px)";
+      }
+      function navBtnLight() {
+        navBtn.forEach((gnbBtns) => {
+          gnbBtns.classList.remove("text-dark");
+        });
+        nav.style.backgroundColor = "transparent";
+        nav.style.backdropFilter = "blur(0px)";
+      }
+      function logoDark() {
+        logoImg.setAttribute("src", "img/tkt-logo-b.svg");
+        loginIcon.setAttribute("src", "img/icon/myicon-black.png");
+      }
+      function logoLight() {
+        logoImg.setAttribute("src", "img/tkt-logo-w.svg");
+        loginIcon.setAttribute("src", "img/icon/myicon-white.png");
+      }
 
-    window.addEventListener('scroll',function(){
-      if(window.scrollY+100 > sec1Height){
+      nav.addEventListener("mouseenter", function () {
         logoDark();
         navBtnDark();
-      }else{
+      });
+      nav.addEventListener("mouseleave", function () {
         logoLight();
         navBtnLight();
-      }
-    });
+        delCName(navBtn, "nav-on");
+        delCName(navDepth, "show");
+        if (window.scrollY > sec1Height) {
+          logoDark();
+          navBtnDark();
+        }
+      });
 
-    let mainSlideBoxes = document.querySelectorAll('.sec1-main-slide-box');
-    mainSlideBoxes.forEach((msbs,index)=>{
-      msbs.setAttribute('data-rank',index+1)
-    });
+      navBtn.forEach(function (b) {
+        b.addEventListener("click", function () {
+          delCName(navBtn, "nav-on");
+          delCName(navDepth, "show");
+          b.classList.add("nav-on");
+        });
+      });
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY + 100 > sec1Height) {
+          logoDark();
+          navBtnDark();
+        } else {
+          logoLight();
+          navBtnLight();
+        }
+      });
+
+      let mainSlideBoxes = document.querySelectorAll(".sec1-main-slide-box");
+      mainSlideBoxes.forEach((msbs, index) => {
+        msbs.setAttribute("data-rank", index + 1);
+      });
 
     // section5 
     let searchBtn = document.querySelectorAll('.sec5-nav-link');
@@ -983,7 +916,6 @@
       })
     })
 
-    //sec4-total-search
     const kopisUrl = "kopis-trans.json";
     const searchTab=document.querySelector('.search');
     const resultImg=document.querySelectorAll('.search-result .card img');
@@ -1015,6 +947,7 @@
             });   
         });
     };
+    
 
     let couponClose = document.querySelector(".coupon-close");
     let purposeClose = document.querySelector(".purpose-close");
@@ -1030,5 +963,6 @@
       purposePop.classList.remove("d-flex");
     });
   </script>
+    
 </body>
 </html>

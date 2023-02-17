@@ -1,6 +1,111 @@
 {
     "total": [
       {
+        "genre": "전체",
+        "sub": [
+          {
+            "id": "1",
+            "rid": "PF213209",
+            "title": "광염 소나타",
+            "std": "2023.03.13",
+            "ed": "2023.06.04",
+            "locate": "대학로 드림아트센터",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213209_230213_114242.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "2",
+            "rid": "PF213385",
+            "title": "하녀들",
+            "std": "2023.02.23",
+            "ed": "2023.03.05",
+            "locate": "을지공간",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213385_230215_124444.jpg",
+            "state": "공연예정"
+          },
+          {
+            "id": "3",
+            "rid": "PF213412",
+            "title": "SG워너비 콘서트: 우리의 노래 [서울]",
+            "std": "2023.04.01",
+            "ed": "2023.04.02",
+            "locate": "올림픽공원",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213412_230215_143654.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "4",
+            "rid": "PF213404",
+            "title": "미술 속 음악이야기, 프리다 칼로, 자클린 뒤프레를 만나다 [여수]",
+            "std": "2023.03.23",
+            "ed": "2023.03.23",
+            "locate": "예울마루",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213404_230215_141736.jpg",
+            "state": "공연예정"
+          },
+          {
+            "id": "5",
+            "rid": "PF213414",
+            "title": "깨비와 혹부리영감",
+            "std": "2023.03.03",
+            "ed": "2023.03.03",
+            "locate": "노원문화예술회관",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213414_230215_144235.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "1",
+            "rid": "PF213395",
+            "title": "그리즐리(Grizzly) Concert: Spring House",
+            "std": "2023.03.04",
+            "ed": "2023.03.05",
+            "locate": "폼텍웍스홀",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF213395_230215_133725.jfif",
+            "state": "공연예정"
+          },
+          {
+            "id": "7",
+            "rid": "PF212524",
+            "title": "다시, 봄",
+            "std": "2023.03.15",
+            "ed": "2023.04.01",
+            "locate": "세종문화회관",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF212524_230202_105129.jpg",
+            "state": "공연예정"
+          },
+          {
+            "id": "8",
+            "rid": "PF211480",
+            "title": "어린왕자",
+            "std": "2023.03.04",
+            "ed": "2023.04.23",
+            "locate": "충무아트센터",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF211480_230127_121857.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "9",
+            "rid": "PF211446",
+            "title": "호프: 읽히지 않은 책과 읽히지 않은 인생",
+            "std": "2023.03.16",
+            "ed": "2023.06.11",
+            "locate": "유니플렉스",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF211446_230127_095750.gif",
+            "state": "공연예정"
+          },
+          {
+            "id": "10",
+            "rid": "PF209954",
+            "title": "Inside Me (인사이드 미)",
+            "std": "2023.02.18",
+            "ed": "2023.03.26",
+            "locate": "엠스테이지(구.인사아트홀)",
+            "img": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF209954_230118_112658.gif",
+            "state": "공연예정"
+          }
+        ]
+      },
+      {
         "genre": "뮤지컬",
         "sub": [
           {

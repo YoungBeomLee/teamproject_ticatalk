@@ -11551,6 +11551,10 @@ nav .card li a:hover {
   content: "";
 }
 
+.sec1-poster-hover-title {
+  line-height: 1.8 !important;
+}
+
 .sec1-poster-hover {
   opacity: 0;
   background-color: rgba(116, 50, 225, 0.9);
@@ -11980,6 +11984,23 @@ nav .card li a:hover {
 }
 .section2-catalk-data .catalk-data-container .catalk-data-wrap .div1 img, .section2-catalk-data .catalk-data-container .catalk-data-wrap .div2 img, .section2-catalk-data .catalk-data-container .catalk-data-wrap .div3 img {
   padding-top: 50px;
+}
+
+.section3-catalk-collection-concert .catalk-info-container .catalk-info-wrap .txt-wrap, .section4-catalk-collection-location .catalk-info-container .catalk-info-wrap .txt-wrap, .section5-catalk-collection-age .catalk-info-container .catalk-info-wrap .txt-wrap {
+  position: relative;
+  top: 150px;
+}
+.section3-catalk-collection-concert .catalk-info-container .catalk-info-wrap .imgbox, .section4-catalk-collection-location .catalk-info-container .catalk-info-wrap .imgbox, .section5-catalk-collection-age .catalk-info-container .catalk-info-wrap .imgbox {
+  margin: 20px 0;
+}
+.section3-catalk-collection-concert .catalk-info-container .catalk-info-wrap .imgbox img, .section4-catalk-collection-location .catalk-info-container .catalk-info-wrap .imgbox img, .section5-catalk-collection-age .catalk-info-container .catalk-info-wrap .imgbox img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.section4-catalk-collection-location {
+  background-color: #ddd;
 }
 
 @media (max-width: 1400px) {
