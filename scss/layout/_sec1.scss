@@ -129,6 +129,12 @@ nav {
     }
   }
 }
+
+
+.sec1-poster-hover-title {
+  line-height: 1.8 !important;
+}
+
 .sec1-poster-hover{
   opacity: 0;
   background-color: rgba(116, 50, 225, 0.9);
@@ -139,8 +145,8 @@ nav {
   &-title{
     line-height: 1.8 !important;
   }
-}
 
+}
 //chat
 #chat-wrap {
   position: fixed;
