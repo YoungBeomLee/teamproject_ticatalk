@@ -52,9 +52,40 @@
     </div>
   </div>
 
+    <!-- Modal-login -->
+    <div class="modal fade br-15" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header d-flex flex-column">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h2 class="fw-bold mb-2 text-uppercase mgb-35 mt-5"><img src="../img/tkt-logo-w.svg" alt="logo" class="login-logo"><a href="#"></a></h2>
+            <p class="text-gray mb-5 tkt-t5">Login to your account</p>
+          </div>
+          <div class="modal-body">
+            <div class="form-outline mgb-55">
+              <input type="email" id="typeEmailX" class="form-control form-control-lg" placeholder="User name"/>
+            </div>
+            <div class="form-outline mgb-55">
+              <input type="password" id="typePasswordX" class="form-control form-control-lg" placeholder="Password"/>
+            </div>
+            <div class="d-grid mgb-35 pt-4">
+              <button type="button" class="btn btn-primary py-2 tkt-t5">Log in</button>
+            </div>
+          </div>
+          <div class="modal-footer text-center">
+            <div>
+              <p class="mgb-15 text-lgray tkt-t6">Don't have an account? <a href="#!" class="text-white-50 fw-bold tkt-t5">Sign Up</a>
+              </p>
+            </div>
+            <p class="small mb-5 pb-lg-2 tkt-t6"><a class="text-white-50" href="#!">Can't login?</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- chat -->
     <a href="javascript:void(0)" class="chat-button">
-      <img src="img/tkt-logocat-w.svg" alt="채팅창 열기 버튼" />
+      <img src="img/tkt-logocat-w.svg" alt="채팅창 열기 버튼" 
     </a>
     <!-- 채팅 영역 -->
     <div id="chat-wrap">
@@ -80,7 +111,7 @@
             <img id="login-icon" src="img/icon/myicon-white.png" alt="login" />
           </a>
           <ul class="dropdown-menu br-15">
-            <li><a class="dropdown-item" href="javascript:void(0)">로그인</a></li>
+            <li><a class="dropdown-item" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModal">로그인</a></li>
             <li><a class="dropdown-item" href="javascript:void(0)">마이페이지</a></li>
             <li><a class="dropdown-item" href="javascript:void(0)">예매확인</a></li>
             <li><a class="dropdown-item" href="javascript:void(0)">이용안내</a></li>

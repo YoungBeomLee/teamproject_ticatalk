@@ -11422,6 +11422,55 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.modal {
+  --bs-modal-width: 600px;
+  --bs-modal-border-width: 0;
+}
+.modal .modal-content {
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.modal .modal-content .modal-header {
+  padding: var(--bs-modal-header-padding);
+  border-bottom: none;
+}
+.modal .modal-content .modal-header .btn-close {
+  box-sizing: content-box;
+  width: 1em;
+  height: 1em;
+  padding: 0.25em 0.25em;
+  color: #d9d9d9;
+}
+.modal .modal-content .modal-header .login-logo {
+  width: 18rem;
+}
+.modal .modal-content .modal-body {
+  padding: 20px 90px;
+}
+.modal .modal-content .modal-body .form-control {
+  width: 100%;
+  color: #d9d9d9;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #d9d9d9;
+  border-radius: 0;
+}
+.modal .modal-content .modal-body .form-control::-webkit-input-placeholder {
+  text-align: center;
+  color: #d9d9d9;
+}
+.modal .modal-content .modal-body .form-control:focus {
+  color: #d9d9d9;
+  border: none;
+  border-radius: 15px;
+}
+.modal .modal-content .modal-footer {
+  padding: calc(var(--bs-modal-padding) - var(--bs-modal-footer-gap) * 0.5);
+  border-top: none;
+  display: block;
+}
+
 nav {
   transition: all 0.4s;
   z-index: 30;
