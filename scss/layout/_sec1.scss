@@ -1,3 +1,61 @@
+  
+.modal{
+  --bs-modal-width: 600px;
+  --bs-modal-border-width: 0;
+
+  & .modal-content{
+      background-color: rgba(255, 255, 255, 0.15); 
+      backdrop-filter: blur(10px);
+
+      & .modal-header {
+          padding: var(--bs-modal-header-padding);
+          border-bottom: none;
+
+          & .btn-close {
+              box-sizing: content-box;
+              width: 1em;
+              height: 1em;
+              padding: 0.25em 0.25em;
+              color: #d9d9d9;
+          }
+
+          & .login-logo{
+              width: 18rem;
+          }
+      }
+
+      & .modal-body{
+          padding: 20px 90px;
+      
+          & .form-control {
+              width: 100%;
+              color: #d9d9d9;
+              background-color: transparent;
+              border: none; 
+              border-bottom : 3px solid #d9d9d9;
+              border-radius: 0;
+              
+              &::-webkit-input-placeholder{
+                  text-align: center;
+                  color:#d9d9d9;
+              }
+              
+              &:focus {
+                  color: #d9d9d9;
+                  border:none;
+                  border-radius: 15px;
+              }
+          }
+      }
+
+      & .modal-footer {
+          padding: calc(var(--bs-modal-padding) - var(--bs-modal-footer-gap) * 0.5);
+          border-top: none;
+          display: block;
+      }
+  }
+}
+
 //nav
 nav {
   transition: all .4s;
@@ -30,6 +88,10 @@ nav {
   .nav-on {
     @include tkt-thover;
   }
+
+
+
+
   //nav 2-depth
   .card {
     --bs-card-border-width: none;
