@@ -11437,10 +11437,15 @@ textarea.form-control-lg {
 }
 .modal .modal-content .modal-header .btn-close {
   box-sizing: content-box;
-  width: 1em;
-  height: 1em;
+  width: 2em;
+  height: 2em;
   padding: 0.25em 0.25em;
   color: #d9d9d9;
+}
+.modal .modal-content .modal-header .login-close {
+  background: url("../img/icon/close-w.png") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .modal .modal-content .modal-header .login-logo {
   width: 18rem;
