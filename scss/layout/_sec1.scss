@@ -82,15 +82,12 @@ nav {
       text-align: center;
     }
     .dropdown-toggle::after {
-      display: none; // display:inline-block 으로 보여도됨
+      display: none;
     }
   }
   .nav-on {
     @include tkt-thover;
   }
-
-
-
 
   //nav 2-depth
   .card {

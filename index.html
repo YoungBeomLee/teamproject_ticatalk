@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
     <title>티캣톡 - 공연 보고 친구도 사귀자!</title>
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <script src="js/chat.js"></script>
     <link rel="shortcut icon" href="img/favicon/tkt-logocat-favicon-96x96.svg">
+    <script src="js/chat.js"></script>
+    <script src="js/main.js"></script>
   </head>
   <body>
     <div id="purpose-pop" class="shadow p-4 bg-light d-flex flex-column position-fixed border-0 br-15">
@@ -21,36 +22,36 @@
       </div>
     </div>
 
-  <div id="coupon-pop" class="shadow p-4 bg-secondary rounded d-flex flex-column position-fixed border-0 br-15">
-    <button type="button" class="coupon-btn btn btn-outline bg-dark mb-2 text-start position-relative" 
-    style="height: 88px; background-image: url('img/poster/sec5/popup-1.svg');">
-        [클래식] 오티움 <br>눈 오는 날 세일 35%
-      <div class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"
-        style="width: 25px; height: 25px; transform: translate(12px, 15px)"></div>
-    </button>
-    <button type="button" class="coupon-btn btn btn-outline bg-dark mb-2 text-start position-relative"
-    style=" height: 88px; background-image: url('img/poster/sec5/popup-2.svg');">
-      [뮤지컬] 프로즌 <br />비 오는 날 세일 15%
-      <div class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"
-        style="width: 25px; height: 25px; transform: translate(12px, 15px)"></div>
-    </button>
-    <button type="button" class="coupon-btn btn btn-outline bg-dark mb-2 text-start position-relative"
-    style="height: 88px; background-image: url('img/poster/sec5/popup-3.svg');">
-      [클래식] 오티움 <br />눈 오는 날 세일 35%
-      <div class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"
-        style="width: 25px; height: 25px; transform: translate(12px, 15px)"></div>
-    </button>
-    <button type="button" class="coupon-btn btn btn-outline bg-dark mb-3 text-start position-relative"
-    style="height: 88px; background-image: url('img/poster/sec5/popup-4.svg');">
-      [뮤지컬] 프로즌 <br />비 오는 날 세일 15%
-      <div class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"
-        style="width: 25px; height: 25px; transform: translate(12px, 15px)"></div>
-    </button>
-    <div class="pop-close-wrap d-flex justify-content-between align-items-center">
-      <a href="javascript:void(0)" class="tkt-sm text-light" alt="오늘 하루 그만 보기">오늘 하루 그만 보기</a>
-      <button type="button" class="coupon-close pop-close border-0 p-0"></button>
+    <div id="coupon-pop" class="shadow p-4 bg-secondary rounded d-flex flex-column position-fixed border-0 br-15">
+      <button type="button" class="coupon-btn btn btn-outline bg-dark mb-2 text-start position-relative" 
+      style="height: 88px; background-image: url('img/poster/sec5/popup-1.svg');">
+          [클래식] 오티움 <br>눈 오는 날 세일 35%
+        <div class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"
+          style="width: 25px; height: 25px; transform: translate(12px, 15px)"></div>
+      </button>
+      <button type="button" class="coupon-btn btn btn-outline bg-dark mb-2 text-start position-relative"
+      style=" height: 88px; background-image: url('img/poster/sec5/popup-2.svg');">
+        [뮤지컬] 프로즌 <br />비 오는 날 세일 15%
+        <div class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"
+          style="width: 25px; height: 25px; transform: translate(12px, 15px)"></div>
+      </button>
+      <button type="button" class="coupon-btn btn btn-outline bg-dark mb-2 text-start position-relative"
+      style="height: 88px; background-image: url('img/poster/sec5/popup-3.svg');">
+        [클래식] 오티움 <br />눈 오는 날 세일 35%
+        <div class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"
+          style="width: 25px; height: 25px; transform: translate(12px, 15px)"></div>
+      </button>
+      <button type="button" class="coupon-btn btn btn-outline bg-dark mb-3 text-start position-relative"
+      style="height: 88px; background-image: url('img/poster/sec5/popup-4.svg');">
+        [뮤지컬] 프로즌 <br />비 오는 날 세일 15%
+        <div class="rec position-absolute bottom-50 end-0 border-none border-radius rounded-5 bg-secondary"
+          style="width: 25px; height: 25px; transform: translate(12px, 15px)"></div>
+      </button>
+      <div class="pop-close-wrap d-flex justify-content-between align-items-center">
+        <a href="javascript:void(0)" class="tkt-sm text-light" alt="오늘 하루 그만 보기">오늘 하루 그만 보기</a>
+        <button type="button" class="coupon-close pop-close border-0 p-0"></button>
+      </div>
     </div>
-  </div>
 
     <!-- Modal-login -->
     <div class="modal fade br-15" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -124,7 +125,7 @@
         <div class="collapse multi-collapse" id="nav-catalk">
           <div class="card card-body">
             <ul class="list-unstyled m-auto d-flex justify-content-center">
-              <li><a href="javascript:void(0)">캣톡이란?</a></li>
+              <li><a href="subPage/catTalk.html">캣톡이란?</a></li>
               <li><a href="javascript:void(0)">캣톡데이터</a></li>
               <li><a href="javascript:void(0)">공연별</a></li>
               <li><a href="javascript:void(0)">지역별</a></li>
@@ -439,405 +440,405 @@
     </section>
     <!-- section3 yb -->
 
-  <section class="sec4-talkdata container-sm container-md container-xxl p-0 mgb-160">
-    <div class="sec4-container container-fluid p-0">
-      <h2 class="sec4-title tkt-h3 mgb-25 text-dark d-flex align-items-center"><span class="d-inline-block tkt-w35 tkt-h35 me-2"></span>캣톡 데이터</h2>
-      <div class="sec4-content row">
-        <div class="sec4-content-left col-12 col-sm-12 col-md-3 col-xxl-3">
-          <div class="sec4-big-card card br-15 bg-tertiary overflow-hidden border-0">
-            <a href="javascript:void(0)" class="sec4-big-img-box br-15 overflow-hidden">
-              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF209403_230106_095241.gif" class="sec4-big-poster card-img-top" alt="...">
-            </a>
-            <div class="card-body bg-tertiary text-center">
-              <a href="javascript:void(0)" class="sec4-big-title card-text text-primary tkt-t6">이번 주 가장 캣톡이 많은 공연</a>
-            </div>
-          </div>
-        </div>
-        <div class="sec4-content-right col-12 col-sm-12 col-md-9 col-xxl-9">
-          <div class="row d-flex justify-content-between align-items-end mgb-25">
-            <p class="sec4-besttalk-title tkt-h4 text-dark w-auto m-0">아마데우스</p>
-            <a href="javascript:void(0)" class="w-auto tkt-t6">
-              등록된 캣톡 52 개
-              <img src="img/icon/right-p.png" class="tkt-w18" alt="">
-            </a>
-          </div>
-          <div class="row mgb-25">
-            <div class="col-4 col-sm-4 col-md-4 col-xxl-4">
-              <div class="card br-15 border-0 bg-light">
-                <div class="card-body">
-                  <div class="mgb-25 d-flex justify-content-between">
-                    <div class="sec4-talk-titlebox w-75">
-                      <a href="javascript:void(0)" class="sec4-talk-title d-block mb-2 text-dark card-title tkt-t6 text-truncate">정문에서 무료나눔 합니다</a>
-                      <p class="card-subtitle mb-2 text-gray tkt-sm">톡장 김와플</p>
-                    </div>
-                    <a href="javascript:void(0)" class="sec4-like-btn tkt-w35 p-0 position-relative">
-                      <img src="img/icon/heart-line.png" class="sec4-like-line w-100 position-absolute" alt="">
-                      <img src="img/icon/heart-fill.png" class="sec4-like-fill w-100 position-absolute d-none" alt="">
-                    </a>
-                  </div>
-                  <div class="sec4-card-btns d-flex justify-content-between align-items-end">
-                    <div class="sec4-card-btn-mem btn-group dropup w-auto d-inline-block">
-                      <button type="button" class="sec4-mem-btn bg-light text-dark ps-0 border-0 br-15 btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="img/icon/member.png" class="tkt-w18" alt="">
-                        &nbsp;3 / 4
-                      </button>
-                      <ul class="dropdown-menu bg-tertiary border-0 br-15 tkt-w18">
-                        <li><a class="dropdown-item" href="javascript:void(0)">김와플</a></li>
-                        <li><a class="dropdown-item" href="javascript:void(0)">박박이</a></li>
-                        <li><a class="dropdown-item" href="javascript:void(0)">김밥</a></li>
-                      </ul>
-                    </div>
-                    <button type="button" class="sec4-join-btn btn w-auto br-15 bg-tertiary d-flex justify-content-between align-items-center">
-                      <p class="w-auto mb-0">
-                        참가하기&nbsp;
-                      </p>
-                      <div class="sec4-join-arrows position-relative tkt-w18">
-                        <img src="img/icon/right.png" class="sec4-right-line position-absolute start-0 tkt-w18 mb-1" alt="">
-                        <img src="img/icon/right-w.png" class="sec4-right-fill position-absolute start-0 tkt-w18 mb-1 d-none" alt="">
-                      </div>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-4 col-sm-4 col-md-4 col-xxl-4">
-              <div class="card br-15 border-0 bg-light">
-                <div class="card-body">
-                  <div class="mgb-25 d-flex justify-content-between">
-                    <div class="sec4-talk-titlebox w-75">
-                      <a href="javascript:void(0)" class="sec4-talk-title d-block mb-2 text-dark card-title tkt-t6 text-truncate">끝나고 뒷풀이</a>
-                      <p class="card-subtitle mb-2 text-gray tkt-sm">톡장 정대만</p>
-                    </div>
-                    <a href="javascript:void(0)" class="sec4-like-btn tkt-w35 p-0 position-relative">
-                      <img src="img/icon/heart-line.png" class="sec4-like-line w-100 position-absolute" alt="">
-                      <img src="img/icon/heart-fill.png" class="sec4-like-fill w-100 position-absolute d-none" alt="">
-                    </a>
-                  </div>
-                  <div class="sec4-card-btns d-flex justify-content-between align-items-end">
-                    <div class="sec4-card-btn-mem btn-group dropup w-auto d-inline-block">
-                      <button type="button" class="sec4-mem-btn bg-light text-dark ps-0 border-0 br-15 btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="img/icon/member.png" class="tkt-w18" alt="">
-                        &nbsp;3 / 4
-                      </button>
-                      <ul class="dropdown-menu bg-tertiary border-0 br-15 tkt-w18">
-                        <li><a class="dropdown-item" href="javascript:void(0)">정대만</a></li>
-                        <li><a class="dropdown-item" href="javascript:void(0)">송태섭</a></li>
-                        <li><a class="dropdown-item" href="javascript:void(0)">강백호</a></li>
-                      </ul>
-                    </div>
-                    <button type="button" class="sec4-join-btn btn w-auto br-15 bg-tertiary d-flex justify-content-between align-items-center">
-                      <p class="w-auto mb-0">
-                        참가하기&nbsp;
-                      </p>
-                      <div class="sec4-join-arrows position-relative tkt-w18">
-                        <img src="img/icon/right.png" class="sec4-right-line position-absolute start-0 tkt-w18 mb-1" alt="">
-                        <img src="img/icon/right-w.png" class="sec4-right-fill position-absolute start-0 tkt-w18 mb-1 d-none" alt="">
-                      </div>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-4 col-sm-4 col-md-4 col-xxl-4">
-              <div class="card br-15 border-0 bg-light">
-                <div class="card-body">
-                  <div class="mgb-25 d-flex justify-content-between">
-                    <div class="sec4-talk-titlebox w-75">
-                      <a href="javascript:void(0)" class="sec4-talk-title d-block mb-2 text-dark card-title tkt-t6 text-truncate">마포에서 같이 이동하실 분</a>
-                      <p class="card-subtitle mb-2 text-gray tkt-sm">톡장 케로피</p>
-                    </div>
-                    <a href="javascript:void(0)" class="sec4-like-btn tkt-w35 p-0 position-relative">
-                      <img src="img/icon/heart-line.png" class="sec4-like-line w-100 position-absolute" alt="">
-                      <img src="img/icon/heart-fill.png" class="sec4-like-fill w-100 position-absolute d-none" alt="">
-                    </a>
-                  </div>
-                  <div class="sec4-card-btns d-flex justify-content-between align-items-end">
-                    <div class="sec4-card-btn-mem btn-group dropup w-auto d-inline-block">
-                      <button type="button" class="sec4-mem-btn bg-light text-dark ps-0 border-0 br-15 btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="img/icon/member.png" class="tkt-w18" alt="">
-                        &nbsp;3 / 4
-                      </button>
-                      <ul class="dropdown-menu bg-tertiary border-0 br-15 tkt-w18">
-                        <li><a class="dropdown-item" href="javascript:void(0)">케로피</a></li>
-                        <li><a class="dropdown-item" href="javascript:void(0)">멜로디</a></li>
-                        <li><a class="dropdown-item" href="javascript:void(0)">뿅</a></li>
-                      </ul>
-                    </div>
-                    <button type="button" class="sec4-join-btn btn w-auto br-15 bg-tertiary d-flex justify-content-between align-items-center">
-                      <p class="w-auto mb-0">
-                        참가하기&nbsp;
-                      </p>
-                      <div class="sec4-join-arrows position-relative tkt-w18">
-                        <img src="img/icon/right.png" class="sec4-right-line position-absolute start-0 tkt-w18 mb-1" alt="">
-                        <img src="img/icon/right-w.png" class="sec4-right-fill position-absolute start-0 tkt-w18 mb-1 d-none" alt="">
-                      </div>
-                    </button>
-                  </div>
-                </div>
+    <section class="sec4-talkdata container-sm container-md container-xxl p-0 mgb-160">
+      <div class="sec4-container container-fluid p-0">
+        <h2 class="sec4-title tkt-h3 mgb-25 text-dark d-flex align-items-center"><span class="d-inline-block tkt-w35 tkt-h35 me-2"></span>캣톡 데이터</h2>
+        <div class="sec4-content row">
+          <div class="sec4-content-left col-12 col-sm-12 col-md-3 col-xxl-3">
+            <div class="sec4-big-card card br-15 bg-tertiary overflow-hidden border-0">
+              <a href="javascript:void(0)" class="sec4-big-img-box br-15 overflow-hidden">
+                <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF209403_230106_095241.gif" class="sec4-big-poster card-img-top" alt="...">
+              </a>
+              <div class="card-body bg-tertiary text-center">
+                <a href="javascript:void(0)" class="sec4-big-title card-text text-primary tkt-t6 word-break">이번 주 가장 캣톡이 많은 공연</a>
               </div>
             </div>
           </div>
-          <div class="row mgb-25 border-bottom border-lgray mx-1"></div>
-          <div class="sec4-most-list row">
-            <div class="col-12 col-sm-12 col-md-4 col-xxl-4">
-              <div class="sec4-mini-card card bg-light border-0 br-15 overflow-hidden">
-                <a href="javascript:void(0)" class="sec4-img-box br-15 overflow-hidden sec4-img-box1 w-100 position-relative">
-                  <div class="sec4-img-blur br-15 overflow-hidden position-absolute top-0 w-100 h-100"></div>                  
-                  <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF210026_230119_114754.gif" class="sec4-img-poster card-img-top br-15 position-absolute top-50 start-50" alt="...">
-                </a>
-                <div class="card-body text-center">
-                  <a href="javascript:void(0)" class="sec4-mini-title card-link text-primary">[가장 빨리] 캣톡이 생성된 공연</a>
+          <div class="sec4-content-right col-12 col-sm-12 col-md-9 col-xxl-9">
+            <div class="row d-flex justify-content-between align-items-end mgb-25">
+              <p class="sec4-besttalk-title tkt-h4 text-dark w-auto m-0">아마데우스</p>
+              <a href="javascript:void(0)" class="w-auto tkt-t6">
+                등록된 캣톡 52 개
+                <img src="img/icon/right-p.png" class="tkt-w18" alt="">
+              </a>
+            </div>
+            <div class="row mgb-25">
+              <div class="col-4 col-sm-4 col-md-4 col-xxl-4">
+                <div class="card br-15 border-0 bg-light">
+                  <div class="card-body">
+                    <div class="mgb-25 d-flex justify-content-between">
+                      <div class="sec4-talk-titlebox w-75">
+                        <a href="javascript:void(0)" class="sec4-talk-title d-block mb-2 text-dark card-title tkt-t6 text-truncate">정문에서 무료나눔 합니다</a>
+                        <p class="card-subtitle mb-2 text-gray tkt-sm">톡장 김와플</p>
+                      </div>
+                      <a href="javascript:void(0)" class="sec4-like-btn tkt-w35 p-0 position-relative">
+                        <img src="img/icon/heart-line.png" class="sec4-like-line w-100 position-absolute" alt="">
+                        <img src="img/icon/heart-fill.png" class="sec4-like-fill w-100 position-absolute d-none" alt="">
+                      </a>
+                    </div>
+                    <div class="sec4-card-btns d-flex justify-content-between align-items-end">
+                      <div class="sec4-card-btn-mem btn-group dropup w-auto d-inline-block">
+                        <button type="button" class="sec4-mem-btn bg-light text-dark ps-0 border-0 br-15 btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="img/icon/member.png" class="tkt-w18" alt="">
+                          &nbsp;3 / 4
+                        </button>
+                        <ul class="dropdown-menu bg-tertiary border-0 br-15 tkt-w18">
+                          <li><a class="dropdown-item" href="javascript:void(0)">김와플</a></li>
+                          <li><a class="dropdown-item" href="javascript:void(0)">박박이</a></li>
+                          <li><a class="dropdown-item" href="javascript:void(0)">김밥</a></li>
+                        </ul>
+                      </div>
+                      <button type="button" class="sec4-join-btn btn w-auto br-15 bg-tertiary d-flex justify-content-between align-items-center">
+                        <p class="w-auto mb-0">
+                          참가하기&nbsp;
+                        </p>
+                        <div class="sec4-join-arrows position-relative tkt-w18">
+                          <img src="img/icon/right.png" class="sec4-right-line position-absolute start-0 tkt-w18 mb-1" alt="">
+                          <img src="img/icon/right-w.png" class="sec4-right-fill position-absolute start-0 tkt-w18 mb-1 d-none" alt="">
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-sm-4 col-md-4 col-xxl-4">
+                <div class="card br-15 border-0 bg-light">
+                  <div class="card-body">
+                    <div class="mgb-25 d-flex justify-content-between">
+                      <div class="sec4-talk-titlebox w-75">
+                        <a href="javascript:void(0)" class="sec4-talk-title d-block mb-2 text-dark card-title tkt-t6 text-truncate">끝나고 뒷풀이</a>
+                        <p class="card-subtitle mb-2 text-gray tkt-sm">톡장 정대만</p>
+                      </div>
+                      <a href="javascript:void(0)" class="sec4-like-btn tkt-w35 p-0 position-relative">
+                        <img src="img/icon/heart-line.png" class="sec4-like-line w-100 position-absolute" alt="">
+                        <img src="img/icon/heart-fill.png" class="sec4-like-fill w-100 position-absolute d-none" alt="">
+                      </a>
+                    </div>
+                    <div class="sec4-card-btns d-flex justify-content-between align-items-end">
+                      <div class="sec4-card-btn-mem btn-group dropup w-auto d-inline-block">
+                        <button type="button" class="sec4-mem-btn bg-light text-dark ps-0 border-0 br-15 btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="img/icon/member.png" class="tkt-w18" alt="">
+                          &nbsp;3 / 4
+                        </button>
+                        <ul class="dropdown-menu bg-tertiary border-0 br-15 tkt-w18">
+                          <li><a class="dropdown-item" href="javascript:void(0)">정대만</a></li>
+                          <li><a class="dropdown-item" href="javascript:void(0)">송태섭</a></li>
+                          <li><a class="dropdown-item" href="javascript:void(0)">강백호</a></li>
+                        </ul>
+                      </div>
+                      <button type="button" class="sec4-join-btn btn w-auto br-15 bg-tertiary d-flex justify-content-between align-items-center">
+                        <p class="w-auto mb-0">
+                          참가하기&nbsp;
+                        </p>
+                        <div class="sec4-join-arrows position-relative tkt-w18">
+                          <img src="img/icon/right.png" class="sec4-right-line position-absolute start-0 tkt-w18 mb-1" alt="">
+                          <img src="img/icon/right-w.png" class="sec4-right-fill position-absolute start-0 tkt-w18 mb-1 d-none" alt="">
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 col-sm-4 col-md-4 col-xxl-4">
+                <div class="card br-15 border-0 bg-light">
+                  <div class="card-body">
+                    <div class="mgb-25 d-flex justify-content-between">
+                      <div class="sec4-talk-titlebox w-75">
+                        <a href="javascript:void(0)" class="sec4-talk-title d-block mb-2 text-dark card-title tkt-t6 text-truncate">마포에서 같이 이동하실 분</a>
+                        <p class="card-subtitle mb-2 text-gray tkt-sm">톡장 케로피</p>
+                      </div>
+                      <a href="javascript:void(0)" class="sec4-like-btn tkt-w35 p-0 position-relative">
+                        <img src="img/icon/heart-line.png" class="sec4-like-line w-100 position-absolute" alt="">
+                        <img src="img/icon/heart-fill.png" class="sec4-like-fill w-100 position-absolute d-none" alt="">
+                      </a>
+                    </div>
+                    <div class="sec4-card-btns d-flex justify-content-between align-items-end">
+                      <div class="sec4-card-btn-mem btn-group dropup w-auto d-inline-block">
+                        <button type="button" class="sec4-mem-btn bg-light text-dark ps-0 border-0 br-15 btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="img/icon/member.png" class="tkt-w18" alt="">
+                          &nbsp;3 / 4
+                        </button>
+                        <ul class="dropdown-menu bg-tertiary border-0 br-15 tkt-w18">
+                          <li><a class="dropdown-item" href="javascript:void(0)">케로피</a></li>
+                          <li><a class="dropdown-item" href="javascript:void(0)">멜로디</a></li>
+                          <li><a class="dropdown-item" href="javascript:void(0)">뿅</a></li>
+                        </ul>
+                      </div>
+                      <button type="button" class="sec4-join-btn btn w-auto br-15 bg-tertiary d-flex justify-content-between align-items-center">
+                        <p class="w-auto mb-0">
+                          참가하기&nbsp;
+                        </p>
+                        <div class="sec4-join-arrows position-relative tkt-w18">
+                          <img src="img/icon/right.png" class="sec4-right-line position-absolute start-0 tkt-w18 mb-1" alt="">
+                          <img src="img/icon/right-w.png" class="sec4-right-fill position-absolute start-0 tkt-w18 mb-1 d-none" alt="">
+                        </div>
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-4 col-xxl-4">
-              <div class="sec4-mini-card card bg-light border-0 br-15 overflow-hidden">
-                <a href="javascript:void(0)" class="sec4-img-box br-15 overflow-hidden sec4-img-box2 w-100 position-relative">
-                  <div class="sec4-img-blur br-15 overflow-hidden position-absolute top-0 w-100 h-100"></div>                  
-                  <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF211503_230127_143720.gif" class="sec4-img-poster card-img-top br-15 position-absolute top-50 start-50" alt="...">
-                </a>
-                <div class="card-body text-center">
-                  <a href="javascript:void(0)" class="sec4-mini-title card-link text-primary">[서울] 에서 가장 캣톡이 많은 공연</a>
+            <div class="row mgb-25 border-bottom border-lgray mx-1"></div>
+            <div class="sec4-most-list row">
+              <div class="col-12 col-sm-12 col-md-4 col-xxl-4">
+                <div class="sec4-mini-card card bg-light border-0 br-15 overflow-hidden">
+                  <a href="javascript:void(0)" class="sec4-img-box br-15 overflow-hidden sec4-img-box1 w-100 position-relative">
+                    <div class="sec4-img-blur br-15 overflow-hidden position-absolute top-0 w-100 h-100"></div>                  
+                    <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF210026_230119_114754.gif" class="sec4-img-poster card-img-top br-15 position-absolute top-50 start-50" alt="...">
+                  </a>
+                  <div class="card-body text-center">
+                    <a href="javascript:void(0)" class="sec4-mini-title card-link text-primary">[가장 빨리] 캣톡이 생성된 공연</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-4 col-xxl-4">
-              <div class="sec4-mini-card card bg-light border-0 br-15 overflow-hidden">
-                <a href="javascript:void(0)" class="sec4-img-box br-15 overflow-hidden sec4-img-box3 w-100 position-relative">
-                  <div class="sec4-img-blur br-15 overflow-hidden position-absolute top-0 w-100 h-100"></div>                  
-                  <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF194359_220711_114119.jpg" class="sec4-img-poster card-img-top br-15 position-absolute top-50 start-50" alt="...">
-                </a>
-                <div class="card-body text-center">
-                  <a href="javascript:void(0)" class="sec4-mini-title card-link text-primary">[10대 미만] 에서 인기인 공연</a>
+              <div class="col-12 col-sm-12 col-md-4 col-xxl-4">
+                <div class="sec4-mini-card card bg-light border-0 br-15 overflow-hidden">
+                  <a href="javascript:void(0)" class="sec4-img-box br-15 overflow-hidden sec4-img-box2 w-100 position-relative">
+                    <div class="sec4-img-blur br-15 overflow-hidden position-absolute top-0 w-100 h-100"></div>                  
+                    <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF211503_230127_143720.gif" class="sec4-img-poster card-img-top br-15 position-absolute top-50 start-50" alt="...">
+                  </a>
+                  <div class="card-body text-center">
+                    <a href="javascript:void(0)" class="sec4-mini-title card-link text-primary">[서울] 에서 가장 캣톡이 많은 공연</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-4 col-xxl-4">
+                <div class="sec4-mini-card card bg-light border-0 br-15 overflow-hidden">
+                  <a href="javascript:void(0)" class="sec4-img-box br-15 overflow-hidden sec4-img-box3 w-100 position-relative">
+                    <div class="sec4-img-blur br-15 overflow-hidden position-absolute top-0 w-100 h-100"></div>                  
+                    <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF194359_220711_114119.jpg" class="sec4-img-poster card-img-top br-15 position-absolute top-50 start-50" alt="...">
+                  </a>
+                  <div class="card-body text-center">
+                    <a href="javascript:void(0)" class="sec4-mini-title card-link text-primary">[10대 미만] 에서 인기인 공연</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- section4 ej -->
+    </section>
+    <!-- section4 ej -->
 
-  <section class="sec5-ticketsearch mx-auto mgb-160">
-    <div class="sec5-container container-fluid container-xxl container-md container-sm">
-      <div class="ticketsearch-wrap">
-        <!--타이틀 부분-->
-        <div class="title text-left mgb-25 d-flex align-items-center">
-          <img src="img/icon/search-p.png" class="d-inline-block tkt-w35 tkt-h35 me-2" alt="" />
-          <h2 class="tkt-h3 m-0 text-dark">통합 검색</h2>
-        </div>
-      </div>
-      <div class="ticketsearch-contents br-15 bg-light p-5">
-        <ul class="search list-unstyled d-inline-block w-100 mgb-25">
-          <li class="float-start me-4">
-            <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark search-nav-on" data-genre="전체">전체</a>
-          </li>
-          <li class="float-start me-4">
-            <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark" data-genre="뮤지컬">뮤지컬</a>
-          </li>
-          <li class="float-start me-4">
-            <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark" data-genre="연극">연극</a>
-          </li>
-          <li class="float-start me-4">
-            <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark" data-genre="콘서트">콘서트</a>
-          </li>
-          <li class="float-start me-4">
-            <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark" data-genre="클래식">클래식</a>
-          </li>
-          <li class="float-start me-4">
-            <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark" data-genre="가족.아동">가족·아동</a>
-          </li>
-          <li class="float-start me-4">
-            <a href="javascript:void(0)" class="nav-link tkt-t5 text-dark" data-genre="뮤직페스티벌">뮤직페스티벌</a>
-          </li>
-        </ul>
-        <div class="search-result row d-flex justify-content-between">
-          <div class="text-center col-6 col-sm-6 col-md-4 col-xxl-2">
-            <div class="card bg-transparent border-0 search-poster">
-              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213194_230213_110545.jpg" class="card-img img img-fluid br-15" alt="공연포스터" />
-              <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
-                <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
-              </a>
-            </div>
-            <div class="sec5-result-text">
-              <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1 date">2023.02.19(일)14:00</a>
-              <a href="#" class="d-inline-block tkt-t6 text-dark title">K-BLSSx월담</a>
-            </div>
-          </div>
-          <div class="text-center col-6 col-sm-6 col-md-4 col-xxl-2">
-            <div class="card bg-transparent border-0 search-poster">
-              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF202671_221122_094142.jpg" class="card-img img img-fluid br-15" alt="공연포스터" />
-              <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
-                <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
-              </a>
-            </div>
-            <div class="sec5-result-text">
-              <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1 date">2022.11.11(월)14:00</a>
-              <a href="#" class="d-inline-block tkt-t6 text-dark title">조이의 다락방</a>
-            </div>
-          </div>
-          <div class="text-center col-6 col-sm-6 col-md-4 col-xxl-2">
-            <div class="card bg-transparent border-0 search-poster">
-              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF204871_221228_093225.gif" class="card-img img img-fluid br-15" alt="공연포스터" />
-              <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
-                <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
-              </a>
-            </div>
-            <div class="sec5-result-text">
-              <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1 date">2023.04.02(일)14:00</a>
-              <a href="#" class="d-inline-block tkt-t6 text-dark title">뷰티풀선데이</a>
-            </div>
-          </div>
-          <div class="text-center col-6 col-sm-6 col-md-4 col-xxl-2">
-            <div class="card bg-transparent border-0 search-poster">
-              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213222_230213_120313.png" class="card-img img img-fluid br-15" alt="공연포스터" />
-              <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
-                <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
-              </a>
-            </div>
-            <div class="sec5-result-text">
-              <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1 date">2023.02.22(수)14:00</a>
-              <a href="#" class="d-inline-block tkt-t6 text-dark title">[우주라이브]현온콘서트</a>
-            </div>
-          </div>
-          <div class="text-center col-6 col-sm-6 col-md-4 col-xxl-2">
-            <div class="card bg-transparent border-0 search-poster">
-              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF209863_230117_105408.gif" class="card-img img img-fluid br-15" alt="공연포스터" />
-              <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
-                <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
-              </a>
-            </div>
-            <div class="sec5-result-text">
-              <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1 date">2023.04.30(일)14:00</a>
-              <a href="#" class="d-inline-block tkt-t6 text-dark title">보이체크 인 더 다크</a>
-            </div>
-          </div>
-          <div class="text-center col-6 col-sm-6 col-md-4 col-xxl-2">
-            <div class="card bg-transparent border-0 search-poster">
-              <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF209529_230110_094630.gif" class="card-img img img-fluid br-15" alt="공연포스터" />
-              <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
-                <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
-              </a>
-            </div>
-            <div class="sec5-result-text">
-              <a href="#" class="d-inline-block tkt-t6 text-dark mt-3 mb-1 date">2023.04.09(일)14:00</a>
-              <a href="#" class="d-inline-block tkt-t6 text-dark title">앤(ANNE)</a>
-            </div>
+    <section class="sec5-ticketsearch mx-auto mgb-160">
+      <div class="sec5-container container-fluid container-xxl container-md container-sm">
+        <div class="ticketsearch-wrap">
+          <!--타이틀 부분-->
+          <div class="title text-left mgb-25 d-flex align-items-center">
+            <img src="img/icon/search-p.png" class="d-inline-block tkt-w35 tkt-h35 me-2" alt="" />
+            <h2 class="tkt-h3 m-0 text-dark">통합 검색</h2>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- section5 jg -->
-
-  <footer class="bg-dark">
-    <div class="footer-container container-xxl container-md container-sm py-4">
-      <div class="footer-top row pt-2 container justify-content-between m-0 mgb-55">
-        <div class="footer-top-left col-12 col-sm-12 col-md-3">
-          <h2 class="tkt-h2 text-secondary mb-3">8282-5353</h2>
-          <p class="tkt-t6 text-gray mb-2">평일<span class="text-white ms-2">09:00~18:00</span></p>
-          <p class="tkt-t6 text-gray mb-0">토요일<span class="text-white ms-2 me-2">09:00~17:00</span>(일요일 및 공휴일 휴무)</p>
-        </div>
-        <div class="footer-top-center col-6 row col-sm-6 col-md-5 border-start border-end border-lgray">
-          <div class="footer-iconbox col-3 p-0 text-center">
-            <a href="javascript:void(0)" class="imgbox">
-              <img src="img/icon/notice.png" alt="" class="common w-50 m-auto">
-              <img src="img/icon/notice-p.png" alt=""  class="hover w-50 m-auto">
-              <p class="footer-icon-text m-0 mt-2 tkt-t6 text-secondary">공지사항</p>
-            </a>
-          </div>
-          <div class="footer-iconbox col-3 p-0 text-center">
-            <a href="javascript:void(0)" class="imgbox">
-              <img src="img/icon/guide.png" alt="" class="common w-50 m-auto">
-              <img src="img/icon/guide-p.png" alt=""  class="hover w-50 m-auto">
-              <p class="footer-icon-text m-0 mt-2 tkt-t6 text-secondary">이용안내</p>
-            </a>
-          </div>
-          <div class="footer-iconbox col-3 p-0 text-center">
-            <a href="javascript:void(0)" class="imgbox">
-              <img src="img/icon/ear-s.png" alt="" class="common w-50 m-auto">
-              <img src="img/icon/ear-p.png" alt=""  class="hover w-50 m-auto">
-              <p class="footer-icon-text m-0 mt-2 tkt-t6 text-secondary">FAQ</p>
-            </a>
-          </div>
-          <div class="footer-iconbox col-3 p-0 text-center">
-            <a href="javascript:void(0)" class="imgbox">
-              <img src="img/icon/sellguide.png" alt="" class="common w-50 m-auto">
-              <img src="img/icon/sellguide-p.png" alt="" class="hover w-50 m-auto">
-              <p class="footer-icon-text m-0 mt-2 tkt-t6 text-secondary">티켓판매<br>안내</p>
-            </a>
-          </div>
-        </div>
-        <div class="footer-top-right col-6 row col-sm-6 col-md-4">
-          <div class="footer-iconbox p-0 col-4 text-center">
-            <a href="javascript:void(0)" class="imgbox">
-              <img src="img/icon/facebook.png" alt="" class="common w-50 m-auto">
-              <img src="img/icon/facebook-p.png" alt="" class="hover w-50 m-auto">
-              <p class="footer-icon-text m-0 mt-2 tkt-t6 text-secondary">페이스북</p>
-            </a>
-          </div>
-          <div class="footer-iconbox p-0 col-4 text-center">
-            <a href="javascript:void(0)" class="imgbox">
-              <img src="img/icon/insta.png" alt="" class="common w-50 m-auto">
-              <img src="img/icon/insta-p.png" alt="" class="hover w-50 m-auto">
-              <p class="footer-icon-text m-0 mt-2 tkt-t6 text-secondary">인스타그램</p>
-            </a>
-          </div>
-          <div class="footer-iconbox p-0 col-4 text-center">
-            <a href="javascript:void(0)" class="imgbox">
-              <img src="img/icon/kakao.png" alt="" class="common w-50 m-auto">
-              <img src="img/icon/kakao-p.png" alt="" class="hover w-50 m-auto">
-              <p class="footer-icon-text m-0 mt-2 tkt-t6 text-secondary">카카오톡</p>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-middle container border-top border-bottom border-lgray py-3 mgb-55 p-0">
-        <div class="footer-info">
-          <ul class="footer-info-list text-white d-flex p-0 m-0">
-            <li class="me-3">
-              <a href="javascript:void(0)" class="footer-info-btn tkt-sm pe-3 text-lgray">
-                회사소개
-              </a>
+        <div class="ticketsearch-contents br-15 bg-light p-5">
+          <ul class="search list-unstyled d-inline-block w-100 mgb-25">
+            <li class="float-start me-4">
+              <a href="javascript:void(0)" class="sec5-nav-link nav-link tkt-t5 text-dark search-nav-on" data-genre="전체">전체</a>
             </li>
-            <li class="me-3">
-              <a href="javascript:void(0)" class="footer-info-btn tkt-sm pe-3 text-lgray">
-                이용약관
-              </a>
+            <li class="float-start me-4">
+              <a href="javascript:void(0)" class="sec5-nav-link nav-link tkt-t5 text-dark" data-genre="뮤지컬">뮤지컬</a>
             </li>
-            <li class="me-3">
-              <a href="javascript:void(0)" class="footer-info-btn tkt-sm pe-3 text-lgray">
-                <b>개인정보처리방침</b>
-              </a>
+            <li class="float-start me-4">
+              <a href="javascript:void(0)" class="sec5-nav-link nav-link tkt-t5 text-dark" data-genre="연극">연극</a>
             </li>
-            <li class="me-3">
-              <a href="javascript:void(0)" class="footer-info-btn tkt-sm pe-3 text-lgray">
-                청소년보호정책
-              </a>
+            <li class="float-start me-4">
+              <a href="javascript:void(0)" class="sec5-nav-link nav-link tkt-t5 text-dark" data-genre="콘서트">콘서트</a>
             </li>
-            <li class="me-3">
-              <a href="javascript:void(0)" class="footer-info-btn tkt-sm pe-3 text-lgray">
-                이용안내
-              </a>
+            <li class="float-start me-4">
+              <a href="javascript:void(0)" class="sec5-nav-link nav-link tkt-t5 text-dark" data-genre="클래식">클래식</a>
             </li>
-            <li>
-              <a href="javascript:void(0)" class="footer-info-btn tkt-sm text-lgray">
-                티켓판매안내
-              </a>
+            <li class="float-start me-4">
+              <a href="javascript:void(0)" class="sec5-nav-link nav-link tkt-t5 text-dark" data-genre="가족.아동">가족·아동</a>
+            </li>
+            <li class="float-start me-4">
+              <a href="javascript:void(0)" class="sec5-nav-link nav-link tkt-t5 text-dark" data-genre="뮤직페스티벌">뮤직페스티벌</a>
             </li>
           </ul>
+          <div class="search-result row d-flex justify-content-between">
+            <div class="text-center col-6 col-sm-6 col-md-3 col-xxl-2">
+              <div class="card bg-transparent border-0 search-poster">
+                <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213194_230213_110545.jpg" class="card-img img img-fluid br-15" alt="공연포스터" />
+                <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                  <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
+                </a>
+              </div>
+              <div class="sec5-result-text">
+                <a href="#" class="d-block tkt-t6 text-dark mt-3 mb-1 date">2023.02.19(일)14:00</a>
+                <a href="#" class="d-block tkt-t6 text-dark title">K-BLSSx월담</a>
+              </div>
+            </div>
+            <div class="text-center col-6 col-sm-6 col-md-3 col-xxl-2">
+              <div class="card bg-transparent border-0 search-poster">
+                <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF202671_221122_094142.jpg" class="card-img img img-fluid br-15" alt="공연포스터" />
+                <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                  <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
+                </a>
+              </div>
+              <div class="sec5-result-text">
+                <a href="#" class="d-block tkt-t6 text-dark mt-3 mb-1 date">2022.11.11(월)14:00</a>
+                <a href="#" class="d-block tkt-t6 text-dark title">조이의 다락방</a>
+              </div>
+            </div>
+            <div class="text-center col-6 col-sm-6 col-md-3 col-xxl-2">
+              <div class="card bg-transparent border-0 search-poster">
+                <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF204871_221228_093225.gif" class="card-img img img-fluid br-15" alt="공연포스터" />
+                <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                  <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
+                </a>
+              </div>
+              <div class="sec5-result-text">
+                <a href="#" class="d-block tkt-t6 text-dark mt-3 mb-1 date">2023.04.02(일)14:00</a>
+                <a href="#" class="d-block tkt-t6 text-dark title">뷰티풀선데이</a>
+              </div>
+            </div>
+            <div class="text-center col-6 col-sm-6 col-md-3 col-xxl-2">
+              <div class="card bg-transparent border-0 search-poster">
+                <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF213222_230213_120313.png" class="card-img img img-fluid br-15" alt="공연포스터" />
+                <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                  <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
+                </a>
+              </div>
+              <div class="sec5-result-text">
+                <a href="#" class="d-block tkt-t6 text-dark mt-3 mb-1 date">2023.02.22(수)14:00</a>
+                <a href="#" class="d-block tkt-t6 text-dark title">[우주라이브]현온콘서트</a>
+              </div>
+            </div>
+            <div class="text-center col-6 col-sm-6 d-md-none d-xxl-block col-xxl-2">
+              <div class="card bg-transparent border-0 search-poster">
+                <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF209863_230117_105408.gif" class="card-img img img-fluid br-15" alt="공연포스터" />
+                <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                  <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
+                </a>
+              </div>
+              <div class="sec5-result-text">
+                <a href="#" class="d-block tkt-t6 text-dark mt-3 mb-1 date">2023.04.30(일)14:00</a>
+                <a href="#" class="d-block tkt-t6 text-dark title">보이체크 인 더 다크</a>
+              </div>
+            </div>
+            <div class="text-center col-6 col-sm-6 d-md-none d-xxl-block col-xxl-2">
+              <div class="card bg-transparent border-0 search-poster">
+                <img src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF209529_230110_094630.gif" class="card-img img img-fluid br-15" alt="공연포스터" />
+                <a href="#" class="search-poster-hover card-img-overlay p-0 w-100 h-100 m-0 br-15">
+                  <span class="search-poster-hover-title w-100 position-absolute top-50 start-50 translate-middle text-light tkt-t6">공연 자세히 보기</span>
+                </a>
+              </div>
+              <div class="sec5-result-text">
+                <a href="#" class="d-block tkt-t6 text-dark mt-3 mb-1 date">2023.04.09(일)14:00</a>
+                <a href="#" class="d-block tkt-t6 text-dark title">앤(ANNE)</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="footer-bottom container text-white mt-3 p-0">
-        <p class="ticket-zoo tkt-t5 mgb-15"><b>티켓톡(주)</b></p>
-        <p class="footer-adress mb-2 tkt-t6">서울 강남구 테헤란로5길24,장연빌딩/4층(장인빌딩) &nbsp;|&nbsp; 대표 정이진&nbsp; |&nbsp; 개인정보보호책임자 윤내현 &nbsp;|&nbsp; tiketalkhelp@tiketalk.com </p>
-        <p class="mgb-15 tkt-t6">사업자등록번호 777&nbsp; |&nbsp; 통신판매업신고 제&nbsp; 1234-56789호</p>
-        <p class="copyright m-0 fw-lighter text-gray">Copyright © TICATALK Corp. All Rights Reserved.</p>
+    </section>
+    <!-- section5 jg -->
+
+    <footer class="bg-dark">
+      <div class="footer-container container-xxl container-md container-sm py-4">
+        <div class="footer-top row pt-2 container justify-content-between m-0 mgb-55">
+          <div class="footer-top-left col-12 col-sm-12 col-md-3">
+            <h2 class="tkt-h2 text-secondary mb-3">8282-5353</h2>
+            <p class="tkt-t6 text-gray mb-2">평일<span class="text-white ms-2">09:00~18:00</span></p>
+            <p class="tkt-t6 text-gray mb-0">토요일<span class="text-white ms-2 me-2">09:00~17:00</span>(일요일 및 공휴일 휴무)</p>
+          </div>
+          <div class="footer-top-center col-6 row col-sm-6 col-md-5 border-start border-end border-lgray">
+            <div class="footer-iconbox col-3 p-0 text-center">
+              <a href="javascript:void(0)" class="imgbox">
+                <img src="img/icon/notice.png" alt="" class="common w-50 m-auto">
+                <img src="img/icon/notice-p.png" alt=""  class="hover w-50 m-auto">
+                <p class="footer-icon-text m-0 mt-2 tkt-t6 text-secondary">공지사항</p>
+              </a>
+            </div>
+            <div class="footer-iconbox col-3 p-0 text-center">
+              <a href="javascript:void(0)" class="imgbox">
+                <img src="img/icon/guide.png" alt="" class="common w-50 m-auto">
+                <img src="img/icon/guide-p.png" alt=""  class="hover w-50 m-auto">
+                <p class="footer-icon-text m-0 mt-2 tkt-t6 text-secondary">이용안내</p>
+              </a>
+            </div>
+            <div class="footer-iconbox col-3 p-0 text-center">
+              <a href="javascript:void(0)" class="imgbox">
+                <img src="img/icon/ear-s.png" alt="" class="common w-50 m-auto">
+                <img src="img/icon/ear-p.png" alt=""  class="hover w-50 m-auto">
+                <p class="footer-icon-text m-0 mt-2 tkt-t6 text-secondary">FAQ</p>
+              </a>
+            </div>
+            <div class="footer-iconbox col-3 p-0 text-center">
+              <a href="javascript:void(0)" class="imgbox">
+                <img src="img/icon/sellguide.png" alt="" class="common w-50 m-auto">
+                <img src="img/icon/sellguide-p.png" alt="" class="hover w-50 m-auto">
+                <p class="footer-icon-text m-0 mt-2 tkt-t6 text-secondary">티켓판매<br>안내</p>
+              </a>
+            </div>
+          </div>
+          <div class="footer-top-right col-6 row col-sm-6 col-md-4">
+            <div class="footer-iconbox p-0 col-4 text-center">
+              <a href="javascript:void(0)" class="imgbox">
+                <img src="img/icon/facebook.png" alt="" class="common w-50 m-auto">
+                <img src="img/icon/facebook-p.png" alt="" class="hover w-50 m-auto">
+                <p class="footer-icon-text m-0 mt-2 tkt-t6 text-secondary">페이스북</p>
+              </a>
+            </div>
+            <div class="footer-iconbox p-0 col-4 text-center">
+              <a href="javascript:void(0)" class="imgbox">
+                <img src="img/icon/insta.png" alt="" class="common w-50 m-auto">
+                <img src="img/icon/insta-p.png" alt="" class="hover w-50 m-auto">
+                <p class="footer-icon-text m-0 mt-2 tkt-t6 text-secondary">인스타그램</p>
+              </a>
+            </div>
+            <div class="footer-iconbox p-0 col-4 text-center">
+              <a href="javascript:void(0)" class="imgbox">
+                <img src="img/icon/kakao.png" alt="" class="common w-50 m-auto">
+                <img src="img/icon/kakao-p.png" alt="" class="hover w-50 m-auto">
+                <p class="footer-icon-text m-0 mt-2 tkt-t6 text-secondary">카카오톡</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-middle container border-top border-bottom border-lgray py-3 mgb-55 p-0">
+          <div class="footer-info">
+            <ul class="footer-info-list text-white d-flex p-0 m-0">
+              <li class="me-3">
+                <a href="javascript:void(0)" class="footer-info-btn tkt-sm pe-3 text-lgray">
+                  회사소개
+                </a>
+              </li>
+              <li class="me-3">
+                <a href="javascript:void(0)" class="footer-info-btn tkt-sm pe-3 text-lgray">
+                  이용약관
+                </a>
+              </li>
+              <li class="me-3">
+                <a href="javascript:void(0)" class="footer-info-btn tkt-sm pe-3 text-lgray">
+                  <b>개인정보처리방침</b>
+                </a>
+              </li>
+              <li class="me-3">
+                <a href="javascript:void(0)" class="footer-info-btn tkt-sm pe-3 text-lgray">
+                  청소년보호정책
+                </a>
+              </li>
+              <li class="me-3">
+                <a href="javascript:void(0)" class="footer-info-btn tkt-sm pe-3 text-lgray">
+                  이용안내
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="footer-info-btn tkt-sm text-lgray">
+                  티켓판매안내
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom container text-white mt-3 p-0">
+          <p class="ticket-zoo tkt-t5 mgb-15"><b>티켓톡(주)</b></p>
+          <p class="footer-adress mb-2 tkt-t6">서울 강남구 테헤란로5길24,장연빌딩/4층(장인빌딩) &nbsp;|&nbsp; 대표 정이진&nbsp; |&nbsp; 개인정보보호책임자 윤내현 &nbsp;|&nbsp; tiketalkhelp@tiketalk.com </p>
+          <p class="mgb-15 tkt-t6">사업자등록번호 777&nbsp; |&nbsp; 통신판매업신고 제&nbsp; 1234-56789호</p>
+          <p class="copyright m-0 fw-lighter text-gray">Copyright © TICATALK Corp. All Rights Reserved.</p>
+        </div>
       </div>
-    </div>
-  </footer>
-  <!-- footer yb -->
+    </footer>
+    <!-- footer yb -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -863,138 +864,5 @@
       });
       
     </script>
-    <script>
-      let sec1 = document.querySelector(".sec1-main-wrap");
-      let sec1Height = sec1.clientHeight;
-      let nav = document.querySelector(".tkt-nav");
-      let navBtn = document.querySelectorAll(".tkt-nav-link");
-      let navDepth = document.querySelectorAll(".multi-collapse");
-      let logoImg = document.querySelector("#logo");
-      let loginIcon = document.querySelector("#login-icon");
-
-      // useful function
-      function delCName(target, clName) {
-        target.forEach((targetAll) => {
-          targetAll.classList.remove(clName);
-        });
-      }
-      function navBtnDark() {
-        navBtn.forEach((gnbBtns) => {
-          gnbBtns.classList.add("text-dark");
-        });
-        nav.style.backgroundColor = "#f2f4f5b2";
-        nav.style.backdropFilter = "blur(10px)";
-      }
-      function navBtnLight() {
-        navBtn.forEach((gnbBtns) => {
-          gnbBtns.classList.remove("text-dark");
-        });
-        nav.style.backgroundColor = "transparent";
-        nav.style.backdropFilter = "blur(0px)";
-      }
-      function logoDark() {
-        logoImg.setAttribute("src", "img/tkt-logo-b.svg");
-        loginIcon.setAttribute("src", "img/icon/myicon-black.png");
-      }
-      function logoLight() {
-        logoImg.setAttribute("src", "img/tkt-logo-w.svg");
-        loginIcon.setAttribute("src", "img/icon/myicon-white.png");
-      }
-
-      nav.addEventListener("mouseenter", function () {
-        logoDark();
-        navBtnDark();
-      });
-      nav.addEventListener("mouseleave", function () {
-        logoLight();
-        navBtnLight();
-        delCName(navBtn, "nav-on");
-        delCName(navDepth, "show");
-        if (window.scrollY > sec1Height) {
-          logoDark();
-          navBtnDark();
-        }
-      });
-
-      navBtn.forEach(function (b) {
-        b.addEventListener("click", function () {
-          delCName(navBtn, "nav-on");
-          delCName(navDepth, "show");
-          b.classList.add("nav-on");
-        });
-      });
-
-      window.addEventListener("scroll", function () {
-        if (window.scrollY + 100 > sec1Height) {
-          logoDark();
-          navBtnDark();
-        } else {
-          logoLight();
-          navBtnLight();
-        }
-      });
-
-      let mainSlideBoxes = document.querySelectorAll(".sec1-main-slide-box");
-      mainSlideBoxes.forEach((msbs, index) => {
-        msbs.setAttribute("data-rank", index + 1);
-      });
-
-    // section5 
-    let searchBtn = document.querySelectorAll('.sec5-nav-link');
-    searchBtn.forEach((sbbtn)=>{
-      sbbtn.addEventListener('click',function(){
-        delCName(searchBtn,'search-nav-on');
-        sbbtn.classList.add('search-nav-on');
-      })
-    })
-
-    const kopisUrl = "kopis-trans.json";
-    const searchTab=document.querySelector('.search');
-    const resultImg=document.querySelectorAll('.search-result .card img');
-    const resultDate=document.querySelectorAll('.search-result .date');
-    const resultTitle=document.querySelectorAll('.search-result .title');
-    console.log(resultTitle);
-    let kopisData;
-
-    get_data();
-        async function get_data() {
-        const response = await fetch(kopisUrl);
-            kopisData = await response.json();
-            mainSearch(kopisData);
-            return kopisData;
-        };
-    function mainSearch(kopisData){
-      kopisData.total.forEach((g)=>{
-          let dataGenre = g.genre;
-      searchTab.addEventListener('click',function(e){
-          let searchGenre = e.target.getAttribute('data-genre');
-          if(searchGenre==dataGenre){
-              for(k=0;k<6;k++){
-                  console.log(g.sub[k].title);
-                  resultImg[k].setAttribute('src',g.sub[k].img)
-                  resultDate[k].innerText = `${g.sub[k].std}`
-                  resultTitle[k].innerText = `${g.sub[k].title}`
-                  };
-              };
-            });   
-        });
-    };
-    
-
-    let couponClose = document.querySelector(".coupon-close");
-    let purposeClose = document.querySelector(".purpose-close");
-    let couponPop = document.querySelector("#coupon-pop");
-    let purposePop = document.querySelector("#purpose-pop");
-
-    couponClose.addEventListener("click", function(){
-      couponPop.classList.add("d-none");
-      couponPop.classList.remove("d-flex");
-    });
-    purposeClose.addEventListener("click", function(){
-      purposePop.classList.add("d-none");
-      purposePop.classList.remove("d-flex");
-    });
-  </script>
-    
 </body>
 </html>
