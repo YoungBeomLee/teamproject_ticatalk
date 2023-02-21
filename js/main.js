@@ -112,19 +112,4 @@ window.addEventListener('DOMContentLoaded',function(){
           });   
       });
   };
-
-
-  let couponClose = document.querySelector(".coupon-close");
-  let purposeClose = document.querySelector(".purpose-close");
-  let couponPop = document.querySelector("#coupon-pop");
-  let purposePop = document.querySelector("#purpose-pop");
-
-  couponClose.addEventListener("click", function(){
-    couponPop.classList.add("d-none");
-    couponPop.classList.remove("d-flex");
-  });
-  purposeClose.addEventListener("click", function(){
-    purposePop.classList.add("d-none");
-    purposePop.classList.remove("d-flex");
-  });
 });
