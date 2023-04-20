@@ -16,7 +16,7 @@
   - [Acknowledgements](#acknowledgements)
        
 ## General Information
-> [기획서 보기]([/main/ticatalk-proposal.pdf](https://ejin1018.github.io/ticatalk/ticatalk-proposal.pdf))     
+> [기획서 보기](https://ejin1018.github.io/ticatalk/ticatalk-proposal.pdf)     
 > 기획서 목차     
 1.제작동기 2. 사이트정의 3.시장조사 4.컨셉설정결과 5.설계 6.결과     
 ## Technologies Used
