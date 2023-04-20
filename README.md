@@ -1,9 +1,9 @@
 # 팀프로젝트 - 티캣톡 
 ### Bootstrap과 Scss를 활용한 반응형 티켓판매 사이트입니다.     
-> 구현화면보기 [_here_](https://ejin1018.github.io/ticatalk/)     
-![grouplogo](https://ejin1018.github.io/ticatalk/blob/main/img/tkt-logo.svg) [공연보내조] - 김종건, 윤내현, 이영범, 정이진, 최성원     
+> [티캣톡 사이트로 이동](https://ejin1018.github.io/ticatalk/)     
+![grouplogo](/img/tkt-logo.svg) [공연보내조] - 김종건, 윤내현, 이영범, 정이진, 최성원     
 ## Screenshots
-![](https://ejin1018.github.io/ticatalk/blob/main/img/teamproject1.jpg)     
+![](/img/teamproject1.jpg)     
 ## 목차
 - [팀프로젝트 - 티캣톡](#팀프로젝트---티캣톡)
     - [Bootstrap과 Scss를 활용한 반응형 티켓판매 사이트입니다.](#bootstrap과-scss를-활용한-반응형-티켓판매-사이트입니다)
@@ -15,8 +15,8 @@
   - [Acknowledgements](#acknowledgements)
        
 ## General Information
-> 기획서 보기 [_here_](https://ejin1018.github.io/ticatalk/blob/main/ticatalk-proposal.pdf)
-> 기획서 목차
+> 기획서 보기 [_here_](/main/ticatalk-proposal.pdf)     
+> 기획서 목차     
 1.제작동기 2. 사이트정의 3.시장조사 4.컨셉설정결과 5.설계 6.결과     
 ## Technologies Used
 - Tech 1 - HTML5
