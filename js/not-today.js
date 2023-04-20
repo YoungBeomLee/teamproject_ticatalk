@@ -43,14 +43,14 @@ window.addEventListener('DOMContentLoaded',function(){
   findCookie('coupon');
 
   purposeToday.addEventListener('click',function(){
-    setCookie('purpose','pp-popup',7);
+    setCookie('purpose','pp-popup',1);
     hidePopup(purposePop);
   });
   purposeClose.addEventListener("click", function(){
     hidePopup(purposePop);
   });
   couponToday.addEventListener('click',function(){
-    setCookie('coupon','cp-popup',7);
+    setCookie('coupon','cp-popup',1);
     hidePopup(couponPop);
   });
   couponClose.addEventListener("click", function(){

@@ -6,8 +6,11 @@
     height: 50px;
 }
 .sec3-poster {
+    height: 270px;
     & > img {
         display: block;
+        width: 100%;
+        object-fit: cover;
         height: 100%;
         transform: scale(1);
         transition: all .4s;
