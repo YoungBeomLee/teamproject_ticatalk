@@ -1,6 +1,6 @@
 # 팀프로젝트 - 티캣톡 
 ### Bootstrap과 Scss를 활용한 반응형 티켓판매 사이트입니다.     
-> [티캣톡 사이트로 이동](https://ejin1018.github.io/ticatalk/)     
+> [티캣톡 사이트로 이동](https://ticatalk.vercel.app/)     
 ![grouplogo](/img/tkt-logo.svg)      
 [공연보내조] - 김종건, 윤내현, 이영범, 정이진, 최성원     
 ## Screenshots
