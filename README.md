@@ -23,7 +23,7 @@
 
 ## General Information
 
-> [기획서 보기](https://github.com/YoungBeomLee/teamproject_ticatalk/ticatalk-proposal.pdf)  
+> [기획서 보기](https://YoungBeomLee.github.io/teamproject_ticatalk/ticatalk-proposal.pdf)  
 > 기획서 목차  
 > 1.제작동기 2. 사이트정의 3.시장조사 4.컨셉설정결과 5.설계 6.결과
 >
