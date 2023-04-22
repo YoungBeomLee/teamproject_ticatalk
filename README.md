@@ -36,7 +36,7 @@
 - Tech 3 - SCSS
 
 - Tech 4 - Bootstrap 5.2.3
-  > > > > > > > upstream/main
+
 
 ## Features
 
