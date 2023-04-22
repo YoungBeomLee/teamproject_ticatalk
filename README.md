@@ -27,7 +27,7 @@
 > 기획서 목차  
 > 1.제작동기 2. 사이트정의 3.시장조사 4.컨셉설정결과 5.설계 6.결과
 >
-> > > > > > > upstream/main
+
 
 ## Technologies Used
 
@@ -45,7 +45,7 @@
 - 구현기능 4. Cookie를 활용한 모달창 구현
 
 - 구현기능 2. Kopis API를 활용하여 장르별 공연을 화면에 표시하는 기능 구현(async, await , fatch)
-  > > > > > > > upstream/main
+
 
 ## Acknowledgements
 
